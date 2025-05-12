@@ -8,3 +8,4 @@ markdown_extensions:
   - attr_list
 
 repo_url: https://github.com/TechReborn/Wiki/
+edit_uri: edit/main/docs/
