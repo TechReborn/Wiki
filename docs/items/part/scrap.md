@@ -1,0 +1,3 @@
+# Scrap
+
+**Scrap** is made using ![Recycler](/media/mods/techreborn/recycler.png){width="24" query="?nolink&24"} **[Recycler](/media/mods/techreborn/recycler)**. You can put any items into it and with 1 in 6 chance you will have **scrap** produced. **Scrap** could be crafted into ![scrap_box.png](/media/mods/techreborn/scrap_box.png){width="32" query="?32"}**[Scrap Boxes](/items/scrap_box)** or used directly in ![Matter Fabricator](/media/mods/techreborn/matter_fabricator.png){width="24" query="?nolink&24"}**[Matter Fabricator](/blocks/matter_fabricator)** to produce ![uu-matter.png](/media/mods/techreborn/uu-matter.png){width="32" query="?32"}**[UU-Matter](/items/uu-matter)**.

@@ -1,0 +1,19 @@
+![Basic Storage Unit](/media/mods/techreborn/basic_storage_unit.png){.align-right width="200" query="?nolink&200"}
+
+# Storage Units
+
+**Storage Units** are used to store large quantities of a single item.
+
+- \<mcitem\>techreborn:crude_storage_unit\</mcitem\>
+- \<mcitem\>techreborn:basic_storage_unit\</mcitem\>
+- \<mcitem\>techreborn:advanced_storage_unit\</mcitem\>
+- \<mcitem\>techreborn:industrial_storage_unit\</mcitem\>
+- \<mcitem\>techreborn:quantum_storage_unit\</mcitem\>
+- \<mcitem\>techreborn:creative_storage_unit\</mcitem\>
+
+### Usage Notes
+
+- Ability to lock items using top right lock icon (By right-clicking unit)
+- Configurable input/outputs by using side menu (Blue - input, Orange - output). Click faces to change them. Can also opt for auto input and output (Pull/push).
+- Currently stored item is shown on the front-panel
+- No power required

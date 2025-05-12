@@ -1,0 +1,53 @@
+![Sapphire Leggings](/media/mods/techreborn/sapphire_leggings.png){.align-right width="200" query="?nolink&200"}
+
+# Sapphire Leggings
+
+---
+
+A **[Sapphire Armor](/items/armor/sapphire_armor)** piece for the legs slot. It has the following properties:
+
+- **4 Defense points**;
+- **285 Durability**;
+- **8 Enchantability**.
+
+## Obtaining
+
+---
+
+### Crafting
+
+Requires **7x**\<mcitem\>techreborn:sapphire\</mcitem\>.
+
+> \<recipe\>
+
+      input  techreborn:sapphire techreborn:sapphire techreborn:sapphire
+      input  techreborn:sapphire air techreborn:sapphire
+      input  techreborn:sapphire air techreborn:sapphire
+      output techreborn:sapphire_leggings
+    </recipe>
+
+### Repairing
+
+Сan be repaired on \<mcitem\>minecraft:anvil\</mcitem\> or a \<mcitem\>minecraft:grindstone\</mcitem\>.
+
+## Usage
+
+---
+
+Wear to gain a protective effect. A **Sapphire Leggings** is equipped by placing it in the legs slot of the inventory next to the player's character. You can also right-click to equip **Sapphire Leggings**. If the slot is occupied, the items will swap places.
+
+### Enchantments
+
+Uses the same enchantments as vanilla leggings. Can be enchanted at an \<mcitem\>minecraft:enchanting_table\</mcitem\>, as well as using an \<mcitem\>minecraft:enchanted_book\</mcitem\> on an \<mcitem\>minecraft:anvil\</mcitem\>.
+
+### Grinding ingredient
+
+> \<mcitem\>techreborn:industrial_grinder\</mcitem\>\
+> \<mcitem\>techreborn:water_cell\</mcitem\> **or** \<mcitem\>minecraft:water_bucket\</mcitem\> **+** \<mcitem\>techreborn:sapphire_leggings\</mcitem\> **-\> 3x**\<mcitem\>techreborn:sapphire_dust\</mcitem\> **+ 2x**\<mcitem\>techreborn:small_pile_of_sapphire_dust\</mcitem\>\
+> \<mcitem\>techreborn:mercury_cell\</mcitem\> **or** \<mcitem\>techreborn:mercury\</mcitem\> **+** \<mcitem\>techreborn:sapphire_leggings\</mcitem\> **-\> 5x**\<mcitem\>techreborn:sapphire_dust\</mcitem\> \*\*+ \*\*\<mcitem\>techreborn:small_pile_of_sapphire_dust\</mcitem\>
+
+## History
+
+---
+
+Updated for 1.21.5 version.

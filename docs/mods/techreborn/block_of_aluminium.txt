@@ -1,0 +1,76 @@
+{{ :mods:techreborn:block_of_aluminium.png?nolink&200|}}
+====== Block of Aluminium =======
+//This article is about the mineral block; see the following articles about similar topics: <mcitem>techreborn:Aluminium_Ingot</mcitem>, <mcitem>techreborn:Aluminium_Nugget</mcitem>, <mcitem>techreborn:Small_Pile_of_Aluminium_Dust</mcitem>, <mcitem>techreborn:Aluminium_Plate</mcitem>.//
+
+A **block of aluminium** is a precious metal block equivalent to nine <mcitem>techreborn:aluminium_ingot</mcitem>s.
+
+===== Obtaining =====
+==== Breaking ====
+Blocks of aluminium can be mined with any or no tool.
+
+==== Crafting ====
+^ Ingredients ^ Crafting Recipe ^
+| <mcitem>techreborn:Aluminium_Ingot</mcitem> | <recipe>
+input techreborn:aluminium_ingot techreborn:aluminium_ingot techreborn:aluminium_ingot 
+input techreborn:aluminium_ingot techreborn:aluminium_ingot techreborn:aluminium_ingot 
+input techreborn:aluminium_ingot techreborn:aluminium_ingot techreborn:aluminium_ingot 
+output techreborn:block_of_aluminium
+</recipe> |
+
+===== Usage =====
+==== Crafting ingredient ====
+^ Name ^ Ingredients ^ Crafting Recipe ^
+| <mcitem>techreborn:Aluminium_Ingot</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+input air air air 
+input air techreborn:block_of_aluminium air 
+input air air air
+output techreborn:aluminium_ingot,9
+</recipe> |
+| <mcitem>techreborn:Aluminium_Stairs</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+input techreborn:block_of_aluminium air air
+input techreborn:block_of_aluminium techreborn:block_of_aluminium air
+input techreborn:block_of_aluminium techreborn:block_of_aluminium techreborn:block_of_aluminium
+output techreborn:aluminium_stairs,4
+</recipe> |
+| <mcitem>techreborn:Aluminium_Slab</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+input air air air 
+input air air air 
+input techreborn:block_of_aluminium techreborn:block_of_aluminium techreborn:block_of_aluminium 
+output techreborn:aluminium_slab,6
+</recipe> |
+| <mcitem>techreborn:Aluminium_Wall</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+input air air air
+input techreborn:block_of_aluminium techreborn:block_of_aluminium techreborn:block_of_aluminium 
+input techreborn:block_of_aluminium techreborn:block_of_aluminium techreborn:block_of_aluminium 
+output techreborn:aluminium_wall,6
+</recipe> |
+| <mcitem>techreborn:Aluminium_Stairs</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+size 1x1
+input techreborn:block_of_aluminium
+output techreborn:aluminium_stairs
+tool minecraft:stone_cutter
+</recipe> |
+| <mcitem>techreborn:Aluminium_Slab</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+size 1x1
+input techreborn:block_of_aluminium
+output techreborn:aluminium_slab
+tool minecraft:stone_cutter
+</recipe> | 
+| <mcitem>techreborn:Aluminium_Wall</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+size 1x1
+input techreborn:block_of_aluminium
+output techreborn:aluminium_wall
+tool minecraft:stone_cutter
+</recipe> |  
+| <mcitem>techreborn:Aluminium_Plate</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+size 1x1
+input techreborn:block_of_aluminium
+output techreborn:aluminium_plate,9
+tool techreborn:compressor
+</recipe> | 
+| <mcitem>techreborn:Aluminium_Dust</mcitem> | <mcitem>techreborn:Block_of_Aluminium</mcitem> | <recipe>
+size 1x1
+input techreborn:block_of_aluminium
+output techreborn:aluminium_dust,9
+tool techreborn:grinder
+</recipe> | 

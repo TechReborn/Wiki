@@ -1,0 +1,43 @@
+# Parts
+
+Parts are essential components to craft machines.\
+
+- \<mcitem\>techreborn:carbon_fiber\</mcitem\>
+- \<mcitem\>techreborn:carbon_mesh\</mcitem\>
+- \<mcitem\>techreborn:electronic_circuit\</mcitem\>
+- \<mcitem\>techreborn:advanced_circuit\</mcitem\>
+- \<mcitem\>techreborn:industrial_circuit\</mcitem\>
+- \<mcitem\>techreborn:machine_parts\</mcitem\>
+- \<mcitem\>techreborn:basic_display\</mcitem\>
+- \<mcitem\>techreborn:digital_display\</mcitem\>
+- \<mcitem\>techreborn:data_storage_core\</mcitem\>
+- \<mcitem\>techreborn:data_storage_chip\</mcitem\>
+- \<mcitem\>techreborn:energy_flow_chip\</mcitem\>
+- \<mcitem\>techreborn:superconductor\</mcitem\>
+- ![Diamond Grinding Head](/media/mods/techreborn/diamond_grinding_head.png){width="24" query="?nolink&24"} **[Diamond Grinding Head](/items/part/diamond_grinding_head)**
+- ![Diamond Saw Blade](/media/mods/techreborn/diamond_saw_blade.png){width="24" query="?nolink&24"} **[Diamond Saw Blade](/items/part/diamond_saw_blade)**
+- ![Tungsten Grinding Head](/media/mods/techreborn/tungsten_grinding_head.png){width="24" query="?nolink&24"} **[Tungsten Grinding Head](/items/part/tungsten_grinding_head)**
+- ![Helium Coolant Simple](/media/mods/techreborn/60k_helium_coolant_cell.png){width="24" query="?nolink&24"} **[Helium Coolant Simple](/items/part/helium_coolant_simple)**
+- ![Helium Coolant Triple](/media/mods/techreborn/180k_helium_coolant_cell.png){width="24" query="?nolink&24"} **[Helium Coolant Triple](/items/part/helium_coolant_triple)**
+- ![Helium Coolant Six](/media/mods/techreborn/360k_helium_coolant_cell.png){width="24" query="?nolink&24"} **[Helium Coolant Six](/items/part/helium_coolant_six)**
+- ![Nak Coolant Simple](/media/mods/techreborn/60k_nak_coolant_cell.png){width="24" query="?nolink&24"} **[Nak Coolant Simple](/items/part/nak_coolant_simple)**
+- ![Nak Coolant Triple](/media/mods/techreborn/180k_nak_coolant_cell.png){width="24" query="?nolink&24"} **[Nak Coolant Triple](/items/part/nak_coolant_triple)**
+- ![Nak Coolant Six](/media/mods/techreborn/360k_nak_coolant_cell.png){width="24" query="?nolink&24"} **[Nak Coolant Six](/items/part/nak_coolant_six)**
+- ![Cupronickel Heating Coil](/media/mods/techreborn/cupronickel_heating_coil.png){width="24" query="?nolink&24"} **[Cupronickel Heating Coil](/items/part/cupronickel_heating_coil)**
+- ![Nichrome Heating Coil](/media/mods/techreborn/nichrome_heating_coil.png){width="24" query="?nolink&24"} **[Nichrome Heating Coil](/items/part/nichrome_heating_coil)**
+- ![Kanthal Heating Coil](/media/mods/techreborn/kanthal_heating_coil.png){width="24" query="?nolink&24"} **[Kanthal Heating Coil](/items/part/kanthal_heating_coil)**
+- ![Thorium Cell](/media/mods/techreborn/fuel_rod_thorium_.png){width="24" query="?nolink&24"} **[Thorium Cell](/items/part/thorium_cell)**
+- ![Double Thorium Cell](/media/mods/techreborn/dual_fuel_rod_thorium_.png){width="24" query="?nolink&24"} **[Double Thorium Cell](/items/part/double_thorium_cell)**
+- ![Quad Thorium Cell](/media/mods/techreborn/quad_fuel_rod_thorium_.png){width="24" query="?nolink&24"} **[Quad Thorium Cell](/items/part/quad_thorium_cell)**
+- ![Plutonium Cell](/media/mods/techreborn/fuel_rod_plutonium_.png){width="24" query="?nolink&24"} **[Plutonium Cell](/items/part/plutonium_cell)**
+- ![Double Plutonium Cell](/media/mods/techreborn/dual_fuel_rod_plutonium_.png){width="24" query="?nolink&24"} **[Double Plutonium Cell](/items/part/double_plutonium_cell)**
+- ![Quad Plutonium Cell](/media/mods/techreborn/quad_fuel_rod_plutonium_.png){width="24" query="?nolink&24"} **[Quad Plutonium Cell](/items/part/quad_plutonium_cell)**
+- ![Neutron Reflector](/media/mods/techreborn/neutron_reflector.png){width="24" query="?nolink&24"} **[Neutron Reflector](/items/part/neutron_reflector)**
+- ![Iridium Neutron Reflector](/media/mods/techreborn/iridium_neutron_reflector.png){width="24" query="?nolink&24"} **[Iridium Neutron Reflector](/items/part/iridium_neutron_reflector)**
+- ![Thick Neutron Reflector](/media/mods/techreborn/thick_neutron_reflector.png){width="24" query="?nolink&24"} **[Thick Neutron Reflector](/items/part/thick_neutron_reflector)**
+- ![Sap](/media/mods/techreborn/sap.png){width="24" query="?nolink&24"} **[Sap](/items/part/sap)**
+- ![Rubber](/media/mods/techreborn/rubber.png){width="24" query="?nolink&24"} **[Rubber](/items/part/rubber)**
+- ![Coolant Simple](/media/mods/techreborn/10k_coolant_cell.png){width="24" query="?nolink&24"} **[Coolant Simple](/items/part/coolant_simple)**
+- ![Coolant Triple](/media/mods/techreborn/30k_coolant_cell.png){width="24" query="?nolink&24"} **[Coolant Triple](/items/part/coolant_triple)**
+- ![Coolant Six](/media/mods/techreborn/60k_coolant_cell.png){width="24" query="?nolink&24"} **[Coolant Six](/items/part/coolant_six)**
+- ![Mixed Metal Ingot](/media/mods/techreborn/mixed_metal_ingot.png){width="24" query="?nolink&24"} **[Mixed Metal Ingot](/items/ingot/mixed_metal_ingot)**

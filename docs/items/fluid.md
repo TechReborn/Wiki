@@ -1,0 +1,32 @@
+![lava_cell.png](/media/mods/techreborn/lava_cell.png){.align-right width="200" query="?nolink&200"}
+
+# Fluids
+
+**Fluids** are essential part of TechReborn mod. Thay are widely used for powering **[generators](/energy/generators)**, producing other fluids or items.\
+\
+===== List of fluids =====
+
+- \<mcitem\>techreborn:empty_cell\</mcitem\>
+- \<mcitem\>techreborn:beryllium_cell\</mcitem\>
+- \<mcitem\>techreborn:calcium_cell\</mcitem\>
+- \<mcitem\>techreborn:calciumcarbonate_cell\</mcitem\>
+- \<mcitem\>techreborn:carbon_cell\</mcitem\>
+- \<mcitem\>techreborn:carbon_fiber_cell\</mcitem\>
+- \<mcitem\>techreborn:chlorite_cell\</mcitem\>
+- \<mcitem\>techreborn:compressed_air_cell\</mcitem\>
+- \<mcitem\>techreborn:diesel_cell\</mcitem\>
+- \<mcitem\>techreborn:electrolyzed_water_cell\</mcitem\>
+- \<mcitem\>techreborn:hydrogen_cell\</mcitem\>
+- \<mcitem\>techreborn:lithium_cell\</mcitem\>
+- \<mcitem\>techreborn:methane_cell\</mcitem\>
+- \<mcitem\>techreborn:mercury_cell\</mcitem\>
+- \<mcitem\>techreborn:nitrocarbon_cell\</mcitem\>
+- \<mcitem\>techreborn:nitrodiesel_cell\</mcitem\>
+- \<mcitem\>techreborn:silicon_cell\</mcitem\>
+- \<mcitem\>techreborn:sodium_cell\</mcitem\>
+- \<mcitem\>techreborn:sodiumpersulfate_cell\</mcitem\>
+- \<mcitem\>techreborn:sodium_sulfide_cell\</mcitem\>
+- \<mcitem\>techreborn:sulfur_cell\</mcitem\>
+- \<mcitem\>techreborn:sulfuric_acid_cell\</mcitem\>
+- \<mcitem\>techreborn:water_cell\</mcitem\>
+- \<mcitem\>techreborn:wolframium_cell\</mcitem\>

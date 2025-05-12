@@ -1,0 +1,43 @@
+{{ :mods:techreborn:bronze_chestplate.png?nolink&200|Bronze Armor}}
+
+====== Bronze Armor ======
+----
+Armor crafted from <mcitem>techreborn:bronze_ingot</mcitem>.
+
+When fully equipped, you'll get **16 Defence points** and **+4 Knockback Resistance**.
+
+===== Armor pieces =====
+----
+^ Piece                                         ^ Crafting recipe                                                                 ^ Defense points ^ Durability ^ Additional stats        ^
+| <mcitem>techreborn:bronze_helmet</mcitem>     | <recipe>
+                                                    input techreborn:bronze_ingot techreborn:bronze_ingot techreborn:bronze_ingot
+                                                    input techreborn:bronze_ingot air techreborn:bronze_ingot
+                                                    input air air air
+                                                    output techreborn:bronze_helmet
+                                                  </recipe>                                                                       | 3              | 187        | +1 Knockback Resistance |
+| <mcitem>techreborn:bronze_chestplate</mcitem> | <recipe>
+                                                    input techreborn:bronze_ingot air techreborn:bronze_ingot
+                                                    input techreborn:bronze_ingot techreborn:bronze_ingot techreborn:bronze_ingot
+                                                    input techreborn:bronze_ingot techreborn:bronze_ingot techreborn:bronze_ingot
+                                                    output techreborn:bronze_chestplate
+                                                  </recipe>                                                                       | 6              | 272        | +1 Knockback Resistance |
+| <mcitem>techreborn:bronze_leggings</mcitem>   | <recipe>
+                                                    input techreborn:bronze_ingot techreborn:bronze_ingot techreborn:bronze_ingot
+                                                    input techreborn:bronze_ingot air techreborn:bronze_ingot
+                                                    input techreborn:bronze_ingot air techreborn:bronze_ingot
+                                                    output techreborn:bronze_leggings
+                                                  </recipe>                                                                       | 5              | 255        | +1 Knockback Resistance |
+| <mcitem>techreborn:bronze_boots</mcitem>      | <recipe>
+                                                    input techreborn:bronze_ingot air techreborn:bronze_ingot
+                                                    input techreborn:bronze_ingot air techreborn:bronze_ingot
+                                                    air air air
+                                                    output techreborn:bronze_boots
+                                                  </recipe>                                                                       | 2              | 221        | +1 Knockback Resistance |
+All pieces of **Bronze Armor** has **8 Enchantability**.
+===== Usage =====
+----
+Wear to gain a protective effect. A helmet, chestplate, leggings, and boots are equipped by placing them in the head, chest, legs and  feet slots of the inventory next to the player's character, respectively. You can also right-click to equip armor. If the slot is occupied, the items will swap places.
+
+===== History =====
+----
+Updated for 1.21.5 version.
