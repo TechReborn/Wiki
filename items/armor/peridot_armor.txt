@@ -1,0 +1,44 @@
+{{ :mods:techreborn:peridot_chestplate.png?nolink&200|Peridot Armor}}
+
+====== Peridot Armor ======
+----
+Armor crafted from <mcitem>techreborn:peridot</mcitem>.
+
+When fully equipped, you'll get **16 Defence points**.
+
+===== Armor pieces =====
+----
+^ Piece                                          ^ Crafting recipe                                                                     ^ Defense points ^ Durability ^ Additional stats ^
+| <mcitem>techreborn:peridot_helmet</mcitem>     | <recipe>
+                                                    input techreborn:peridot techreborn:peridot techreborn:peridot
+                                                    input techreborn:peridot air techreborn:peridot
+                                                    input air air air
+                                                    output techreborn:peridot_helmet
+                                                   </recipe>                                                                           | 3              | 187        | -                |
+| <mcitem>techreborn:peridot_chestplate</mcitem> | <recipe>
+                                                    input techreborn:peridot air techreborn:peridot
+                                                    input techreborn:peridot techreborn:peridot techreborn:peridot
+                                                    input techreborn:peridot techreborn:peridot techreborn:peridot
+                                                    output techreborn:peridot_chestplate
+                                                   </recipe>                                                                           | 8              | 272        | -                |
+| <mcitem>techreborn:peridot_leggings</mcitem>   | <recipe>
+                                                    input techreborn:peridot techreborn:peridot techreborn:peridot
+                                                    input techreborn:peridot air techreborn:peridot
+                                                    input techreborn:peridot air techreborn:peridot
+                                                    output techreborn:peridot_leggings
+                                                  </recipe>                                                                           | 3              | 255        | -                |
+| <mcitem>techreborn:peridot_boots</mcitem>      | <recipe>
+                                                    input techreborn:peridot air techreborn:peridot
+                                                    input techreborn:peridot air techreborn:peridot
+                                                    air air air
+                                                    output techreborn:peridot_boots
+                                                   </recipe>                                                                           | 2              | 221        | -                |
+All pieces of **Peridot Armor** has **16 Enchantability**.
+
+===== Usage =====
+----
+Wear to gain a protective effect. A helmet, chestplate, leggings, and boots are equipped by placing them in the head, chest, legs and  feet slots of the inventory next to the player's character, respectively. You can also right-click to equip armor. If the slot is occupied, the items will swap places.
+
+===== History =====
+----
+Updated for 1.21.5 version.

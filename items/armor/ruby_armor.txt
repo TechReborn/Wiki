@@ -1,0 +1,44 @@
+{{ :mods:techreborn:ruby_chestplate.png?nolink&200|Ruby Armor}}
+
+====== Ruby Armor ======
+----
+Armor crafted from <mcitem>techreborn:ruby</mcitem>.
+
+When fully equipped, you'll get **16 Defence points**.
+
+===== Armor pieces =====
+----
+^ Piece                                       ^ Crafting recipe                                         ^ Defense points ^ Durability ^ Additional stats ^
+| <mcitem>techreborn:ruby_helmet</mcitem>     | <recipe>
+                                                  input techreborn:ruby techreborn:ruby techreborn:ruby
+                                                  input techreborn:ruby air techreborn:ruby
+                                                  input air air air
+                                                  output techreborn:ruby_helmet
+                                                </recipe>                                               | 2              | 176        | -                |
+| <mcitem>techreborn:ruby_chestplate</mcitem> | <recipe>
+                                                  input techreborn:ruby air techreborn:ruby
+                                                  input techreborn:ruby techreborn:ruby techreborn:ruby
+                                                  input techreborn:ruby techreborn:ruby techreborn:ruby
+                                                  output techreborn:ruby_chestplate
+                                                </recipe>                                               | 7              | 256        | -                |
+| <mcitem>techreborn:ruby_leggings</mcitem>   | <recipe>
+                                                  input techreborn:ruby techreborn:ruby techreborn:ruby
+                                                  input techreborn:ruby air techreborn:ruby
+                                                  input techreborn:ruby air techreborn:ruby
+                                                  output techreborn:ruby_leggings
+                                                </recipe>                                               | 5              | 240        | -                |
+| <mcitem>techreborn:ruby_boots</mcitem>      | <recipe>
+                                                  input techreborn:ruby air techreborn:ruby
+                                                  input techreborn:ruby air techreborn:ruby
+                                                  air air air
+                                                  output techreborn:ruby_boots
+                                                </recipe>                                               | 2              | 208        | -                |
+All pieces of **Ruby Armor** has **10 Enchantability**.
+
+===== Usage =====
+----
+Wear to gain a protective effect. A helmet, chestplate, leggings, and boots are equipped by placing them in the head, chest, legs and  feet slots of the inventory next to the player's character, respectively. You can also right-click to equip armor. If the slot is occupied, the items will swap places.
+
+===== History =====
+----
+Updated for 1.21.5 version.
