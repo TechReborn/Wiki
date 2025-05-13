@@ -1,7 +1,0 @@
-![matter_fabricator.png](/media/mods/techreborn/matter_fabricator.png){.align-right width="200" query="?nolink&200"}
-
-# Matter Fabricator
-
-The **Matter Fabricator** is used to produce ![uu-matter.png](/media/mods/techreborn/uu-matter.png){width="32" query="?32"}[UU-Matter](/items/uu-matter) which in turn can be used to craft various vanilla items. The **Matter Fabricator** belongs in the extreme power tier, has an input rate of 16,384 FE/tick and an internal buffer of 400,000,000FE. Both ![scrap.png](/media/mods/techreborn/scrap.png){width="32" query="?32"}**[Scrap](/items/part/scrap)** and ![scrap_box.png](/media/mods/techreborn/scrap_box.png){width="32" query="?32"}[Scrap Boxes](/items/scrap_box) can be used in the **Matter Fabricator**. The first one will give you 2% on the progress bar for producing a single piece of ![uu-matter.png](/media/mods/techreborn/uu-matter.png){width="32" query="?32"}[UU-Matter](/items/uu-matter) which means that to produce 1x![uu-matter.png](/media/mods/techreborn/uu-matter.png){width="32" query="?32"}[UU-Matter](/items/uu-matter), you will need 50x![scrap.png](/media/mods/techreborn/scrap.png){width="32" query="?32"}**[Scrap](/items/part/scrap)**.\
-\
-===== Recipe ===== \<recipe\> input techreborn:energy_flow_chip techreborn:extractor techreborn:energy_flow_chip input techreborn:highly_advanced_machine_block techreborn:lapotronic_energy_orb techreborn:highly_advanced_machine_block input techreborn:energy_flow_chip techreborn:extractor techreborn:energy_flow_chip output techreborn:matter_fabricator \</recipe\>
