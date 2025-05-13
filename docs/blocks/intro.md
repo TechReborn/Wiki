@@ -1,24 +1,27 @@
 ---
 title: Blocks
+sidebar_position: 1
 ---
 
 Tech Reborn adds many types of blocks.
 
+<ItemImage file="insulated_copper_cable" alt="Cables" size="100" />
+
 ## Cables
-![Insulated Copper Cable](/img/techreborn/insulated_copper_cable.png) *[General information about Cables](/energy/cables)*
 
-Cables are used in crafting and to transfer energy.
+Cables are used in crafting and to transfer energy. Please, find more details in [Cables](cables) section.
 
-- \<mcitem\>techreborn:tin_cable\</mcitem\>
-- \<mcitem\>techreborn:copper_cable\</mcitem\> and \<mcitem\>techreborn:insulated_copper_cable\</mcitem\>
-- \<mcitem\>techreborn:gold_cable\</mcitem\> and \<mcitem\>techreborn:insulated \_gold_cable\</mcitem\>
-- \<mcitem\>techreborn:HV_cable\</mcitem\> and \<mcitem\>techreborn:insulated_HV_cable\</mcitem\>
-- \<mcitem\>techreborn:GlassFiber_Cable\</mcitem\>
-- \<mcitem\>techreborn:superconductor_cable\</mcitem\>
 
 ## Generators
 
-*[General information about Generators](/energy/generators)* [Excerp](/section>/energy/generators&firstseconly&noheader&inline)
+<ItemImage file="generator" alt="Generators" size="100" />
+
+There are two major types of generators:
+1. Active. They are consume some resources to generate Energy. Building an effective supply chain could be a challenging task. But they are good starting point in most cases.
+2. Passive. They do not consume resources to generate Energy. Energy production of basic tier passive generators is not so impressive. But instead of building a supply chain for fuel you can build a bunch of passive generator and just forget about it. 
+
+Please, find more details in [Generators](generators) section.
+
 
 ## Transformers
 
