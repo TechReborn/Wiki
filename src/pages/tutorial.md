@@ -6,9 +6,7 @@ This is a very basic guide on getting started with [**Tech Reborn**](https://www
 
 ## Acquiring Rubber 
 
-To get started with [**Tech Reborn**](https://www.curseforge.com/minecraft/mc-mods/techreborn) you want to craft yourself a \<mcitem\>techreborn:treetap\</mcitem\>. Once you have acquired one you can begin to look for a [**Rubber Tree**](/World Generation/Rubber Tree) 
-
-[Icon](/world_generation/rubber_tree)
+To get started with [**Tech Reborn**](https://www.curseforge.com/minecraft/mc-mods/techreborn) you want to craft yourself a \<mcitem\>techreborn:treetap\</mcitem\>. Once you have acquired one you can begin to look for a [**Rubber Tree**](/docs/world/rubber_tree) 
 
 They are distinctive as they have a spike of leaves at the top. They usually spawn in clumps. This is an example of what the rubber trees will look like in the world.
 
