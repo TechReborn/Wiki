@@ -1,0 +1,52 @@
+---
+title: Wiki Guidelines
+---
+
+First of all, thank you for your efforts to make this wiki better. Seriously, with a lot of blocks and items it is near to impossible for developers to keep wiki up-to-date.
+
+## Wiki Structure
+
+Wiki content split into several sections:
+
+- **Items** - Tech Reborn items. Including cells, dusts, ingots, parts, etc.
+- **Blocks** - Tech Reborn blocks. Including machine frames/casings, storage/tank units, etc.
+- **World** - World Generation related things, like ores, trees, NPCs.
+
+## Syntax
+
+This wiki with **Docusaurus** and use [Markdown syntax](https://www.markdownguide.org/basic-syntax/) for pages. There is a comprehensive [documentation](https://docusaurus.io/docs/markdown-features) on possible formatting options.
+
+## Page Structure
+
+Pages should start with Front Matter.
+
+```
+---
+title: <Some page Title. It will become H1 tag on the page and also will be used in SideBar>
+sidebar_position: <Some number, including float. Optional. Could be used to better sort pages in SideBar
+---
+```
+
+More fields for Front Matter documented [here](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter).
+
+Most of pages have big righ-aligned item image just below page title. We have custom component for that image
+
+```
+<ItemImage 
+    file="<file name without extension for a file in /static/img/techreborn folder>" 
+    alt="<Alt text for image>" 
+    size="<Size in pixels for image.>" />
+```
+
+Here is an example of ItemImage.
+```
+<ItemImage file="rubber_sapling" alt="Rubber Sapling" size="200" />
+```
+will be shown as:
+
+<ItemImage file="rubber_sapling" alt="Rubber Sapling" size="200" />
+
+<div style={{clear: 'both'}} />
+
+Please, use headings to structure page content. Table of Content for a page will be generated automatically based on heading.
+
