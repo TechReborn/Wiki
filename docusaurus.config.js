@@ -89,6 +89,12 @@ const config = {
             label: 'World',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'devSidebar',
+            position: 'left',
+            label: 'Dev',
+          },
+          {
             href: 'https://github.com/TechReborn/Wiki',
             label: 'GitHub',
             position: 'right',

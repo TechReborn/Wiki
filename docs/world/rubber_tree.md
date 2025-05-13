@@ -1,5 +1,6 @@
 ---
 title: Rubber Tree
+sidebar_position: 3
 ---
 
 <ItemImage file="rubber_sapling" alt="Rubber Sapling" size="200" />
