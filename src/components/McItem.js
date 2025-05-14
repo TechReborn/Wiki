@@ -2,7 +2,7 @@ import React from 'react';
 const GLOBAL = require('../../.docusaurus/globalData.json');
 const PAGES = GLOBAL['docusaurus-plugin-content-docs'].default.versions[0].docs;
 
-export default function McItem({slug, pack, friendlyName="", inline = false, size = 24, float = 'left', overrides = {}}) {
+export default function McItem({slug, pack, inline = false, size = 24, float = 'left', overrides = {}}) {
 	// todo: something better here, but if they don't give a slug, what can we even do?
 	if (!slug) { return (''); }
 	// todo: solve for vanilla images, do we want to hotlink or rehost?
@@ -14,6 +14,7 @@ export default function McItem({slug, pack, friendlyName="", inline = false, siz
 			return {image, path};
 		}
 	};
+	const friendlyName = overrides.description === false ? '' : titleCase(slug);
 	const items = packMap[pack](slug);
 	const Element = inline === true ? "span" : "div";
 	return (
@@ -38,3 +39,7 @@ function findIdInGlobal(id) {
 	// returning "/" is probably best is users are complaining.
 	return id;
 }
+
+const titleCase = (s) =>
+	s.replace (/^[-_]*(.)/, (_, c) => c.toUpperCase())
+	 .replace (/[-_]+(.)/g, (_, c) => ' ' + c.toUpperCase());

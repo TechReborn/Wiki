@@ -59,12 +59,10 @@ Here's a list of custom components and how to use them.
 The base of most item references. If you want to refer to an item in your page, you should probably be using this tag. It brings in an image and automatically does some other nice things too (hopefully).
 
 ```
-<McItem imgSlug="aluminium_ingot" linkPath="items/ingots/aluminium_ingot" friendlyName="Aluminium Ingot" pack="techreborn"/> 
+<McItem slug="aluminium_ingot" pack="techreborn"/> 
 ```
 
-The `imgSlug` is the name of the file in `/static/imgs/techreborn/` without the file extension. If you don't supply an `imgSlug`, it will render an ugly red X
-The `linkPath` is the partial url to the wiki page for this item.
-The `friendlyName` is how you'd like the user to see the name, preferably, how the game shows the name.
+The `slug` is the name of the file in `/static/imgs/techreborn/` without the file extension. We also use the slug to find the correct page in the index and to render the friendly name of the item.
 The `pack` is the content pack that this item originates from. Supported packs at the moment are:
 - `minecraft`: for the base game
 - `techreborn`: for this modpack
