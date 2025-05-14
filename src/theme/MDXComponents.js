@@ -3,10 +3,12 @@ import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
 import ItemImage from '@site/src/components/ItemImage';
 import McItem from '@site/src/components/McItem';
+import CraftingTable from '@site/src/components/CraftingTable';
 
 export default {
   // Re-use the default mapping
   ...MDXComponents,
   ItemImage,
-  McItem
+  McItem,
+  CraftingTable
 };

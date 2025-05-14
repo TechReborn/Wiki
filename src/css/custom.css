@@ -28,3 +28,35 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.crafting-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	font-family: sans-serif;
+}
+  
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 50px);
+	grid-template-rows: repeat(3, 50px);
+	gap: 2px;
+}
+  
+.slot, .output-slot {
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+	border: 2px solid #999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+  
+.arrow {
+	font-size: 24px;
+}
+  
+.item {
+	font-size: 18px;
+}

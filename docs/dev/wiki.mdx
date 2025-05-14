@@ -50,3 +50,48 @@ will be shown as:
 
 Please, use headings to structure page content. Table of Content for a page will be generated automatically based on heading.
 
+## Custom Components
+
+Here's a list of custom components and how to use them.
+
+### McItem
+
+The base of most item references. If you want to refer to an item in your page, you should probably be using this tag. It brings in an image and automatically does some other nice things too (hopefully).
+
+```
+<McItem imgSlug="aluminium_ingot" linkPath="items/ingots/aluminium_ingot" friendlyName="Aluminium Ingot" pack="techreborn"/> 
+```
+
+The `imgSlug` is the name of the file in `/static/imgs/techreborn/` without the file extension. If you don't supply an `imgSlug`, it will render an ugly red X
+The `linkPath` is the partial url to the wiki page for this item.
+The `friendlyName` is how you'd like the user to see the name, preferably, how the game shows the name.
+The `pack` is the content pack that this item originates from. Supported packs at the moment are:
+- `minecraft`: for the base game
+- `techreborn`: for this modpack
+
+### CraftingTable
+
+This is largely meant to take recipes from the previous generation of wiki and display them in a somewhat nice interface.
+
+```
+<CraftingTable recipe="input techreborn:aluminium_nugget techreborn:aluminium_nugget techreborn:aluminium_nugget input techreborn:aluminium_nugget techreborn:aluminium_nugget techreborn:aluminium_nugget input techreborn:aluminium_nugget techreborn:aluminium_nugget techreborn:aluminium_nugget output techreborn:aluminium_ingot" />
+```
+
+The `recipe` is meant to be a drop in replacement for the previous version of the wiki, but this doesn't mean you can't handwrite a recipe. I'm showing a broken down example below, but when you do it for real, use spaces between your items, not newlines.
+```
+input
+air
+air
+air
+input
+air
+minecraft:coal
+air
+input
+air
+minecraft:stick
+air
+output
+minecraft:torch,4
+```
+This would be the broken down recipe for torchs in the base game. Use `air` if you'd like nothing to be rendered in that grid position.
