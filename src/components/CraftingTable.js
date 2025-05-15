@@ -26,11 +26,11 @@ export default function CraftingTable({recipe}) {
 	techreborn:blast_furnace 
 	</recipe\>
 	*/
-	const recipeParts = recipe.split(' ');
+	const recipeParts = recipe.trim().split(' ');
 	// expressed as 0-8, left to right, top to bottom
 	const finalInput = [];
 	let finalOutput = null;
-	let finalQty = 0;
+	let finalQty = '';
 	// marking the next item will be output
 	let finalItem = false;
 	for (const part of recipeParts) {
@@ -45,7 +45,7 @@ export default function CraftingTable({recipe}) {
 				pack: outputNameParts[0],
 				id: outputNameParts[1]
 			};
-			finalQty = outputParts[1];
+			finalQty = !!outputParts[1] ? outputParts[1] + 'x' : '';
 			break;
 		}
 		// everything else is input...probably (except air)
@@ -82,7 +82,7 @@ export default function CraftingTable({recipe}) {
 				<div class="arrow"><img src="/img/crafting_arrow.jpg" width="32" /></div>
 
 				<div class="output-slot">
-					<div class="item"><div class="item"><McItem slug={finalOutput.id} pack={finalOutput.pack} size="64" overrides={{ description: false }}/></div></div>
+					<div class="item"><McItem slug={finalOutput.id} pack={finalOutput.pack} size="64" overrides={{ description: false }}/></div>{finalQty}
 				</div>
 			</div>
 		</div>
