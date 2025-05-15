@@ -7,7 +7,10 @@ export default function McItem({slug, pack, inline = false, size = 24, float = '
 	if (!slug) { return (''); }
 	// todo: solve for vanilla images, do we want to hotlink or rehost?
 	const packMap = {
-		minecraft: (slug) => { return {image: '/img/x_button.png', path: `https://minecraft.wiki/w/${slug}`}; },
+		minecraft: (slug) => { 
+			const image = overrides.image === true ? '/img/x_button.png' : `/img/minecraft/${slug}.png`;
+			return {image, path: `https://minecraft.wiki/w/${slug}`}; 
+		},
 		techreborn: (slug) => {
 			const image = overrides.image === true ? '/img/x_button.png' : `/img/techreborn/${slug}.png`;
 			const path = findIdInGlobal(slug);
