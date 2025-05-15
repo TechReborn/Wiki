@@ -23,7 +23,9 @@ export default function CraftingTable({recipe}) {
 	techreborn:cupronickel_heating_coil 
 	techreborn:electric_furnace 
 	output 
-	techreborn:blast_furnace 
+	techreborn:blast_furnace
+	tool
+	techreborn:rolling_machine 
 	</recipe\>
 	*/
 	const recipeParts = recipe.trim().split(' ');
@@ -31,8 +33,10 @@ export default function CraftingTable({recipe}) {
 	const finalInput = [];
 	let finalOutput = null;
 	let finalQty = '';
+	let finalTool = null;
 	// marking the next item will be output
 	let finalItem = false;
+	let toolStation = false;
 	for (const part of recipeParts) {
 		// used to indicate rows, we don't really care
 		if (part === 'input') { continue; }
@@ -46,6 +50,16 @@ export default function CraftingTable({recipe}) {
 				id: outputNameParts[1]
 			};
 			finalQty = !!outputParts[1] ? outputParts[1] + 'x' : '';
+			finalItem = false;
+			continue;
+		}
+		if (part === 'tool') { toolStation = true; continue; }
+		if (toolStation === true){
+			const toolParts = part.split(':');
+			finalTool = {
+				pack: toolParts[0],
+				id: toolParts[1]
+			};
 			break;
 		}
 		// everything else is input...probably (except air)
@@ -63,9 +77,17 @@ export default function CraftingTable({recipe}) {
 		}
 	}
 
+	if (finalTool === null){
+		finalTool = {
+			pack: 'minecraft',
+			id: 'crafting_table'
+		};
+	}
+	
+
 	return (
 		<div>
-			<h3>Crafting Table</h3>
+			<McItem slug={finalTool.id} pack={finalTool.pack}  />
 			<div class="crafting-container">
 				<div class="grid">
 					<div class="slot"><div class="item"><McItem slug={finalInput[0].id} pack={finalInput[0].pack} size="64" overrides={{ description: false }}/> </div></div>
