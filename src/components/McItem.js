@@ -40,7 +40,7 @@ export default function McItem({slug, pack, inline = false, size = 24, overrides
 
 function findIdInGlobal(id) {
 	for (const page of PAGES) {
-		if (page.id.indexOf(id) !== -1) {
+		if (page.id.indexOf(`/${id}"`) !== -1) {
 			// we found our term in the ID
 			return page.path;
 		}
