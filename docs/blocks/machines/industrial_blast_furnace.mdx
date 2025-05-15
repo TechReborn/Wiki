@@ -1,0 +1,47 @@
+---
+title: Industrial Blast Furnace
+---
+
+<ItemImage file="industrial_blast_furnace" alt="Industrial Blast Furnace" size="200" />
+
+# Blast Furnace
+
+The **Blast Furnace** is a multi-block machine used to smelt tough metals. It has an input rate of 512 FE/tick and an internal buffer of 40,000 FE.  
+The smelting abilities depend on the casings used for the multi-block.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:advanced_circuit techreborn:cupronickel_heating_coil techreborn:advanced_circuit input techreborn:cupronickel_heating_coil techreborn:advanced_machine_block techreborn:cupronickel_heating_coil input techreborn:electric_furnace techreborn:cupronickel_heating_coil techreborn:electric_furnace output techreborn:blast_furnace"/>
+
+## Building Instructions
+
+The **Blast Furnace** requires a 3×4 multi-block with a hole in the center.  
+The multi-block can be built from different machine casings. Possible options include:
+
+- <McItem slug="techreborn:standard_machine_casing" inline={true}/>
+- <McItem slug="techreborn:advanced_machine_casing" inline={true}/>
+- <McItem slug="techreborn:industrial_machine_casing" inline={true}/>
+
+This configuration will generate heat inside the furnace, enabling it to smelt the toughest ores (the type of casing used determines the heat generated).
+
+- **First layer**: 9x casings  
+  <img src="/img/blocks/blast_furnace_layer1.png" alt="Blast Furnace Layer 1"/>
+- **Second layer**: 8x casings with a hollow center  
+  <img src="/img/blocks/blast_furnace_layer2.png" alt="Blast Furnace Layer 2"/>
+- **Third layer**: 8x casings with a hollow center  
+  <img src="/img/blocks/blast_furnace_layer3.png" alt="Blast Furnace Layer 3"/>
+- **Fourth layer**: 9x casings  
+  <img src="/img/blocks/blast_furnace_layer4.png" alt="Blast Furnace Layer 4"/>
+
+Place the **Blast Furnace** in the center of the bottom layer and connect it to a power source.
+
+- A multi-block built using <McItem slug="techreborn:standard_machine_casing" inline={true}/> will generate **1360 heat**  
+  <img src="/img/blocks/blast_furnace1.png" alt="Standard Casing Furnace"/>
+- A multi-block built using <McItem slug="techreborn:industrial_machine_casing" inline={true}/> will generate **3230 heat**  
+  <img src="/img/blocks/blast_furnace2.png" alt="Industrial Casing Furnace"/>
+
+> 🪨 Two blocks of lava placed in the center of the multi-block will add **500 heat**.
+
+## Video
+
+[Watch the tutorial on YouTube](https://www.youtube.com/watch?v=DEULTz1JWCI)

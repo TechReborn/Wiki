@@ -26,7 +26,7 @@ export default function CraftingTable({recipe}) {
 	techreborn:blast_furnace 
 	</recipe\>
 	*/
-	const recipeParts = recipe.split(' ');
+	const recipeParts = recipe.trim().split(' ');
 	// expressed as 0-8, left to right, top to bottom
 	const finalInput = [];
 	let finalOutput = null;

@@ -1,0 +1,81 @@
+---
+title: Industrial Grinder
+---
+
+<ItemImage file="industrial_grinder" alt="Industrial Grinder" size="200" />
+
+# Industrial Grinder
+
+The **Industrial Grinder** is a multi-block machine that allows better grinding of items. It is a medium tier machine with 40000FE internal energy buffer and 256FE input. Also it has internal tank for 16 buckets which store fluid used to grind ore.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:industrial_electrolyzer techreborn:advanced_circuit techreborn:grinder input techreborn:diamond_grinding_head techreborn:diamond_grinding_head techreborn:diamond_grinding_head input techreborn:advanced_circuit techreborn:advanced_machine_block techreborn:advanced_circuit output techreborn:industrial_grinder"/>
+
+## Building instructions
+
+The **Industrial Grinder** multi-block has 3 layers.  
+The first layer consists of 9x <McItem slug="techreborn:standard_machine_casing" inline={true}/>  
+<img src="/img/blocks/industrial_grinder_layer1.png" alt="industrial_grinder_layer1.png"/>
+
+The second layer consists of 8x <McItem slug="techreborn:advanced_machine_casing" inline={true}/> with a central hole filled with water.  
+<img src="/img/blocks/industrial_grinder_layer2.png" alt="industrial_grinder_layer2.png"/>
+
+The third layer again contains 9x <McItem slug="techreborn:standard_machine_casing" inline={true}/>  
+<img src="/img/blocks/industrial_grinder_layer3.png" alt="industrial_grinder_layer3.png"/>
+
+Attach the **Industrial Grinder** to the middle layer centre and connect it to a power source.  
+<img src="/img/blocks/industrial_grinder.png" alt="industrial_grinder.png"/>
+
+## Machine GUI
+
+**Industrial Grinder** has the following elements on its GUI:
+
+1. Four slots for upgrades  
+2. Energy indicator. Click on it to switch energy display between EU and FE  
+3. Input slot for cells (for draining or filling)  
+4. Output slot for used cells  
+5. Internal tank with tooltip info  
+6. Input slot for ore  
+7. Four output slots  
+8. Hologram button  
+9. JEI recipe button
+
+## Usage
+
+| Input A                                               | Input B                                         | Output(s)                                                                                                   |
+|-------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| <McItem slug="minecraft:ancient_debris" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="minecraft:netherite_scrap" inline={true}/> + 3x<McItem slug="minecraft:gold_nugget" inline={true}/> |
+| 8x<McItem slug="minecraft:netherrack" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 8x<McItem slug="techreborn:netherrack_dust" inline={true}/> + <McItem slug="minecraft:gold_nugget" inline={true}/> |
+| <McItem slug="minecraft:iron_ore" inline={true}/>     | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:iron_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_tin_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> |
+| <McItem slug="techreborn:sheldonite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:platinum_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> + 2x<McItem slug="techreborn:iridium_nugget" inline={true}/> |
+| <McItem slug="techreborn:sheldonite_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="techreborn:platinum_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> + 2x<McItem slug="techreborn:iridium_nugget" inline={true}/> |
+| <McItem slug="techreborn:tungsten_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:tungsten_dust" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_manganese_dust" inline={true}/> |
+| <McItem slug="techreborn:iridium_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:iridium_ingot" inline={true}/> + <McItem slug="techreborn:platinum_dust" inline={true}/> |
+| <McItem slug="techreborn:copper_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_gold_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/> |
+| <McItem slug="techreborn:copper_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 3x<McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_gold_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/> |
+| <McItem slug="techreborn:copper_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="minecraft:raw_copper" inline={true}/> + 3x<McItem slug="minecraft:gold_nugget" inline={true}/> |
+| <McItem slug="techreborn:tin_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:tin_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_zinc_dust" inline={true}/> |
+| <McItem slug="techreborn:tin_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 2x<McItem slug="techreborn:tin_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> |
+| <McItem slug="minecraft:gold_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 2x<McItem slug="techreborn:gold_dust" inline={true}/> + <McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/> |
+| <McItem slug="minecraft:gold_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="minecraft:raw_gold" inline={true}/> + 3x<McItem slug="techreborn:copper_nugget" inline={true}/> + 3x<McItem slug="techreborn:nickel_nugget" inline={true}/> |
+| <McItem slug="techreborn:galena_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 2x<McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/> |
+| <McItem slug="techreborn:galena_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 2x<McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/> + <McItem slug="techreborn:raw_silver" inline={true}/> |
+| <McItem slug="techreborn:sphalerite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 5x<McItem slug="techreborn:sphalerite_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> |
+| <McItem slug="techreborn:sphalerite_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 5x<McItem slug="techreborn:sphalerite_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> |
+| <McItem slug="techreborn:bauxite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 2x<McItem slug="techreborn:bauxite_dust" inline={true}/> + <McItem slug="techreborn:aluminium_dust" inline={true}/> |
+| <McItem slug="techreborn:sodalite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 12x<McItem slug="techreborn:sodalite_dust" inline={true}/> + 3x<McItem slug="techreborn:aluminium_dust" inline={true}/> |
+| <McItem slug="techreborn:pyrite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 5x<McItem slug="techreborn:pyrite_dust" inline={true}/> + 2x<McItem slug="techreborn:sulfur_dust" inline={true}/> |
+| <McItem slug="techreborn:ruby_ore" inline={true}/>    | <McItem slug="techreborn:water_cell" inline={true}/>    | <McItem slug="techreborn:ruby" inline={true}/> + 6x<McItem slug="techreborn:small_pile_of_ruby_dust" inline={true}/> + 2x<McItem slug="techreborn:small_pile_of_red_garnet_dust" inline={true}/> |
+| <McItem slug="techreborn:sapphire_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | <McItem slug="techreborn:sapphire" inline={true}/> + 6x<McItem slug="techreborn:small_pile_of_sapphire_dust" inline={true}/> + 2x<McItem slug="techreborn:small_pile_of_peridot" inline={true}/> |
+| <McItem slug="minecraft:diamond_ore" inline={true}/>  | <McItem slug="techreborn:mercury_cell" inline={true}/> | 2x<McItem slug="minecraft:diamond" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_diamond_dust" inline={true}/> |
+| <McItem slug="minecraft:emerald_ore" inline={true}/>  | <McItem slug="techreborn:mercury_cell" inline={true}/> | 2x<McItem slug="minecraft:emerald" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_emerald_dust" inline={true}/> |
+| <McItem slug="minecraft:lapis_lazuli_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 12x<McItem slug="minecraft:lapis_lazuli" inline={true}/> + 3x<McItem slug="techreborn:lazurite_dust" inline={true}/> |
+| <McItem slug="minecraft:copper_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="minecraft:raw_copper" inline={true}/> |
+| <McItem slug="minecraft:gold_ingot" inline={true}/>   | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="minecraft:raw_gold" inline={true}/> |
+| <McItem slug="minecraft:iron_ingot" inline={true}/>   | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="minecraft:raw_iron" inline={true}/> |
+| <McItem slug="techreborn:iridium_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_iridium" inline={true}/> |
+| <McItem slug="techreborn:lead_ingot" inline={true}/>  | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_lead" inline={true}/> |
+| <McItem slug="techreborn:silver_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_silver" inline={true}/> |
+| <McItem slug="techreborn:tin_ingot" inline={true}/>   | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_tin" inline={true}/> |
+| <McItem slug="techreborn:tungsten_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_tungsten" inline={true}/> |

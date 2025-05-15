@@ -100,3 +100,10 @@ output
 minecraft:torch,4
 ```
 This would be the broken down recipe for torchs in the base game. Use `air` if you'd like nothing to be rendered in that grid position.
+
+> Tip!
+
+If you use VSCode, you can use find and replace with regex and simplify this inside of a file:
+
+- Find: `\\<recipe\\>(.*?)\\<\/recipe\\>`
+- Replace: `<CraftingTable recipe="$1"/>`
