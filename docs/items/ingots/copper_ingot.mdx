@@ -4,4 +4,55 @@ title: Copper Ingot
 
 <ItemImage file="copper_ingot" alt="Ingots" size="200" />
 
-Ingots are made from Ores.
+# Copper Ingot
+
+**Copper Ingot** is used to craft wires, alloys, etc. The main source for copper is <McItem slug="minecraft:Copper_Ore" inline={true}/>.
+
+## Recipe
+
+#### Smelting Recipe
+
+The main source of **Copper Ingot** is smelting <McItem slug="minecraft:Raw_Copper" inline={true}/> or <McItem slug="minecraft:Copper_Ore" inline={true}/> in any kind of Furnace, including the vanilla Furnace, <McItem slug="techreborn:iron_furnace" inline={true}/> or <McItem slug="techreborn:electric_furnace" inline={true}/>.
+
+\<recipe\> size 1x1 input minecraft:raw_copper output techreborn:copper_ingot tool techreborn:electric_furnace \</recipe\>
+
+\
+\<recipe\> size 1x1 input techreborn:copper_ore output techreborn:copper_ingot tool techreborn:electric_furnace \</recipe\>
+
+## Crafting Table Recipe
+<CraftingTable recipe="input techreborn:copper_nugget techreborn:copper_nugget techreborn:copper_nugget input techreborn:copper_nugget techreborn:copper_nugget techreborn:copper_nugget input techreborn:copper_nugget techreborn:copper_nugget techreborn:copper_nugget output techreborn:copper_ingot"/>
+
+<CraftingTable recipe="input air air air input air techreborn:block_of_copper air input air air air output techreborn:copper_ingot,9"/>
+
+## Industrial Centrifuge recipe
+
+16x <McItem slug="techreborn:lava_cell"/> -\> 4x <McItem slug="techreborn:copper_ingot"/> + <McItem slug="techreborn:electrum_ingot"/> + <McItem slug="techreborn:small_pile_of_tungsten_dust"/> + 16x <McItem slug="techreborn:Empty_Cell"/>
+
+## Usage
+
+**Copper Ingot** used in the following <McItem slug="minecraft:crafting_table"/> recipes:
+
+- <McItem slug="techreborn:copper_cable"/>
+- <McItem slug="techreborn:insulated_copper_cable"/>
+- <McItem slug="techreborn:LV_transformer"/>
+- <McItem slug="techreborn:helium_coolant_cell_360k"/>
+- <McItem slug="techreborn:nak_coolant_cell_360k"/>
+- <McItem slug="techreborn:copper_nugget"/>
+
+\
+<McItem slug="techreborn:alloy_smelter"/> recipe:\
+3x<McItem slug="techreborn:copper_ingot"/> + <McItem slug="techreborn:zinc_ingot"/> -\> 4x <McItem slug="techreborn:brass_ingot"/>\
+3x<McItem slug="techreborn:copper_ingot"/> + <McItem slug="techreborn:tin_ingot"/> -\> 4x <McItem slug="techreborn:bronze_ingot"/>\
+\
+<McItem slug="techreborn:compressor"/> recipe:\
+<McItem slug="techreborn:copper_ingot"/> -\> <McItem slug="techreborn:copper_plate"/>\
+\
+<McItem slug="techreborn:industrial_grinder"/> recipe:\
+Input: 1000 Units <McItem slug="techreborn:mercury"/>, <McItem slug="techreborn:copper_ingot"/>\
+Output: <McItem slug="minecraft:Raw_Copper"/>\
+\
+<McItem slug="techreborn:rolling_machine"/> recipe:\
+\<recipe\> input techreborn:nickel_ingot techreborn:copper_ingot techreborn:nickel_ingot input techreborn:copper_ingot air techreborn:copper_ingot input techreborn:nickel_ingot techreborn:copper_ingot techreborn:nickel_ingot output techreborn:cupronickel_heating_coil,3 tool techreborn:rolling_machine \</recipe\>\
+\
+<McItem slug="techreborn:wire_mill"/> recipe:\
+<McItem slug="techreborn:copper_ingot"/> -\> 6x <McItem slug="techreborn:copper_cable"/>

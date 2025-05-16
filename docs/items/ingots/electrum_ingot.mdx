@@ -4,4 +4,28 @@ title: Electrum Ingot
 
 <ItemImage file="electrum_ingot" alt="Ingots" size="200" />
 
-Ingots are made from Ores.
+# Electrum Ingot
+
+**Electrum Ingot** is an alloy used in several recipes. Tech Reborn doesn't have electrum ore.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:electrum_nugget techreborn:electrum_nugget techreborn:electrum_nugget input techreborn:electrum_nugget techreborn:electrum_nugget techreborn:electrum_nugget input techreborn:electrum_nugget techreborn:electrum_nugget techreborn:electrum_nugget output techreborn:electrum_ingot"/>
+<CraftingTable recipe="input air air air input air techreborn:electrum_storage_block air input air air air output techreborn:electrum_ingot,9"/>
+
+<McItem slug="techreborn:alloy_smelter" inline={true}/> recipes:  
+<McItem slug="minecraft:gold_ingot" inline={true}/> + <McItem slug="techreborn:silver_ingot" inline={true}/> -> 2x <McItem slug="techreborn:electrum_ingot" inline={true}/>
+
+Smelting recipe: <recipe> size 1x1 input techreborn:electrum_dust output techreborn:electrum_ingot tool techreborn:iron_furnace </recipe>
+
+## Usage
+
+**Electrum Ingot** could be used as a **Beacon** payment.
+
+**Electrum Ingot** used in several crafting recipes:
+
+- <McItem slug="techreborn:electrum_nugget" inline={true}/>
+- <McItem slug="techreborn:electrum_storage_block" inline={true}/>
+
+<McItem slug="techreborn:compressor" inline={true}/> recipe: <recipe> size 1x1 input techreborn:electrum_ingot output techreborn:electrum_plate tool techreborn:compressor </recipe>
+<McItem slug="techreborn:grinder" inline={true}/> recipe: <recipe> size 1x1 input techreborn:electrum_ingot output techreborn:electrum_dust tool techreborn:grinder </recipe>
