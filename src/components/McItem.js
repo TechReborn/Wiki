@@ -23,7 +23,8 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 		slug = slugParts[1];
 		pack = slugParts[0];
 	}
-	const friendlyName = overrides.description === false ? '' : titleCase(slug);
+	let friendlyName = overrides.description === false ? '' : titleCase(slug);
+	if (!!overrides.name) { friendlyName = overrides.name; }
 	const items = packMap[pack](slug);
 	const Element = inline === true ? "span" : "div";
 	return (
@@ -39,9 +40,10 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 }
 
 function findIdInGlobal(id) {
+	const regex = new RegExp(`/${id}(-_?:"?$|$)`);
 	for (const page of PAGES) {
-		if (page.id.indexOf(`/${id}"`) !== -1) {
-			// we found our term in the ID
+		if (regex.test(page.id)) {
+			// we found our term at the end of the ID
 			return page.path;
 		}
 	}
