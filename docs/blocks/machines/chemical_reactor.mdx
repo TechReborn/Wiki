@@ -4,9 +4,7 @@ title: Chemical Reactor
 
 <ItemImage file="chemical_reactor" alt="Chemical Reactor" size="200" />
 
-# Chemical Reactor
-
-The **Chemical Reactor** is used to combine two <McItem slug="techreborn:lava_cell" inline={true}/> (and other assorted items) into a third fluid or item. It has input rate of 128 Energy and an internal buffer of 10,000 Energy.
+The **Chemical Reactor** is used to combine two <McItem slug="techreborn:lava_cell" /> (and other assorted items) into a third fluid or item. It has input rate of 128 Energy and an internal buffer of 10,000 Energy.
 
 ## Recipe
 
@@ -14,25 +12,28 @@ The **Chemical Reactor** is used to combine two <McItem slug="techreborn:lava_ce
 
 ## List of Chemical Reactions
 
-| Inputs                                                                                              | Time         | Output                                                       |
-|-----------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------|
-| <McItem slug="techreborn:Carbon_Cell" inline={true}/> + <McItem slug="techreborn:Calcium_Cell" inline={true}/>            | 40 Seconds   | 2x <McItem slug="techreborn:Calcium_Carbonate_Cell" inline={true}/>        |
-| 8x <McItem slug="minecraft:Block_of_Gold" inline={true}/> + <McItem slug="minecraft:Apple" inline={true}/>               | 20 Seconds   | <McItem slug="minecraft:Enchanted_Golden_Apple" inline={true}/>             |
-| <McItem slug="minecraft:Blaze_Powder" inline={true}/> + <McItem slug="minecraft:Ender_Pearl" inline={true}/>             | 20 Seconds   | 2x <McItem slug="minecraft:Eye_of_Ender" inline={true}/>                    |
-| 8x <McItem slug="minecraft:Gold_Nugget" inline={true}/> + <McItem slug="minecraft:Melon_Slice" inline={true}/>           | 25 Seconds   | <McItem slug="minecraft:Glistering_Melon_Slice" inline={true}/>             |
-| <McItem slug="techreborn:Nitro_Carbon_Cell" inline={true}/> + <McItem slug="techreborn:Water_Cell" inline={true}/>       | 30 Seconds   | 2x <McItem slug="techreborn:Glyceryl_Cell" inline={true}/>                  |
-| 6x <McItem slug="minecraft:Gold_Ingot" inline={true}/> + <McItem slug="minecraft:Apple" inline={true}/>                  | 20 Seconds   | <McItem slug="minecraft:Golden_Apple" inline={true}/>                       |
-| 8x <McItem slug="minecraft:Gold_Nugget" inline={true}/> + <McItem slug="minecraft:Carrot" inline={true}/>                | 20 Seconds   | <McItem slug="minecraft:Golden_Carrot" inline={true}/>                      |
-| 3x <McItem slug="minecraft:Rotten_Flesh" inline={true}/> + <McItem slug="techreborn:Ashes" inline={true}/>               | 15 Seconds   | 2x <McItem slug="minecraft:Leather" inline={true}/>                         |
-| <McItem slug="minecraft:Blaze_Powder" inline={true}/> + <McItem slug="minecraft:Slimeball" inline={true}/>               | 20 Seconds   | 2x <McItem slug="minecraft:Magma_Cream" inline={true}/>                     |
-| <McItem slug="techreborn:Carbon_Cell" inline={true}/> + 4x <McItem slug="techreborn:Hydrogen_Cell" inline={true}/>       | 100 Seconds  | 5x <McItem slug="techreborn:Methane_Cell" inline={true}/>                   |
-| <McItem slug="techreborn:Carbon_Cell" inline={true}/> + <McItem slug="techreborn:Nitrogen_Cell" inline={true}/>          | 50 Seconds   | 2x <McItem slug="techreborn:Nitro_Carbon_Cell" inline={true}/>             |
-| <McItem slug="techreborn:Glyceryl_Cell" inline={true}/> + <McItem slug="techreborn:Diesel_Cell" inline={true}/>          | 15 Seconds   | 5x <McItem slug="techreborn:Nitro_Diesel_Cell" inline={true}/>             |
-| <McItem slug="techreborn:Glyceryl_Cell" inline={true}/> + <McItem slug="techreborn:Carbon_Cell" inline={true}/>          | 15 Seconds   | 5x <McItem slug="techreborn:Nitrocoal_Fuel_Cell" inline={true}/>           |
-| <McItem slug="techreborn:Oil_Cell" inline={true}/> + <McItem slug="techreborn:Nitrogen_Cell" inline={true}/>             | 40 Seconds   | 2x <McItem slug="techreborn:Nitrofuel_Cell" inline={true}/>                 |
-| <McItem slug="techreborn:Compressed_Air_Cell" inline={true}/> + <McItem slug="techreborn:Nitrogen_Cell" inline={true}/> | 20 Seconds   | <McItem slug="techreborn:Nitrogen_Dioxide_Cell" inline={true}/>            |
-| <McItem slug="techreborn:Sodium_Sulfide_Cell" inline={true}/> + <McItem slug="techreborn:Compressed_Air_Cell" inline={true}/> | 40 Seconds | 2x <McItem slug="techreborn:Sodium_Persulfate_Cell" inline={true}/>        |
-| <McItem slug="techreborn:Sulfur_Cell" inline={true}/> + <McItem slug="techreborn:Sodium_Cell" inline={true}/>           | 40 Seconds   | 2x <McItem slug="techreborn:Sodium_Sulfide_Cell" inline={true}/>           |
-| <McItem slug="techreborn:Sulfur_Cell" inline={true}/> + <McItem slug="techreborn:Water_Cell" inline={true}/>            | 60 Seconds   | 3x <McItem slug="techreborn:Sulfuric_Acid_Cell" inline={true}/>            |
-| 32x <McItem slug="minecraft:Redstone_Dust" inline={true}/> + <McItem slug="minecraft:Diamond" inline={true}/>           | 60 Seconds   | <McItem slug="techreborn:Synthetic_Redstone_Crystal" inline={true}/>       |
-| <McItem slug="techreborn:Compressed_Air_Cell" inline={true}/> + <McItem slug="techreborn:Hydrogen_Cell" inline={true}/> | 20 Seconds   | <McItem slug="techreborn:Water_Cell" inline={true}/>                        |
+| Inputs                                                                                                | Time        | Output                                                   |
+| ----------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------- |
+| <McItem slug="techreborn:carbon_cell" /> + <McItem slug="techreborn:calcium_cell" />                  | 40 Seconds  | 2x <McItem slug="techreborn:calcium_carbonate_cell" />   |
+| 8x <McItem slug="minecraft:block_of_gold" /> + <McItem slug="minecraft:apple" />                      | 20 Seconds  | <McItem slug="minecraft:enchanted_golden_apple" />       |
+| <McItem slug="minecraft:blaze_powder" /> + <McItem slug="minecraft:ender_pearl" />                    | 20 Seconds  | 2x <McItem slug="minecraft:ender_eye" />                 |
+| 8x <McItem slug="minecraft:gold_nugget"  /> + <McItem slug="minecraft:melon_slice"  />                | 25 Seconds  | <McItem slug="minecraft:glistering_melon_slice"  />      |
+| <McItem slug="techreborn:nitro_carbon_cell"  /> + <McItem slug="techreborn:water_cell"  />            | 30 Seconds  | 2x <McItem slug="techreborn:glyceryl_cell"  />           |
+| 6x <McItem slug="minecraft:gold_ingot"  /> + <McItem slug="minecraft:apple"  />                       | 20 Seconds  | <McItem slug="minecraft:golden_apple"  />                |
+| 8x <McItem slug="minecraft:gold_nugget"  /> + <McItem slug="minecraft:carrot"  />                     | 20 Seconds  | <McItem slug="minecraft:golden_carrot"  />               |
+| 3x <McItem slug="minecraft:rotten_flesh"  /> + <McItem slug="techreborn:ashes"  />                    | 15 Seconds  | 2x <McItem slug="minecraft:leather"  />                  |
+| <McItem slug="minecraft:blaze_powder"  /> + <McItem slug="minecraft:slimeball"  />                    | 20 Seconds  | 2x <McItem slug="minecraft:magma_cream"  />              |
+| 3x <McItem slug="techreborn:calcite_dust"  /> + <McItem slug="minecraft:slimeball"  />                | 20 Seconds  | <McItem slug="minecraft:bone"  />                        |
+| <McItem slug="techreborn:carbon_cell"  /> + 4x <McItem slug="techreborn:hydrogen_cell"  />            | 100 Seconds | 5x <McItem slug="techreborn:methane_cell"  />            |
+| <McItem slug="techreborn:carbon_cell"  /> + <McItem slug="techreborn:nitrogen_cell"  />               | 50 Seconds  | 2x <McItem slug="techreborn:nitro_carbon_cell"  />       |
+| <McItem slug="techreborn:glyceryl_cell"  /> + <McItem slug="techreborn:diesel_cell"  />               | 15 Seconds  | 5x <McItem slug="techreborn:nitro_diesel_cell"  />       |
+| <McItem slug="techreborn:glyceryl_cell"  /> + <McItem slug="techreborn:carbon_cell"  />               | 15 Seconds  | 5x <McItem slug="techreborn:nitrocoal_fuel_cell"  />     |
+| <McItem slug="techreborn:oil_cell"  /> + <McItem slug="techreborn:nitrogen_cell"  />                  | 40 Seconds  | 2x <McItem slug="techreborn:nitrofuel_cell"  />          |
+| <McItem slug="techreborn:compressed_air_cell"  /> + <McItem slug="techreborn:nitrogen_cell"  />       | 20 Seconds  | <McItem slug="techreborn:nitrogen_dioxide_cell"  />      |
+| <McItem slug="techreborn:sodium_sulfide_cell"  /> + <McItem slug="techreborn:compressed_air_cell"  /> | 40 Seconds  | 2x <McItem slug="techreborn:sodium_persulfate_cell"  />  |
+| <McItem slug="techreborn:sulfur_cell"  /> + <McItem slug="techreborn:sodium_cell"  />                 | 40 Seconds  | 2x <McItem slug="techreborn:sodium_sulfide_cell"  />     |
+| <McItem slug="techreborn:sulfur_cell"  /> + <McItem slug="techreborn:water_cell"  />                  | 60 Seconds  | 3x <McItem slug="techreborn:sulfuric_acid_cell"  />      |
+| 32x <McItem slug="minecraft:redstone_dust"  /> + <McItem slug="minecraft:diamond"  />                 | 60 Seconds  | <McItem slug="techreborn:synthetic_redstone_crystal"  /> |
+| <McItem slug="techreborn:compressed_air_cell"  /> + <McItem slug="techreborn:hydrogen_cell"  />       | 20 Seconds  | <McItem slug="techreborn:water_cell"  />                 |
+
+**Chemical Reactor** can dye glass, terracota, candles, wool and carpets and also can transform crimson items and blocks into warped.
