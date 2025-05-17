@@ -1,8 +1,8 @@
 ---
-title: Aluminium Ingot
+title: Aluminum Ingot
 ---
 
-<ItemImage file="aluminium_ingot" alt="Ingots" size="200" />
+<ItemImage file="aluminum_ingot" alt="Ingots" size="200" />
 
 # Aluminum Ingot
 
@@ -13,8 +13,9 @@ title: Aluminium Ingot
 <CraftingTable recipe="input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget output techreborn:aluminum_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:aluminum_storage_block air input air air air output techreborn:aluminum_ingot,9"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:aluminum_dust" inline={true}/> -> <McItem slug="techreborn:aluminum_ingot" inline={true}/>. This recipe requires 1700 heat.
+
+<Machine next={{input: [{id: "techreborn:aluminum_dust"}], output: [{id: "techreborn:aluminum_ingot"}], tool: "techreborn:blast_furnace"}} />
+This recipe requires 1700 heat.
 
 ## Usage
 
