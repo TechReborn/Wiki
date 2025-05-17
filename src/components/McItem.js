@@ -8,11 +8,11 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 	slug = slug.toLowerCase();
 	const packMap = {
 		minecraft: (slug) => { 
-			const image = overrides.image === true ? '/img/x_button.png' : `/img/minecraft/${slug}.png`;
+			const image = !!overrides.image ? `/img/minecraft/${overrides.image}.png` : `/img/minecraft/${slug}.png`;
 			return {image, path: `https://minecraft.wiki/w/${slug}`}; 
 		},
 		techreborn: (slug) => {
-			const image = overrides.image === true ? '/img/x_button.png' : `/img/techreborn/${slug}.png`;
+			const image = !!overrides.image ? `/img/techreborn/${overrides.image}.png` : `/img/techreborn/${slug}.png`;
 			const path = findIdInGlobal(slug);
 			return {image, path};
 		}
