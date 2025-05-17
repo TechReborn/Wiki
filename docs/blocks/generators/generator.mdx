@@ -1,0 +1,35 @@
+---
+title: Generator
+---
+
+<ItemImage file="generator" alt="Generator" size="200" />
+
+# Generator
+
+The **Generator** is the most basic power generator in the mod and produces energy by burning coal or wood. It will power adjacent blocks or remote blocks using [cables](/energy/cables). It is also used as an ingredient for more advanced machines. It will not consume fuel if there is not enough room to store the produced energy (e.g. It will pause burning the fuel until there is room for another tick worth of energy).
+
+| Tier | Fuel Type   | Output | Storage |
+|------|-------------|--------|---------|
+| Basic | Solid Fuels | 32 E/t | 10 kE   |
+
+### Recipe
+
+<CraftingTable recipe="input air air air input techreborn:red_cell_battery techreborn:basic_machine_frame minecraft:furnace input air air air output techreborn:generator"/>
+
+### Usage
+
+- Put any burnable material into the input slot to produce energy  
+- Outputs energy on all sides
+
+Used as an ingredient in the <McItem slug="minecraft:crafting_table" inline={true}/> to produce:
+
+- <McItem slug="techreborn:basic_solar_panel" inline={true}/>
+- <McItem slug="techreborn:diesel_generator" inline={true}/>
+- <McItem slug="techreborn:plasma_generator" inline={true}/>
+- <McItem slug="techreborn:semifluid_generator" inline={true}/>
+- <McItem slug="techreborn:thermal_generator" inline={true}/>
+- <McItem slug="techreborn:water_mill" inline={true}/>
+- <McItem slug="techreborn:wind_mill" inline={true}/>
+
+Used as an ingredient in the <McItem slug="techreborn:assembling_machine" inline={true}/> to produce:<br/>
+* <McItem slug="techreborn:wind_mill" inline={true}/>
