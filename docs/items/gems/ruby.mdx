@@ -6,16 +6,19 @@ title: Ruby
 
 # Ruby
 
-**Ruby** is a gem added by TechReborn. Can be obtained from <McItem slug="techreborn:ruby_ore" inline={true}/>. It is used to craft ruby armor set and also it could be grinded to <McItem slug="techreborn:ruby_dust" inline={true}/> for further processing.
+**Ruby** is a gem added by TechReborn. Can be obtained from <McItem slug="techreborn:ruby_ore"/>. It is used to craft the ruby armor set and can also be ground into <McItem slug="techreborn:ruby_dust"/> for further processing.
 
 <CraftingTable recipe="input air air air input air techreborn:block_of_ruby air input air air air output techreborn:ruby,9" />
 
-**Ruby** could be made back from dust using raw power of TNT in \<mcitem\>techreborn:implosion_compressor\</mcitem\>:\
-4x\<mcitem\>techreborn:ruby_dust\</mcitem\> + 16x\<mcitem\>minecraft:TNT\</mcitem\> -\> 3x\<mcitem\>techreborn:ruby\</mcitem\> + 12x\<mcitem\>techreborn:dark_ashes\</mcitem\>\
-4x\<mcitem\>techreborn:ruby_dust\</mcitem\> + 4x\<mcitem\>minecraft:end_crystal\</mcitem\> -\> 3x\<mcitem\>techreborn:ruby\</mcitem\> + 4x\<mcitem\>techreborn:ender_eye_small_dust\</mcitem\>\
-\
-\<mcitem\>techreborn:industrial_grinder\</mcitem\> recipe:\
-\<mcitem\>techreborn:ruby_ore\</mcitem\> + \<mcitem\>techreborn:water_cell\</mcitem\> -\> \<mcitem\>techreborn:ruby\</mcitem\> + 6x\<mcitem\>techreborn:small_pile_of_ruby_dust\</mcitem\> + 2x\<mcitem\>techreborn:small_pile_of_red_garnet_dust\</mcitem\>
+<Machine next={{input: [{id: "techreborn:ruby_dust", qty: 4}, {id: "minecraft:TNT", qty: 16}], output: [{id: "techreborn:ruby", qty: 3}, {id: "techreborn:dark_ashes", qty: 12}], tool: "techreborn:implosion_compressor"}} />
+
+<Machine next={{input: [{id: "techreborn:ruby_dust", qty: 4}, {id: "minecraft:end_crystal", qty: 4}], output: [{id: "techreborn:ruby", qty: 3}, {id: "techreborn:small_pile_of_ender_eye_dust", qty: 4}], tool: "techreborn:implosion_compressor"}} />
+
+<Machine next={{input: [{id: "techreborn:ruby_ore"}, {id: "techreborn:water_cell"}], output: [
+  {id: "techreborn:ruby"},
+  {id: "techreborn:small_pile_of_ruby_dust", qty: 6},
+  {id: "techreborn:small_pile_of_red_garnet_dust", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
@@ -30,6 +33,4 @@ title: Ruby
 <CraftingTable recipe="input techreborn:ruby techreborn:ruby techreborn:ruby input techreborn:ruby air techreborn:ruby input techreborn:ruby air techreborn:ruby output techreborn:ruby_leggings" />
 <CraftingTable recipe="input air air air input techreborn:ruby air techreborn:ruby input techreborn:ruby air techreborn:ruby output techreborn:ruby_boots" />
 
-
-\<mcitem\>techreborn:grinder\</mcitem\> recipe:\
-\<mcitem\>techreborn:ruby\</mcitem\> -\> \<mcitem\>techreborn:ruby_dust\</mcitem\>
+<Machine recipe="input techreborn:ruby output techreborn:ruby_dust tool techreborn:grinder" />

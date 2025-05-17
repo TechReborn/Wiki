@@ -6,15 +6,17 @@ title: Sapphire
 
 # Sapphire
 
-**Sapphire** is a gem added by TechReborn. It is used to craft sapphire armor set and also it could be grinded to <McItem slug="techreborn:sapphire_dust" inline={true}/> for further processing.
+**Sapphire** is a gem added by TechReborn. It is used to craft the sapphire armor set and can also be ground into <McItem slug="techreborn:sapphire_dust"/> for further processing.
 
 <CraftingTable recipe="input air air air input air techreborn:block_of_sapphire air input air air air output techreborn:sapphire,9" />
 
-**Sapphire** could be made back from dust using raw power of TNT in \<mcitem\>techreborn:implosion_compressor\</mcitem\>:\
-4x\<mcitem\>techreborn:sapphire_dust\</mcitem\> + 16x\<mcitem\>minecraft:TNT\</mcitem\> -\> 3x\<mcitem\>techreborn:sapphire\</mcitem\> + 12x\<mcitem\>techreborn:dark_ashes\</mcitem\>\
-\
-\<mcitem\>techreborn:industrial_grinder\</mcitem\> recipe:\
-\<mcitem\>techreborn:sapphire_ore\</mcitem\> + \<mcitem\>techreborn:water_cell\</mcitem\> -\> \<mcitem\>techreborn:sapphire\</mcitem\> + 6x\<mcitem\>techreborn:small_pile_of_sapphire_dust\</mcitem\> + 2x\<mcitem\>techreborn:small_pile_of_peridot\</mcitem\>
+<Machine next={{input: [{id: "techreborn:sapphire_dust", qty: 4}, {id: "minecraft:TNT", qty: 16}], output: [{id: "techreborn:sapphire", qty: 3}, {id: "techreborn:dark_ashes", qty: 12}], tool: "techreborn:implosion_compressor"}} />
+
+<Machine next={{input: [{id: "techreborn:sapphire_ore"}, {id: "techreborn:water_cell"}], output: [
+  {id: "techreborn:sapphire"},
+  {id: "techreborn:small_pile_of_sapphire_dust", qty: 6},
+  {id: "techreborn:small_pile_of_peridot", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
@@ -29,8 +31,6 @@ title: Sapphire
 <CraftingTable recipe="input techreborn:sapphire techreborn:sapphire techreborn:sapphire input techreborn:sapphire air techreborn:sapphire input techreborn:sapphire air techreborn:sapphire output techreborn:sapphire_leggings" />
 <CraftingTable recipe="input air air air input techreborn:sapphire air techreborn:sapphire input techreborn:sapphire air techreborn:sapphire output techreborn:sapphire_boots" />
 
-\<mcitem\>techreborn:grinder\</mcitem\> recipe:\
-\<mcitem\>techreborn:sapphire\</mcitem\> -\> \<mcitem\>techreborn:sapphire_dust\</mcitem\>\
-\
-\<mcitem\>techreborn:compressor\</mcitem\> recipe:\
-\<mcitem\>techreborn:sapphire\</mcitem\> -\> \<mcitem\>techreborn:sapphire_plate\</mcitem\>
+<Machine recipe="input techreborn:sapphire output techreborn:sapphire_dust tool techreborn:grinder" />
+
+<Machine recipe="input techreborn:sapphire output techreborn:sapphire_plate tool techreborn:compressor" />
