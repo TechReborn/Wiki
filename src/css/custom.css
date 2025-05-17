@@ -29,35 +29,76 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.crafting-container {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	font-family: sans-serif;
+/* —————————————————————————————
+   Machine CSS
+   ————————————————————————————— */
+:root {
+  --slot-size: 48px;    /* width/height of each slot */
+  --slot-gap: 4px;      /* grid gap between slots */
+  --arrow-size: 24px;   /* width/height of the arrow */
+  --mobile-break: 600px;/* switch to vertical layout below this */
 }
-  
-.grid {
-	display: grid;
-	grid-template-columns: repeat(3, 50px);
-	grid-template-rows: repeat(3, 50px);
-	gap: 2px;
+
+.crafting {
+  display: flex;
+  align-items: center;
+  gap: 1rem;               /* space between input, arrow, output */
 }
-  
-.slot, .output-slot {
-	width: 50px;
-	height: 50px;
-	background-color: #ccc;
-	border: 2px solid #999;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
+.board {
+  display: grid;
+  gap: var(--slot-gap);
+  grid-template-columns: repeat(var(--cols), var(--slot-size));
+  grid-template-rows:    repeat(var(--rows), var(--slot-size));
+  padding-bottom: 10px;
 }
-  
+
+.slot {
+  position: relative;
+  width:  var(--slot-size);
+  height: var(--slot-size);
+  border: 1px solid #ccc;
+  background: #fafafa;
+  box-sizing: border-box;
+  /* you can drop an <img> or background-image here for the item */
+}
+
+/* only show when data-quantity is present & not "1" */
+.slot[data-quantity]:not([data-quantity="1"])::after {
+  content: attr(data-quantity);
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+  font-size: .75em;
+  line-height: 1;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
+/* —————————————————————————————
+   SVG ARROW (right-pointing by default)
+   ————————————————————————————— */
 .arrow {
-	font-size: 24px;
+  width:  var(--arrow-size);
+  height: var(--arrow-size);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\<path d='M5 12h14M13 5l7 7-7 7' fill='none' stroke='%23666' stroke-width='2'/>\</svg>");
+  /* mobile override will rotate this downwards */
+  transform: rotate(0deg);
 }
-  
-.item {
-	font-size: 18px;
-  padding-top: 8px;
+
+/* —————————————————————————————
+   RESPONSIVE: STACK + ROTATE ARROW
+   ————————————————————————————— */
+@media (max-width: 600px) {
+  .crafting {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .arrow {
+    transform: rotate(90deg);
+  }
 }
