@@ -5,7 +5,7 @@ const PAGES = GLOBAL['docusaurus-plugin-content-docs'].default.versions[0].docs;
 export default function McItem({slug, pack, inline = true, size = 24, overrides = {}}) {
 	// todo: something better here, but if they don't give a slug, what can we even do?
 	if (!slug) { return (''); }
-	// todo: solve for vanilla images, do we want to hotlink or rehost?
+	slug = slug.toLowerCase();
 	const packMap = {
 		minecraft: (slug) => { 
 			const image = overrides.image === true ? '/img/x_button.png' : `/img/minecraft/${slug}.png`;
