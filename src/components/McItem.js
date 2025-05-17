@@ -49,7 +49,7 @@ function findIdInGlobal(id) {
 	}
 	// returning slug only seems like the best way to gracefully fail. 
 	// returning "/" is probably best is users are complaining.
-	return id;
+	return `#${id}`;
 }
 
 const titleCase = (s) =>
