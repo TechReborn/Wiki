@@ -12,12 +12,14 @@ title: Silver Ingot
 
 <CraftingTable recipe="input techreborn:silver_nugget techreborn:silver_nugget techreborn:silver_nugget input techreborn:silver_nugget techreborn:silver_nugget techreborn:silver_nugget input techreborn:silver_nugget techreborn:silver_nugget techreborn:silver_nugget output techreborn:silver_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:silver_storage_block air input air air air output techreborn:silver_ingot,9"/>
-Smelting recipes: \<recipe\> size 1x1 input techreborn:raw_silver output techreborn:silver_ingot tool techreborn:iron_furnace \</recipe\>\
-\<recipe\> size 1x1 input techreborn:silver_ore output techreborn:silver_ingot tool techreborn:iron_furnace \</recipe\>\
-\<recipe\> size 1x1 input techreborn:deepslate_silver_ore output techreborn:silver_ingot tool techreborn:iron_furnace \</recipe\>\
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-8x<McItem slug="techreborn:galena_small_dust" inline={true}/> &rarr; <McItem slug="techreborn:silver_ingot" inline={true}/> + <McItem slug="techreborn:lead_ingot" inline={true}/>  
-2x<McItem slug="techreborn:galena_dust" inline={true}/> &rarr; <McItem slug="techreborn:silver_ingot" inline={true}/> + <McItem slug="techreborn:lead_ingot" inline={true}/>
+
+<Machine recipe="input techreborn:raw_silver output techreborn:silver_ingot tool techreborn:iron_furnace" />
+<Machine recipe="input techreborn:silver_ore output techreborn:silver_ingot tool techreborn:iron_furnace" />
+<Machine recipe="input techreborn:deepslate_silver_ore output techreborn:silver_ingot tool techreborn:iron_furnace" />
+
+<Machine next={{input: [{id: "techreborn:galena_small_dust", qty: 8}], output: [{id: "techreborn:silver_ingot"}, {id: "techreborn:lead_ingot"}], tool: "techreborn:blast_furnace"}} />
+<Machine next={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [{id: "techreborn:silver_ingot"}, {id: "techreborn:lead_ingot"}], tool: "techreborn:blast_furnace"}} />
+
 <img src="/img/mods/techreborn/silver_chestplate.png" width="24" alt="Silver Armor"/> <strong><a href="/items/armor/silver_armor">Silver Armor</a></strong> recycling
 
 ## Usage
@@ -26,15 +28,13 @@ Smelting recipes: \<recipe\> size 1x1 input techreborn:raw_silver output techreb
 
 **Silver Ingot** used in several crafting recipes:
 
-- <McItem slug="techreborn:silver_nugget" inline={true}/>
-- <McItem slug="techreborn:silver_storage_block" inline={true}/>
-- <McItem slug="techreborn:silver_helmet" inline={true}/>
-- <McItem slug="techreborn:silver_chestplate" inline={true}/>
-- <McItem slug="techreborn:silver_leggings" inline={true}/>
-- <McItem slug="techreborn:silver_boots" inline={true}/>
+- <McItem slug="techreborn:silver_nugget"/>
+- <McItem slug="techreborn:silver_storage_block"/>
+- <McItem slug="techreborn:silver_helmet"/>
+- <McItem slug="techreborn:silver_chestplate"/>
+- <McItem slug="techreborn:silver_leggings"/>
+- <McItem slug="techreborn:silver_boots"/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:silver_ingot" inline={true}/> &rarr; <McItem slug="techreborn:silver_plate" inline={true}/>
+<Machine next={{input: [{id: "techreborn:silver_ingot"}], output: [{id: "techreborn:silver_plate"}], tool: "techreborn:compressor"}} />
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipes:  
-<McItem slug="minecraft:gold_ingot" inline={true}/> + <McItem slug="techreborn:silver_ingot" inline={true}/> &rarr; 2x <McItem slug="techreborn:electrum_ingot" inline={true}/>
+<Machine next={{input: [{id: "minecraft:gold_ingot"}, {id: "techreborn:silver_ingot"}], output: [{id: "techreborn:electrum_ingot", qty: 2}], tool: "techreborn:alloy_smelter"}} />

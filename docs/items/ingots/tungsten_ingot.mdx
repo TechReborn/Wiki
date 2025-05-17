@@ -12,10 +12,9 @@ title: Tungsten Ingot
 
 <CraftingTable recipe="input techreborn:tungsten_nugget techreborn:tungsten_nugget techreborn:tungsten_nugget input techreborn:tungsten_nugget techreborn:tungsten_nugget techreborn:tungsten_nugget input techreborn:tungsten_nugget techreborn:tungsten_nugget techreborn:tungsten_nugget output techreborn:tungsten_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:tungsten_storage_block air input air air air output techreborn:tungsten_ingot,9"/>
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-Recipes require 2500 heat.  
-\<recipe\> size 1x2 input techreborn:raw_tungsten air output techreborn:tungsten_ingot tool techreborn:blast_furnace \</recipe\>\
-\<recipe\> size 1x2 input techreborn:tungsten_small_dust,4 air output techreborn:tungsten_ingot tool techreborn:blast_furnace \</recipe\>
+
+<Machine recipe="input techreborn:raw_tungsten air output techreborn:tungsten_ingot tool techreborn:blast_furnace" />
+<Machine recipe="input techreborn:tungsten_small_dust,4 air output techreborn:tungsten_ingot tool techreborn:blast_furnace" />
 
 ## Usage
 
@@ -23,14 +22,13 @@ Recipes require 2500 heat.
 
 **Tungsten Ingot** used in several crafting recipes:
 
-- <McItem slug="techreborn:tungsten_nugget" inline={true}/>
-- <McItem slug="techreborn:tungsten_storage_block" inline={true}/>
-- <McItem slug="techreborn:tungsten_grinding_head" inline={true}/>
-- <McItem slug="techreborn:superconductor" inline={true}/>
-- <McItem slug="techreborn:energy_flow_chip" inline={true}/>
-- <McItem slug="techreborn:mixed_metal_ingot" inline={true}/>
+- <McItem slug="techreborn:tungsten_nugget"/>
+- <McItem slug="techreborn:tungsten_storage_block"/>
+- <McItem slug="techreborn:tungsten_grinding_head"/>
+- <McItem slug="techreborn:superconductor"/>
+- <McItem slug="techreborn:energy_flow_chip"/>
+- <McItem slug="techreborn:mixed_metal_ingot"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:steel_ingot" inline={true}/> + <McItem slug="techreborn:tungsten_ingot" inline={true}/> &rarr; <McItem slug="techreborn:hot_tungstensteel_ingot" inline={true}/> + <McItem slug="techreborn:dark_ashes_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:steel_ingot"}, {id: "techreborn:tungsten_ingot"}], output: [{id: "techreborn:hot_tungstensteel_ingot"}, {id: "techreborn:dark_ashes_dust"}], tool: "techreborn:blast_furnace"}} />
 
-<McItem slug="techreborn:compressor"/> recipe: \<recipe\> size 1x1 input techreborn:tungsten_ingot output techreborn:tungsten_plate tool techreborn:compressor \</recipe\>
+<Machine recipe="input techreborn:tungsten_ingot output techreborn:tungsten_plate tool techreborn:compressor" />

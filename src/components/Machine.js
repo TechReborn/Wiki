@@ -5,24 +5,21 @@ import McItem from '@site/src/components/McItem';
 /* Next Parameter Format:
 	input: array
 		item: object
-			slug: string
-			qty: mixed
+			id: string
+			qty?: mixed (optional)
 	output: array
 		item: object
-			slug: string
-			qty: mixed
+			id: string
+			qty?: mixed (optional)
 	tool: string
 */
 export default function Machine({recipe, next = null}) {
-
-	// expressed as 0-8, left to right, top to bottom
 	if (!next) {
 		// didn't pass next, convert recipe to next
 		next = convertRecipeToNext(recipe);
 	}
 
 	const styles = mapToolToStyles(next.tool);
-	console.log(next)
 	return (
 		<span>
 			<McItem slug={next.tool} />
@@ -61,13 +58,23 @@ export default function Machine({recipe, next = null}) {
 function mapToolToStyles(tool) {
 	const FURNACE_LIKE = {input: { '--cols': '1', '--rows': '1' }, output: { '--cols': '1', '--rows': '1' }};
 	const CRAFTING_LIKE = {input: { '--cols': '3', '--rows': '3' }, output: { '--cols': '1', '--rows': '1' }};
+	const TWOWIDE_ONETALL = {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '2', '--rows': '1' }};
 	const options = {
 		"minecraft:crafting_table": CRAFTING_LIKE,
+		"techreborn:rolling_machine": CRAFTING_LIKE,
 		"minecraft:furnace": FURNACE_LIKE,
 		"techreborn:iron_furnace": FURNACE_LIKE,
-		"techreborn:blast_furnace": FURNACE_LIKE,
+		"techreborn:blast_furnace": TWOWIDE_ONETALL,
+		"techreborn:electric_furnace": FURNACE_LIKE,
 		"techreborn:compressor": FURNACE_LIKE,
 		"techreborn:grinder": FURNACE_LIKE,
+		"techreborn:wire_mill": FURNACE_LIKE,
+		"techreborn:vacuum_freezer": FURNACE_LIKE,
+		"techreborn:industrial_grinder": TWOWIDE_ONETALL,
+		"techreborn:alloy_smelter": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '1', '--rows': '1' }},
+		"techreborn:industrial_centrifuge": {input: { '--cols': '1', '--rows': '1' }, output: { '--cols': '4', '--rows': '1' }},
+		"techreborn:implosion_compressor": TWOWIDE_ONETALL,
+		"techreborn:solid_canning_machine": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '1', '--rows': '1' }}
 	};
 	const styles = options[tool];
 	// todo: maybe something better than this

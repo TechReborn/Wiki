@@ -26,11 +26,8 @@ This recipe requires 1700 heat.
 - <McItem slug="techreborn:aluminum_nugget" inline={true}/>
 - <McItem slug="techreborn:aluminum_storage_block" inline={true}/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:aluminum_ingot" inline={true}/> -> <McItem slug="techreborn:aluminum_plate" inline={true}/>
+<Machine next={{input: [{id: "techreborn:aluminum_ingot"}], output: [{id: "techreborn:aluminum_plate"}], tool: "techreborn:compressor"}} />
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:aluminum_ingot" inline={true}/> -> <McItem slug="techreborn:aluminum_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:aluminum_ingot"}], output: [{id: "techreborn:aluminum_dust"}], tool: "techreborn:grinder"}} />
 
-\<mcitem\>techreborn:rolling_machine\</mcitem\> recipe:\
-\<recipe\> input techreborn:aluminum_ingot techreborn:aluminum_ingot techreborn:aluminum_ingot input techreborn:magnesium_dust techreborn:magnesium_dust techreborn:magnesium_dust input techreborn:aluminum_ingot techreborn:aluminum_ingot techreborn:aluminum_ingot output techreborn:magnalium_plate,3 tool techreborn:rolling_machine \</recipe\>
+<Machine recipe="input techreborn:aluminum_ingot techreborn:aluminum_ingot techreborn:aluminum_ingot input techreborn:magnesium_dust techreborn:magnesium_dust techreborn:magnesium_dust input techreborn:aluminum_ingot techreborn:aluminum_ingot techreborn:aluminum_ingot output techreborn:magnalium_plate,3 tool techreborn:rolling_machine" />

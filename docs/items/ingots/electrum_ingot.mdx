@@ -13,10 +13,9 @@ title: Electrum Ingot
 <CraftingTable recipe="input techreborn:electrum_nugget techreborn:electrum_nugget techreborn:electrum_nugget input techreborn:electrum_nugget techreborn:electrum_nugget techreborn:electrum_nugget input techreborn:electrum_nugget techreborn:electrum_nugget techreborn:electrum_nugget output techreborn:electrum_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:electrum_storage_block air input air air air output techreborn:electrum_ingot,9"/>
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipes:  
-<McItem slug="minecraft:gold_ingot" inline={true}/> + <McItem slug="techreborn:silver_ingot" inline={true}/> -> 2x <McItem slug="techreborn:electrum_ingot" inline={true}/>
+<Machine next={{input: [{id: "minecraft:gold_ingot"}, {id: "techreborn:silver_ingot"}], output: [{id: "techreborn:electrum_ingot", qty: 2}], tool: "techreborn:alloy_smelter"}} />
 
-Smelting recipe: <recipe> size 1x1 input techreborn:electrum_dust output techreborn:electrum_ingot tool techreborn:iron_furnace </recipe>
+<Machine recipe="input techreborn:electrum_dust output techreborn:electrum_ingot tool techreborn:iron_furnace" />
 
 ## Usage
 
@@ -24,8 +23,8 @@ Smelting recipe: <recipe> size 1x1 input techreborn:electrum_dust output techreb
 
 **Electrum Ingot** used in several crafting recipes:
 
-- <McItem slug="techreborn:electrum_nugget" inline={true}/>
-- <McItem slug="techreborn:electrum_storage_block" inline={true}/>
+- <McItem slug="techreborn:electrum_nugget"/>
+- <McItem slug="techreborn:electrum_storage_block"/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe: <recipe> size 1x1 input techreborn:electrum_ingot output techreborn:electrum_plate tool techreborn:compressor </recipe>
-<McItem slug="techreborn:grinder" inline={true}/> recipe: <recipe> size 1x1 input techreborn:electrum_ingot output techreborn:electrum_dust tool techreborn:grinder </recipe>
+<Machine recipe="input techreborn:electrum_ingot output techreborn:electrum_plate tool techreborn:compressor" />
+<Machine recipe="input techreborn:electrum_ingot output techreborn:electrum_dust tool techreborn:grinder" />
