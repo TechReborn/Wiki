@@ -6,5 +6,24 @@ title: Sodalite Dust
 
 # Sodalite Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Sodalite Dust** is an intermediate material used for further processing.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_sodalite_dust techreborn:small_pile_of_sodalite_dust air input techreborn:small_pile_of_sodalite_dust techreborn:small_pile_of_sodalite_dust air input air air air output techreborn:sodalite_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:sodalite_ore" inline={true}/> → 2x <McItem slug="techreborn:sodalite_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:sodalite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 12x <McItem slug="techreborn:sodalite_dust" inline={true}/> + 3x <McItem slug="techreborn:aluminium_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:sodalite_dust air input air air air output techreborn:small_pile_of_sodalite_dust,4"/>
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+23x <McItem slug="techreborn:sodalite_dust" inline={true}/> + 8x <McItem slug="techreborn:empty_cell" inline={true}/> →  
+4x <McItem slug="techreborn:sodium_cell" inline={true}/> + 3x <McItem slug="techreborn:aluminium_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + <McItem slug="techreborn:chlorite_cell" inline={true}/>

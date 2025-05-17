@@ -6,5 +6,39 @@ title: Platinum Dust
 
 # Platinum Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Platinum Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:platinum_ingot" inline={true}/>.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:small_pile_of_platinum_dust techreborn:small_pile_of_platinum_dust air input techreborn:small_pile_of_platinum_dust techreborn:small_pile_of_platinum_dust air input air air air output techreborn:platinum_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:platinum_ingot" inline={true}/> → <McItem slug="techreborn:platinum_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipes:  
+- <McItem slug="techreborn:iridium_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> →  
+  <McItem slug="techreborn:iridium_ingot" inline={true}/> + <McItem slug="techreborn:platinum_dust" inline={true}/>  
+- <McItem slug="techreborn:sheldonite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+  2x <McItem slug="techreborn:platinum_dust" inline={true}/> +  
+  <McItem slug="techreborn:nickel_dust" inline={true}/> +  
+  2x <McItem slug="techreborn:iridium_nugget" inline={true}/>  
+- <McItem slug="techreborn:sheldonite_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> →  
+  3x <McItem slug="techreborn:platinum_dust" inline={true}/> +  
+  <McItem slug="techreborn:nickel_dust" inline={true}/> +  
+  2x <McItem slug="techreborn:iridium_nugget" inline={true}/>
+
+<McItem slug="techreborn:fusion_control_computer" inline={true}/> recipe:  
+<McItem slug="techreborn:wolframium_cell" inline={true}/> + <McItem slug="techreborn:beryllium_cell" inline={true}/> →  
+<McItem slug="techreborn:platinum_dust" inline={true}/>
+
+## Usage
+
+<CraftingTable recipe="input air air air input air techreborn:platinum_dust air input air air air output techreborn:small_pile_of_platinum_dust,4"/>
+
+**Smelting recipe:**  
+<McItem slug="techreborn:platinum_dust" inline={true}/> → <McItem slug="techreborn:platinum_ingot" inline={true}/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+2x <McItem slug="techreborn:platinum_dust" inline={true}/> →  
+2x <McItem slug="techreborn:iridium_nugget" inline={true}/> +  
+<McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/>

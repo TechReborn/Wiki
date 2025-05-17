@@ -6,5 +6,32 @@ title: Lazurite Dust
 
 # Lazurite Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Lazurite Dust** is an intermediate material used for further processing.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_lazurite_dust techreborn:small_pile_of_lazurite_dust air input techreborn:small_pile_of_lazurite_dust techreborn:small_pile_of_lazurite_dust air input air air air output techreborn:lazurite_dust"/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+<McItem slug="minecraft:lapis_lazuli" inline={true}/> → 3x <McItem slug="techreborn:lazurite_dust" inline={true}/> +  
+<McItem slug="techreborn:small_pile_of_pyrite_dust" inline={true}/> +  
+<McItem slug="techreborn:small_pile_of_calcite_dust" inline={true}/> +  
+2x <McItem slug="techreborn:small_pile_of_sodalite_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
+<McItem slug="minecraft:lapis_lazuli_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+12x <McItem slug="minecraft:lapis_lazuli" inline={true}/> + 3x <McItem slug="techreborn:lazurite_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:lazurite_dust air input air air air output techreborn:small_pile_of_lazurite_dust,4"/>
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+29x <McItem slug="techreborn:lazurite_dust" inline={true}/> + 10x <McItem slug="techreborn:empty_cell" inline={true}/> →  
+3x <McItem slug="techreborn:aluminium_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> +  
+2x <McItem slug="techreborn:calcium_cell" inline={true}/> + 4x <McItem slug="techreborn:sodium_cell" inline={true}/>
+
+<McItem slug="techreborn:compressor" inline={true}/> recipe:  
+8x <McItem slug="techreborn:lazurite_dust" inline={true}/> → <McItem slug="techreborn:lazurite_plate" inline={true}/>

@@ -6,5 +6,26 @@ title: Lead Dust
 
 # Lead Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Lead Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:lead_ingot" inline={true}/>.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:small_pile_of_lead_dust techreborn:small_pile_of_lead_dust air input techreborn:small_pile_of_lead_dust techreborn:small_pile_of_lead_dust air input air air air output techreborn:lead_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipes:  
+<McItem slug="techreborn:lead_ore" inline={true}/> → 2x <McItem slug="techreborn:lead_dust" inline={true}/>  
+<McItem slug="techreborn:lead_ingot" inline={true}/> → <McItem slug="techreborn:lead_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:lead_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+2x <McItem slug="techreborn:lead_dust" inline={true}/> + 2x <McItem slug="techreborn:small_pile_of_galena_dust" inline={true}/>
+
+## Usage
+
+<CraftingTable recipe="input air air air input air techreborn:lead_dust air input air air air output techreborn:small_pile_of_lead_dust,4"/>
+
+**Smelting recipe:**  
+<McItem slug="techreborn:lead_dust" inline={true}/> → <McItem slug="techreborn:lead_ingot" inline={true}/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+2x <McItem slug="techreborn:lead_dust" inline={true}/> → <McItem slug="techreborn:small_pile_of_silver_dust" inline={true}/>

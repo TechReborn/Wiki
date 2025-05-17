@@ -1,0 +1,36 @@
+---
+title: Gas Turbine
+---
+
+<ItemImage file="gas_turbine" alt="Gas Turbine" size="200" />
+
+# Gas Turbine
+
+The **Gas Turbine** produces energy from various gases. It has an internal **[Tank](/img/mods/techreborn/basic_tank_unit)** that can hold 10k mB of fluid (10 **[Buckets](/mods/minecraft/bucket)** or **[Cells](/items/fluid/empty_cell)** worth) which is consumed as it is converted to energy.
+
+| Tier   | Generation Rate | Output  | Storage |
+|--------|------------------|---------|---------|
+| Medium | 16 E/t           | 128 E/t | 1 mE    |
+
+### Fuel
+
+| Fuel     | E/1000 mB |
+|----------|-----------|
+| Hydrogen | 15,000    |
+| Methane  | 45,000    |
+
+### Recipe
+
+<CraftingTable recipe="input techreborn:invar_plate techreborn:advanced_circuit techreborn:invar_plate input techreborn:wind_mill techreborn:reinforced_glass techreborn:wind_mill input techreborn:invar_plate techreborn:advanced_circuit techreborn:invar_plate output techreborn:gas_turbine"/><br/>
+<CraftingTable recipe="input techreborn:aluminum_plate techreborn:advanced_circuit techreborn:aluminum_plate input techreborn:wind_mill techreborn:reinforced_glass techreborn:wind_mill input techreborn:aluminum_plate techreborn:advanced_circuit techreborn:aluminum_plate output techreborn:gas_turbine"/>
+
+### Usage
+
+- Place a cell or bucket of fuel into the input slot to fill the internal tank  
+- Can also be filled by an external **[Tank](/img/mods/techreborn/basic_tank_unit)**  
+- Outputs energy on all sides
+
+### Related Items
+
+- <McItem slug="techreborn:hydrogen_cell" inline={true}/>
+- <McItem slug="techreborn:methane_cell" inline={true}/>

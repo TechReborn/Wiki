@@ -6,5 +6,45 @@ title: Zinc Dust
 
 # Zinc Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Zinc Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:zinc_ingot" inline={true}/>.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:small_pile_of_zinc_dust techreborn:small_pile_of_zinc_dust air input techreborn:small_pile_of_zinc_dust techreborn:small_pile_of_zinc_dust air input air air air output techreborn:zinc_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:zinc_ingot" inline={true}/> → <McItem slug="techreborn:zinc_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipes:  
+- <McItem slug="techreborn:tin_ore" inline={true}/> + <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> →  
+  2x <McItem slug="techreborn:tin_dust" inline={true}/> +  
+  <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> +  
+  <McItem slug="techreborn:zinc_dust" inline={true}/>  
+- <McItem slug="techreborn:sphalerite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+  5x <McItem slug="techreborn:sphalerite_dust" inline={true}/> +  
+  <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> +  
+  <McItem slug="techreborn:zinc_dust" inline={true}/>  
+- <McItem slug="techreborn:sphalerite_ore" inline={true}/> + <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> →  
+  5x <McItem slug="techreborn:sphalerite_dust" inline={true}/> +  
+  <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> +  
+  <McItem slug="techreborn:zinc_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+2x <McItem slug="techreborn:sphalerite_dust" inline={true}/> →  
+<McItem slug="techreborn:zinc_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>
+
+## Usage
+
+<CraftingTable recipe="input air air air input air techreborn:zinc_dust air input air air air output techreborn:small_pile_of_zinc_dust,4"/>
+
+**Smelting recipe:**  
+<McItem slug="techreborn:zinc_dust" inline={true}/> → <McItem slug="techreborn:zinc_ingot" inline={true}/>
+
+<McItem slug="techreborn:alloy_smelter" inline={true}/> recipes:  
+- 3x <McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> →  
+  4x <McItem slug="techreborn:brass_ingot" inline={true}/>  
+- 3x <McItem slug="techreborn:copper_ingot" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> →  
+  4x <McItem slug="techreborn:brass_ingot" inline={true}/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+<McItem slug="techreborn:zinc_dust" inline={true}/> → <McItem slug="techreborn:small_pile_of_tin_dust" inline={true}/>

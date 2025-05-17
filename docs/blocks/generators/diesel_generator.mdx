@@ -1,0 +1,40 @@
+---
+title: Diesel Generator
+---
+
+<ItemImage file="diesel_generator" alt="Diesel Generator" size="200" />
+
+# Diesel Generator
+
+The **Diesel Generator** produces energy from various fluids. It has an internal **[Tank](/img/mods/techreborn/basic_tank_unit)** that can hold 10k mB of fluid (10 **[Buckets](/mods/minecraft/bucket)** or **[Cells](/items/fluid/empty_cell)** worth) which is consumed as it is converted to energy.
+
+| Tier | Fuel Type | Output | Storage |
+|------|------------|--------|---------|
+| Basic | Diesel | 128 E/t | 64 kE |
+
+### Fuel
+
+| Fuel | E/1000 mB |
+|------|-----------|
+| <McItem slug="techreborn:Nitrofuel" inline={true}/> | 24,000 |
+| <McItem slug="techreborn:Nitrocoal_Fuel" inline={true}/> | 48,000 |
+| <McItem slug="techreborn:Diesel" inline={true}/> | 128,000 |
+| <McItem slug="techreborn:Nitro_Diesel" inline={true}/> | 400,000 |
+
+### Recipe
+
+<CraftingTable recipe="input techreborn:iron_plate techreborn:iron_plate techreborn:iron_plate input techreborn:iron_plate techreborn:reinforced_glass techreborn:iron_plate input techreborn:electronic_circuit techreborn:solid_fuel_generator techreborn:electronic_circuit output techreborn:diesel_generator"/><br/>
+<CraftingTable recipe="input techreborn:aluminum_plate techreborn:aluminum_plate techreborn:aluminum_plate input techreborn:aluminum_plate techreborn:reinforced_glass techreborn:aluminum_plate input techreborn:electronic_circuit techreborn:solid_fuel_generator techreborn:electronic_circuit output techreborn:diesel_generator"/>
+
+### Usage
+
+- Place a cell or bucket of fuel into the input slot to fill the internal tank  
+- Can also be filled by an external **[Tank](/img/mods/techreborn/basic_tank_unit)**  
+- Outputs energy on all sides
+
+### Related Items
+
+- <McItem slug="techreborn:nitrofuel_cell" inline={true}/>
+- <McItem slug="techreborn:nitrocoalfuel_cell" inline={true}/>
+- <McItem slug="techreborn:diesel_cell" inline={true}/>
+- <McItem slug="techreborn:nitrodiesel_cell" inline={true}/>

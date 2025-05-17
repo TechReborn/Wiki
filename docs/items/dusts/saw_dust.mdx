@@ -2,9 +2,25 @@
 title: Saw Dust
 ---
 
-<ItemImage file="saw_dust" alt="Saw Dust" size="200" />
+<ItemImage file="Saw_dust" alt="Saw Dust" size="200" />
 
 # Saw Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Saw Dust** is a byproduct received from <McItem slug="techreborn:saw_mill" inline={true}/>.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:small_pile_of_saw_dust techreborn:small_pile_of_saw_dust air input techreborn:small_pile_of_saw_dust techreborn:small_pile_of_saw_dust air input air air air output techreborn:saw_dust"/>
+
+<McItem slug="techreborn:saw_mill" inline={true}/> recipe:  
+<McItem slug="minecraft:wood" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+4x <McItem slug="minecraft:wood" inline={true}/> + 3x <McItem slug="techreborn:saw_dust" inline={true}/> + <McItem slug="minecraft:paper" inline={true}/>
+
+## Usage
+
+<CraftingTable recipe="input air air air input air techreborn:saw_dust air input air air air output techreborn:small_pile_of_saw_dust,4"/>
+
+<CraftingTable recipe="input techreborn:saw_dust techreborn:saw_dust techreborn:saw_dust input minecraft:water_bucket air air input air air air output minecraft:paper,3"/>
+
+<McItem slug="techreborn:compressor" inline={true}/> recipe:  
+2x <McItem slug="techreborn:saw_dust" inline={true}/> → <McItem slug="techreborn:wooden_plate" inline={true}/>

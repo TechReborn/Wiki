@@ -6,5 +6,29 @@ title: Emerald Dust
 
 # Emerald Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Emerald Dust** is a dust added by TechReborn. It is used for further processing.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_emerald_dust techreborn:small_pile_of_emerald_dust air input techreborn:small_pile_of_emerald_dust techreborn:small_pile_of_emerald_dust air input air air air output techreborn:emerald_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="minecraft:emerald" inline={true}/> → <McItem slug="techreborn:emerald_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:emerald_dust air input air air air output techreborn:small_pile_of_emerald_dust,4"/>
+
+<McItem slug="techreborn:compressor" inline={true}/> recipe:  
+<McItem slug="techreborn:emerald_dust" inline={true}/> → <McItem slug="techreborn:emerald_plate" inline={true}/>
+
+<McItem slug="techreborn:implosion_compressor" inline={true}/> recipes:  
+4x <McItem slug="techreborn:emerald_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → 3x <McItem slug="minecraft:emerald" inline={true}/> + 12x <McItem slug="techreborn:dark_ashes" inline={true}/>  
+4x <McItem slug="techreborn:emerald_dust" inline={true}/> + 4x <McItem slug="minecraft:end_crystal" inline={true}/> → 3x <McItem slug="minecraft:emerald" inline={true}/> + 4x <McItem slug="techreborn:ender_eye_small_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+29x <McItem slug="techreborn:emerald_dust" inline={true}/> + 18x <McItem slug="techreborn:empty_cell" inline={true}/> →  
+2x <McItem slug="techreborn:aluminium_dust" inline={true}/> + 3x <McItem slug="techreborn:beryllium_cell" inline={true}/> +  
+6x <McItem slug="techreborn:silicon_cell" inline={true}/> + 9x <McItem slug="techreborn:compressed_air_cell" inline={true}/>

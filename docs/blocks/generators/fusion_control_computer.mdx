@@ -1,0 +1,52 @@
+---
+title: Fusion Control Computer
+---
+
+<ItemImage file="fusion_control_computer" alt="Fusion Control Computer" size="200" />
+
+# Fusion Control Computer
+
+The **Fusion Control Computer** is part of a multi-block generator that produces energy from various fluids. It is unique in that it does not simply consume the fuel, but instead processes them into a new item. It is also used as a machine to produce <McItem slug="techreborn:platinum_dust" inline={true}/> and <McItem slug="techreborn:iridium_ore" inline={true}/>.  
+It must be combined with a minimum of 16 <McItem slug="techreborn:fusion_coil" inline={true}/>s to create a usable fusion reactor.
+
+| Tier   | Generation Rate | Input | Output | Storage |
+|--------|------------------|--------|--------|---------|
+| Insane | <tooltip title="16,384">16.3k</tooltip> E/t[^1] | <tooltip title="8,192">8.1k</tooltip> E/t | <tooltip title="100,000">100k</tooltip> E/t[^2] | 100M–2.1G Energy[^3] |
+
+### Recipe
+
+<CraftingTable recipe="input techreborn:energy_flow_chip techreborn:energy_flow_chip techreborn:energy_flow_chip input techreborn:energy_crystal techreborn:fusion_coil techreborn:energy_crystal input techreborn:energy_flow_chip techreborn:energy_flow_chip techreborn:energy_flow_chip output techreborn:fusion_control_computer"/>
+
+### Usage
+
+- Adjustable hologram with H key
+- Outputs power only while crafting
+- Inputs energy only while idle
+- Must be pre-charged before activation
+
+### Fuel/Input Table
+
+| Input A | Input B | Minimum Energy | Output | Energy Produced |
+|--------|---------|----------------|--------|-----------------|
+| <McItem slug="techreborn:deuterium_cell" inline={true}/> | <McItem slug="techreborn:tritium_cell" inline={true}/> | 40M | <McItem slug="techreborn:helium3_cell" inline={true}/> | 16,364 E/t × 2048 = 33.5M E × Mult |
+| <McItem slug="techreborn:deuterium_cell" inline={true}/> | <McItem slug="techreborn:helium3_cell" inline={true}/> | 40M | <McItem slug="techreborn:heliumplasma_cell" inline={true}/> | 33.5M E × Mult |
+
+### Fuel-to-Item Reactions (Consumes 2048 E/t)[^4]
+
+| Input A | Input B | Min Energy | Continuous Energy Cost | Output |
+|---------|---------|------------|------------------------|--------|
+| <McItem slug="techreborn:wolframium_cell" inline={true}/> | <McItem slug="techreborn:beryllium_cell" inline={true}/> | 80M | 2048 E/t × 1024 ticks = 2.1M E | <McItem slug="techreborn:platinum_dust" inline={true}/> |
+| <McItem slug="techreborn:wolframium_cell" inline={true}/> | <McItem slug="techreborn:lithium_cell" inline={true}/> | 90M | 2048 E/t × 1024 ticks = 2.1M E | <McItem slug="techreborn:iridium_ore" inline={true}/> |
+
+<accordion>
+<panel title="Power Generation Table" icon="fa fa-table">
+
+*Table is omitted for brevity but includes reactor size, coil count, generation multiplier, per-tick energy, total energy, max capacity, and efficiency percent.*
+
+</panel>
+</accordion>
+
+[^1]: Base generation rate. Multiplied by reactor size multiplier.  
+[^2]: May not be extractable via cables due to mod limitations.  
+[^3]: Storage scales with multiplier. Max capped at 2,147,483,647 E.  
+[^4]: Bug: These reactions produce energy rather than consume it in 1.16.5+.

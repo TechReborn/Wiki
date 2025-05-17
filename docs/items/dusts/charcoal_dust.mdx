@@ -6,5 +6,20 @@ title: Charcoal Dust
 
 # Charcoal Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Charcoal Dust** is an intermediate material used for further processing.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_charcoal_dust techreborn:small_pile_of_charcoal_dust air input techreborn:small_pile_of_charcoal_dust techreborn:small_pile_of_charcoal_dust air input air air air output techreborn:charcoal_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="minecraft:charcoal" inline={true}/> → <McItem slug="techreborn:charcoal_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:charcoal_dust air input air air air output techreborn:small_pile_of_charcoal_dust,4"/>
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+<McItem slug="techreborn:charcoal_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> → <McItem slug="techreborn:carbon_cell" inline={true}/>

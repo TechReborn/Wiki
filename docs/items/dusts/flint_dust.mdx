@@ -4,7 +4,25 @@ title: Flint Dust
 
 <ItemImage file="flint_dust" alt="Flint Dust" size="200" />
 
-# Flint Dust
+# Flint dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Flint dust** is a dust used to get <McItem slug="techreborn:silicon_cell" inline={true}/>.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_flint_dust techreborn:small_pile_of_flint_dust air input techreborn:small_pile_of_flint_dust techreborn:small_pile_of_flint_dust air input air air air output techreborn:flint_dust"/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+16x <McItem slug="techreborn:basalt_dust" inline={true}/> → <McItem slug="techreborn:peridot_dust" inline={true}/> +  
+3x <McItem slug="techreborn:calcite_dust" inline={true}/> + 8x <McItem slug="techreborn:flint_dust" inline={true}/> +  
+4x <McItem slug="techreborn:dark_ashes" inline={true}/>
+
+## Usage
+
+**Flint dust** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>  
+8x <McItem slug="techreborn:flint_dust" inline={true}/> + 2x <McItem slug="techreborn:empty_cell" inline={true}/> →  
+<McItem slug="techreborn:silicon_cell" inline={true}/> + <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+
+Besides that, **Flint dust** could be split into small piles using <McItem slug="minecraft:crafting_table" inline={true}/>  
+<CraftingTable recipe="input air air air input air techreborn:flint_dust air input air air air output techreborn:small_pile_of_flint_dust,4"/>

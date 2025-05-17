@@ -6,5 +6,28 @@ title: Endstone Dust
 
 # Endstone Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Endstone Dust** is a dust added by TechReborn. It is used for further processing.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:small_pile_of_endstone_dust techreborn:small_pile_of_endstone_dust air input techreborn:small_pile_of_endstone_dust techreborn:small_pile_of_endstone_dust air input air air air output techreborn:endstone_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="minecraft:end_stone" inline={true}/> → <McItem slug="techreborn:endstone_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipes:  
+- <McItem slug="minecraft:end_stone" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+  2x <McItem slug="techreborn:endstone_dust" inline={true}/>  
+- <McItem slug="minecraft:end_stone_bricks" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+  4x <McItem slug="techreborn:endstone_dust" inline={true}/>
+
+## Usage
+
+<CraftingTable recipe="input air air air input air techreborn:endstone_dust air input air air air output techreborn:small_pile_of_endstone_dust,4"/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+16x <McItem slug="techreborn:endstone_dust" inline={true}/> + 2x <McItem slug="techreborn:empty_cell" inline={true}/> →  
+<McItem slug="techreborn:helium3_cell" inline={true}/> +  
+<McItem slug="techreborn:helium_cell" inline={true}/> +  
+<McItem slug="techreborn:small_pile_of_tungsten_dust" inline={true}/> +  
+12x <McItem slug="minecraft:sand" inline={true}/>

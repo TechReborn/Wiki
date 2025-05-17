@@ -4,23 +4,21 @@ title: Tin Cable
 
 <ItemImage file="tin_cable" alt="Tin Cable" size="200" />
 
+# Tin Cable
+
 **Tin Cable** transfers energy through it. For more details and how to use, read [general information about Cables](/docs/blocks/cables).
 
 | Tier | I/O Rate | Buffer |
-| ---- | -------- | ------ |
+|------|----------|--------|
 | Low  | 32 E/t   | 128 E  |
 
-## Recipes
 
-\<mcitem\>minecraft:crafting_table\</mcitem\>: \<recipe\> input input techreborn:tin_ingot techreborn:tin_ingot techreborn:tin_ingot input output techreborn:tin_cable,9 \</recipe\>
+<McItem slug="minecraft:crafting_table" inline={true}/>: <CraftingTable recipe="input air air air input techreborn:tin_ingot techreborn:tin_ingot techreborn:tin_ingot input air air air output techreborn:tin_cable,9"/><br/>
+<McItem slug="techreborn:wire_mill" inline={true}/>:  
+<recipe> size 1x1 input techreborn:tin_ingot output techreborn:tin_cable,6 tool techreborn:wire_mill </recipe>
 
-\<mcitem\>techreborn:wire_mill\</mcitem\>: \<recipe\> size 1x1 input techreborn:tin_ingot output techreborn:tin_cable,6 tool techreborn:wire_mill \</recipe\>
 
-## Usage 
+Used as an ingredient in the <McItem slug="minecraft:crafting_table" inline={true}/> to produce:
 
-Main usage is to provide Energy from source to the destination. 
-
-Also used as an ingredient in the \<mcitem\>minecraft:crafting_table\</mcitem\> to produce:
-
-- \<mcitem\>techreborn:lamp_led\</mcitem\>
+- <McItem slug="techreborn:lamp_led" inline={true}/>
 

@@ -1,0 +1,43 @@
+---
+title: Solar Panels
+---
+
+<ItemImage file="solar_panels" alt="Solar Panels" size="200" />
+
+# Solar Panels
+
+**Solar Panels** are **[passive generators](/energy/generators/passive_generators)** that produce energy from sunlight.
+
+It is a tiered system, progressing as follows:
+
+| Name | Tier | Day Energy Generation | Night Energy Generation | Energy Storage |
+|------|------|------------------------|--------------------------|----------------|
+| <McItem slug="techreborn:basic_solar_panel" inline={true}/> | Micro | 3 E/t | – | <tooltip title="6,000">6k</tooltip> |
+| <McItem slug="techreborn:advanced_solar_panel" inline={true}/> | Low | 12 E/t | – | <tooltip title="24,000">24k</tooltip> |
+| <McItem slug="techreborn:industrial_solar_panel" inline={true}/> | Medium | 24 E/t | 4 E/t | <tooltip title="48,000">48k</tooltip> |
+| <McItem slug="techreborn:ultimate_solar_panel" inline={true}/> | High | 48 E/t | 8 E/t | <tooltip title="96,000">96k</tooltip> |
+| <McItem slug="techreborn:quantum_solar_panel" inline={true}/> | Insane | 512 E/t | 32 E/t | <tooltip title="1,000,000">1m</tooltip> |
+| <McItem slug="techreborn:creative_solar_panel" inline={true}/>[^1] | Infinite | ∞ | ∞ | ∞ |
+
+### Panel States
+
+A solar panel has three possible states:
+
+- **Direct Sunlight:** The panel is producing at its maximum rate — *Sky access, daytime, and clear weather.*
+- **Reduced Sunlight:** The panel is producing its night-time generation rate — *Nighttime, rain, or thunderstorms.*
+- **Obstructed Sunlight:** The panel doesn’t have a direct view of the sky — *A solid block is directly above it (height doesn't matter).*
+
+<callout type="info" title="Day & Night">
+Solar Panels do not generate energy based on the light level of sunlight like the <McItem slug="minecraft:Daylight_Detector" inline={true}/>, but rather based on the [Daylight Cycle](https://minecraft.fandom.com/wiki/Daylight_cycle) and occur at times 12542 and 23460.  
+These times are the same as when the player can and cannot sleep in a bed.
+</callout>
+
+### Usage Notes
+
+- Right-click a solar panel to open its GUI and view its specifications and current status (except for the Creative tier).
+- Solar panels output energy from all sides; a wire on top does not interfere with generation.
+- Output can be toggled with <McItem slug="minecraft:redstone" inline={true}/>.
+- All panels output at <tooltip title="2,048">2.0k</tooltip> Energy per Tick and are typically limited by the attached cable.[^2]
+
+[^1]: This panel is Tech Reborn's version of an infinite energy source. It has no recipe and is Creative-only.  
+[^2]: The only exception is the <McItem slug="techreborn:Creative_Solar_Panel" inline={true}/>, which is only limited by the connected cable or device.

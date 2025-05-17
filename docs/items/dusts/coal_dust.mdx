@@ -6,5 +6,43 @@ title: Coal Dust
 
 # Coal Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Coal Dust** is an intermediate material used for further processing.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:small_pile_of_coal_dust techreborn:small_pile_of_coal_dust air input techreborn:small_pile_of_coal_dust techreborn:small_pile_of_coal_dust air input air air air output techreborn:coal_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipes:  
+<McItem slug="minecraft:coal" inline={true}/> → <McItem slug="techreborn:coal_dust" inline={true}/>  
+<McItem slug="minecraft:coal_ore" inline={true}/> → 2x <McItem slug="techreborn:coal_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipes:  
+- 16x <McItem slug="minecraft:soul_sand" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
+  10x <McItem slug="minecraft:sand" inline={true}/> + 4x <McItem slug="techreborn:saltpeter_dust" inline={true}/> +  
+  <McItem slug="techreborn:coal_dust" inline={true}/> + <McItem slug="techreborn:oil_cell" inline={true}/>
+- 16x <McItem slug="techreborn:netherrack_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
+  <McItem slug="minecraft:redstone" inline={true}/> + <McItem slug="techreborn:sulfur_cell" inline={true}/> +  
+  <McItem slug="techreborn:coal_dust" inline={true}/> + <McItem slug="minecraft:gold_nugget" inline={true}/>
+
+## Usage
+
+<CraftingTable recipe="input air air air input air techreborn:coal_dust air input air air air output techreborn:small_pile_of_coal_dust,4"/>
+
+<CraftingTable recipe="input techreborn:coal_dust minecraft:glass techreborn:coal_dust input minecraft:glass techreborn:coal_dust minecraft:glass input techreborn:electronic_circuit techreborn:generator techreborn:electronic_circuit output techreborn:basic_solar_panel"/>
+
+<CraftingTable recipe="input techreborn:coal_dust minecraft:glass techreborn:coal_dust input minecraft:glass techreborn:coal_dust minecraft:glass input techreborn:advanced_circuit techreborn:basic_solar_panel techreborn:advanced_circuit output techreborn:advanced_solar_panel"/>
+
+<CraftingTable recipe="input techreborn:coal_dust minecraft:glass techreborn:coal_dust input minecraft:glass techreborn:coal_dust minecraft:glass input techreborn:advanced_circuit techreborn:basic_machine_frame techreborn:advanced_circuit output techreborn:advanced_solar_panel"/>
+
+<CraftingTable recipe="input techreborn:tin_dust techreborn:coal_dust techreborn:tin_dust input techreborn:coal_dust techreborn:copper_plate techreborn:coal_dust input techreborn:tin_dust techreborn:coal_dust techreborn:tin_dust output techreborn:neutron_reflector"/>
+
+<CraftingTable recipe="input techreborn:coal_dust techreborn:coal_dust air input techreborn:coal_dust techreborn:coal_dust air input air air air output techreborn:carbon_fiber"/>
+
+<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
+<McItem slug="minecraft:iron_ingot" inline={true}/> + 2x <McItem slug="techreborn:coal_dust" inline={true}/> →  
+<McItem slug="techreborn:steel_ingot" inline={true}/> + 2x <McItem slug="techreborn:dark_ashes" inline={true}/>  
+_This requires 1000 heat._
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+<McItem slug="techreborn:coal_dust" inline={true}/> + 2x <McItem slug="techreborn:empty_cell" inline={true}/> →  
+2x <McItem slug="techreborn:carbon_cell" inline={true}/>
