@@ -6,5 +6,41 @@ title: Diamond Dust
 
 # Diamond Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Diamond Dust** is a dust added by TechReborn. It is used in crafting recipes.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_diamond_dust techreborn:small_pile_of_diamond_dust air input techreborn:small_pile_of_diamond_dust techreborn:small_pile_of_diamond_dust air input air air air output techreborn:diamond_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="minecraft:diamond_ore" inline={true}/> → 2x <McItem slug="techreborn:diamond_dust" inline={true}/>  
+<McItem slug="minecraft:diamond" inline={true}/> → <McItem slug="techreborn:diamond_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:diamond_dust air input air air air output techreborn:small_pile_of_diamond_dust,4"/>
+
+<CraftingTable recipe="input techreborn:diamond_dust techreborn:titanium_ingot air input techreborn:diamond_dust techreborn:titanium_ingot air input techreborn:diamond_dust techreborn:electronic_circuit techreborn:battery output techreborn:rockcutter"/>
+
+<CraftingTable recipe="input techreborn:diamond_dust minecraft:glass techreborn:diamond_dust input minecraft:glass techreborn:diamond_dust minecraft:glass input techreborn:advanced_circuit techreborn:solar_panel techreborn:advanced_circuit output techreborn:solar_panel"/>
+
+<CraftingTable recipe="input techreborn:diamond_dust minecraft:glass techreborn:diamond_dust input minecraft:glass techreborn:diamond_dust minecraft:glass input techreborn:advanced_circuit techreborn:basic_machine_frame techreborn:advanced_circuit output techreborn:solar_panel"/>
+
+<CraftingTable recipe="input techreborn:diamond_dust techreborn:reinforced_glass techreborn:diamond_dust input techreborn:reinforced_glass techreborn:diamond_dust techreborn:reinforced_glass input techreborn:advanced_circuit techreborn:solar_panel techreborn:advanced_circuit output techreborn:solar_panel"/>
+
+<CraftingTable recipe="input techreborn:iridium_ingot techreborn:advanced_alloy_plate techreborn:iridium_ingot input techreborn:advanced_alloy_plate techreborn:diamond_dust techreborn:advanced_alloy_plate input techreborn:iridium_ingot techreborn:advanced_alloy_plate techreborn:iridium_ingot output techreborn:iridium_alloy_ingot"/>
+
+<CraftingTable recipe="input techreborn:diamond_dust techreborn:steel_ingot techreborn:diamond_dust input techreborn:steel_ingot air techreborn:steel_ingot input techreborn:diamond_dust techreborn:steel_ingot techreborn:diamond_dust output techreborn:diamond_saw_blade,4"/>
+
+<CraftingTable recipe="input techreborn:diamond_dust techreborn:steel_ingot techreborn:diamond_dust input techreborn:steel_ingot minecraft:diamond techreborn:steel_ingot input techreborn:diamond_dust techreborn:steel_ingot techreborn:diamond_dust output techreborn:diamond_grinding_head,2"/>
+
+<CraftingTable recipe="input minecraft:glass minecraft:glass minecraft:glass input minecraft:redstone techreborn:diamond_dust minecraft:redstone input minecraft:glass minecraft:glass minecraft:glass output techreborn:glass_fiber_cable,4"/>
+
+<CraftingTable recipe="input minecraft:glass minecraft:glass minecraft:glass input techreborn:silver_ingot techreborn:diamond_dust techreborn:silver_ingot input minecraft:glass minecraft:glass minecraft:glass output techreborn:glass_fiber_cable,6"/>
+
+<CraftingTable recipe="input minecraft:glass minecraft:glass minecraft:glass input techreborn:electrum_ingot techreborn:diamond_dust techreborn:electrum_ingot input minecraft:glass minecraft:glass minecraft:glass output techreborn:glass_fiber_cable,8"/>
+
+<McItem slug="techreborn:implosion_compressor" inline={true}/> recipe:  
+<McItem slug="techreborn:diamond_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → <McItem slug="minecraft:diamond" inline={true}/> + 16x <McItem slug="techreborn:dark_ashes" inline={true}/>

@@ -6,5 +6,24 @@ title: Brass Dust
 
 # Brass Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Brass Dust** is a dust added by TechReborn.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_brass_dust techreborn:small_pile_of_brass_dust air input techreborn:small_pile_of_brass_dust techreborn:small_pile_of_brass_dust air input air air air output techreborn:brass_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:brass_ingot" inline={true}/> → <McItem slug="techreborn:brass_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:brass_dust air input air air air output techreborn:small_pile_of_brass_dust,4"/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+<McItem slug="techreborn:brass_dust" inline={true}/> → 3x <McItem slug="techreborn:small_pile_of_copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_zinc_dust" inline={true}/>
+
+### Smelting
+
+<McItem slug="techreborn:brass_dust" inline={true}/> → <McItem slug="techreborn:brass_ingot" inline={true}/>

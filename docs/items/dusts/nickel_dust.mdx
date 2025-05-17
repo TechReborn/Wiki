@@ -6,5 +6,37 @@ title: Nickel Dust
 
 # Nickel Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Nickel Dust** is a dust added by TechReborn, and is an important stepping stone to the more complicated machinery added by the mod. It is used to produce <McItem slug="techreborn:nickel_ingot" inline={true}/>.
+
+Before the player makes the <McItem slug="techreborn:industrial_grinder" inline={true}/>, the primary way of acquiring <McItem slug="techreborn:nickel_dust" inline={true}/> is from <McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/>
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_nickel_dust techreborn:small_pile_of_nickel_dust air input techreborn:small_pile_of_nickel_dust techreborn:small_pile_of_nickel_dust air input air air air output techreborn:nickel_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:nickel_ingot" inline={true}/> → <McItem slug="techreborn:nickel_dust" inline={true}/>  
+<McItem slug="techreborn:nickel_storage_block" inline={true}/> → 9x <McItem slug="techreborn:nickel_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipes:  
+<McItem slug="techreborn:sheldonite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+2x <McItem slug="techreborn:platinum_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> + 2x <McItem slug="techreborn:iridium_nugget" inline={true}/>  
+<McItem slug="techreborn:sheldonite_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> →  
+3x <McItem slug="techreborn:platinum_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> + 2x <McItem slug="techreborn:iridium_nugget" inline={true}/>  
+<McItem slug="minecraft:gold_ore" inline={true}/> + <McItem slug="techreborn:sodium_persulfate_cell" inline={true}/> →  
+2x <McItem slug="minecraft:raw_gold" inline={true}/> + <McItem slug="minecraft:raw_copper" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/>  
+<McItem slug="minecraft:copper_ore" inline={true}/> + <McItem slug="techreborn:sodium_persulfate_cell" inline={true}/> →  
+2x <McItem slug="minecraft:raw_copper" inline={true}/> + <McItem slug="minecraft:raw_gold" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:nickel_dust air input air air air output techreborn:small_pile_of_nickel_dust,4"/>
+
+**Smelting**:  
+<McItem slug="techreborn:nickel_dust" inline={true}/> → <McItem slug="techreborn:nickel_ingot" inline={true}/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+3x <McItem slug="techreborn:nickel_dust" inline={true}/> →  
+3x <McItem slug="minecraft:iron_nugget" inline={true}/> + 3x <McItem slug="minecraft:gold_nugget" inline={true}/> + 3x <McItem slug="techreborn:copper_nugget" inline={true}/>

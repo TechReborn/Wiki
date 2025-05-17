@@ -6,5 +6,20 @@ title: Ashes
 
 # Ashes
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Ashes** is a dust used to get <McItem slug="techreborn:carbon_fiber_cell" inline={true}/>.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:small_pile_of_ashes techreborn:small_pile_of_ashes air input techreborn:small_pile_of_ashes techreborn:small_pile_of_ashes air input air air air output techreborn:ashes"/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+2x <McItem slug="techreborn:dark_ashes" inline={true}/> → 2x <McItem slug="techreborn:ashes" inline={true}/>
+
+## Usage
+
+**Ashes** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>  
+2x <McItem slug="techreborn:ashes" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
+<McItem slug="techreborn:carbon_fiber_cell" inline={true}/>
+
+Besides that **Ashes** could be split into small piles using <McItem slug="minecraft:crafting_table" inline={true}/>  
+<CraftingTable recipe="input air air air input air techreborn:ashes air input air air air output techreborn:small_pile_of_ashes,4"/>

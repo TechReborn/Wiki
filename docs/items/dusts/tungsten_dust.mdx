@@ -6,5 +6,29 @@ title: Tungsten Dust
 
 # Tungsten Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Tungsten Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:tungsten_ingot" inline={true}/>.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_tungsten_dust techreborn:small_pile_of_tungsten_dust air input techreborn:small_pile_of_tungsten_dust techreborn:small_pile_of_tungsten_dust air input air air air output techreborn:tungsten_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:tungsten_ingot" inline={true}/> → <McItem slug="techreborn:tungsten_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:tungsten_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
+2x <McItem slug="techreborn:tungsten_dust" inline={true}/> + 3x <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + 3x <McItem slug="techreborn:small_pile_of_manganese_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:tungsten_dust air input air air air output techreborn:small_pile_of_tungsten_dust,4"/>
+
+<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
+<McItem slug="techreborn:tungsten_dust" inline={true}/> → <McItem slug="techreborn:tungsten_ingot" inline={true}/>  
+_This operation requires 2500 heat._
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+<McItem slug="techreborn:tungsten_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
+<McItem slug="techreborn:wolframium_cell" inline={true}/>

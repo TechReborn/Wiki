@@ -6,5 +6,23 @@ title: Calcite Dust
 
 # Calcite Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Calcite Dust** is an intermediate material used for further processing.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_calcite_dust techreborn:small_pile_of_calcite_dust air input techreborn:small_pile_of_calcite_dust techreborn:small_pile_of_calcite_dust air input air air air output techreborn:calcite_dust"/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+16x <McItem slug="techreborn:basalt_dust" inline={true}/> → <McItem slug="techreborn:peridot_dust" inline={true}/> + 3x <McItem slug="techreborn:calcite_dust" inline={true}/> + 8x <McItem slug="techreborn:flint_dust" inline={true}/> + 4x <McItem slug="techreborn:dark_ashes" inline={true}/>  
+<McItem slug="techreborn:marble_dust" inline={true}/> → <McItem slug="techreborn:magnesium_dust" inline={true}/> + 7x <McItem slug="techreborn:calcite_dust" inline={true}/>  
+<McItem slug="techreborn:calciumcarbonate_cell" inline={true}/> → <McItem slug="techreborn:calcite_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:calcite_dust air input air air air output techreborn:small_pile_of_calcite_dust,4"/>
+
+<McItem slug="techreborn:blast_furnace" inline={true}/> recipes:  
+<McItem slug="minecraft:iron_ore" inline={true}/> + <McItem slug="techreborn:calcite_dust" inline={true}/> → 3x <McItem slug="minecraft:iron_ingot" inline={true}/> + <McItem slug="techreborn:dark_ashes" inline={true}/>  
+<McItem slug="techreborn:pyrite_ore" inline={true}/> + <McItem slug="techreborn:calcite_dust" inline={true}/> → 2x <McItem slug="minecraft:iron_ingot" inline={true}/> + <McItem slug="techreborn:dark_ashes" inline={true}/>

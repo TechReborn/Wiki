@@ -6,5 +6,25 @@ title: Sapphire Dust
 
 # Sapphire Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Sapphire Dust** is an intermediate material used for further processing.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_sapphire_dust techreborn:small_pile_of_sapphire_dust air input techreborn:small_pile_of_sapphire_dust techreborn:small_pile_of_sapphire_dust air input air air air output techreborn:sapphire_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:sapphire_ore" inline={true}/> → 2x <McItem slug="techreborn:sapphire_dust" inline={true}/>  
+<McItem slug="techreborn:sapphire" inline={true}/> → <McItem slug="techreborn:sapphire_dust" inline={true}/>
+
+## Usage
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input air air air input air techreborn:sapphire_dust air input air air air output techreborn:small_pile_of_sapphire_dust,4"/>
+
+**Sapphire Dust** could be compressed back into gem using raw power of TNT in <McItem slug="techreborn:implosion_compressor" inline={true}/>:  
+4x <McItem slug="techreborn:sapphire_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → 3x <McItem slug="techreborn:sapphire" inline={true}/> + 12x <McItem slug="techreborn:dark_ashes" inline={true}/>
+
+<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
+8x <McItem slug="techreborn:sapphire_dust" inline={true}/> + 3x <McItem slug="techreborn:empty_cell" inline={true}/> →  
+2x <McItem slug="techreborn:aluminium_dust" inline={true}/> + 3x <McItem slug="techreborn:compressed_air_cell" inline={true}/>

@@ -6,5 +6,28 @@ title: Peridot Dust
 
 # Peridot Dust
 
-Dusts are created mainly by grinding **[ores](/world_generation/ore)** or another materials in the <mcitem>techreborn:grinder</mcitem> 
-or <mcitem>techreborn:industrial_grinder</mcitem>
+**Peridot Dust** is an intermediate product received by processing <McItem slug="techreborn:peridot" inline={true}/> or <McItem slug="techreborn:peridot_ore" inline={true}/>.
+
+## Recipe
+
+<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
+<CraftingTable recipe="input techreborn:small_pile_of_peridot techreborn:small_pile_of_peridot air input techreborn:small_pile_of_peridot techreborn:small_pile_of_peridot air input air air air output techreborn:peridot_dust"/>
+
+<McItem slug="techreborn:grinder" inline={true}/> recipe:  
+<McItem slug="techreborn:peridot_ore" inline={true}/> → 2x <McItem slug="techreborn:peridot_dust" inline={true}/>  
+<McItem slug="techreborn:peridot" inline={true}/> → <McItem slug="techreborn:peridot_dust" inline={true}/>
+
+<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
+16x <McItem slug="techreborn:basalt_dust" inline={true}/> → <McItem slug="techreborn:peridot_dust" inline={true}/> + 3x <McItem slug="techreborn:calcite_dust" inline={true}/> + 8x <McItem slug="techreborn:flint_dust" inline={true}/> + 4x <McItem slug="techreborn:dark_ashes" inline={true}/>
+
+## Usage
+
+**Peridot Dust** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>:  
+9x <McItem slug="techreborn:peridot_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
+2x <McItem slug="techreborn:magnesium_dust" inline={true}/> + 2x <McItem slug="techreborn:iron_dust" inline={true}/> + <McItem slug="techreborn:silicon_cell" inline={true}/> + 2x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+
+**Peridot Dust** can also be split into small piles using a crafting table:  
+<CraftingTable recipe="input air air air input air techreborn:peridot_dust air input air air air output techreborn:small_pile_of_peridot,4"/>
+
+And finally, **Peridot Dust** can be recompressed back into a gem using raw power of TNT in an <McItem slug="techreborn:implosion_compressor" inline={true}/>:  
+4x <McItem slug="techreborn:peridot_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → 3x <McItem slug="techreborn:peridot" inline={true}/> + 12x <McItem slug="techreborn:dark_ashes" inline={true}/>
