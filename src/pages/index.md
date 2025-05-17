@@ -4,7 +4,7 @@ title: Tech Reborn Wiki
 
 :::info[🚧 Wiki Migration in Progress]
 
-The documentation wiki is currently undergoing a migration from dokuwiki to mkdocs. Some pages may not be formed correctly, and some links may be broken.
+The documentation wiki is currently undergoing a migration from dokuwiki to docusaurus. Some pages may not be formed correctly, and some links may be broken.
 
 🛠️ **We welcome contributions!** If you'd like to help out, head over to our [GitHub repository](https://github.com/TechReborn/Wiki) and get involved.
 
