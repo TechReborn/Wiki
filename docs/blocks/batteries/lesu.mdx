@@ -1,0 +1,32 @@
+---
+title: Lapotronic Energy Storage Unit
+---
+
+<ItemImage file="lesu" alt="Lapotronic Energy Storage Unit" size="200" />
+
+# Lapotronic Energy Storage Unit
+
+The **Lapotronic Energy Storage Unit** — *aka **LESU*** — is a battery multi-block that stores energy and charges items.  
+For more details and how to use, read [general information about Batteries](/energy/batteries).
+
+| Tier | Input           | Output                  | Storage            |
+|------|------------------|--------------------------|---------------------|
+| Low  | 32–512 E/t¹      | 64 + (x × 64) E/t²       | 4 + (x) ME²         |
+
+¹ *32 E/t base input. If ≥32 attached, increased to 128 E/t; if ≥128, increased to 512 E/t.*  
+² *x = number of LESU Storage blocks attached; e.g. 5 blocks = 384 E/t output and 24 ME storage*
+
+## Recipe
+
+<CraftingTable recipe="input air techreborn:lv_transformer air input techreborn:advanced_circuit techreborn:lsu_storage techreborn:advanced_circuit input air techreborn:mv_transformer air output techreborn:lapotronic_su"/>
+
+## Usage
+
+- While not impressive on its own, the LESU can be expanded by connecting  
+  - <McItem slug="techreborn:lesu_storage" inline={true}/>
+  to form a multi-block battery. Each attached **LESU Storage** increases energy storage and output rate.
+- Input rate has non-linear scaling:
+  - ≥ 32 LESU Storage blocks → 128 E/t input
+  - ≥ 128 LESU Storage blocks → 512 E/t input
+  - Between these thresholds, input scales linearly.
+- Limited to 536 attached storage blocks per LESU Controller due to Java’s 32-bit integer cap (max 2,147,483,647 E).
