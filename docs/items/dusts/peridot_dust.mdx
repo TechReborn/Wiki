@@ -12,11 +12,11 @@ title: Peridot Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_peridot techreborn:small_pile_of_peridot air input techreborn:small_pile_of_peridot techreborn:small_pile_of_peridot air input air air air output techreborn:peridot_dust"/>
 
-<Machine next={{input: [{id: "techreborn:peridot_ore"}], output: [{id: "techreborn:peridot_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:peridot_ore"}], output: [{id: "techreborn:peridot_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:peridot"}], output: [{id: "techreborn:peridot_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:peridot"}], output: [{id: "techreborn:peridot_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
+<Machine config={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
   {id: "techreborn:peridot_dust"},
   {id: "techreborn:calcite_dust", qty: 3},
   {id: "techreborn:flint_dust", qty: 8},
@@ -25,7 +25,7 @@ title: Peridot Dust
 
 ## Usage
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:peridot_dust", qty: 9},
   {id: "techreborn:empty_cell"}
 ], output: [
@@ -37,7 +37,7 @@ title: Peridot Dust
 
 <CraftingTable recipe="input air air air input air techreborn:peridot_dust air input air air air output techreborn:small_pile_of_peridot,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:peridot_dust", qty: 4},
   {id: "minecraft:TNT", qty: 16}
 ], output: [

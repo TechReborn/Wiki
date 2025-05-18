@@ -12,15 +12,15 @@ title: Electrum Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_electrum_dust techreborn:small_pile_of_electrum_dust air input techreborn:small_pile_of_electrum_dust techreborn:small_pile_of_electrum_dust air input air air air output techreborn:electrum_dust"/>
 
-<Machine next={{input: [{id: "techreborn:electrum_ingot"}], output: [{id: "techreborn:electrum_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:electrum_ingot"}], output: [{id: "techreborn:electrum_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:electrum_dust air input air air air output techreborn:small_pile_of_electrum_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:electrum_dust"}], output: [{id: "techreborn:electrum_ingot"}], tool: "techreborn:iron_furnace"}} />
+<Machine config={{input: [{id: "techreborn:electrum_dust"}], output: [{id: "techreborn:electrum_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<Machine next={{input: [{id: "techreborn:electrum_dust"}], output: [
+<Machine config={{input: [{id: "techreborn:electrum_dust"}], output: [
   {id: "techreborn:small_pile_of_gold_dust", qty: 2},
   {id: "techreborn:small_pile_of_silver_dust", qty: 2}
 ], tool: "techreborn:industrial_centrifuge"}} />

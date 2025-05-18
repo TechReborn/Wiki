@@ -12,11 +12,11 @@ title: Almandine Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_almandine_dust techreborn:small_pile_of_almandine_dust air input techreborn:small_pile_of_almandine_dust techreborn:small_pile_of_almandine_dust air input air air air output techreborn:almandine_dust"/>
 
-<Machine next={{input: [{id: "techreborn:red_garnet_dust", qty: 16}], output: [{id: "techreborn:pyrope_dust", qty: 3}, {id: "techreborn:almandine_dust", qty: 5}, {id: "techreborn:spessartine_dust", qty: 8}], tool: "techreborn:industrial_centrifuge"}} />
+<Machine config={{input: [{id: "techreborn:red_garnet_dust", qty: 16}], output: [{id: "techreborn:pyrope_dust", qty: 3}, {id: "techreborn:almandine_dust", qty: 5}, {id: "techreborn:spessartine_dust", qty: 8}], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-**Almandine Dust** could be further processed in <Machine next={{input: [{id: "techreborn:almandine_dust", qty: 20}, {id: "techreborn:empty_cell", qty: 9}], output: [{id: "techreborn:iron_dust", qty: 3}, {id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:compressed_air_cell", qty: 6}], tool: "techreborn:industrial_electrolyzer"}} />
+**Almandine Dust** could be further processed in <Machine config={{input: [{id: "techreborn:almandine_dust", qty: 20}, {id: "techreborn:empty_cell", qty: 9}], output: [{id: "techreborn:iron_dust", qty: 3}, {id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:compressed_air_cell", qty: 6}], tool: "techreborn:industrial_electrolyzer"}} />
 
 Besides that, **Almandine Dust** could be split into small piles using <McItem slug="minecraft:crafting_table"/>  
 <CraftingTable recipe="input air air air input air techreborn:almandine_dust air input air air air output techreborn:small_pile_of_almandine_dust,4"/>

@@ -12,14 +12,14 @@ title: Tungsten Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_tungsten_dust techreborn:small_pile_of_tungsten_dust air input techreborn:small_pile_of_tungsten_dust techreborn:small_pile_of_tungsten_dust air input air air air output techreborn:tungsten_dust"/>
 
-<Machine next={{input: [{id: "techreborn:tungsten_ingot"}], output: [{id: "techreborn:tungsten_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:tungsten_ingot"}], output: [{id: "techreborn:tungsten_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:tungsten_ore"}, {id: "techreborn:water_cell"}], output: [{id: "techreborn:tungsten_dust", qty: 2}, {id: "techreborn:small_pile_of_iron_dust", qty: 3}, {id: "techreborn:small_pile_of_manganese_dust", qty: 3}], tool: "techreborn:industrial_grinder"}} />
+<Machine config={{input: [{id: "techreborn:tungsten_ore"}, {id: "techreborn:water_cell"}], output: [{id: "techreborn:tungsten_dust", qty: 2}, {id: "techreborn:small_pile_of_iron_dust", qty: 3}, {id: "techreborn:small_pile_of_manganese_dust", qty: 3}], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:tungsten_dust air input air air air output techreborn:small_pile_of_tungsten_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:tungsten_dust"}], output: [{id: "techreborn:tungsten_ingot"}], tool: "techreborn:blast_furnace"}} />
+<Machine config={{input: [{id: "techreborn:tungsten_dust"}], output: [{id: "techreborn:tungsten_ingot"}], tool: "techreborn:blast_furnace"}} />
 
-<Machine next={{input: [{id: "techreborn:tungsten_dust"}, {id: "techreborn:empty_cell"}], output: [{id: "techreborn:wolframium_cell"}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine config={{input: [{id: "techreborn:tungsten_dust"}, {id: "techreborn:empty_cell"}], output: [{id: "techreborn:wolframium_cell"}], tool: "techreborn:industrial_electrolyzer"}} />

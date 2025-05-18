@@ -12,9 +12,9 @@ title: Cinnabar Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_cinnabar_dust techreborn:small_pile_of_cinnabar_dust air input techreborn:small_pile_of_cinnabar_dust techreborn:small_pile_of_cinnabar_dust air input air air air output techreborn:cinnabar_dust"/>
 
-<Machine next={{input: [{id: "techreborn:cinnabar_ore"}], output: [{id: "techreborn:cinnabar_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:cinnabar_ore"}], output: [{id: "techreborn:cinnabar_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:cinnabar_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -27,7 +27,7 @@ title: Cinnabar Dust
 
 <CraftingTable recipe="input air air air input air techreborn:cinnabar_dust air input air air air output techreborn:small_pile_of_cinnabar_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:cinnabar_dust"},
   {id: "techreborn:empty_cell"}
 ], output: [

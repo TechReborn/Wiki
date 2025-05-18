@@ -12,11 +12,11 @@ title: Ruby Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_ruby_dust techreborn:small_pile_of_ruby_dust air input techreborn:small_pile_of_ruby_dust techreborn:small_pile_of_ruby_dust air input air air air output techreborn:ruby_dust"/>
 
-<Machine next={{input: [{id: "techreborn:ruby_ore"}], output: [{id: "techreborn:ruby_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:ruby_ore"}], output: [{id: "techreborn:ruby_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:ruby"}], output: [{id: "techreborn:ruby_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:ruby"}], output: [{id: "techreborn:ruby_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:redstone", qty: 32},
   {id: "techreborn:empty_cell", qty: 13}
 ], output: [
@@ -30,7 +30,7 @@ title: Ruby Dust
 
 <CraftingTable recipe="input air air air input air techreborn:ruby_dust air input air air air output techreborn:small_pile_of_ruby_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:ruby_dust", qty: 4},
   {id: "minecraft:TNT", qty: 16}
 ], output: [
@@ -38,7 +38,7 @@ title: Ruby Dust
   {id: "techreborn:dark_ashes", qty: 12}
 ], tool: "techreborn:implosion_compressor"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:ruby_dust", qty: 9},
   {id: "techreborn:empty_cell", qty: 3}
 ], output: [

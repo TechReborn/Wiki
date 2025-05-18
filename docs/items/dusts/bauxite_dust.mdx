@@ -12,9 +12,9 @@ title: Bauxite Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_bauxite_dust techreborn:small_pile_of_bauxite_dust air input techreborn:small_pile_of_bauxite_dust techreborn:small_pile_of_bauxite_dust air input air air air output techreborn:bauxite_dust"/>
 
-<Machine next={{input: [{id: "techreborn:bauxite_ore"}], output: [{id: "techreborn:bauxite_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:bauxite_ore"}], output: [{id: "techreborn:bauxite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:bauxite_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -26,7 +26,7 @@ title: Bauxite Dust
 
 <CraftingTable recipe="input air air air input air techreborn:bauxite_dust air input air air air output techreborn:small_pile_of_bauxite_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:bauxite_dust", qty: 12},
   {id: "techreborn:empty_cell", qty: 8}
 ], output: [

@@ -12,13 +12,13 @@ title: Ashes
 
 <CraftingTable recipe="input techreborn:small_pile_of_ashes techreborn:small_pile_of_ashes air input techreborn:small_pile_of_ashes techreborn:small_pile_of_ashes air input air air air output techreborn:ashes"/>
 
-<Machine next={{input: [{id: "techreborn:dark_ashes", qty: 2}], output: [{id: "techreborn:ashes", qty: 2}], tool: "techreborn:industrial_centrifuge"}} />
+<Machine config={{input: [{id: "techreborn:dark_ashes", qty: 2}], output: [{id: "techreborn:ashes", qty: 2}], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
 **Ashes** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:ashes", qty: 2},
   {id: "techreborn:empty_cell"}
 ], output: [

@@ -12,11 +12,11 @@ title: Lead Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_lead_dust techreborn:small_pile_of_lead_dust air input techreborn:small_pile_of_lead_dust techreborn:small_pile_of_lead_dust air input air air air output techreborn:lead_dust"/>
 
-<Machine next={{input: [{id: "techreborn:lead_ore"}], output: [{id: "techreborn:lead_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:lead_ore"}], output: [{id: "techreborn:lead_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:lead_ingot"}], output: [{id: "techreborn:lead_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:lead_ingot"}], output: [{id: "techreborn:lead_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:lead_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -28,6 +28,6 @@ title: Lead Dust
 
 <CraftingTable recipe="input air air air input air techreborn:lead_dust air input air air air output techreborn:small_pile_of_lead_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:lead_dust"}], output: [{id: "techreborn:lead_ingot"}], tool: "techreborn:iron_furnace"}} />
+<Machine config={{input: [{id: "techreborn:lead_dust"}], output: [{id: "techreborn:lead_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<Machine next={{input: [{id: "techreborn:lead_dust", qty: 2}], output: [{id: "techreborn:small_pile_of_silver_dust"}], tool: "techreborn:industrial_centrifuge"}} />
+<Machine config={{input: [{id: "techreborn:lead_dust", qty: 2}], output: [{id: "techreborn:small_pile_of_silver_dust"}], tool: "techreborn:industrial_centrifuge"}} />

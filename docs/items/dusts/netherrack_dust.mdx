@@ -9,9 +9,9 @@ title: Netherrack Dust
 **Netherrack Dust** is obtained by grinding <McItem slug="minecraft:netherrack" /> using either  
 <McItem slug="techreborn:grinder" /> or <McItem slug="techreborn:industrial_grinder" />.
 
-<Machine next={{input: [{id: "minecraft:netherrack"}], output: [{id: "techreborn:netherrack_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:netherrack"}], output: [{id: "techreborn:netherrack_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "minecraft:netherrack"}], output: [{id: "techreborn:netherrack_dust"}], tool: "techreborn:industrial_grinder"}} />
+<Machine config={{input: [{id: "minecraft:netherrack"}], output: [{id: "techreborn:netherrack_dust"}], tool: "techreborn:industrial_grinder"}} />
 
 It can also be crafted from 4x <McItem slug="techreborn:small_pile_of_netherrack_dust" />  
 using a <McItem slug="minecraft:crafting_table" />.
@@ -20,7 +20,7 @@ using a <McItem slug="minecraft:crafting_table" />.
 
 It can be used in the <McItem slug="techreborn:industrial_centrifuge" /> to obtain:
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:netherrack_dust", qty: 16},
   {id: "techreborn:empty_cell"}
 ], output: [

@@ -12,13 +12,13 @@ title: Ender Eye Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_ender_eye_dust techreborn:small_pile_of_ender_eye_dust air input techreborn:small_pile_of_ender_eye_dust techreborn:small_pile_of_ender_eye_dust air input air air air output techreborn:ender_eye_dust"/>
 
-<Machine next={{input: [{id: "minecraft:ender_eye"}], output: [{id: "techreborn:ender_eye_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:ender_eye"}], output: [{id: "techreborn:ender_eye_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:ender_eye_dust air input air air air output techreborn:small_pile_of_ender_eye_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:ender_eye_dust", qty: 2}], output: [
+<Machine config={{input: [{id: "techreborn:ender_eye_dust", qty: 2}], output: [
   {id: "techreborn:ender_pearl_dust", qty: 2},
   {id: "minecraft:blaze_powder"}
 ], tool: "techreborn:industrial_centrifuge"}} />

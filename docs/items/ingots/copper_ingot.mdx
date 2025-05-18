@@ -24,7 +24,7 @@ The main source of **Copper Ingot** is smelting <McItem slug="minecraft:Raw_Copp
 
 ## Industrial Centrifuge recipe
 
-<Machine next={{input: [{id: "techreborn:lava_cell", qty: 16}], output: [
+<Machine config={{input: [{id: "techreborn:lava_cell", qty: 16}], output: [
   {id: "techreborn:copper_ingot", qty: 4},
   {id: "techreborn:electrum_ingot"},
   {id: "techreborn:small_pile_of_tungsten_dust"},
@@ -42,14 +42,14 @@ The main source of **Copper Ingot** is smelting <McItem slug="minecraft:Raw_Copp
 - <McItem slug="techreborn:nak_coolant_cell_360k"/>
 - <McItem slug="techreborn:copper_nugget"/>
 
-<Machine next={{input: [{id: "techreborn:copper_ingot", qty: 3}, {id: "techreborn:zinc_ingot"}], output: [{id: "techreborn:brass_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
+<Machine config={{input: [{id: "techreborn:copper_ingot", qty: 3}, {id: "techreborn:zinc_ingot"}], output: [{id: "techreborn:brass_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
 
-<Machine next={{input: [{id: "techreborn:copper_ingot", qty: 3}, {id: "techreborn:tin_ingot"}], output: [{id: "techreborn:bronze_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
+<Machine config={{input: [{id: "techreborn:copper_ingot", qty: 3}, {id: "techreborn:tin_ingot"}], output: [{id: "techreborn:bronze_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
 
-<Machine next={{input: [{id: "techreborn:copper_ingot"}], output: [{id: "techreborn:copper_plate"}], tool: "techreborn:compressor"}} />
+<Machine config={{input: [{id: "techreborn:copper_ingot"}], output: [{id: "techreborn:copper_plate"}], tool: "techreborn:compressor"}} />
 
-<Machine next={{input: [{id: "techreborn:mercury"}, {id: "techreborn:copper_ingot"}], output: [{id: "minecraft:Raw_Copper"}], tool: "techreborn:industrial_grinder"}} />
+<Machine config={{input: [{id: "techreborn:mercury"}, {id: "techreborn:copper_ingot"}], output: [{id: "minecraft:Raw_Copper"}], tool: "techreborn:industrial_grinder"}} />
 
 <Machine recipe="input techreborn:nickel_ingot techreborn:copper_ingot techreborn:nickel_ingot input techreborn:copper_ingot air techreborn:copper_ingot input techreborn:nickel_ingot techreborn:copper_ingot techreborn:nickel_ingot output techreborn:cupronickel_heating_coil,3 tool techreborn:rolling_machine" />
 
-<Machine next={{input: [{id: "techreborn:copper_ingot"}], output: [{id: "techreborn:copper_cable", qty: 6}], tool: "techreborn:wire_mill"}} />
+<Machine config={{input: [{id: "techreborn:copper_ingot"}], output: [{id: "techreborn:copper_cable", qty: 6}], tool: "techreborn:wire_mill"}} />

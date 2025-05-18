@@ -12,11 +12,11 @@ title: Coal Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_coal_dust techreborn:small_pile_of_coal_dust air input techreborn:small_pile_of_coal_dust techreborn:small_pile_of_coal_dust air input air air air output techreborn:coal_dust"/>
 
-<Machine next={{input: [{id: "minecraft:coal"}], output: [{id: "techreborn:coal_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:coal"}], output: [{id: "techreborn:coal_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "minecraft:coal_ore"}], output: [{id: "techreborn:coal_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:coal_ore"}], output: [{id: "techreborn:coal_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:soul_sand", qty: 16},
   {id: "techreborn:empty_cell"}
 ], output: [
@@ -26,7 +26,7 @@ title: Coal Dust
   {id: "techreborn:oil_cell"}
 ], tool: "techreborn:industrial_centrifuge"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:netherrack_dust", qty: 16},
   {id: "techreborn:empty_cell"}
 ], output: [
@@ -50,7 +50,7 @@ title: Coal Dust
 
 <CraftingTable recipe="input techreborn:coal_dust techreborn:coal_dust air input techreborn:coal_dust techreborn:coal_dust air input air air air output techreborn:carbon_fiber"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:iron_ingot"},
   {id: "techreborn:coal_dust", qty: 2}
 ], output: [
@@ -59,7 +59,7 @@ title: Coal Dust
 ], tool: "techreborn:blast_furnace"}} />
 _This requires 1000 heat._
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:coal_dust"},
   {id: "techreborn:empty_cell", qty: 2}
 ], output: [

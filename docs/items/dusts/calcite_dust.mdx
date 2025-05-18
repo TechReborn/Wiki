@@ -12,19 +12,19 @@ title: Calcite Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_calcite_dust techreborn:small_pile_of_calcite_dust air input techreborn:small_pile_of_calcite_dust techreborn:small_pile_of_calcite_dust air input air air air output techreborn:calcite_dust"/>
 
-<Machine next={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
+<Machine config={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
   {id: "techreborn:peridot_dust"},
   {id: "techreborn:calcite_dust", qty: 3},
   {id: "techreborn:flint_dust", qty: 8},
   {id: "techreborn:dark_ashes", qty: 4}
 ], tool: "techreborn:industrial_centrifuge"}} />
 
-<Machine next={{input: [{id: "techreborn:marble_dust"}], output: [
+<Machine config={{input: [{id: "techreborn:marble_dust"}], output: [
   {id: "techreborn:magnesium_dust"},
   {id: "techreborn:calcite_dust", qty: 7}
 ], tool: "techreborn:industrial_centrifuge"}} />
 
-<Machine next={{input: [{id: "techreborn:calciumcarbonate_cell"}], output: [
+<Machine config={{input: [{id: "techreborn:calciumcarbonate_cell"}], output: [
   {id: "techreborn:calcite_dust"},
   {id: "techreborn:empty_cell"}
 ], tool: "techreborn:industrial_centrifuge"}} />
@@ -33,7 +33,7 @@ title: Calcite Dust
 
 <CraftingTable recipe="input air air air input air techreborn:calcite_dust air input air air air output techreborn:small_pile_of_calcite_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:iron_ore"},
   {id: "techreborn:calcite_dust"}
 ], output: [
@@ -41,7 +41,7 @@ title: Calcite Dust
   {id: "techreborn:dark_ashes"}
 ], tool: "techreborn:blast_furnace"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:pyrite_ore"},
   {id: "techreborn:calcite_dust"}
 ], output: [

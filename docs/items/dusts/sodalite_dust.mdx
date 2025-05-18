@@ -12,9 +12,9 @@ title: Sodalite Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_sodalite_dust techreborn:small_pile_of_sodalite_dust air input techreborn:small_pile_of_sodalite_dust techreborn:small_pile_of_sodalite_dust air input air air air output techreborn:sodalite_dust"/>
 
-<Machine next={{input: [{id: "techreborn:sodalite_ore"}], output: [{id: "techreborn:sodalite_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:sodalite_ore"}], output: [{id: "techreborn:sodalite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sodalite_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -26,7 +26,7 @@ title: Sodalite Dust
 
 <CraftingTable recipe="input air air air input air techreborn:sodalite_dust air input air air air output techreborn:small_pile_of_sodalite_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sodalite_dust", qty: 23},
   {id: "techreborn:empty_cell", qty: 8}
 ], output: [

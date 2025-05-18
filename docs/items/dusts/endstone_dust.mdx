@@ -12,14 +12,14 @@ title: Endstone Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_endstone_dust techreborn:small_pile_of_endstone_dust air input techreborn:small_pile_of_endstone_dust techreborn:small_pile_of_endstone_dust air input air air air output techreborn:endstone_dust"/>
 
-<Machine next={{input: [{id: "minecraft:end_stone"}], output: [{id: "techreborn:endstone_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:end_stone"}], output: [{id: "techreborn:endstone_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:end_stone"},
   {id: "techreborn:water_cell"}
 ], output: [{id: "techreborn:endstone_dust", qty: 2}], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:end_stone_bricks"},
   {id: "techreborn:water_cell"}
 ], output: [{id: "techreborn:endstone_dust", qty: 4}], tool: "techreborn:industrial_grinder"}} />
@@ -28,7 +28,7 @@ title: Endstone Dust
 
 <CraftingTable recipe="input air air air input air techreborn:endstone_dust air input air air air output techreborn:small_pile_of_endstone_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:endstone_dust", qty: 16},
   {id: "techreborn:empty_cell", qty: 2}
 ], output: [

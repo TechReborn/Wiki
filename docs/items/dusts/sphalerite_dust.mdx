@@ -12,9 +12,9 @@ title: Sphalerite Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_sphalerite_dust techreborn:small_pile_of_sphalerite_dust air input techreborn:small_pile_of_sphalerite_dust techreborn:small_pile_of_sphalerite_dust air input air air air output techreborn:sphalerite_dust"/>
 
-<Machine next={{input: [{id: "techreborn:sphalerite_ore"}], output: [{id: "techreborn:sphalerite_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:sphalerite_ore"}], output: [{id: "techreborn:sphalerite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sphalerite_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -23,7 +23,7 @@ title: Sphalerite Dust
   {id: "techreborn:zinc_dust"}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sphalerite_ore"},
   {id: "techreborn:sodiumpersulfate_cell"}
 ], output: [
@@ -36,7 +36,7 @@ title: Sphalerite Dust
 
 <CraftingTable recipe="input air air air input air techreborn:sphalerite_dust air input air air air output techreborn:small_pile_of_sphalerite_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:sphalerite_dust", qty: 2}], output: [
+<Machine config={{input: [{id: "techreborn:sphalerite_dust", qty: 2}], output: [
   {id: "techreborn:zinc_dust"},
   {id: "techreborn:sulfur_dust"}
 ], tool: "techreborn:industrial_electrolyzer"}} />

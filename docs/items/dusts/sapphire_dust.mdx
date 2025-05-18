@@ -12,15 +12,15 @@ title: Sapphire Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_sapphire_dust techreborn:small_pile_of_sapphire_dust air input techreborn:small_pile_of_sapphire_dust techreborn:small_pile_of_sapphire_dust air input air air air output techreborn:sapphire_dust"/>
 
-<Machine next={{input: [{id: "techreborn:sapphire_ore"}], output: [{id: "techreborn:sapphire_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:sapphire_ore"}], output: [{id: "techreborn:sapphire_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:sapphire"}], output: [{id: "techreborn:sapphire_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:sapphire"}], output: [{id: "techreborn:sapphire_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:sapphire_dust air input air air air output techreborn:small_pile_of_sapphire_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sapphire_dust", qty: 4},
   {id: "minecraft:TNT", qty: 16}
 ], output: [
@@ -28,7 +28,7 @@ title: Sapphire Dust
   {id: "techreborn:dark_ashes", qty: 12}
 ], tool: "techreborn:implosion_compressor"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sapphire_dust", qty: 8},
   {id: "techreborn:empty_cell", qty: 3}
 ], output: [

@@ -12,9 +12,9 @@ title: Chrome Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_chrome_dust techreborn:small_pile_of_chrome_dust air input techreborn:small_pile_of_chrome_dust techreborn:small_pile_of_chrome_dust air input air air air output techreborn:chrome_dust"/>
 
-<Machine next={{input: [{id: "techreborn:chrome_ingot"}], output: [{id: "techreborn:chrome_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:chrome_ingot"}], output: [{id: "techreborn:chrome_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:ruby_dust", qty: 9},
   {id: "techreborn:empty_cell", qty: 3}
 ], output: [
@@ -23,7 +23,7 @@ title: Chrome Dust
   {id: "techreborn:compressed_air_cell", qty: 3}
 ], tool: "techreborn:industrial_electrolyzer"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:uvarovite_dust", qty: 20},
   {id: "techreborn:empty_cell", qty: 12}
 ], output: [
@@ -37,5 +37,5 @@ title: Chrome Dust
 
 <CraftingTable recipe="input air air air input air techreborn:chrome_dust air input air air air output techreborn:small_pile_of_chrome_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:chrome_dust"}], output: [{id: "techreborn:chrome_ingot"}], tool: "techreborn:blast_furnace"}} />
+<Machine config={{input: [{id: "techreborn:chrome_dust"}], output: [{id: "techreborn:chrome_ingot"}], tool: "techreborn:blast_furnace"}} />
 _This operation requires 1700 heat._

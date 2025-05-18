@@ -1,8 +1,8 @@
 import React from 'react';
 import McItem from '@site/src/components/McItem';
 
-// recipe is the legacy recipe, next is the next generation parameter passing method
-/* Next Parameter Format:
+// recipe is the legacy recipe, config is the config generation parameter passing method
+/* Config Parameter Format:
 	input: array
 		item: object
 			id: string
@@ -13,19 +13,19 @@ import McItem from '@site/src/components/McItem';
 			qty?: mixed (optional)
 	tool: string
 */
-export default function Machine({recipe, next = null}) {
-	if (!next) {
-		// didn't pass next, convert recipe to next
-		next = convertRecipeToNext(recipe);
+export default function Machine({recipe, config = null}) {
+	if (!config) {
+		// didn't pass config, convert recipe to config
+		config = convertRecipeToConfig(recipe);
 	}
 
-	const styles = mapToolToStyles(next.tool);
+	const styles = mapToolToStyles(config.tool);
 	return (
 		<span>
-			<McItem slug={next.tool} />
+			<McItem slug={config.tool} />
 			<div class="crafting">
 			<div class="board" style={styles.input}>
-				{next.input.map((item, idx) => (
+				{config.input.map((item, idx) => (
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem
 							slug={item.id}
@@ -39,7 +39,7 @@ export default function Machine({recipe, next = null}) {
 			<div class="arrow"></div>
 
 			<div class="board" style={styles.output}>
-				{next.output.map((item, idx) => (
+				{config.output.map((item, idx) => (
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem
 							slug={item.id}
@@ -85,7 +85,7 @@ function mapToolToStyles(tool) {
 	return styles;
 }
 
-function convertRecipeToNext(recipe) {
+function convertRecipeToConfig(recipe) {
 	const input = [];
 	const output = [];
 

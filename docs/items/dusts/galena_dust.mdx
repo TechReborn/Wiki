@@ -12,9 +12,9 @@ title: Galena Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_galena_dust techreborn:small_pile_of_galena_dust air input techreborn:small_pile_of_galena_dust techreborn:small_pile_of_galena_dust air input air air air output techreborn:galena_dust"/>
 
-<Machine next={{input: [{id: "techreborn:galena_ore"}], output: [{id: "techreborn:galena_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:galena_ore"}], output: [{id: "techreborn:galena_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:galena_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -22,7 +22,7 @@ title: Galena Dust
   {id: "techreborn:sulfur_dust"}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:galena_ore"},
   {id: "techreborn:mercury_cell"}
 ], output: [
@@ -35,13 +35,13 @@ title: Galena Dust
 
 <CraftingTable recipe="input air air air input air techreborn:galena_dust air input air air air output techreborn:small_pile_of_galena_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [
+<Machine config={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [
   {id: "techreborn:silver_ingot"},
   {id: "techreborn:lead_ingot"}
 ], tool: "techreborn:blast_furnace"}} />
 _Requires 1500 heat_
 
-<Machine next={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [
+<Machine config={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [
   {id: "techreborn:small_pile_of_silver_dust", qty: 3},
   {id: "techreborn:small_pile_of_lead_dust", qty: 3},
   {id: "techreborn:small_pile_of_sulfur_dust", qty: 2}

@@ -12,15 +12,15 @@ title: Emerald Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_emerald_dust techreborn:small_pile_of_emerald_dust air input techreborn:small_pile_of_emerald_dust techreborn:small_pile_of_emerald_dust air input air air air output techreborn:emerald_dust"/>
 
-<Machine next={{input: [{id: "minecraft:emerald"}], output: [{id: "techreborn:emerald_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:emerald"}], output: [{id: "techreborn:emerald_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:emerald_dust air input air air air output techreborn:small_pile_of_emerald_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:emerald_dust"}], output: [{id: "techreborn:emerald_plate"}], tool: "techreborn:compressor"}} />
+<Machine config={{input: [{id: "techreborn:emerald_dust"}], output: [{id: "techreborn:emerald_plate"}], tool: "techreborn:compressor"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:emerald_dust", qty: 4},
   {id: "minecraft:TNT", qty: 16}
 ], output: [
@@ -28,7 +28,7 @@ title: Emerald Dust
   {id: "techreborn:dark_ashes", qty: 12}
 ], tool: "techreborn:implosion_compressor"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:emerald_dust", qty: 4},
   {id: "minecraft:end_crystal", qty: 4}
 ], output: [
@@ -36,7 +36,7 @@ title: Emerald Dust
   {id: "techreborn:ender_eye_small_dust", qty: 4}
 ], tool: "techreborn:implosion_compressor"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:emerald_dust", qty: 29},
   {id: "techreborn:empty_cell", qty: 18}
 ], output: [

@@ -17,8 +17,8 @@ title: Silver Ingot
 <Machine recipe="input techreborn:silver_ore output techreborn:silver_ingot tool techreborn:iron_furnace" />
 <Machine recipe="input techreborn:deepslate_silver_ore output techreborn:silver_ingot tool techreborn:iron_furnace" />
 
-<Machine next={{input: [{id: "techreborn:galena_small_dust", qty: 8}], output: [{id: "techreborn:silver_ingot"}, {id: "techreborn:lead_ingot"}], tool: "techreborn:blast_furnace"}} />
-<Machine next={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [{id: "techreborn:silver_ingot"}, {id: "techreborn:lead_ingot"}], tool: "techreborn:blast_furnace"}} />
+<Machine config={{input: [{id: "techreborn:galena_small_dust", qty: 8}], output: [{id: "techreborn:silver_ingot"}, {id: "techreborn:lead_ingot"}], tool: "techreborn:blast_furnace"}} />
+<Machine config={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [{id: "techreborn:silver_ingot"}, {id: "techreborn:lead_ingot"}], tool: "techreborn:blast_furnace"}} />
 
 <img src="/img/mods/techreborn/silver_chestplate.png" width="24" alt="Silver Armor"/> <strong><a href="/items/armor/silver_armor">Silver Armor</a></strong> recycling
 
@@ -35,6 +35,6 @@ title: Silver Ingot
 - <McItem slug="techreborn:silver_leggings"/>
 - <McItem slug="techreborn:silver_boots"/>
 
-<Machine next={{input: [{id: "techreborn:silver_ingot"}], output: [{id: "techreborn:silver_plate"}], tool: "techreborn:compressor"}} />
+<Machine config={{input: [{id: "techreborn:silver_ingot"}], output: [{id: "techreborn:silver_plate"}], tool: "techreborn:compressor"}} />
 
-<Machine next={{input: [{id: "minecraft:gold_ingot"}, {id: "techreborn:silver_ingot"}], output: [{id: "techreborn:electrum_ingot", qty: 2}], tool: "techreborn:alloy_smelter"}} />
+<Machine config={{input: [{id: "minecraft:gold_ingot"}, {id: "techreborn:silver_ingot"}], output: [{id: "techreborn:electrum_ingot", qty: 2}], tool: "techreborn:alloy_smelter"}} />

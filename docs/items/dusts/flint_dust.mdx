@@ -12,7 +12,7 @@ title: Flint Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_flint_dust techreborn:small_pile_of_flint_dust air input techreborn:small_pile_of_flint_dust techreborn:small_pile_of_flint_dust air input air air air output techreborn:flint_dust"/>
 
-<Machine next={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
+<Machine config={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
   {id: "techreborn:peridot_dust"},
   {id: "techreborn:calcite_dust", qty: 3},
   {id: "techreborn:flint_dust", qty: 8},
@@ -23,7 +23,7 @@ title: Flint Dust
 
 **Flint dust** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:flint_dust", qty: 8},
   {id: "techreborn:empty_cell", qty: 2}
 ], output: [

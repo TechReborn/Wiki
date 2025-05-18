@@ -12,10 +12,10 @@ title: Tin Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_tin_dust techreborn:small_pile_of_tin_dust air input techreborn:small_pile_of_tin_dust techreborn:small_pile_of_tin_dust air input air air air output techreborn:tin_dust"/>
 
-<Machine next={{input: [{id: "techreborn:tin_ore"}], output: [{id: "techreborn:tin_dust", qty: 2}], tool: "techreborn:grinder"}} />
-<Machine next={{input: [{id: "techreborn:tin_ingot"}], output: [{id: "techreborn:tin_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:tin_ore"}], output: [{id: "techreborn:tin_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:tin_ingot"}], output: [{id: "techreborn:tin_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:tin_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -24,7 +24,7 @@ title: Tin Dust
   {id: "techreborn:small_pile_of_zinc_dust"}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:tin_ore"},
   {id: "techreborn:sodiumpersulfate_cell"}
 ], output: [
@@ -37,23 +37,23 @@ title: Tin Dust
 
 <CraftingTable recipe="input air air air input air techreborn:tin_dust air input air air air output techreborn:small_pile_of_tin_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:tin_dust"}], output: [{id: "techreborn:tin_ingot"}], tool: "techreborn:iron_furnace"}} />
+<Machine config={{input: [{id: "techreborn:tin_dust"}], output: [{id: "techreborn:tin_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:copper_dust", qty: 3},
   {id: "techreborn:tin_dust"}
 ], output: [
   {id: "techreborn:bronze_ingot", qty: 4}
 ], tool: "techreborn:alloy_smelter"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:copper_ingot", qty: 3},
   {id: "techreborn:tin_dust"}
 ], output: [
   {id: "techreborn:bronze_ingot", qty: 4}
 ], tool: "techreborn:alloy_smelter"}} />
 
-<Machine next={{input: [{id: "techreborn:tin_dust", qty: 2}], output: [
+<Machine config={{input: [{id: "techreborn:tin_dust", qty: 2}], output: [
   {id: "techreborn:small_pile_of_zinc_dust"},
   {id: "techreborn:small_pile_of_iron_dust"}
 ], tool: "techreborn:industrial_centrifuge"}} />

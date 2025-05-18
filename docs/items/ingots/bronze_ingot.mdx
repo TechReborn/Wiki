@@ -13,7 +13,7 @@ title: Bronze Ingot
 <CraftingTable recipe="input techreborn:bronze_nugget techreborn:bronze_nugget techreborn:bronze_nugget input techreborn:bronze_nugget techreborn:bronze_nugget techreborn:bronze_nugget input techreborn:bronze_nugget techreborn:bronze_nugget techreborn:bronze_nugget output techreborn:bronze_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:bronze_storage_block air input air air air output techreborn:bronze_ingot,9"/>
 
-<Machine next={{input: [{id: "minecraft:copper_ingot", qty: 3}, {id: "techreborn:tin_ingot"}], output: [{id: "techreborn:bronze_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
+<Machine config={{input: [{id: "minecraft:copper_ingot", qty: 3}, {id: "techreborn:tin_ingot"}], output: [{id: "techreborn:bronze_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
 
 <Machine recipe="input techreborn:bronze_dust output techreborn:bronze_ingot tool techreborn:iron_furnace" />
 
@@ -40,6 +40,6 @@ Recycling of <McItem slug="techreborn:bronze_pickaxe"/>, <McItem slug="techrebor
 - <McItem slug="techreborn:bronze_leggings"/>
 - <McItem slug="techreborn:bronze_boots"/>
 
-<Machine next={{input: [{id: "techreborn:bronze_ingot"}], output: [{id: "techreborn:bronze_plate"}], tool: "techreborn:compressor"}} />
+<Machine config={{input: [{id: "techreborn:bronze_ingot"}], output: [{id: "techreborn:bronze_plate"}], tool: "techreborn:compressor"}} />
 
-<Machine next={{input: [{id: "techreborn:bronze_ingot"}], output: [{id: "techreborn:bronze_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:bronze_ingot"}], output: [{id: "techreborn:bronze_dust"}], tool: "techreborn:grinder"}} />

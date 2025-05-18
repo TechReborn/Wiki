@@ -12,9 +12,9 @@ title: Ender Pearl Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_ender_pearl_dust techreborn:small_pile_of_ender_pearl_dust air input techreborn:small_pile_of_ender_pearl_dust techreborn:small_pile_of_ender_pearl_dust air input air air air output techreborn:ender_pearl_dust"/>
 
-<Machine next={{input: [{id: "minecraft:ender_pearl"}], output: [{id: "techreborn:ender_pearl_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:ender_pearl"}], output: [{id: "techreborn:ender_pearl_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:ender_eye_dust", qty: 2}], output: [
+<Machine config={{input: [{id: "techreborn:ender_eye_dust", qty: 2}], output: [
   {id: "techreborn:ender_pearl_dust", qty: 2},
   {id: "minecraft:blaze_powder"}
 ], tool: "techreborn:industrial_centrifuge"}} />
@@ -23,7 +23,7 @@ title: Ender Pearl Dust
 
 <CraftingTable recipe="input air air air input air techreborn:ender_pearl_dust air input air air air output techreborn:small_pile_of_ender_pearl_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:ender_pearl_dust", qty: 16},
   {id: "techreborn:empty_cell", qty: 16}
 ], output: [

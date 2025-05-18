@@ -12,7 +12,7 @@ title: Sulfur Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_sulfur_dust techreborn:small_pile_of_sulfur_dust air input techreborn:small_pile_of_sulfur_dust techreborn:small_pile_of_sulfur_dust air input air air air output techreborn:sulfur_dust"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:galena_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -20,7 +20,7 @@ title: Sulfur Dust
   {id: "techreborn:sulfur_dust"}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:galena_ore"},
   {id: "techreborn:mercury_cell"}
 ], output: [
@@ -29,7 +29,7 @@ title: Sulfur Dust
   {id: "techreborn:silver_dust"}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:pyrite_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -37,28 +37,28 @@ title: Sulfur Dust
   {id: "techreborn:sulfur_dust", qty: 2}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sulfur_cell"}
 ], output: [
   {id: "techreborn:sulfur_dust"},
   {id: "techreborn:empty_cell"}
 ], tool: "techreborn:industrial_centrifuge"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:blaze_powder"}
 ], output: [
   {id: "techreborn:dark_ashes"},
   {id: "techreborn:sulfur_dust"}
 ], tool: "techreborn:industrial_electrolyzer"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:pyrite_dust", qty: 3}
 ], output: [
   {id: "techreborn:iron_dust"},
   {id: "techreborn:sulfur_dust", qty: 2}
 ], tool: "techreborn:industrial_electrolyzer"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:cinnabar_dust"},
   {id: "techreborn:empty_cell"}
 ], output: [
@@ -66,7 +66,7 @@ title: Sulfur Dust
   {id: "techreborn:sulfur_dust"}
 ], tool: "techreborn:industrial_electrolyzer"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sphalerite_dust", qty: 2}
 ], output: [
   {id: "techreborn:zinc_dust"},

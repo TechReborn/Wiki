@@ -12,9 +12,9 @@ title: Diamond Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_diamond_dust techreborn:small_pile_of_diamond_dust air input techreborn:small_pile_of_diamond_dust techreborn:small_pile_of_diamond_dust air input air air air output techreborn:diamond_dust"/>
 
-<Machine next={{input: [{id: "minecraft:diamond_ore"}], output: [{id: "techreborn:diamond_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:diamond_ore"}], output: [{id: "techreborn:diamond_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "minecraft:diamond"}], output: [{id: "techreborn:diamond_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:diamond"}], output: [{id: "techreborn:diamond_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
@@ -40,7 +40,7 @@ title: Diamond Dust
 
 <CraftingTable recipe="input minecraft:glass minecraft:glass minecraft:glass input techreborn:electrum_ingot techreborn:diamond_dust techreborn:electrum_ingot input minecraft:glass minecraft:glass minecraft:glass output techreborn:glass_fiber_cable,8"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:diamond_dust"},
   {id: "minecraft:TNT", qty: 16}
 ], output: [

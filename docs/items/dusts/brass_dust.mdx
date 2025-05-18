@@ -12,17 +12,17 @@ title: Brass Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_brass_dust techreborn:small_pile_of_brass_dust air input techreborn:small_pile_of_brass_dust techreborn:small_pile_of_brass_dust air input air air air output techreborn:brass_dust"/>
 
-<Machine next={{input: [{id: "techreborn:brass_ingot"}], output: [{id: "techreborn:brass_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:brass_ingot"}], output: [{id: "techreborn:brass_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:brass_dust air input air air air output techreborn:small_pile_of_brass_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:brass_dust"}], output: [
+<Machine config={{input: [{id: "techreborn:brass_dust"}], output: [
   {id: "techreborn:small_pile_of_copper_dust", qty: 3},
   {id: "techreborn:small_pile_of_zinc_dust"}
 ], tool: "techreborn:industrial_centrifuge"}} />
 
 ### Smelting
 
-<Machine next={{input: [{id: "techreborn:brass_dust"}], output: [{id: "techreborn:brass_ingot"}], tool: "techreborn:iron_furnace"}} />
+<Machine config={{input: [{id: "techreborn:brass_dust"}], output: [{id: "techreborn:brass_ingot"}], tool: "techreborn:iron_furnace"}} />

@@ -12,13 +12,13 @@ title: Obsidian Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_obsidian_dust techreborn:small_pile_of_obsidian_dust air input techreborn:small_pile_of_obsidian_dust techreborn:small_pile_of_obsidian_dust air input air air air output techreborn:obsidian_dust"/>
 
-<Machine next={{input: [{id: "minecraft:obsidian"}], output: [{id: "techreborn:obsidian_dust", qty: 4}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:obsidian"}], output: [{id: "techreborn:obsidian_dust", qty: 4}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:obsidian_dust air input air air air output techreborn:small_pile_of_obsidian_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:obsidian_dust", qty: 4},
   {id: "techreborn:empty_cell", qty: 3}
 ], output: [

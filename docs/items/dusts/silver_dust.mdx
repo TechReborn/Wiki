@@ -12,11 +12,11 @@ title: Silver Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_silver_dust techreborn:small_pile_of_silver_dust air input techreborn:small_pile_of_silver_dust techreborn:small_pile_of_silver_dust air input air air air output techreborn:silver_dust"/>
 
-<Machine next={{input: [{id: "techreborn:silver_ore"}], output: [{id: "techreborn:silver_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:silver_ore"}], output: [{id: "techreborn:silver_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:silver_ingot"}], output: [{id: "techreborn:silver_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:silver_ingot"}], output: [{id: "techreborn:silver_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:silver_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -24,7 +24,7 @@ title: Silver Dust
   {id: "techreborn:small_pile_of_galena_dust", qty: 2}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:galena_ore"},
   {id: "techreborn:mercury_cell"}
 ], output: [
@@ -37,6 +37,6 @@ title: Silver Dust
 
 <CraftingTable recipe="input air air air input air techreborn:silver_dust air input air air air output techreborn:small_pile_of_silver_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:silver_dust"}], output: [{id: "techreborn:silver_ingot"}], tool: "techreborn:iron_furnace"}} />
+<Machine config={{input: [{id: "techreborn:silver_dust"}], output: [{id: "techreborn:silver_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<Machine next={{input: [{id: "techreborn:silver_dust", qty: 2}], output: [{id: "techreborn:small_pile_of_lead_dust"}], tool: "techreborn:industrial_centrifuge"}} />
+<Machine config={{input: [{id: "techreborn:silver_dust", qty: 2}], output: [{id: "techreborn:small_pile_of_lead_dust"}], tool: "techreborn:industrial_centrifuge"}} />

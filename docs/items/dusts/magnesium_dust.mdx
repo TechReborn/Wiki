@@ -12,12 +12,12 @@ title: Magnesium Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_magnesium_dust techreborn:small_pile_of_magnesium_dust air input techreborn:small_pile_of_magnesium_dust techreborn:small_pile_of_magnesium_dust air input air air air output techreborn:magnesium_dust"/>
 
-<Machine next={{input: [{id: "techreborn:marble_dust"}], output: [
+<Machine config={{input: [{id: "techreborn:marble_dust"}], output: [
   {id: "techreborn:magnesium_dust"},
   {id: "techreborn:calcite_dust", qty: 7}
 ], tool: "techreborn:industrial_centrifuge"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:peridot_dust", qty: 9},
   {id: "techreborn:empty_cell"}
 ], output: [
@@ -27,7 +27,7 @@ title: Magnesium Dust
   {id: "techreborn:compressed_air_cell", qty: 2}
 ], tool: "techreborn:industrial_electrolyzer"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:pyrope_dust", qty: 20},
   {id: "techreborn:empty_cell", qty: 9}
 ], output: [

@@ -12,13 +12,13 @@ title: Clay Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_clay_dust techreborn:small_pile_of_clay_dust air input techreborn:small_pile_of_clay_dust techreborn:small_pile_of_clay_dust air input air air air output techreborn:clay_dust"/>
 
-<Machine next={{input: [{id: "minecraft:clay_item"}], output: [{id: "techreborn:clay_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "minecraft:clay_item"}], output: [{id: "techreborn:clay_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:clay_dust air input air air air output techreborn:small_pile_of_clay_dust,4"/>
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:clay_dust", qty: 8},
   {id: "techreborn:empty_cell", qty: 5}
 ], output: [

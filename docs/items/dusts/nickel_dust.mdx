@@ -14,11 +14,11 @@ Before the player makes the <McItem slug="techreborn:industrial_grinder" />, the
 
 <CraftingTable recipe="input techreborn:small_pile_of_nickel_dust techreborn:small_pile_of_nickel_dust air input techreborn:small_pile_of_nickel_dust techreborn:small_pile_of_nickel_dust air input air air air output techreborn:nickel_dust"/>
 
-<Machine next={{input: [{id: "techreborn:nickel_ingot"}], output: [{id: "techreborn:nickel_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:nickel_ingot"}], output: [{id: "techreborn:nickel_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [{id: "techreborn:nickel_storage_block"}], output: [{id: "techreborn:nickel_dust", qty: 9}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:nickel_storage_block"}], output: [{id: "techreborn:nickel_dust", qty: 9}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sheldonite_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -27,7 +27,7 @@ Before the player makes the <McItem slug="techreborn:industrial_grinder" />, the
   {id: "techreborn:iridium_nugget", qty: 2}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sheldonite_ore"},
   {id: "techreborn:mercury_cell"}
 ], output: [
@@ -36,7 +36,7 @@ Before the player makes the <McItem slug="techreborn:industrial_grinder" />, the
   {id: "techreborn:iridium_nugget", qty: 2}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:gold_ore"},
   {id: "techreborn:sodium_persulfate_cell"}
 ], output: [
@@ -45,7 +45,7 @@ Before the player makes the <McItem slug="techreborn:industrial_grinder" />, the
   {id: "techreborn:nickel_dust"}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:copper_ore"},
   {id: "techreborn:sodium_persulfate_cell"}
 ], output: [
@@ -58,9 +58,9 @@ Before the player makes the <McItem slug="techreborn:industrial_grinder" />, the
 
 <CraftingTable recipe="input air air air input air techreborn:nickel_dust air input air air air output techreborn:small_pile_of_nickel_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:nickel_dust"}], output: [{id: "techreborn:nickel_ingot"}], tool: "techreborn:iron_furnace"}} />
+<Machine config={{input: [{id: "techreborn:nickel_dust"}], output: [{id: "techreborn:nickel_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<Machine next={{input: [{id: "techreborn:nickel_dust", qty: 3}], output: [
+<Machine config={{input: [{id: "techreborn:nickel_dust", qty: 3}], output: [
   {id: "minecraft:iron_nugget", qty: 3},
   {id: "minecraft:gold_nugget", qty: 3},
   {id: "techreborn:copper_nugget", qty: 3}

@@ -12,9 +12,9 @@ title: Platinum Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_platinum_dust techreborn:small_pile_of_platinum_dust air input techreborn:small_pile_of_platinum_dust techreborn:small_pile_of_platinum_dust air input air air air output techreborn:platinum_dust"/>
 
-<Machine next={{input: [{id: "techreborn:platinum_ingot"}], output: [{id: "techreborn:platinum_dust"}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:platinum_ingot"}], output: [{id: "techreborn:platinum_dust"}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:iridium_ore"},
   {id: "techreborn:mercury_cell"}
 ], output: [
@@ -22,7 +22,7 @@ title: Platinum Dust
   {id: "techreborn:platinum_dust"}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sheldonite_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -31,7 +31,7 @@ title: Platinum Dust
   {id: "techreborn:iridium_nugget", qty: 2}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:sheldonite_ore"},
   {id: "techreborn:mercury_cell"}
 ], output: [
@@ -40,7 +40,7 @@ title: Platinum Dust
   {id: "techreborn:iridium_nugget", qty: 2}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:wolframium_cell"},
   {id: "techreborn:beryllium_cell"}
 ], output: [{id: "techreborn:platinum_dust"}], tool: "techreborn:fusion_control_computer"}} />
@@ -49,9 +49,9 @@ title: Platinum Dust
 
 <CraftingTable recipe="input air air air input air techreborn:platinum_dust air input air air air output techreborn:small_pile_of_platinum_dust,4"/>
 
-<Machine next={{input: [{id: "techreborn:platinum_dust"}], output: [{id: "techreborn:platinum_ingot"}], tool: "techreborn:iron_furnace"}} />
+<Machine config={{input: [{id: "techreborn:platinum_dust"}], output: [{id: "techreborn:platinum_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<Machine next={{input: [{id: "techreborn:platinum_dust", qty: 2}], output: [
+<Machine config={{input: [{id: "techreborn:platinum_dust", qty: 2}], output: [
   {id: "techreborn:iridium_nugget", qty: 2},
   {id: "techreborn:small_pile_of_nickel_dust"}
 ], tool: "techreborn:industrial_centrifuge"}} />

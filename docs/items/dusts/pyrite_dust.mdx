@@ -12,9 +12,9 @@ title: Pyrite Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_pyrite_dust techreborn:small_pile_of_pyrite_dust air input techreborn:small_pile_of_pyrite_dust techreborn:small_pile_of_pyrite_dust air input air air air output techreborn:pyrite_dust"/>
 
-<Machine next={{input: [{id: "techreborn:pyrite_ore"}], output: [{id: "techreborn:pyrite_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:pyrite_ore"}], output: [{id: "techreborn:pyrite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "techreborn:pyrite_ore"},
   {id: "techreborn:water_cell"}
 ], output: [
@@ -22,7 +22,7 @@ title: Pyrite Dust
   {id: "techreborn:sulfur_dust", qty: 2}
 ], tool: "techreborn:industrial_grinder"}} />
 
-<Machine next={{input: [
+<Machine config={{input: [
   {id: "minecraft:redstone", qty: 32},
   {id: "techreborn:empty_cell", qty: 13}
 ], output: [
@@ -34,7 +34,7 @@ title: Pyrite Dust
 
 ## Usage
 
-<Machine next={{input: [{id: "techreborn:pyrite_dust", qty: 3}], output: [
+<Machine config={{input: [{id: "techreborn:pyrite_dust", qty: 3}], output: [
   {id: "techreborn:iron_dust"},
   {id: "techreborn:sulfur_dust", qty: 2}
 ], tool: "techreborn:industrial_electrolyzer"}} />
