@@ -1,0 +1,29 @@
+---
+title: Brass Plate
+---
+
+<ItemImage file="brass_plate" alt="Brass Plate" size="200" />
+
+# Brass Plate
+
+**Brass Plate** is a crafting ingredient.
+
+## Recipe
+
+<Machine config={{input: [
+	{id: "techreborn:brass_ingot"}
+], output: [
+	{id: "techreborn:brass_plate"}
+], tool: "techreborn:compressor"}} />
+
+<Machine config={{input: [
+	{id: "techreborn:brass_storage_block"}
+], output: [
+	{id: "techreborn:brass_plate", qty: 9}
+], tool: "techreborn:compressor"}} />
+
+## Usage
+
+**Brass Plate** used in this crafting recipe:
+
+<CraftingTable recipe="input techreborn:brass_plate techreborn:extractor techreborn:brass_plate input techreborn:electronic_circuit techreborn:basic_machine_frame techreborn:electronic_circuit input techreborn:brass_plate minecraft:piston techreborn:brass_plate output techreborn:wire_mill"/>
