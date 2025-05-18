@@ -80,12 +80,6 @@ More details on casings are in [Machine Casings](casings) section.
 
 ## Miscellaneous
 
-- \<mcitem\>techreborn:nuke\</mcitem\>
-- \<mcitem\>techreborn:alarm\</mcitem\>
-- \<mcitem\>techreborn:player_detector\</mcitem\>
-- \<mcitem\>techreborn:drain\</mcitem\>
-- \<mcitem\>techreborn:industrial_chunkloader\</mcitem\>
-- \<mcitem\>techreborn:basin\</mcitem\>
-- \<mcitem\>techreborn:fusion_coil\</mcitem\>
-- \<mcitem\>techreborn:charge_o_mat\</mcitem\>
-- \<mcitem\>techreborn:storage_buffer\</mcitem\>
+These are sad blocks that don't belong to other categories.
+
+Please, find more details in [Miscellaneous](miscellaneous) section.
