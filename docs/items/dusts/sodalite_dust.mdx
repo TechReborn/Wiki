@@ -10,20 +10,28 @@ title: Sodalite Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_sodalite_dust techreborn:small_pile_of_sodalite_dust air input techreborn:small_pile_of_sodalite_dust techreborn:small_pile_of_sodalite_dust air input air air air output techreborn:sodalite_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:sodalite_ore" inline={true}/> → 2x <McItem slug="techreborn:sodalite_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:sodalite_ore"}], output: [{id: "techreborn:sodalite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:sodalite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 12x <McItem slug="techreborn:sodalite_dust" inline={true}/> + 3x <McItem slug="techreborn:aluminium_dust" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:sodalite_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:sodalite_dust", qty: 12},
+  {id: "techreborn:aluminum_dust", qty: 3}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:sodalite_dust air input air air air output techreborn:small_pile_of_sodalite_dust,4"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-23x <McItem slug="techreborn:sodalite_dust" inline={true}/> + 8x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-4x <McItem slug="techreborn:sodium_cell" inline={true}/> + 3x <McItem slug="techreborn:aluminium_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + <McItem slug="techreborn:chlorite_cell" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:sodalite_dust", qty: 23},
+  {id: "techreborn:empty_cell", qty: 8}
+], output: [
+  {id: "techreborn:sodium_cell", qty: 4},
+  {id: "techreborn:aluminum_dust", qty: 3},
+  {id: "techreborn:silicon_cell", qty: 3},
+  {id: "techreborn:chlorite_cell"}
+], tool: "techreborn:industrial_electrolyzer"}} />

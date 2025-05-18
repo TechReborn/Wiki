@@ -6,26 +6,28 @@ title: Lead Dust
 
 # Lead Dust
 
-**Lead Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:lead_ingot" inline={true}/>.
+**Lead Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:lead_ingot" />.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_lead_dust techreborn:small_pile_of_lead_dust air input techreborn:small_pile_of_lead_dust techreborn:small_pile_of_lead_dust air input air air air output techreborn:lead_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipes:  
-<McItem slug="techreborn:lead_ore" inline={true}/> → 2x <McItem slug="techreborn:lead_dust" inline={true}/>  
-<McItem slug="techreborn:lead_ingot" inline={true}/> → <McItem slug="techreborn:lead_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:lead_ore"}], output: [{id: "techreborn:lead_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:lead_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-2x <McItem slug="techreborn:lead_dust" inline={true}/> + 2x <McItem slug="techreborn:small_pile_of_galena_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:lead_ingot"}], output: [{id: "techreborn:lead_dust"}], tool: "techreborn:grinder"}} />
+
+<Machine config={{input: [
+  {id: "techreborn:lead_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:lead_dust", qty: 2},
+  {id: "techreborn:small_pile_of_galena_dust", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:lead_dust air input air air air output techreborn:small_pile_of_lead_dust,4"/>
 
-**Smelting recipe:**  
-<McItem slug="techreborn:lead_dust" inline={true}/> → <McItem slug="techreborn:lead_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:lead_dust"}], output: [{id: "techreborn:lead_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-2x <McItem slug="techreborn:lead_dust" inline={true}/> → <McItem slug="techreborn:small_pile_of_silver_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:lead_dust", qty: 2}], output: [{id: "techreborn:small_pile_of_silver_dust"}], tool: "techreborn:industrial_centrifuge"}} />

@@ -6,30 +6,37 @@ title: Silver Dust
 
 # Silver Dust
 
-**Silver Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:silver_ingot" inline={true}/>.
+**Silver Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:silver_ingot" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_silver_dust techreborn:small_pile_of_silver_dust air input techreborn:small_pile_of_silver_dust techreborn:small_pile_of_silver_dust air input air air air output techreborn:silver_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:silver_ore" inline={true}/> → 2x <McItem slug="techreborn:silver_dust" inline={true}/>  
-<McItem slug="techreborn:silver_ingot" inline={true}/> → <McItem slug="techreborn:silver_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:silver_ore"}], output: [{id: "techreborn:silver_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:silver_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-2x <McItem slug="techreborn:silver_dust" inline={true}/> + 2x <McItem slug="techreborn:small_pile_of_galena_dust" inline={true}/>  
-<McItem slug="techreborn:galena_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> →  
-2x <McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/> + <McItem slug="techreborn:silver_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:silver_ingot"}], output: [{id: "techreborn:silver_dust"}], tool: "techreborn:grinder"}} />
+
+<Machine config={{input: [
+  {id: "techreborn:silver_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:silver_dust", qty: 2},
+  {id: "techreborn:small_pile_of_galena_dust", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
+
+<Machine config={{input: [
+  {id: "techreborn:galena_ore"},
+  {id: "techreborn:mercury_cell"}
+], output: [
+  {id: "techreborn:galena_dust", qty: 2},
+  {id: "techreborn:sulfur_dust"},
+  {id: "techreborn:silver_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:silver_dust air input air air air output techreborn:small_pile_of_silver_dust,4"/>
 
-**Smelting recipe:**  
-<McItem slug="techreborn:silver_dust" inline={true}/> → <McItem slug="techreborn:silver_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:silver_dust"}], output: [{id: "techreborn:silver_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-2x <McItem slug="techreborn:silver_dust" inline={true}/> → <McItem slug="techreborn:small_pile_of_lead_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:silver_dust", qty: 2}], output: [{id: "techreborn:small_pile_of_lead_dust"}], tool: "techreborn:industrial_centrifuge"}} />

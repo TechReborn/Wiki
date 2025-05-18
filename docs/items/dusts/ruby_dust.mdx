@@ -10,25 +10,39 @@ title: Ruby Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_ruby_dust techreborn:small_pile_of_ruby_dust air input techreborn:small_pile_of_ruby_dust techreborn:small_pile_of_ruby_dust air input air air air output techreborn:ruby_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:ruby_ore" inline={true}/> → 2x <McItem slug="techreborn:ruby_dust" inline={true}/>  
-<McItem slug="techreborn:ruby" inline={true}/> → <McItem slug="techreborn:ruby_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:ruby_ore"}], output: [{id: "techreborn:ruby_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-32x <McItem slug="minecraft:redstone" inline={true}/> + 13x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-16x <McItem slug="techreborn:pyrite_dust" inline={true}/> + 3x <McItem slug="techreborn:ruby_dust" inline={true}/> + 10x <McItem slug="techreborn:mercury_cell" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/>
+<Machine config={{input: [{id: "techreborn:ruby"}], output: [{id: "techreborn:ruby_dust"}], tool: "techreborn:grinder"}} />
+
+<Machine config={{input: [
+  {id: "minecraft:redstone", qty: 32},
+  {id: "techreborn:empty_cell", qty: 13}
+], output: [
+  {id: "techreborn:pyrite_dust", qty: 16},
+  {id: "techreborn:ruby_dust", qty: 3},
+  {id: "techreborn:mercury_cell", qty: 10},
+  {id: "techreborn:silicon_cell", qty: 3}
+], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:ruby_dust air input air air air output techreborn:small_pile_of_ruby_dust,4"/>
 
-**Ruby Dust** can be compressed back into a gem using TNT in an <McItem slug="techreborn:implosion_compressor" inline={true}/>:  
-4x <McItem slug="techreborn:ruby_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → 3x <McItem slug="techreborn:ruby" inline={true}/> + 12x <McItem slug="techreborn:dark_ashes" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:ruby_dust", qty: 4},
+  {id: "minecraft:TNT", qty: 16}
+], output: [
+  {id: "techreborn:ruby", qty: 3},
+  {id: "techreborn:dark_ashes", qty: 12}
+], tool: "techreborn:implosion_compressor"}} />
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-9x <McItem slug="techreborn:ruby_dust" inline={true}/> + 3x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-2x <McItem slug="techreborn:aluminium_dust" inline={true}/> + <McItem slug="techreborn:chrome_dust" inline={true}/> + 3x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:ruby_dust", qty: 9},
+  {id: "techreborn:empty_cell", qty: 3}
+], output: [
+  {id: "techreborn:aluminum_dust", qty: 2},
+  {id: "techreborn:chrome_dust"},
+  {id: "techreborn:compressed_air_cell", qty: 3}
+], tool: "techreborn:industrial_electrolyzer"}} />

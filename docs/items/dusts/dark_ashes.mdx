@@ -6,34 +6,42 @@ title: Dark Ashes
 
 # Dark Ashes
 
-**Dark Ashes** is a dust added by TechReborn. It is a byproduct from several recipes.
+**Dark Ashes** is a dust added by TechReborn. It is a byproduct from several recipes. **Dark Ashes** is a byproduct from every recipe using <McItem slug="minecraft:tnt"/> in <McItem slug="techreborn:implosion_compressor"/>.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_dark_ashes techreborn:small_pile_of_dark_ashes air input techreborn:small_pile_of_dark_ashes techreborn:small_pile_of_dark_ashes air input air air air output techreborn:dark_ashes"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipes:  
-<McItem slug="minecraft:iron_ingot" inline={true}/> + 2x <McItem slug="techreborn:coal_dust" inline={true}/> →  
-<McItem slug="techreborn:steel_ingot" inline={true}/> + 2x <McItem slug="techreborn:dark_ashes" inline={true}/>  
+<Machine config={{input: [
+  {id: "minecraft:iron_ingot"},
+  {id: "techreborn:coal_dust", qty: 2}
+], output: [
+  {id: "techreborn:steel_ingot"},
+  {id: "techreborn:dark_ashes", qty: 2}
+], tool: "techreborn:blast_furnace"}} />
 
-<McItem slug="techreborn:steel_ingot" inline={true}/> + <McItem slug="techreborn:tungsten_ingot" inline={true}/> →  
-<McItem slug="techreborn:hot_tungstensteel_ingot" inline={true}/> + 4x <McItem slug="techreborn:dark_ashes" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:steel_ingot"},
+  {id: "techreborn:tungsten_ingot"}
+], output: [
+  {id: "techreborn:hot_tungstensteel_ingot"},
+  {id: "techreborn:dark_ashes", qty: 4}
+], tool: "techreborn:blast_furnace"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-16x <McItem slug="techreborn:basalt_dust" inline={true}/> →  
-<McItem slug="techreborn:peridot_dust" inline={true}/> + 3x <McItem slug="techreborn:calcite_dust" inline={true}/> +  
-8x <McItem slug="techreborn:flint_dust" inline={true}/> + 4x <McItem slug="techreborn:dark_ashes" inline={true}/>
+<Machine config={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
+  {id: "techreborn:peridot_dust"},
+  {id: "techreborn:calcite_dust", qty: 3},
+  {id: "techreborn:flint_dust", qty: 8},
+  {id: "techreborn:dark_ashes", qty: 4}
+], tool: "techreborn:industrial_centrifuge"}} />
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-4x <McItem slug="minecraft:blaze_powder" inline={true}/> →  
-<McItem slug="techreborn:dark_ashes" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>
-
-<McItem slug="techreborn:implosion_compressor" inline={true}/> recipe:  
-**Dark Ashes** is a byproduct from every recipe using <McItem slug="minecraft:tnt" inline={true}/>
+<Machine config={{input: [{id: "minecraft:blaze_powder", qty: 4}], output: [
+  {id: "techreborn:dark_ashes"},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:dark_ashes air input air air air output techreborn:small_pile_of_dark_ashes,4"/>
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-2x <McItem slug="techreborn:dark_ashes" inline={true}/> → 2x <McItem slug="techreborn:ashes" inline={true}/>
+<Machine config={{input: [{id: "techreborn:dark_ashes", qty: 2}], output: [{id: "techreborn:ashes", qty: 2}], tool: "techreborn:industrial_centrifuge"}} />

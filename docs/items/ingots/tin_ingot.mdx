@@ -19,13 +19,9 @@ title: Tin Ingot
 
 Main source of **Tin Ingot** is smelting <McItem slug="techreborn:raw_tin"/> in any kind of Furnaces, including <McItem slug="minecraft:furnace"/>, <McItem slug="techreborn:iron_furnace"/> or <McItem slug="techreborn:electric_furnace"/>.
 
-\<recipe\> size 1x1 input techreborn:raw_tin output techreborn:tin_ingot tool techreborn:electric_furnace \</recipe\>
-
-\
-\<recipe\> size 1x1 input techreborn:tin_ore output techreborn:tin_ingot tool techreborn:electric_furnace \</recipe\>
-
-\
-\<recipe\> size 1x1 input techreborn:deepslate_tin_ore output techreborn:tin_ingot tool techreborn:electric_furnace \</recipe\>
+<Machine recipe="input techreborn:raw_tin output techreborn:tin_ingot tool techreborn:electric_furnace" />
+<Machine recipe="input techreborn:tin_ore output techreborn:tin_ingot tool techreborn:electric_furnace" />
+<Machine recipe="input techreborn:deepslate_tin_ore output techreborn:tin_ingot tool techreborn:electric_furnace" />
 
 ## Usage
 
@@ -33,31 +29,28 @@ Main source of **Tin Ingot** is smelting <McItem slug="techreborn:raw_tin"/> in 
 
 **Tin Ingot** used in several crafting recipes:
 
-- <McItem slug="techreborn:tin_cable" inline={true}/>
-- <McItem slug="techreborn:empty_cell" inline={true}/>
-- <McItem slug="techreborn:mixed_metal_ingot" inline={true}/>
-- <McItem slug="techreborn:solid_canning_machine" inline={true}/>
-- <McItem slug="techreborn:tin_nugget" inline={true}/>
-- <McItem slug="techreborn:tin_storage_block" inline={true}/>
-- <McItem slug="techreborn:helium_coolant_cell_180k" inline={true}/>
-- <McItem slug="techreborn:helium_coolant_cell_360k" inline={true}/>
-- <McItem slug="techreborn:helium_coolant_cell_60k" inline={true}/>
-- <McItem slug="techreborn:nak_coolant_cell_180k" inline={true}/>
-- <McItem slug="techreborn:nak_coolant_cell_360k" inline={true}/>
-- <McItem slug="techreborn:nak_coolant_cell_60k" inline={true}/>
-- <McItem slug="techreborn:water_coolant_cell_10k" inline={true}/>
-- <McItem slug="techreborn:water_coolant_cell_30k" inline={true}/>
-- <McItem slug="techreborn:water_coolant_cell_60k" inline={true}/>
+- <McItem slug="techreborn:tin_cable"/>
+- <McItem slug="techreborn:empty_cell"/>
+- <McItem slug="techreborn:mixed_metal_ingot"/>
+- <McItem slug="techreborn:solid_canning_machine"/>
+- <McItem slug="techreborn:tin_nugget"/>
+- <McItem slug="techreborn:tin_storage_block"/>
+- <McItem slug="techreborn:helium_coolant_cell_180k"/>
+- <McItem slug="techreborn:helium_coolant_cell_360k"/>
+- <McItem slug="techreborn:helium_coolant_cell_60k"/>
+- <McItem slug="techreborn:nak_coolant_cell_180k"/>
+- <McItem slug="techreborn:nak_coolant_cell_360k"/>
+- <McItem slug="techreborn:nak_coolant_cell_60k"/>
+- <McItem slug="techreborn:water_coolant_cell_10k"/>
+- <McItem slug="techreborn:water_coolant_cell_30k"/>
+- <McItem slug="techreborn:water_coolant_cell_60k"/>
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipe:  
-3x<McItem slug="minecraft:copper_ingot" inline={true}/> + <McItem slug="techreborn:tin_ingot" inline={true}/> &rarr; 4x <McItem slug="techreborn:bronze_ingot" inline={true}/>
+<Machine config={{input: [{id: "minecraft:copper_ingot", qty: 3}, {id: "techreborn:tin_ingot"}], output: [{id: "techreborn:bronze_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:tin_ingot" inline={true}/> &rarr; <McItem slug="techreborn:tin_plate" inline={true}/>
+<Machine config={{input: [{id: "techreborn:tin_ingot"}], output: [{id: "techreborn:tin_plate"}], tool: "techreborn:compressor"}} />
 
-<McItem slug="techreborn:solid_canning_machine" inline={true}/> recipe:  
-- <McItem slug="techreborn:water_cell" inline={true}/> + 2x <McItem slug="techreborn:tin_ingot" inline={true}/> &rarr; 2x <McItem slug="techreborn:water_coolant_cell_10k" inline={true}/>
-- <McItem slug="techreborn:helium_cell" inline={true}/> + 2x <McItem slug="techreborn:tin_ingot" inline={true}/> &rarr; <McItem slug="techreborn:helium_coolant_cell_60k" inline={true}/>
+<Machine config={{input: [{id: "techreborn:water_cell"}, {id: "techreborn:tin_ingot", qty: 2}], output: [{id: "techreborn:water_coolant_cell_10k", qty: 2}], tool: "techreborn:solid_canning_machine"}} />
 
-<McItem slug="techreborn:wire_mill" inline={true}/> recipe:  
-<McItem slug="techreborn:tin_ingot" inline={true}/> &rarr; 6x <McItem slug="techreborn:tin_cable" inline={true}/>
+<Machine config={{input: [{id: "techreborn:helium_cell"}, {id: "techreborn:tin_ingot", qty: 2}], output: [{id: "techreborn:helium_coolant_cell_60k"}], tool: "techreborn:solid_canning_machine"}} />
+
+<Machine config={{input: [{id: "techreborn:tin_ingot"}], output: [{id: "techreborn:tin_cable", qty: 6}], tool: "techreborn:wire_mill"}} />

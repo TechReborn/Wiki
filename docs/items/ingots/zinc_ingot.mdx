@@ -13,8 +13,7 @@ title: Zinc Ingot
 <CraftingTable recipe="input techreborn:zinc_nugget techreborn:zinc_nugget techreborn:zinc_nugget input techreborn:zinc_nugget techreborn:zinc_nugget techreborn:zinc_nugget input techreborn:zinc_nugget techreborn:zinc_nugget techreborn:zinc_nugget output techreborn:zinc_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:zinc_storage_block air input air air air output techreborn:zinc_ingot,9"/>
 
-**Smelting** recipe:  
-<McItem slug="techreborn:zinc_dust" inline={true}/> &rarr; <McItem slug="techreborn:zinc_ingot" inline={true}/>
+<Machine recipe="input techreborn:zinc_dust output techreborn:zinc_ingot tool techreborn:iron_furnace" />
 
 ## Usage
 
@@ -22,15 +21,12 @@ title: Zinc Ingot
 
 **Crafting** recipes:
 
-- <McItem slug="techreborn:zinc_storage_block" inline={true}/>
-- <McItem slug="techreborn:zinc_nugget" inline={true}/>
-- <McItem slug="techreborn:mixed_metal_ingot" inline={true}/>
+- <McItem slug="techreborn:zinc_storage_block"/>
+- <McItem slug="techreborn:zinc_nugget"/>
+- <McItem slug="techreborn:mixed_metal_ingot"/>
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipe:  
-3x <McItem slug="minecraft:copper_ingot" inline={true}/> + <McItem slug="techreborn:zinc_ingot" inline={true}/> &rarr; 4x <McItem slug="techreborn:brass_ingot" inline={true}/>
+<Machine config={{input: [{id: "minecraft:copper_ingot", qty: 3}, {id: "techreborn:zinc_ingot"}], output: [{id: "techreborn:brass_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:zinc_ingot" inline={true}/> &rarr; <McItem slug="techreborn:zinc_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:zinc_ingot"}], output: [{id: "techreborn:zinc_dust"}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:zinc_ingot" inline={true}/> &rarr; <McItem slug="techreborn:zinc_plate" inline={true}/>
+<Machine config={{input: [{id: "techreborn:zinc_ingot"}], output: [{id: "techreborn:zinc_plate"}], tool: "techreborn:compressor"}} />

@@ -1,0 +1,33 @@
+---
+title: Aluminum Ingot
+---
+
+<ItemImage file="aluminum_ingot" alt="Ingots" size="200" />
+
+# Aluminum Ingot
+
+**Aluminum Ingot** is used to craft <McItem slug="techreborn:mixed_metal_ingot" inline={true}/> and for further processing. Tech Reborn doesn't have Aluminum ore.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget output techreborn:aluminum_ingot"/>
+<CraftingTable recipe="input air air air input air techreborn:aluminum_storage_block air input air air air output techreborn:aluminum_ingot,9"/>
+
+
+<Machine config={{input: [{id: "techreborn:aluminum_dust"}], output: [{id: "techreborn:aluminum_ingot"}], tool: "techreborn:blast_furnace"}} />
+This recipe requires 1700 heat.
+
+## Usage
+
+**Aluminum Ingot** could be used as a **Beacon** payment.  
+**Aluminum Ingot** is used in the following <McItem slug="minecraft:crafting_table" inline={true}/> recipes:
+
+- <McItem slug="techreborn:mixed_metal_ingot" inline={true}/>
+- <McItem slug="techreborn:aluminum_nugget" inline={true}/>
+- <McItem slug="techreborn:aluminum_storage_block" inline={true}/>
+
+<Machine config={{input: [{id: "techreborn:aluminum_ingot"}], output: [{id: "techreborn:aluminum_plate"}], tool: "techreborn:compressor"}} />
+
+<Machine config={{input: [{id: "techreborn:aluminum_ingot"}], output: [{id: "techreborn:aluminum_dust"}], tool: "techreborn:grinder"}} />
+
+<Machine recipe="input techreborn:aluminum_ingot techreborn:aluminum_ingot techreborn:aluminum_ingot input techreborn:magnesium_dust techreborn:magnesium_dust techreborn:magnesium_dust input techreborn:aluminum_ingot techreborn:aluminum_ingot techreborn:aluminum_ingot output techreborn:magnalium_plate,3 tool techreborn:rolling_machine" />

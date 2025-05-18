@@ -6,31 +6,36 @@ title: Chrome Dust
 
 # Chrome Dust
 
-**Chrome Dust** is a dust added by TechReborn. It is mainly used to produce <McItem slug="techreborn:chrome_ingot" inline={true}/> or some alloys.
+**Chrome Dust** is a dust added by TechReborn. It is mainly used to produce <McItem slug="techreborn:chrome_ingot" /> or some alloys.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_chrome_dust techreborn:small_pile_of_chrome_dust air input techreborn:small_pile_of_chrome_dust techreborn:small_pile_of_chrome_dust air input air air air output techreborn:chrome_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:chrome_ingot" inline={true}/> → <McItem slug="techreborn:chrome_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:chrome_ingot"}], output: [{id: "techreborn:chrome_dust"}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipes:  
-- 9x <McItem slug="techreborn:ruby_dust" inline={true}/> + 3x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-  2x <McItem slug="techreborn:aluminium_dust" inline={true}/> +  
-  <McItem slug="techreborn:chrome_dust" inline={true}/> +  
-  3x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:ruby_dust", qty: 9},
+  {id: "techreborn:empty_cell", qty: 3}
+], output: [
+  {id: "techreborn:aluminum_dust", qty: 2},
+  {id: "techreborn:chrome_dust"},
+  {id: "techreborn:compressed_air_cell", qty: 3}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
-- 20x <McItem slug="techreborn:uvarovite_dust" inline={true}/> + 12x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-  3x <McItem slug="techreborn:calcium_cell" inline={true}/> +  
-  2x <McItem slug="techreborn:chrome_dust" inline={true}/> +  
-  3x <McItem slug="techreborn:silicon_cell" inline={true}/> +  
-  6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:uvarovite_dust", qty: 20},
+  {id: "techreborn:empty_cell", qty: 12}
+], output: [
+  {id: "techreborn:calcium_cell", qty: 3},
+  {id: "techreborn:chrome_dust", qty: 2},
+  {id: "techreborn:silicon_cell", qty: 3},
+  {id: "techreborn:compressed_air_cell", qty: 6}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:chrome_dust air input air air air output techreborn:small_pile_of_chrome_dust,4"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:chrome_dust" inline={true}/> → <McItem slug="techreborn:chrome_ingot" inline={true}/>  
+<Machine config={{input: [{id: "techreborn:chrome_dust"}], output: [{id: "techreborn:chrome_ingot"}], tool: "techreborn:blast_furnace"}} />
 _This operation requires 1700 heat._

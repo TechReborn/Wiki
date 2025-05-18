@@ -6,20 +6,16 @@ title: Invar Dust
 
 # Invar Dust
 
-**Invar Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:invar_ingot" inline={true}/>.
+**Invar Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:invar_ingot" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_invar_dust techreborn:small_pile_of_invar_dust air input techreborn:small_pile_of_invar_dust techreborn:small_pile_of_invar_dust air input air air air output techreborn:invar_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:invar_ingot" inline={true}/> → <McItem slug="techreborn:invar_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:invar_ingot"}], output: [{id: "techreborn:invar_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:invar_dust air input air air air output techreborn:small_pile_of_invar_dust,4"/>
 
-**Smelting recipe:**  
-<McItem slug="techreborn:invar_dust" inline={true}/> → <McItem slug="techreborn:invar_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:invar_dust"}], output: [{id: "techreborn:invar_ingot"}], tool: "techreborn:iron_furnace"}} />

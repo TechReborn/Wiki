@@ -6,39 +6,52 @@ title: Platinum Dust
 
 # Platinum Dust
 
-**Platinum Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:platinum_ingot" inline={true}/>.
+**Platinum Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:platinum_ingot" />.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_platinum_dust techreborn:small_pile_of_platinum_dust air input techreborn:small_pile_of_platinum_dust techreborn:small_pile_of_platinum_dust air input air air air output techreborn:platinum_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:platinum_ingot" inline={true}/> → <McItem slug="techreborn:platinum_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:platinum_ingot"}], output: [{id: "techreborn:platinum_dust"}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipes:  
-- <McItem slug="techreborn:iridium_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> →  
-  <McItem slug="techreborn:iridium_ingot" inline={true}/> + <McItem slug="techreborn:platinum_dust" inline={true}/>  
-- <McItem slug="techreborn:sheldonite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-  2x <McItem slug="techreborn:platinum_dust" inline={true}/> +  
-  <McItem slug="techreborn:nickel_dust" inline={true}/> +  
-  2x <McItem slug="techreborn:iridium_nugget" inline={true}/>  
-- <McItem slug="techreborn:sheldonite_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> →  
-  3x <McItem slug="techreborn:platinum_dust" inline={true}/> +  
-  <McItem slug="techreborn:nickel_dust" inline={true}/> +  
-  2x <McItem slug="techreborn:iridium_nugget" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:iridium_ore"},
+  {id: "techreborn:mercury_cell"}
+], output: [
+  {id: "techreborn:iridium_ingot"},
+  {id: "techreborn:platinum_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
-<McItem slug="techreborn:fusion_control_computer" inline={true}/> recipe:  
-<McItem slug="techreborn:wolframium_cell" inline={true}/> + <McItem slug="techreborn:beryllium_cell" inline={true}/> →  
-<McItem slug="techreborn:platinum_dust" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:sheldonite_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:platinum_dust", qty: 2},
+  {id: "techreborn:nickel_dust"},
+  {id: "techreborn:iridium_nugget", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
+
+<Machine config={{input: [
+  {id: "techreborn:sheldonite_ore"},
+  {id: "techreborn:mercury_cell"}
+], output: [
+  {id: "techreborn:platinum_dust", qty: 3},
+  {id: "techreborn:nickel_dust"},
+  {id: "techreborn:iridium_nugget", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
+
+<Machine config={{input: [
+  {id: "techreborn:wolframium_cell"},
+  {id: "techreborn:beryllium_cell"}
+], output: [{id: "techreborn:platinum_dust"}], tool: "techreborn:fusion_control_computer"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:platinum_dust air input air air air output techreborn:small_pile_of_platinum_dust,4"/>
 
-**Smelting recipe:**  
-<McItem slug="techreborn:platinum_dust" inline={true}/> → <McItem slug="techreborn:platinum_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:platinum_dust"}], output: [{id: "techreborn:platinum_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-2x <McItem slug="techreborn:platinum_dust" inline={true}/> →  
-2x <McItem slug="techreborn:iridium_nugget" inline={true}/> +  
-<McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:platinum_dust", qty: 2}], output: [
+  {id: "techreborn:iridium_nugget", qty: 2},
+  {id: "techreborn:small_pile_of_nickel_dust"}
+], tool: "techreborn:industrial_centrifuge"}} />

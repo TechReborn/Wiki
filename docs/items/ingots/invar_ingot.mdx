@@ -6,30 +6,26 @@ title: Invar Ingot
 
 # Invar Ingot
 
-**Invar Ingot** is used to craft <McItem slug="techreborn:mixed_metal_ingot" inline={true}/> and for further processing. Tech Reborn doesn't have Invar ore.
+**Invar Ingot** is used to craft <McItem slug="techreborn:mixed_metal_ingot"/> and for further processing. Tech Reborn doesn't have Invar ore.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:invar_nugget techreborn:invar_nugget techreborn:invar_nugget input techreborn:invar_nugget techreborn:invar_nugget techreborn:invar_nugget input techreborn:invar_nugget techreborn:invar_nugget techreborn:invar_nugget output techreborn:invar_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:invar_storage_block air input air air air output techreborn:invar_ingot,9"/>
 
-<McItem slug="minecraft:furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:invar_dust" inline={true}/> &rarr; <McItem slug="techreborn:invar_ingot" inline={true}/>
+<Machine recipe="input techreborn:invar_dust output techreborn:invar_ingot tool minecraft:furnace" />
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipe:  
-2x <McItem slug="minecraft:iron_ingot" inline={true}/> + 1x <McItem slug="techreborn:nickel_ingot" inline={true}/> &rarr; 3x <McItem slug="techreborn:invar_ingot" inline={true}/>.
+<Machine config={{input: [{id: "minecraft:iron_ingot", qty: 2}, {id: "techreborn:nickel_ingot"}], output: [{id: "techreborn:invar_ingot", qty: 3}], tool: "techreborn:alloy_smelter"}} />
 
 ## Usage
 
 **Invar Ingot** could be used as a **Beacon** payment.  
 **Invar Ingot** is used in the following recipes:
 
-- <McItem slug="techreborn:mixed_metal_ingot" inline={true}/>
-- <McItem slug="techreborn:invar_nugget" inline={true}/>
-- <McItem slug="techreborn:invar_storage_block" inline={true}/>
+- <McItem slug="techreborn:mixed_metal_ingot"/>
+- <McItem slug="techreborn:invar_nugget"/>
+- <McItem slug="techreborn:invar_storage_block"/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:invar_ingot" inline={true}/> &rarr; <McItem slug="techreborn:invar_plate" inline={true}/>
+<Machine config={{input: [{id: "techreborn:invar_ingot"}], output: [{id: "techreborn:invar_plate"}], tool: "techreborn:compressor"}} />
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:invar_ingot" inline={true}/> &rarr; <McItem slug="techreborn:invar_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:invar_ingot"}], output: [{id: "techreborn:invar_dust"}], tool: "techreborn:grinder"}} />

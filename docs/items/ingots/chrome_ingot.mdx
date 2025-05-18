@@ -14,27 +14,25 @@ title: Chrome Ingot
 
 <CraftingTable recipe="input air air air input air techreborn:chrome_storage_block air input air air air output techreborn:chrome_ingot,9"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:\
-These recipes require 1700 heat.
 
-\<recipe\> size 1x2 input techreborn:chrome_dust air output techreborn:chrome_ingot tool techreborn:blast_furnace \</recipe\>\
-\<recipe\> size 1x2 input techreborn:small_pile_of_chrome_dust,4 air output techreborn:chrome_ingot tool techreborn:blast_furnace \</recipe\>
+<Machine recipe="input techreborn:chrome_dust air output techreborn:chrome_ingot tool techreborn:blast_furnace" />
+This recipe require 1700 heat.
+
+<Machine recipe="input techreborn:small_pile_of_chrome_dust,4 air output techreborn:chrome_ingot tool techreborn:blast_furnace" />
+This recipe require 1700 heat.
 
 ## Usage
 
 **Chrome Ingot** used in several machine and crafting recipes and could be used as a **Beacon** payment.
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipes: 
 <CraftingTable recipe="input techreborn:chrome_ingot techreborn:iridium_alloy_plate techreborn:chrome_ingot input techreborn:iridium_alloy_plate techreborn:lapotronic_orb techreborn:iridium_alloy_plate input techreborn:chrome_ingot techreborn:iridium_alloy_plate techreborn:chrome_ingot output techreborn:cloaking_device"/>
 
 <CraftingTable recipe="input techreborn:chrome_ingot techreborn:chrome_ingot techreborn:chrome_ingot input techreborn:chrome_ingot techreborn:chrome_ingot techreborn:chrome_ingot input techreborn:chrome_ingot techreborn:chrome_ingot techreborn:chrome_ingot output techreborn:chrome_storage_block"/>
 
 <CraftingTable recipe="input air techreborn:chrome_ingot air air air air air air air output techreborn:chrome_nugget,9"/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:\
-<McItem slug="techreborn:chrome_ingot" inline={true}/> -> <McItem slug="techreborn:chrome_plate" inline={true}/>
+<Machine config={{input: [{id: "techreborn:chrome_ingot"}], output: [{id: "techreborn:chrome_plate"}], tool: "techreborn:compressor"}} />
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:\
-<McItem slug="techreborn:chrome_ingot" inline={true}/> -> <McItem slug="techreborn:chrome_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:chrome_ingot"}], output: [{id: "techreborn:chrome_dust"}], tool: "techreborn:grinder"}} />
 
-\<mcitem\>techreborn:rolling_machine\</mcitem\> recipe: \<recipe\> input air techreborn:nickel_ingot air input techreborn:nickel_ingot techreborn:chrome_ingot techreborn:nickel_ingot input air techreborn:nickel_ingot air output techreborn:nichrome_heating_coil,2 tool techreborn:rolling_machine \</recipe\>
+<Machine recipe="input air techreborn:nickel_ingot air input techreborn:nickel_ingot techreborn:chrome_ingot techreborn:nickel_ingot input air techreborn:nickel_ingot air output techreborn:nichrome_heating_coil,2 tool techreborn:rolling_machine" />

@@ -6,16 +6,15 @@ title: Hot Tungstensteel Ingot
 
 # Hot Tungstensteel Ingot
 
-**Hot Tungstensteel Ingot** is an ingot used to make <McItem slug="techreborn:tungstensteel_ingot" inline={true}/>.
+**Hot Tungstensteel Ingot** is an ingot used to make <McItem slug="techreborn:tungstensteel_ingot"/>.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:hot_tungstensteel_nugget techreborn:hot_tungstensteel_nugget techreborn:hot_tungstensteel_nugget input techreborn:hot_tungstensteel_nugget techreborn:hot_tungstensteel_nugget techreborn:hot_tungstensteel_nugget input techreborn:hot_tungstensteel_nugget techreborn:hot_tungstensteel_nugget techreborn:hot_tungstensteel_nugget output techreborn:hot_tungstensteel_ingot"/>
+
 <CraftingTable recipe="input air air air input air techreborn:hot_tungstensteel_storage_block air input air air air output techreborn:hot_tungstensteel_ingot,9"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-Recipes require 2500 heat.  
-<McItem slug="techreborn:steel_ingot" inline={true}/> + <McItem slug="techreborn:tungsten_ingot" inline={true}/>&rarr; <McItem slug="techreborn:hot_tungstensteel_ingot" inline={true}/> + <McItem slug="techreborn:dark_ashes_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:steel_ingot"}, {id: "techreborn:tungsten_ingot"}], output: [{id: "techreborn:hot_tungstensteel_ingot"}, {id: "techreborn:dark_ashes_dust"}], tool: "techreborn:blast_furnace"}} />
 
 ## Usage
 
@@ -23,8 +22,7 @@ Recipes require 2500 heat.
 
 **Hot Tungstensteel Ingot** is used in the following recipes:
 
-- <McItem slug="techreborn:hot_tungstensteel_nugget" inline={true}/>
-- <McItem slug="techreborn:hot_tungstensteel_storage_block" inline={true}/>
+- <McItem slug="techreborn:hot_tungstensteel_nugget"/>
+- <McItem slug="techreborn:hot_tungstensteel_storage_block"/>
 
-<McItem slug="techreborn:vacuum_freezer" inline={true}/> recipe:  
-\<recipe\> size 1x1 input techreborn:hot_tungstensteel_ingot output techreborn:tungstensteel_ingot tool techreborn:vacuum_freezer \</recipe\>
+<Machine recipe="input techreborn:hot_tungstensteel_ingot output techreborn:tungstensteel_ingot tool techreborn:vacuum_freezer" />

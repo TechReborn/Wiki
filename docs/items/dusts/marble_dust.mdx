@@ -6,20 +6,17 @@ title: Marble Dust
 
 # Marble Dust
 
-**Marble Dust** is a dust added by TechReborn. It is used for further processing in <McItem slug="techreborn:industrial_centrifuge" inline={true}/>.
+**Marble Dust** is a dust added by TechReborn. It is used for further processing in <McItem slug="techreborn:industrial_centrifuge" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_marble_dust techreborn:small_pile_of_marble_dust air input techreborn:small_pile_of_marble_dust techreborn:small_pile_of_marble_dust air input air air air output techreborn:marble_dust"/>
-
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-Recipe for grinding marble block into dust registered by TechReborn if there are such blocks provided by other mods.
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:marble_dust air input air air air output techreborn:small_pile_of_marble_dust,4"/>
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-<McItem slug="techreborn:marble_dust" inline={true}/> → <McItem slug="techreborn:magnesium_dust" inline={true}/> + 7x <McItem slug="techreborn:calcite_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:marble_dust"}], output: [
+  {id: "techreborn:magnesium_dust"},
+  {id: "techreborn:calcite_dust", qty: 7}
+], tool: "techreborn:industrial_centrifuge"}} />

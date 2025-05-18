@@ -6,15 +6,20 @@ title: Saw Dust
 
 # Saw Dust
 
-**Saw Dust** is a byproduct received from <McItem slug="techreborn:saw_mill" inline={true}/>.
+**Saw Dust** is a byproduct received from <McItem slug="techreborn:saw_mill" />.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_saw_dust techreborn:small_pile_of_saw_dust air input techreborn:small_pile_of_saw_dust techreborn:small_pile_of_saw_dust air input air air air output techreborn:saw_dust"/>
 
-<McItem slug="techreborn:saw_mill" inline={true}/> recipe:  
-<McItem slug="minecraft:wood" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-4x <McItem slug="minecraft:wood" inline={true}/> + 3x <McItem slug="techreborn:saw_dust" inline={true}/> + <McItem slug="minecraft:paper" inline={true}/>
+<Machine config={{input: [
+  {id: "minecraft:wood"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "minecraft:wood", qty: 4},
+  {id: "techreborn:saw_dust", qty: 3},
+  {id: "minecraft:paper"}
+], tool: "techreborn:saw_mill"}} />
 
 ## Usage
 
@@ -22,5 +27,8 @@ title: Saw Dust
 
 <CraftingTable recipe="input techreborn:saw_dust techreborn:saw_dust techreborn:saw_dust input minecraft:water_bucket air air input air air air output minecraft:paper,3"/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-2x <McItem slug="techreborn:saw_dust" inline={true}/> → <McItem slug="techreborn:wooden_plate" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:saw_dust", qty: 2}
+], output: [
+  {id: "techreborn:wooden_plate"}
+], tool: "techreborn:compressor"}} />

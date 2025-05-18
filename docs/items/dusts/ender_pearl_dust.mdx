@@ -10,20 +10,25 @@ title: Ender Pearl Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_ender_pearl_dust techreborn:small_pile_of_ender_pearl_dust air input techreborn:small_pile_of_ender_pearl_dust techreborn:small_pile_of_ender_pearl_dust air input air air air output techreborn:ender_pearl_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="minecraft:ender_pearl" inline={true}/> → 2x <McItem slug="techreborn:ender_pearl_dust" inline={true}/>
+<Machine config={{input: [{id: "minecraft:ender_pearl"}], output: [{id: "techreborn:ender_pearl_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-2x <McItem slug="techreborn:ender_eye_dust" inline={true}/> → 2x <McItem slug="techreborn:ender_pearl_dust" inline={true}/> + <McItem slug="minecraft:blaze_powder" inline={true}/>
+<Machine config={{input: [{id: "techreborn:ender_eye_dust", qty: 2}], output: [
+  {id: "techreborn:ender_pearl_dust", qty: 2},
+  {id: "minecraft:blaze_powder"}
+], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:ender_pearl_dust air input air air air output techreborn:small_pile_of_ender_pearl_dust,4"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-16x <McItem slug="techreborn:ender_pearl_dust" inline={true}/> + 16x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-5x <McItem slug="techreborn:nitrogen_cell" inline={true}/> + <McItem slug="techreborn:beryllium_cell" inline={true}/> + 4x <McItem slug="techreborn:potassium_cell" inline={true}/> + 6x <McItem slug="techreborn:chlorite_cell" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:ender_pearl_dust", qty: 16},
+  {id: "techreborn:empty_cell", qty: 16}
+], output: [
+  {id: "techreborn:nitrogen_cell", qty: 5},
+  {id: "techreborn:beryllium_cell"},
+  {id: "techreborn:potassium_cell", qty: 4},
+  {id: "techreborn:chlorite_cell", qty: 6}
+], tool: "techreborn:industrial_electrolyzer"}} />

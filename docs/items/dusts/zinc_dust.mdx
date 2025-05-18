@@ -12,39 +12,24 @@ title: Zinc Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_zinc_dust techreborn:small_pile_of_zinc_dust air input techreborn:small_pile_of_zinc_dust techreborn:small_pile_of_zinc_dust air input air air air output techreborn:zinc_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:zinc_ingot" inline={true}/> → <McItem slug="techreborn:zinc_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:zinc_ingot", qty: 1}], output: [{id: "techreborn:zinc_dust", qty: 1}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipes:  
-- <McItem slug="techreborn:tin_ore" inline={true}/> + <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> →  
-  2x <McItem slug="techreborn:tin_dust" inline={true}/> +  
-  <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> +  
-  <McItem slug="techreborn:zinc_dust" inline={true}/>  
-- <McItem slug="techreborn:sphalerite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-  5x <McItem slug="techreborn:sphalerite_dust" inline={true}/> +  
-  <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> +  
-  <McItem slug="techreborn:zinc_dust" inline={true}/>  
-- <McItem slug="techreborn:sphalerite_ore" inline={true}/> + <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> →  
-  5x <McItem slug="techreborn:sphalerite_dust" inline={true}/> +  
-  <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> +  
-  <McItem slug="techreborn:zinc_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:tin_ore", qty: 1}, {id: "techreborn:sodiumpersulfate_cell", qty: 1}], output: [{id: "techreborn:tin_dust", qty: 2}, {id: "techreborn:small_pile_of_iron_dust", qty: 1}, {id: "techreborn:zinc_dust", qty: 1}], tool: "techreborn:industrial_grinder"}} />
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-2x <McItem slug="techreborn:sphalerite_dust" inline={true}/> →  
-<McItem slug="techreborn:zinc_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:sphalerite_ore", qty: 1}, {id: "techreborn:water_cell", qty: 1}], output: [{id: "techreborn:sphalerite_dust", qty: 5}, {id: "techreborn:small_pile_of_yellow_garnet_dust", qty: 1}, {id: "techreborn:zinc_dust", qty: 1}], tool: "techreborn:industrial_grinder"}} />
+
+<Machine config={{input: [{id: "techreborn:sphalerite_ore", qty: 1}, {id: "techreborn:sodiumpersulfate_cell", qty: 1}], output: [{id: "techreborn:sphalerite_dust", qty: 5}, {id: "techreborn:small_pile_of_yellow_garnet_dust", qty: 1}, {id: "techreborn:zinc_dust", qty: 1}], tool: "techreborn:industrial_grinder"}} />
+
+<Machine config={{input: [{id: "techreborn:sphalerite_dust", qty: 2}], output: [{id: "techreborn:zinc_dust", qty: 1}, {id: "techreborn:sulfur_dust", qty: 1}], tool: "techreborn:industrial_electrolyzer"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:zinc_dust air input air air air output techreborn:small_pile_of_zinc_dust,4"/>
 
-**Smelting recipe:**  
-<McItem slug="techreborn:zinc_dust" inline={true}/> → <McItem slug="techreborn:zinc_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:zinc_dust", qty: 1}], output: [{id: "techreborn:zinc_ingot", qty: 1}], tool: "techreborn:iron_furnace"}} />
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipes:  
-- 3x <McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> →  
-  4x <McItem slug="techreborn:brass_ingot" inline={true}/>  
-- 3x <McItem slug="techreborn:copper_ingot" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> →  
-  4x <McItem slug="techreborn:brass_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:copper_dust", qty: 3}, {id: "techreborn:zinc_dust", qty: 1}], output: [{id: "techreborn:brass_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-<McItem slug="techreborn:zinc_dust" inline={true}/> → <McItem slug="techreborn:small_pile_of_tin_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:copper_ingot", qty: 3}, {id: "techreborn:zinc_dust", qty: 1}], output: [{id: "techreborn:brass_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
+
+<Machine config={{input: [{id: "techreborn:zinc_dust", qty: 1}], output: [{id: "techreborn:small_pile_of_tin_dust", qty: 1}], tool: "techreborn:industrial_centrifuge"}} />

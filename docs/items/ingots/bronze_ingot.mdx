@@ -13,36 +13,33 @@ title: Bronze Ingot
 <CraftingTable recipe="input techreborn:bronze_nugget techreborn:bronze_nugget techreborn:bronze_nugget input techreborn:bronze_nugget techreborn:bronze_nugget techreborn:bronze_nugget input techreborn:bronze_nugget techreborn:bronze_nugget techreborn:bronze_nugget output techreborn:bronze_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:bronze_storage_block air input air air air output techreborn:bronze_ingot,9"/>
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipes:  
-3x<McItem slug="minecraft:copper_ingot" inline={true}/> + <McItem slug="techreborn:tin_ingot" inline={true}/> -> 4x <McItem slug="techreborn:bronze_ingot" inline={true}/>
+<Machine config={{input: [{id: "minecraft:copper_ingot", qty: 3}, {id: "techreborn:tin_ingot"}], output: [{id: "techreborn:bronze_ingot", qty: 4}], tool: "techreborn:alloy_smelter"}} />
 
-Smelting recipe: \<recipe\> size 1x1 input techreborn:bronze_dust output techreborn:bronze_ingot tool techreborn:iron_furnace \</recipe\>
+<Machine recipe="input techreborn:bronze_dust output techreborn:bronze_ingot tool techreborn:iron_furnace" />
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipes:  
-Recycling of <McItem slug="techreborn:bronze_pickaxe" inline={true}/>, <McItem slug="techreborn:bronze_axe" inline={true}/> and <McItem slug="techreborn:bronze_chestplate" inline={true}/> <McItem slug="techreborn:bronze_armor" inline={true}/>
+<McItem slug="techreborn:blast_furnace"/> recipes:  
+Recycling of <McItem slug="techreborn:bronze_pickaxe"/>, <McItem slug="techreborn:bronze_axe"/> and <McItem slug="techreborn:bronze_chestplate"/> <McItem slug="techreborn:bronze_armor"/>
 
 ## Usage
 
 **Bronze Ingot** could be used as a **Beacon** payment.  
 **Bronze Ingot** used in several crafting recipes:
 
-- <McItem slug="techreborn:wrench" inline={true}/>
-- <McItem slug="techreborn:painting_tool" inline={true}/>
-- <McItem slug="techreborn:bronze_nugget" inline={true}/>
-- <McItem slug="techreborn:bronze_storage_block" inline={true}/>
-- <McItem slug="techreborn:mixed_metal_ingot" inline={true}/>
-- <McItem slug="techreborn:bronze_axe" inline={true}/>
-- <McItem slug="techreborn:bronze_hoe" inline={true}/>
-- <McItem slug="techreborn:bronze_pickaxe" inline={true}/>
-- <McItem slug="techreborn:bronze_spade" inline={true}/>
-- <McItem slug="techreborn:bronze_sword" inline={true}/>
-- <McItem slug="techreborn:bronze_helmet" inline={true}/>
-- <McItem slug="techreborn:bronze_chestplate" inline={true}/>
-- <McItem slug="techreborn:bronze_leggings" inline={true}/>
-- <McItem slug="techreborn:bronze_boots" inline={true}/>
+- <McItem slug="techreborn:wrench"/>
+- <McItem slug="techreborn:painting_tool"/>
+- <McItem slug="techreborn:bronze_nugget"/>
+- <McItem slug="techreborn:bronze_storage_block"/>
+- <McItem slug="techreborn:mixed_metal_ingot"/>
+- <McItem slug="techreborn:bronze_axe"/>
+- <McItem slug="techreborn:bronze_hoe"/>
+- <McItem slug="techreborn:bronze_pickaxe"/>
+- <McItem slug="techreborn:bronze_spade"/>
+- <McItem slug="techreborn:bronze_sword"/>
+- <McItem slug="techreborn:bronze_helmet"/>
+- <McItem slug="techreborn:bronze_chestplate"/>
+- <McItem slug="techreborn:bronze_leggings"/>
+- <McItem slug="techreborn:bronze_boots"/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:bronze_ingot" inline={true}/> -> <McItem slug="techreborn:bronze_plate" inline={true}/>
+<Machine config={{input: [{id: "techreborn:bronze_ingot"}], output: [{id: "techreborn:bronze_plate"}], tool: "techreborn:compressor"}} />
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:bronze_ingot" inline={true}/> -> <McItem slug="techreborn:bronze_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:bronze_ingot"}], output: [{id: "techreborn:bronze_dust"}], tool: "techreborn:grinder"}} />
