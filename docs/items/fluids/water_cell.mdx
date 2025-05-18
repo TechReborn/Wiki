@@ -4,5 +4,53 @@ title: Water Cell
 
 <ItemImage file="water_cell" alt="Water Cell" size="200" />
 
+**Water Cell** is used in the <McItem slug="techreborn:chemical_reactor" /> and the <McItem slug="techreborn:industrial_electrolyzer" />.
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:nitro_carbon_cell", qty: 1},
+    {id: "techreborn:water_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:glyceryl_cell", qty: 2}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:sulfur_cell", qty: 1},
+    {id: "techreborn:water_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:sulfuric_acid_cell", qty: 3}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:compressed_air_cell", qty: 1},
+    {id: "techreborn:hydrogen_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:water_cell", qty: 1}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "minecraft:sugar", qty: 32},
+    {id: "techreborn:empty_cell", qty: 7}
+  ],
+  output: [
+    {id: "techreborn:carbon_cell", qty: 2},
+    {id: "techreborn:water_cell", qty: 5}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />

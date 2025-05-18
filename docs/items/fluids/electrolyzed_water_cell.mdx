@@ -5,4 +5,29 @@ title: Electrolyzed Water Cell
 <ItemImage file="electrolyzed_water_cell" alt="Electrolyzed Water Cell" size="200" />
 
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+**Electrolyzed Water Cell** is used in the <McItem slug="techreborn:industrial_electrolyzer" />.
+
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:electrolyzed_water_cell", qty: 5}
+  ],
+  output: [
+    {id: "techreborn:hydrogen_cell", qty: 4},
+    {id: "techreborn:compressed_air_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:water_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:electrolyzed_water_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />

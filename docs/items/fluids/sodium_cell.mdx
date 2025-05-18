@@ -5,4 +5,47 @@ title: Sodium Cell
 <ItemImage file="sodium_cell" alt="Sodium Cell" size="200" />
 
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+**Sodium Cell** is used in the <McItem slug="techreborn:chemical_reactor" /> and the <McItem slug="techreborn:industrial_electrolyzer" />.
+
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:sulfur_cell", qty: 1},
+    {id: "techreborn:sodium_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:sodium_sulfide_cell", qty: 2}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:sodalite_dust", qty: 23},
+    {id: "techreborn:empty_cell", qty: 8}
+  ],
+  output: [
+    {id: "techreborn:sodium_cell", qty: 4},
+    {id: "techreborn:aluminum_dust", qty: 3},
+    {id: "techreborn:silicon_cell", qty: 3},
+    {id: "techreborn:chlorite_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:clay_dust", qty: 8},
+    {id: "techreborn:empty_cell", qty: 5}
+  ],
+  output: [
+    {id: "techreborn:lithium_cell", qty: 1},
+    {id: "techreborn:silicon_cell", qty: 2},
+    {id: "techreborn:sodium_cell", qty: 2},
+    {id: "techreborn:aluminum_dust", qty: 2}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />

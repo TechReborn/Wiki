@@ -1,0 +1,34 @@
+---
+title: Potassium Cell
+---
+
+<ItemImage file="potassium_cell" alt="Potassium Cell" size="200" />
+
+**Potassium Cell** is produced in the <McItem slug="techreborn:industrial_electrolyzer" />.
+
+<Machine config={{
+  input: [
+    {id: "techreborn:saltpeter_dust", qty: 10},
+    {id: "techreborn:empty_cell", qty: 7}
+  ],
+  output: [
+    {id: "techreborn:potassium_cell", qty: 2},
+    {id: "techreborn:nitrogen_cell", qty: 2},
+    {id: "techreborn:compressed_air_cell", qty: 3}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:ender_pearl_dust", qty: 16},
+    {id: "techreborn:empty_cell", qty: 16}
+  ],
+  output: [
+    {id: "techreborn:nitrogen_cell", qty: 5},
+    {id: "techreborn:beryllium_cell", qty: 1},
+    {id: "techreborn:potassium_cell", qty: 4},
+    {id: "techreborn:chlorite_cell", qty: 6}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />

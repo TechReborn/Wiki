@@ -5,4 +5,30 @@ title: Methane Cell
 <ItemImage file="methane_cell" alt="Methane Cell" size="200" />
 
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+**Methane Cell** is used in the <McItem slug="techreborn:chemical_reactor" /> and the <McItem slug="techreborn:industrial_electrolyzer" />.
+
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:methane_cell", qty: 5}
+  ],
+  output: [
+    {id: "techreborn:hydrogen_cell", qty: 4},
+    {id: "techreborn:carbon_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:carbon_cell", qty: 1},
+    {id: "techreborn:hydrogen_cell", qty: 4}
+  ],
+  output: [
+    {id: "techreborn:methane_cell", qty: 5}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
