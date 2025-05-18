@@ -107,3 +107,24 @@ If you use VSCode, you can use find and replace with regex and simplify this ins
 
 - Find: `\\<recipe\\>(.*?)\\<\/recipe\\>`
 - Replace: `<CraftingTable recipe="$1"/>`
+
+### Machine
+
+Machine is meant as a one-size-fits-all solution for crafting machines (including crafting table). You can pass in data to the component in two ones. One using the traditional recipe format:
+
+```
+<Machine recipe="input techreborn:sap output techreborn:rubber tool minecraft:furnace" />
+```
+
+You can also supply configuration in the new format:
+
+```
+<Machine config={{input: [
+  {id: "techreborn:ashes", qty: 2},
+  {id: "techreborn:empty_cell"}
+], output: [
+  {id: "techreborn:carbon_fiber_cell"}
+], tool: "techreborn:industrial_electrolyzer"}} />
+```
+
+Both inputs and outputs can have quantities attached to them. If you don't include a quantity, it's assumed to be 1.

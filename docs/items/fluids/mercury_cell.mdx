@@ -4,24 +4,21 @@ title: Mercury Cell
 
 <ItemImage file="mercury_cell" alt="Mercury Cell" size="200" />
 
-
 The **Mercury Cell** is a fluid cell added by TechReborn. You can get by using empty cell on Mercury fluid block or from several machine recipes.
 
 ## Recipe
 
-\<mcitem\>techreborn:industrial_centrifuge\</mcitem\> recipe:\
-32x\<mcitem\>minecraft:redstone\</mcitem\> + 13x\<mcitem\>techreborn:empty_cell\</mcitem\> -\> 3x \<mcitem\>techreborn:silicon_cell\</mcitem\> + 16x \<mcitem\>techreborn:pyrite_dust\</mcitem\> + 3x \<mcitem\>techreborn:ruby_dust\</mcitem\> + 10x \<mcitem\>techreborn:mercury_cell\</mcitem\>\
-\
-\<mcitem\>techreborn:industrial_centrifuge\</mcitem\> recipe:\
-2x\<mcitem\>techreborn:cinnabar_dust\</mcitem\> + \<mcitem\>techreborn:empty_cell\</mcitem\> -\> \<mcitem\>techreborn:mercury_cell\</mcitem\> + \<mcitem\>techreborn:sulfur_dust\</mcitem\>\
-\
-\<mcitem\>techreborn:fluid_replicator\</mcitem\> recipe:\
-4x\<mcitem\>techreborn:UU_matter\</mcitem\> -\> \<mcitem\>techreborn:mercury_cell\</mcitem\>
+<Machine config={{input: [{id: "minecraft:redstone", qty: 32}, {id: "techreborn:empty_cell", qty: 13}], output: [{id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:pyrite_dust", qty: 16}, {id: "techreborn:ruby_dust", qty: 3}, {id: "techreborn:mercury_cell", qty: 10}], tool: "techreborn:industrial_centrifuge"}} />
+
+<Machine config={{input: [{id: "techreborn:cinnabar_dust", qty: 2}, {id: "techreborn:empty_cell"}], output: [{id: "techreborn:mercury_cell"}, {id: "techreborn:sulfur_dust"}], tool: "techreborn:industrial_centrifuge"}} />
+
+<Machine config={{input: [{id: "techreborn:UU_matter", qty: 4}], output: [{id: "techreborn:mercury_cell"}], tool: "techreborn:fluid_replicator"}} />
 
 ## Usage
 
-You can pour **Mercury Cell** into the world to get fluid block. But this is not the main usage of Mercury.\
-**Mercury Cell** used in <McItem slug="techreborn:industrial_grinder" inline={true}/> to produce more primary outputs:
+You can pour **Mercury Cell** into the world to get fluid block. But this is not the main usage of Mercury.  
+**Mercury Cell** used in <McItem slug="techreborn:industrial_grinder" /> to produce more primary outputs:
+
 
 | Input | Output |
 |-------|--------|

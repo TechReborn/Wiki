@@ -12,13 +12,12 @@ title: Tin Cable
 |------|----------|--------|
 | Low  | 32 E/t   | 128 E  |
 
+<CraftingTable recipe="input air air air input techreborn:tin_ingot techreborn:tin_ingot techreborn:tin_ingot input air air air output techreborn:tin_cable,9"/>
 
-<McItem slug="minecraft:crafting_table" inline={true}/>: <CraftingTable recipe="input air air air input techreborn:tin_ingot techreborn:tin_ingot techreborn:tin_ingot input air air air output techreborn:tin_cable,9"/><br/>
-<McItem slug="techreborn:wire_mill" inline={true}/>:  
-<recipe> size 1x1 input techreborn:tin_ingot output techreborn:tin_cable,6 tool techreborn:wire_mill </recipe>
+<Machine config={{input: [{id: "techreborn:tin_ingot", qty: 1}], output: [{id: "techreborn:tin_cable", qty: 6}], tool: "techreborn:wire_mill"}} />
 
+## Crafting Usage
 
-Used as an ingredient in the <McItem slug="minecraft:crafting_table" inline={true}/> to produce:
+Used as an ingredient in the crafting table to produce:
 
 - <McItem slug="techreborn:lamp_led" inline={true}/>
-
