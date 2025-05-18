@@ -10,11 +10,10 @@ title: Red Garnet
 
 <CraftingTable recipe="input air air air input air techreborn:block_of_red_garnet air input air air air output techreborn:red_garnet,9" />
 
-**Red Garnet** could be made back from dust using raw power of TNT in \<mcitem\>techreborn:implosion_compressor\</mcitem\>:\
-4x\<mcitem\>techreborn:red_garnet_dust\</mcitem\> + 16x\<mcitem\>minecraft:TNT\</mcitem\> -\> 3x\<mcitem\>techreborn:red_garnet\</mcitem\> + 8x\<mcitem\>techreborn:dark_ashes\</mcitem\>
+<Machine config={{input: [{id: "techreborn:red_garnet_dust", qty: 4}, {id: "minecraft:TNT", qty: 16}], output: [{id: "techreborn:red_garnet", qty: 3}, {id: "techreborn:dark_ashes", qty: 8}], tool: "techreborn:implosion_compressor"}} />
 
 ## Usage
+
 <CraftingTable recipe="input techreborn:red_garnet techreborn:red_garnet techreborn:red_garnet input techreborn:red_garnet techreborn:red_garnet techreborn:red_garnet input techreborn:red_garnet techreborn:red_garnet techreborn:red_garnet output techreborn:block_of_red_garnet" />
 
-\<mcitem\>techreborn:grinder\</mcitem\> recipe:\
-\<mcitem\>techreborn:red_garnet\</mcitem\> -\> \<mcitem\>techreborn:red_garnet_dust\</mcitem\>
+<Machine recipe="input techreborn:red_garnet output techreborn:red_garnet_dust tool techreborn:grinder" />

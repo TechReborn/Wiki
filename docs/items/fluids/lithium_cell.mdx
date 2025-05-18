@@ -4,20 +4,16 @@ title: Lithium Cell
 
 <ItemImage file="lithium_cell" alt="Lithium Cell" size="200" />
 
-
-The **Lithium Cell** is a fluid cell added by TechReborn. It is used to create <McItem slug="techreborn:lithium_ion_battery" inline={true}/>.
+The **Lithium Cell** is a fluid cell added by TechReborn. It is used to create <McItem slug="techreborn:lithium_ion_battery" />.
 
 ## Recipe
 
-\<mcitem\>techreborn:industrial_electrolyzer\</mcitem\> recipe:\
-8x \<mcitem\>techreborn:clay_dust\</mcitem\> + \<mcitem\>techreborn:empty_cell\</mcitem\> -\> \<mcitem\>techreborn:lithium_cell\</mcitem\> + 2x \<mcitem\>techreborn:silicon_cell\</mcitem\> + 2x \<mcitem\>techreborn:sodium_cell\</mcitem\> + 2x \<mcitem\>techreborn:aluminium_dust\</mcitem\>
+<Machine config={{input: [{id: "techreborn:clay_dust", qty: 8}, {id: "techreborn:empty_cell"}], output: [{id: "techreborn:lithium_cell"}, {id: "techreborn:silicon_cell", qty: 2}, {id: "techreborn:sodium_cell", qty: 2}, {id: "techreborn:aluminum_dust", qty: 2}], tool: "techreborn:industrial_electrolyzer"}} />
 
 ## Usage
 
-\<mcitem\>techreborn:assembling_machine\</mcitem\> recipes:\
-2x \<mcitem\>techreborn:aluminium_plate\</mcitem\> + 2x \<mcitem\>techreborn:lithium_cell\</mcitem\> -\> \<mcitem\>techreborn:lithium_ion_battery\</mcitem\>
+<Machine config={{input: [{id: "techreborn:aluminum_plate", qty: 2}, {id: "techreborn:lithium_cell", qty: 2}], output: [{id: "techreborn:lithium_ion_battery"}], tool: "techreborn:assembling_machine"}} />
 
-\<mcitem\>techreborn:fusion_reactor\</mcitem\> recipe:\
-\<mcitem\>techreborn:wolframium_cell\</mcitem\> + \<mcitem\>techreborn:lithium_cell\</mcitem\> -\> \<mcitem\>techreborn:iridium_ore\</mcitem\>
+<Machine config={{input: [{id: "techreborn:wolframium_cell"}, {id: "techreborn:lithium_cell"}], output: [{id: "techreborn:iridium_ore"}], tool: "techreborn:fusion_reactor"}} />
 
-Can also be used as fuel in the <McItem slug="techreborn:semifluid_generator" inline={true}/>.
+Can also be used as fuel in the <McItem slug="techreborn:semifluid_generator" />.

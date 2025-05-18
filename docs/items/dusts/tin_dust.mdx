@@ -6,40 +6,54 @@ title: Tin Dust
 
 # Tin Dust
 
-**Tin Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:tin_ingot" inline={true}/>.
+**Tin Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:tin_ingot" />.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_tin_dust techreborn:small_pile_of_tin_dust air input techreborn:small_pile_of_tin_dust techreborn:small_pile_of_tin_dust air input air air air output techreborn:tin_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipes:  
-<McItem slug="techreborn:tin_ore" inline={true}/> → 2x <McItem slug="techreborn:tin_dust" inline={true}/>  
-<McItem slug="techreborn:tin_ingot" inline={true}/> → <McItem slug="techreborn:tin_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:tin_ore"}], output: [{id: "techreborn:tin_dust", qty: 2}], tool: "techreborn:grinder"}} />
+<Machine config={{input: [{id: "techreborn:tin_ingot"}], output: [{id: "techreborn:tin_dust"}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipes:  
-- <McItem slug="techreborn:tin_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-  2x <McItem slug="techreborn:tin_dust" inline={true}/> +  
-  <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> +  
-  <McItem slug="techreborn:small_pile_of_zinc_dust" inline={true}/>  
-- <McItem slug="techreborn:tin_ore" inline={true}/> + <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> →  
-  2x <McItem slug="techreborn:tin_dust" inline={true}/> +  
-  <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> +  
-  <McItem slug="techreborn:zinc_dust" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:tin_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:tin_dust", qty: 2},
+  {id: "techreborn:small_pile_of_iron_dust"},
+  {id: "techreborn:small_pile_of_zinc_dust"}
+], tool: "techreborn:industrial_grinder"}} />
+
+<Machine config={{input: [
+  {id: "techreborn:tin_ore"},
+  {id: "techreborn:sodiumpersulfate_cell"}
+], output: [
+  {id: "techreborn:tin_dust", qty: 2},
+  {id: "techreborn:small_pile_of_iron_dust"},
+  {id: "techreborn:zinc_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:tin_dust air input air air air output techreborn:small_pile_of_tin_dust,4"/>
 
-**Smelting recipe:**  
-<McItem slug="techreborn:tin_dust" inline={true}/> → <McItem slug="techreborn:tin_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:tin_dust"}], output: [{id: "techreborn:tin_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipes:  
-- 3x <McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:tin_dust" inline={true}/> →  
-  4x <McItem slug="techreborn:bronze_ingot" inline={true}/>  
-- 3x <McItem slug="techreborn:copper_ingot" inline={true}/> + <McItem slug="techreborn:tin_dust" inline={true}/> →  
-  4x <McItem slug="techreborn:bronze_ingot" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:copper_dust", qty: 3},
+  {id: "techreborn:tin_dust"}
+], output: [
+  {id: "techreborn:bronze_ingot", qty: 4}
+], tool: "techreborn:alloy_smelter"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-2x <McItem slug="techreborn:tin_dust" inline={true}/> →  
-<McItem slug="techreborn:small_pile_of_zinc_dust" inline={true}/> +  
-<McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:copper_ingot", qty: 3},
+  {id: "techreborn:tin_dust"}
+], output: [
+  {id: "techreborn:bronze_ingot", qty: 4}
+], tool: "techreborn:alloy_smelter"}} />
+
+<Machine config={{input: [{id: "techreborn:tin_dust", qty: 2}], output: [
+  {id: "techreborn:small_pile_of_zinc_dust"},
+  {id: "techreborn:small_pile_of_iron_dust"}
+], tool: "techreborn:industrial_centrifuge"}} />

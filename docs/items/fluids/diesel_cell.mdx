@@ -4,18 +4,25 @@ title: Diesel Cell
 
 <ItemImage file="diesel_cell" alt="Diesel Cell" size="200" />
 
-
-The **Diesel Cell** is a fluid cell added by Tech Reborn. It is used to produce energy in <McItem slug="diesel_generator" pack="techreborn" inline={true}/> or for further processing into <McItem slug="nitrodiesel_cell" pack="techreborn" inline={true}/>.
+The **Diesel Cell** is a fluid cell added by Tech Reborn. It is used to produce energy in <McItem slug="diesel_generator" pack="techreborn" /> or for further processing into <McItem slug="nitrodiesel_cell" pack="techreborn" />.
 
 ## Recipe
 
-\<mcitem\>techreborn:distillation_tower\</mcitem\> recipe:\
-16x\<mcitem\>techreborn:oil_cell\</mcitem\> + 16x\<mcitem\>techreborn:empty_cell\</mcitem\> -\> 16x\<mcitem\>techreborn:diesel_cell\</mcitem\> + 15x\<mcitem\>techreborn:sulfuric_acid_cell\</mcitem\> + \<mcitem\>techreborn:glyceryl_cell\</mcitem\>
+<Machine config={{input: [{id: "techreborn:oil_cell", qty: 16}, {id: "techreborn:empty_cell", qty: 16}], output: [{id: "techreborn:diesel_cell", qty: 16}, {id: "techreborn:sulfuric_acid_cell", qty: 15}, {id: "techreborn:glyceryl_cell"}], tool: "techreborn:distillation_tower"}} />
 
 ## Usage
 
-\<mcitem\>techreborn:diesel_cell\</mcitem\> is used to generate energy. 1 cell or bucket will generate 128k Energy in \<mcitem\>techreborn:diesel_generator\</mcitem\>.
+<McItem slug="techreborn:diesel_cell" /> is used to generate energy. 1 cell or bucket will generate 128k Energy in <McItem slug="techreborn:diesel_generator" />.
 
-\
-It is also used for further processing in \<mcitem\>techreborn:chemical_reactor\</mcitem\> recipe:\
-\<mcitem\>techreborn:diesel_cell\</mcitem\> + \<mcitem\>techreborn:glyceryl_cell\</mcitem\> -\> 5x\<mcitem\>techreborn:nitrodiesel_cell\</mcitem\>
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:glyceryl_cell", qty: 1},
+    {id: "techreborn:diesel_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:nitro_diesel_cell", qty: 5}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />

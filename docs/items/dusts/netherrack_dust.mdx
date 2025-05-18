@@ -6,14 +6,26 @@ title: Netherrack Dust
 
 # Netherrack Dust
 
-**Netherrack Dust** is obtained by grinding <McItem slug="minecraft:netherrack" inline={true}/> using either  
-<McItem slug="techreborn:grinder" inline={true}/> or <McItem slug="techreborn:industrial_grinder" inline={true}/>.
+**Netherrack Dust** is obtained by grinding <McItem slug="minecraft:netherrack" /> using either  
+<McItem slug="techreborn:grinder" /> or <McItem slug="techreborn:industrial_grinder" />.
 
-It can also be crafted from 4x <McItem slug="techreborn:small_pile_of_netherrack_dust" inline={true}/>  
-using a <McItem slug="minecraft:crafting_table" inline={true}/>.
+<Machine config={{input: [{id: "minecraft:netherrack"}], output: [{id: "techreborn:netherrack_dust"}], tool: "techreborn:grinder"}} />
 
-It can be used in the <McItem slug="techreborn:industrial_centrifuge" inline={true}/> to obtain:  
-- <McItem slug="minecraft:redstone" inline={true}/>  
-- <McItem slug="techreborn:sulfur_dust" inline={true}/>  
-- <McItem slug="techreborn:coal_dust" inline={true}/>  
-- <McItem slug="minecraft:gold_nugget" inline={true}/>
+<Machine config={{input: [{id: "minecraft:netherrack"}], output: [{id: "techreborn:netherrack_dust"}], tool: "techreborn:industrial_grinder"}} />
+
+It can also be crafted from 4x <McItem slug="techreborn:small_pile_of_netherrack_dust" />  
+using a <McItem slug="minecraft:crafting_table" />.
+
+<CraftingTable recipe="input techreborn:small_pile_of_netherrack_dust techreborn:small_pile_of_netherrack_dust air input techreborn:small_pile_of_netherrack_dust techreborn:small_pile_of_netherrack_dust air input air air air output techreborn:netherrack_dust"/>
+
+It can be used in the <McItem slug="techreborn:industrial_centrifuge" /> to obtain:
+
+<Machine config={{input: [
+  {id: "techreborn:netherrack_dust", qty: 16},
+  {id: "techreborn:empty_cell"}
+], output: [
+  {id: "minecraft:redstone"},
+  {id: "techreborn:sulfur_cell"},
+  {id: "techreborn:coal_dust"},
+  {id: "minecraft:gold_nugget"}
+], tool: "techreborn:industrial_centrifuge"}} />

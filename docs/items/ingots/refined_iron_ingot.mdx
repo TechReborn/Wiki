@@ -6,7 +6,7 @@ title: Refined Iron Ingot
 
 # Refined Iron Ingot
 
-A **Refined Iron Ingot** is used in many Tech Reborn recipes. It is typically acquired by is smelting <McItem slug="minecraft:iron_ingot" inline={true}/>s in any kind of furnace, such as a <McItem slug="minecraft:furnace" inline={true}/>, <McItem slug="minecraft:blast_furnace" inline={true}/>, <McItem slug="techreborn:iron_furnace" inline={true}/> or <McItem slug="techreborn:electric_furnace" inline={true}/>.
+A **Refined Iron Ingot** is used in many Tech Reborn recipes. It is typically acquired by smelting <McItem slug="minecraft:iron_ingot"/>s in any kind of furnace, such as a <McItem slug="minecraft:furnace"/>, <McItem slug="minecraft:blast_furnace"/>, <McItem slug="techreborn:iron_furnace"/> or <McItem slug="techreborn:electric_furnace"/>.
 
 ## Recipe
 
@@ -17,13 +17,15 @@ A **Refined Iron Ingot** is used in many Tech Reborn recipes. It is typically ac
 
 #### Smelting Recipe
 
-\<recipe\> size 1x1 input minecraft:iron_ingot output techreborn:refined_iron_ingot tool techreborn:iron_furnace \</recipe\>
+<Machine recipe="input minecraft:iron_ingot output techreborn:refined_iron_ingot tool techreborn:iron_furnace" />
 
 #### Blast Furnace Recipes
 
-- <McItem slug="techreborn:pyrite_ore" inline={true}/> + <McItem slug="techreborn:calcium_carbonate_cell" inline={true}/> &rarr; 2x<McItem slug="techreborn:refined_iron_ingot" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/>
-- <McItem slug="minecraft:iron_ore" inline={true}/> + <McItem slug="techreborn:calcium_carbonate_cell" inline={true}/> &rarr; 3x<McItem slug="techreborn:refined_iron_ingot" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/>
-- <McItem slug="minecraft:deepslate_iron_ore" inline={true}/> + <McItem slug="techreborn:calcium_carbonate_cell" inline={true}/> &rarr; 3x<McItem slug="techreborn:refined_iron_ingot" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/>
+<Machine config={{input: [{id: "techreborn:pyrite_ore"}, {id: "techreborn:calcium_carbonate_cell"}], output: [{id: "techreborn:refined_iron_ingot", qty: 2}, {id: "techreborn:empty_cell"}], tool: "techreborn:blast_furnace"}} />
+
+<Machine config={{input: [{id: "minecraft:iron_ore"}, {id: "techreborn:calcium_carbonate_cell"}], output: [{id: "techreborn:refined_iron_ingot", qty: 3}, {id: "techreborn:empty_cell"}], tool: "techreborn:blast_furnace"}} />
+
+<Machine config={{input: [{id: "minecraft:deepslate_iron_ore"}, {id: "techreborn:calcium_carbonate_cell"}], output: [{id: "techreborn:refined_iron_ingot", qty: 3}, {id: "techreborn:empty_cell"}], tool: "techreborn:blast_furnace"}} />
 
 ## Usage
 
@@ -31,35 +33,36 @@ A **Refined Iron Ingot** is used in many Tech Reborn recipes. It is typically ac
 
 #### Crafting Table Recipes
 
-- <McItem slug="techreborn:basic_jackhammer" inline={true}/>
-- <McItem slug="techreborn:basic_drill" inline={true}/>
-- <McItem slug="techreborn:basic_chainsaw" inline={true}/>
-- <McItem slug="techreborn:refined_iron_storage_block" inline={true}/>
-- <McItem slug="techreborn:electronic_circuit" inline={true}/>
-- <McItem slug="techreborn:refined_iron_nugget" inline={true}/>
-- <McItem slug="techreborn:refined_iron_fence" inline={true}/>
-- <McItem slug="techreborn:manual" inline={true}/>
-- <McItem slug="techreborn:basic_machine_frame" inline={true}/>
-- <McItem slug="techreborn:basic_machine_casing" inline={true}/>
-- <McItem slug="techreborn:iron_alloy_furnace" inline={true}/>
-- <McItem slug="techreborn:industrial_sawmill" inline={true}/>
-- <McItem slug="techreborn:industrial_centrifuge" inline={true}/>
-- <McItem slug="techreborn:greenhouse_controller" inline={true}/>
-- <McItem slug="techreborn:diesel_generator" inline={true}/>
-- <McItem slug="techreborn:alarm" inline={true}/>
-- <McItem slug="techreborn:mixed_metal_ingot" inline={true}/>
-- <McItem slug="techreborn:insulated_hv_cable" inline={true}/>
-- <McItem slug="techreborn:hv_cable" inline={true}/>
+- <McItem slug="techreborn:basic_jackhammer"/>
+- <McItem slug="techreborn:basic_drill"/>
+- <McItem slug="techreborn:basic_chainsaw"/>
+- <McItem slug="techreborn:refined_iron_storage_block"/>
+- <McItem slug="techreborn:electronic_circuit"/>
+- <McItem slug="techreborn:refined_iron_nugget"/>
+- <McItem slug="techreborn:refined_iron_fence"/>
+- <McItem slug="techreborn:manual"/>
+- <McItem slug="techreborn:basic_machine_frame"/>
+- <McItem slug="techreborn:basic_machine_casing"/>
+- <McItem slug="techreborn:iron_alloy_furnace"/>
+- <McItem slug="techreborn:industrial_sawmill"/>
+- <McItem slug="techreborn:industrial_centrifuge"/>
+- <McItem slug="techreborn:greenhouse_controller"/>
+- <McItem slug="techreborn:diesel_generator"/>
+- <McItem slug="techreborn:alarm"/>
+- <McItem slug="techreborn:mixed_metal_ingot"/>
+- <McItem slug="techreborn:insulated_hv_cable"/>
+- <McItem slug="techreborn:hv_cable"/>
 
 #### Blast Furnace Recipes
 
-- <McItem slug="techreborn:refined_iron_ingot" inline={true}/> + 4x <McItem slug="techreborn:coal_dust" inline={true}/> &rarr; <McItem slug="techreborn:steel_ingot" inline={true}/> + 2x <McItem slug="techreborn:dark_ashes_dust" inline={true}/>
-- <McItem slug="techreborn:refined_iron_ingot" inline={true}/> + 2x <McItem slug="techreborn:carbon_cell" inline={true}/> &rarr; <McItem slug="techreborn:steel_ingot" inline={true}/> + 2x <McItem slug="techreborn:empty_cell" inline={true}/>
+<Machine config={{input: [{id: "techreborn:refined_iron_ingot"}, {id: "techreborn:coal_dust", qty: 4}], output: [{id: "techreborn:steel_ingot"}, {id: "techreborn:dark_ashes_dust", qty: 2}], tool: "techreborn:blast_furnace"}} />
+
+<Machine config={{input: [{id: "techreborn:refined_iron_ingot"}, {id: "techreborn:carbon_cell", qty: 2}], output: [{id: "techreborn:steel_ingot"}, {id: "techreborn:empty_cell", qty: 2}], tool: "techreborn:blast_furnace"}} />
 
 #### Compressor Recipe
 
-\<recipe\> size 1x1 input techreborn:refined_iron_ingot output techreborn:refined_iron_plate tool techreborn:compressor \</recipe\>
+<Machine recipe="input techreborn:refined_iron_ingot output techreborn:refined_iron_plate tool techreborn:compressor" />
 
 #### Wire Mill Recipe
 
-\<recipe\> size 1x1 input techreborn:refined_iron_ingot output techreborn:hv_cable,6 tool techreborn:wire_mill \</recipe\>
+<Machine recipe="input techreborn:refined_iron_ingot output techreborn:hv_cable,6 tool techreborn:wire_mill" />

@@ -6,7 +6,7 @@ title: HV Transformer
 
 <ItemImage file="hv_transformer" alt="HV Transformer" size="200" />
 
-The **HV Transformer** converts energy from Extreme to High tier. For more details and how to use, read [general information about Transformers](/energy/transformers).
+The **HV Transformer** converts energy from Extreme to High tier. For more details and how to use, read [general information about Transformers](/docs/blocks/transformers).
 
 | Input    | Output   |
 |----------|----------|

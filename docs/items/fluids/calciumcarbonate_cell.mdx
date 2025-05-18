@@ -5,4 +5,17 @@ title: Calciumcarbonate Cell
 <ItemImage file="calciumcarbonate_cell" alt="Calciumcarbonate Cell" size="200" />
 
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+**Calciumcarbonate Cell** is used in the <McItem slug="techreborn:chemical_reactor" />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:carbon_cell", qty: 1},
+    {id: "techreborn:calcium_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:calcium_carbonate_cell", qty: 2}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />

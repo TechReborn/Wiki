@@ -6,28 +6,41 @@ title: Peridot Dust
 
 # Peridot Dust
 
-**Peridot Dust** is an intermediate product received by processing <McItem slug="techreborn:peridot" inline={true}/> or <McItem slug="techreborn:peridot_ore" inline={true}/>.
+**Peridot Dust** is an intermediate product received by processing <McItem slug="techreborn:peridot" /> or <McItem slug="techreborn:peridot_ore" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_peridot techreborn:small_pile_of_peridot air input techreborn:small_pile_of_peridot techreborn:small_pile_of_peridot air input air air air output techreborn:peridot_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:peridot_ore" inline={true}/> → 2x <McItem slug="techreborn:peridot_dust" inline={true}/>  
-<McItem slug="techreborn:peridot" inline={true}/> → <McItem slug="techreborn:peridot_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:peridot_ore"}], output: [{id: "techreborn:peridot_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-16x <McItem slug="techreborn:basalt_dust" inline={true}/> → <McItem slug="techreborn:peridot_dust" inline={true}/> + 3x <McItem slug="techreborn:calcite_dust" inline={true}/> + 8x <McItem slug="techreborn:flint_dust" inline={true}/> + 4x <McItem slug="techreborn:dark_ashes" inline={true}/>
+<Machine config={{input: [{id: "techreborn:peridot"}], output: [{id: "techreborn:peridot_dust"}], tool: "techreborn:grinder"}} />
+
+<Machine config={{input: [{id: "techreborn:basalt_dust", qty: 16}], output: [
+  {id: "techreborn:peridot_dust"},
+  {id: "techreborn:calcite_dust", qty: 3},
+  {id: "techreborn:flint_dust", qty: 8},
+  {id: "techreborn:dark_ashes", qty: 4}
+], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-**Peridot Dust** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>:  
-9x <McItem slug="techreborn:peridot_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
-2x <McItem slug="techreborn:magnesium_dust" inline={true}/> + 2x <McItem slug="techreborn:iron_dust" inline={true}/> + <McItem slug="techreborn:silicon_cell" inline={true}/> + 2x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:peridot_dust", qty: 9},
+  {id: "techreborn:empty_cell"}
+], output: [
+  {id: "techreborn:magnesium_dust", qty: 2},
+  {id: "techreborn:iron_dust", qty: 2},
+  {id: "techreborn:silicon_cell"},
+  {id: "techreborn:compressed_air_cell", qty: 2}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
-**Peridot Dust** can also be split into small piles using a crafting table:  
 <CraftingTable recipe="input air air air input air techreborn:peridot_dust air input air air air output techreborn:small_pile_of_peridot,4"/>
 
-And finally, **Peridot Dust** can be recompressed back into a gem using raw power of TNT in an <McItem slug="techreborn:implosion_compressor" inline={true}/>:  
-4x <McItem slug="techreborn:peridot_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → 3x <McItem slug="techreborn:peridot" inline={true}/> + 12x <McItem slug="techreborn:dark_ashes" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:peridot_dust", qty: 4},
+  {id: "minecraft:TNT", qty: 16}
+], output: [
+  {id: "techreborn:peridot", qty: 3},
+  {id: "techreborn:dark_ashes", qty: 12}
+], tool: "techreborn:implosion_compressor"}} />

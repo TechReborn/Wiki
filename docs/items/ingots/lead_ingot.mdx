@@ -13,20 +13,19 @@ title: Lead Ingot
 <CraftingTable recipe="input techreborn:lead_nugget techreborn:lead_nugget techreborn:lead_nugget input techreborn:lead_nugget techreborn:lead_nugget techreborn:lead_nugget input techreborn:lead_nugget techreborn:lead_nugget techreborn:lead_nugget output techreborn:lead_ingot"/>
 <CraftingTable recipe="input air air air input air techreborn:lead_storage_block air input air air air output techreborn:lead_ingot,9"/>
 
-Smelting recipes: \<recipe\> size 1x1 input techreborn:raw_lead output techreborn:lead_ingot tool techreborn:iron_furnace \</recipe\>\
-\<recipe\> size 1x1 input techreborn:lead_ore output techreborn:lead_ingot tool techreborn:iron_furnace \</recipe\>\
-\<recipe\> size 1x1 input techreborn:deepslate_lead_ore output techreborn:lead_ingot tool techreborn:iron_furnace \</recipe\>\
-<McItem slug="techreborn:blast_furnace"/> recipe:\
-8x<McItem slug="techreborn:galena_small_dust"/> -\> <McItem slug="techreborn:lead_ingot"/> + <McItem slug="techreborn:silver_ingot"/>\
-2x<McItem slug="techreborn:galena_dust"/> -\> <McItem slug="techreborn:lead_ingot"/> + <McItem slug="techreborn:silver_ingot"/>
+<Machine recipe="input techreborn:raw_lead output techreborn:lead_ingot tool techreborn:iron_furnace" />
+<Machine recipe="input techreborn:lead_ore output techreborn:lead_ingot tool techreborn:iron_furnace" />
+<Machine recipe="input techreborn:deepslate_lead_ore output techreborn:lead_ingot tool techreborn:iron_furnace" />
+
+<Machine config={{input: [{id: "techreborn:galena_small_dust", qty: 8}], output: [{id: "techreborn:lead_ingot"}, {id: "techreborn:silver_ingot"}], tool: "techreborn:blast_furnace"}} />
+<Machine config={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [{id: "techreborn:lead_ingot"}, {id: "techreborn:silver_ingot"}], tool: "techreborn:blast_furnace"}} />
 
 ## Usage
 
 **Lead Ingot** used in several crafting recipes:
 
-- <McItem slug="techreborn:lead_nugget" inline={true}/>
-- <McItem slug="techreborn:lead_storage_block" inline={true}/>
-- <McItem slug="techreborn:red_cell_battery" inline={true}/>
+- <McItem slug="techreborn:lead_nugget"/>
+- <McItem slug="techreborn:lead_storage_block"/>
+- <McItem slug="techreborn:red_cell_battery"/>
 
-<McItem slug="techreborn:compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:lead_ingot" inline={true}/> &rarr; <McItem slug="techreborn:lead_plate" inline={true}/>
+<Machine config={{input: [{id: "techreborn:lead_ingot"}], output: [{id: "techreborn:lead_plate"}], tool: "techreborn:compressor"}} />

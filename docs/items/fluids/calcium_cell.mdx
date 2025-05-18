@@ -4,5 +4,99 @@ title: Calcium Cell
 
 <ItemImage file="calcium_cell" alt="Calcium Cell" size="200" />
 
+**Calcium Cell** is used in the <McItem slug="techreborn:chemical_reactor" /> and the <McItem slug="techreborn:industrial_electrolyzer" />.
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:carbon_cell", qty: 1},
+    {id: "techreborn:calcium_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:calcium_carbonate_cell", qty: 2}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:uvarovite_dust", qty: 20},
+    {id: "techreborn:empty_cell", qty: 12}
+  ],
+  output: [
+    {id: "techreborn:calcium_cell", qty: 3},
+    {id: "techreborn:chrome_dust", qty: 2},
+    {id: "techreborn:silicon_cell", qty: 3},
+    {id: "techreborn:compressed_air_cell", qty: 6}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:lazurite_dust", qty: 29},
+    {id: "techreborn:empty_cell", qty: 10}
+  ],
+  output: [
+    {id: "techreborn:aluminum_dust", qty: 3},
+    {id: "techreborn:silicon_cell", qty: 3},
+    {id: "techreborn:calcium_cell", qty: 3},
+    {id: "techreborn:sodium_cell", qty: 4}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:grossular_dust", qty: 20},
+    {id: "techreborn:empty_cell", qty: 12}
+  ],
+  output: [
+    {id: "techreborn:calcium_cell", qty: 3},
+    {id: "techreborn:aluminum_dust", qty: 2},
+    {id: "techreborn:silicon_cell", qty: 3},
+    {id: "techreborn:compressed_air_cell", qty: 6}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "minecraft:bone_meal", qty: 3},
+    {id: "techreborn:empty_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:calcium_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:calcite_dust", qty: 10},
+    {id: "techreborn:empty_cell", qty: 7}
+  ],
+  output: [
+    {id: "techreborn:calcium_cell", qty: 2},
+    {id: "techreborn:carbon_cell", qty: 2},
+    {id: "techreborn:compressed_air_cell", qty: 3}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:andradite_dust", qty: 20},
+    {id: "techreborn:empty_cell", qty: 12}
+  ],
+  output: [
+    {id: "techreborn:calcium_cell", qty: 3},
+    {id: "minecraft:raw_Iron", qty: 2},
+    {id: "techreborn:silicon_cell", qty: 3},
+    {id: "techreborn:compressed_air_cell", qty: 6}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />

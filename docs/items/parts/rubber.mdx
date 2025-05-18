@@ -4,10 +4,10 @@ title: Rubber
 
 <ItemImage file="rubber" alt="Rubber" size="200" />
 
-**Rubber** is used to produce [insulated cables](/energy/cables). It is produced by heating <McItem slug="techreborn:sap"/> in 
+**Rubber** is used to produce [insulated cables](/docs/blocks/cables). It is produced by heating <McItem slug="techreborn:sap"/> in 
 a <McItem slug="minecraft:furnace"/>.
 
-An <McItem slug="techreborn:industrial_blast_furnace"/> or <McItem slug="smoker" pack="minecraft" /> will not work.
+An <McItem slug="techreborn:industrial_blast_furnace"/> or <McItem slug="minecraft:smoker" /> will not work.
 
 A more efficient way to produce <McItem slug="techreborn:rubber"/> is with an <McItem slug="techreborn:extractor"/>; it will produce three times the amount of <McItem slug="techreborn:rubber"/> per <McItem slug="techreborn:sap"/>. 
 
@@ -15,23 +15,17 @@ The most efficient method is to use the <McItem slug="techreborn:Industrial_Cent
 
 ## Recipes
 
-<McItem slug="minecraft:Furnace"/>: 
+<Machine recipe="input techreborn:sap output techreborn:rubber tool minecraft:furnace" />
 
-\<recipe\> size 1x1 input techreborn:sap output techreborn:rubber tool minecraft:furnace \</recipe\>\
+<Machine recipe="input techreborn:sap output techreborn:rubber,3 tool techreborn:extractor" />
 
-<McItem slug="techreborn:Extractor"/>: 
+<Machine recipe="input input techreborn:rubber_log output techreborn:rubber tool techreborn:extractor" />
 
-\<recipe\> size 1x1 input techreborn:sap output techreborn:rubber,3 tool techreborn:extractor \</recipe\>\
+<Machine recipe="input techreborn:rubber_sapling output techreborn:rubber tool techreborn:extractor" />
 
-\<recipe\> size 1x1 input techreborn:rubber_log output techreborn:rubber tool techreborn:extractor \</recipe\>\
+<Machine recipe="input minecraft:slimeball output techreborn:rubber,2 tool techreborn:extractor" />
 
-\<recipe\> size 1x1 input techreborn:rubber_sapling output techreborn:rubber tool techreborn:extractor \</recipe\>\
-
-\<recipe\> size 1x1 input minecraft:slimeball output techreborn:rubber,2 tool techreborn:extractor \</recipe\>\
-
-<McItem slug="techreborn:Industrial_Centrifuge"/>: 
-
-\<recipe\> size 1x1 input techreborn:sap,4 output techreborn:rubber,14 tool techreborn:industrial_centrifuge \</recipe\>
+<Machine recipe="input techreborn:sap,4 output techreborn:rubber,14 tool techreborn:industrial_centrifuge" />
 
 ## Usage
 

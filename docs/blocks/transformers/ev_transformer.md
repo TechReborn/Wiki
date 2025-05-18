@@ -6,7 +6,7 @@ title: EV Transformer
 
 <ItemImage file="ev_transformer" alt="EV Transformer" size="200" />
 
-The **EV Transformer** converts energy from Insane to Extreme tier. For more details and how to use, read [general information about Transformers](/energy/transformers).
+The **EV Transformer** converts energy from Insane to Extreme tier. For more details and how to use, read [general information about Transformers](/docs/blocks/transformers).
 
 | Input    | Output   |
 |----------|----------|

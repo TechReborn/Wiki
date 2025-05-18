@@ -6,26 +6,28 @@ title: Pyrope Dust
 
 # Pyrope Dust
 
-**Pyrope Dust** is an intermediate product received by processing <McItem slug="techreborn:red_garnet_dust" inline={true}/> in <McItem slug="techreborn:industrial_centrifuge" inline={true}/>.
+**Pyrope Dust** is an intermediate product received by processing <McItem slug="techreborn:red_garnet_dust" /> in <McItem slug="techreborn:industrial_centrifuge" />.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_pyrope_dust techreborn:small_pile_of_pyrope_dust air input techreborn:small_pile_of_pyrope_dust techreborn:small_pile_of_pyrope_dust air input air air air output techreborn:pyrope_dust"/>
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-16x <McItem slug="techreborn:red_garnet_dust" inline={true}/> →  
-3x <McItem slug="techreborn:pyrope_dust" inline={true}/> +  
-5x <McItem slug="techreborn:almandine_dust" inline={true}/> +  
-8x <McItem slug="techreborn:spessartine_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:red_garnet_dust", qty: 16}], output: [
+  {id: "techreborn:pyrope_dust", qty: 3},
+  {id: "techreborn:almandine_dust", qty: 5},
+  {id: "techreborn:spessartine_dust", qty: 8}
+], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-**Pyrope Dust** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>  
-20x <McItem slug="techreborn:pyrope_dust" inline={true}/> + 9x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-3x <McItem slug="techreborn:magnesium_dust" inline={true}/> +  
-2x <McItem slug="techreborn:aluminium_dust" inline={true}/> +  
-3x <McItem slug="techreborn:silicon_cell" inline={true}/> +  
-6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine config={{input: [
+  {id: "techreborn:pyrope_dust", qty: 20},
+  {id: "techreborn:empty_cell", qty: 9}
+], output: [
+  {id: "techreborn:magnesium_dust", qty: 3},
+  {id: "techreborn:aluminum_dust", qty: 2},
+  {id: "techreborn:silicon_cell", qty: 3},
+  {id: "techreborn:compressed_air_cell", qty: 6}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
-Besides that **Pyrope Dust** could be split into small piles using <McItem slug="minecraft:crafting_table" inline={true}/>  
 <CraftingTable recipe="input air air air input air techreborn:pyrope_dust air input air air air output techreborn:small_pile_of_pyrope_dust,4"/>

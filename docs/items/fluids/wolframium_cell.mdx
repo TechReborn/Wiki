@@ -4,5 +4,17 @@ title: Wolframium Cell
 
 <ItemImage file="wolframium_cell" alt="Wolframium Cell" size="200" />
 
+**Wolframium Cell** is produced in the <McItem slug="techreborn:industrial_electrolyzer" />.
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:raw_tungsten", qty: 1},
+    {id: "techreborn:empty_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:wolframium_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />

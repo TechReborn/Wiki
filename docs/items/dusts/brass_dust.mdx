@@ -10,20 +10,19 @@ title: Brass Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_brass_dust techreborn:small_pile_of_brass_dust air input techreborn:small_pile_of_brass_dust techreborn:small_pile_of_brass_dust air input air air air output techreborn:brass_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:brass_ingot" inline={true}/> → <McItem slug="techreborn:brass_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:brass_ingot"}], output: [{id: "techreborn:brass_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:brass_dust air input air air air output techreborn:small_pile_of_brass_dust,4"/>
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-<McItem slug="techreborn:brass_dust" inline={true}/> → 3x <McItem slug="techreborn:small_pile_of_copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_zinc_dust" inline={true}/>
+<Machine config={{input: [{id: "techreborn:brass_dust"}], output: [
+  {id: "techreborn:small_pile_of_copper_dust", qty: 3},
+  {id: "techreborn:small_pile_of_zinc_dust"}
+], tool: "techreborn:industrial_centrifuge"}} />
 
 ### Smelting
 
-<McItem slug="techreborn:brass_dust" inline={true}/> → <McItem slug="techreborn:brass_ingot" inline={true}/>
+<Machine config={{input: [{id: "techreborn:brass_dust"}], output: [{id: "techreborn:brass_ingot"}], tool: "techreborn:iron_furnace"}} />

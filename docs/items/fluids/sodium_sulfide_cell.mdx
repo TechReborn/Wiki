@@ -5,4 +5,30 @@ title: Sodium Sulfide Cell
 <ItemImage file="sodium_sulfide_cell" alt="Sodium Sulfide Cell" size="200" />
 
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+**Sodium Sulfide Cell** is used in the <McItem slug="techreborn:chemical_reactor" />.
+
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:sodium_sulfide_cell", qty: 1},
+    {id: "techreborn:compressed_air_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:sodiumpersulfate_cell", qty: 2}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:sulfur_cell", qty: 1},
+    {id: "techreborn:sodium_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:sodium_sulfide_cell", qty: 2}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />

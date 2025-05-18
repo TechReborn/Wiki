@@ -59,7 +59,7 @@ Here's a list of custom components and how to use them.
 The base of most item references. If you want to refer to an item in your page, you should probably be using this tag. It brings in an image and automatically does some other nice things too (hopefully).
 
 ```
-<McItem slug="aluminium_ingot" pack="techreborn"/> 
+<McItem slug="aluminum_ingot" pack="techreborn"/> 
 ```
 
 The `slug` is the name of the file in `/static/imgs/techreborn/` without the file extension. We also use the slug to find the correct page in the index and to render the friendly name of the item. Slug can also be the old format of pack:slug instead of passing the pack on its own.
@@ -79,7 +79,7 @@ If you use VSCode, you can use find and replace with regex and simplify this ins
 This is largely meant to take recipes from the previous generation of wiki and display them in a somewhat nice interface.
 
 ```
-<CraftingTable recipe="input techreborn:aluminium_nugget techreborn:aluminium_nugget techreborn:aluminium_nugget input techreborn:aluminium_nugget techreborn:aluminium_nugget techreborn:aluminium_nugget input techreborn:aluminium_nugget techreborn:aluminium_nugget techreborn:aluminium_nugget output techreborn:aluminium_ingot" />
+<CraftingTable recipe="input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget input techreborn:aluminum_nugget techreborn:aluminum_nugget techreborn:aluminum_nugget output techreborn:aluminum_ingot" />
 ```
 
 The `recipe` is meant to be a drop in replacement for the previous version of the wiki, but this doesn't mean you can't handwrite a recipe. I'm showing a broken down example below, but when you do it for real, use spaces between your items, not newlines.
@@ -107,3 +107,24 @@ If you use VSCode, you can use find and replace with regex and simplify this ins
 
 - Find: `\\<recipe\\>(.*?)\\<\/recipe\\>`
 - Replace: `<CraftingTable recipe="$1"/>`
+
+### Machine
+
+Machine is meant as a one-size-fits-all solution for crafting machines (including crafting table). You can pass in data to the component in two ones. One using the traditional recipe format:
+
+```
+<Machine recipe="input techreborn:sap output techreborn:rubber tool minecraft:furnace" />
+```
+
+You can also supply configuration in the new format:
+
+```
+<Machine config={{input: [
+  {id: "techreborn:ashes", qty: 2},
+  {id: "techreborn:empty_cell"}
+], output: [
+  {id: "techreborn:carbon_fiber_cell"}
+], tool: "techreborn:industrial_electrolyzer"}} />
+```
+
+Both inputs and outputs can have quantities attached to them. If you don't include a quantity, it's assumed to be 1.

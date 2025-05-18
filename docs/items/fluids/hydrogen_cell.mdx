@@ -4,5 +4,67 @@ title: Hydrogen Cell
 
 <ItemImage file="hydrogen_cell" alt="Hydrogen Cell" size="200" />
 
+**Hydrogen Cell** is used in the <McItem slug="techreborn:chemical_reactor" /> and the <McItem slug="techreborn:industrial_electrolyzer" />.
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:carbon_cell", qty: 1},
+    {id: "techreborn:hydrogen_cell", qty: 4}
+  ],
+  output: [
+    {id: "techreborn:methane_cell", qty: 5}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:compressed_air_cell", qty: 1},
+    {id: "techreborn:hydrogen_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:water_cell", qty: 1}
+  ],
+  tool: "techreborn:chemical_reactor"
+}} />
+
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:sulfuric_acid_cell", qty: 5}
+  ],
+  output: [
+    {id: "techreborn:hydrogen_cell", qty: 2},
+    {id: "techreborn:sulfur_cell", qty: 1},
+    {id: "techreborn:compressed_air_cell", qty: 2}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:electrolyzed_water_cell", qty: 5}
+  ],
+  output: [
+    {id: "techreborn:hydrogen_cell", qty: 4},
+    {id: "techreborn:compressed_air_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
+
+<Machine config={{
+  input: [
+    {id: "techreborn:bauxite_dust", qty: 12},
+    {id: "techreborn:empty_cell", qty: 8}
+  ],
+  output: [
+    {id: "techreborn:aluminum_dust", qty: 8},
+    {id: "techreborn:small_pile_of_titanium_dust", qty: 2},
+    {id: "techreborn:hydrogen_cell", qty: 5},
+    {id: "techreborn:compressed_air_cell", qty: 3}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />
