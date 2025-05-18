@@ -6,7 +6,7 @@ title: LV Transformer
 
 <ItemImage file="lv_transformer" alt="LV Transformer" size="200" />
 
-The **LV Transformer** converts energy from Medium to Low tier. For more details and how to use, read [general information about Transformers](/energy/transformers).
+The **LV Transformer** converts energy from Medium to Low tier. For more details and how to use, read [general information about Transformers](/docs/blocks/transformers).
 
 | Input   | Output |
 |---------|--------|

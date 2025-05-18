@@ -6,7 +6,7 @@ title: Superconductor Upgrade
 
 ## Superconductor Upgrade
 
-The **Superconductor Upgrade** is a [battery upgrade](/energy/batteries/upgrades) that increases the maximum energy flow rate of the <McItem slug="techreborn:adjustable_SU" inline={true}/> by 8x with each upgrade inserted.
+The **Superconductor Upgrade** is a battery upgrade that increases the maximum energy flow rate of the <McItem slug="techreborn:adjustable_SU" inline={true}/> by 8x with each upgrade inserted.
 
 | Number of Upgrades | Flow Modifier                                      | Max Transfer Rate         |
 |--------------------|----------------------------------------------------|---------------------------|

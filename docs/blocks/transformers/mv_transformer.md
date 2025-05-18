@@ -6,7 +6,7 @@ title: MV Transformer
 
 <ItemImage file="mv_transformer" alt="MV Transformer" size="200" />
 
-The **MV Transformer** converts energy from High to Medium tier. For more details and how to use, read [general information about Transformers](/energy/transformers).
+The **MV Transformer** converts energy from High to Medium tier. For more details and how to use, read [general information about Transformers](/docs/blocks/transformers).
 
 | Input   | Output  |
 |---------|---------|
