@@ -10,15 +10,14 @@ title: Bronze Dust
 
 ## Recipe
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:bronze_ingot" inline={true}/> → <McItem slug="techreborn:bronze_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:bronze_ingot"}], output: [{id: "techreborn:bronze_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 **Smelting recipe:**  
-<McItem slug="techreborn:bronze_dust" inline={true}/> → <McItem slug="techreborn:bronze_ingot" inline={true}/>
+<Machine next={{input: [{id: "techreborn:bronze_dust"}], output: [{id: "techreborn:bronze_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-<McItem slug="techreborn:bronze_dust" inline={true}/> →  
-6x <McItem slug="techreborn:copper_nugget" inline={true}/> +  
-3x <McItem slug="techreborn:tin_nugget" inline={true}/>
+<Machine next={{input: [{id: "techreborn:bronze_dust"}], output: [
+  {id: "techreborn:copper_nugget", qty: 6},
+  {id: "techreborn:tin_nugget", qty: 3}
+], tool: "techreborn:industrial_centrifuge"}} />

@@ -6,23 +6,21 @@ title: Electrum Dust
 
 # Electrum Dust
 
-**Electrum Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:electrum_ingot" inline={true}/>.
+**Electrum Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:electrum_ingot" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_electrum_dust techreborn:small_pile_of_electrum_dust air input techreborn:small_pile_of_electrum_dust techreborn:small_pile_of_electrum_dust air input air air air output techreborn:electrum_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:electrum_ingot" inline={true}/> → <McItem slug="techreborn:electrum_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:electrum_ingot"}], output: [{id: "techreborn:electrum_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:electrum_dust air input air air air output techreborn:small_pile_of_electrum_dust,4"/>
 
-**Smelting recipe:**  
-<McItem slug="techreborn:electrum_dust" inline={true}/> → <McItem slug="techreborn:electrum_ingot" inline={true}/>
+<Machine next={{input: [{id: "techreborn:electrum_dust"}], output: [{id: "techreborn:electrum_ingot"}], tool: "techreborn:iron_furnace"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-<McItem slug="techreborn:electrum_dust" inline={true}/> → 2x <McItem slug="techreborn:small_pile_of_gold_dust" inline={true}/> + 2x <McItem slug="techreborn:small_pile_of_silver_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:electrum_dust"}], output: [
+  {id: "techreborn:small_pile_of_gold_dust", qty: 2},
+  {id: "techreborn:small_pile_of_silver_dust", qty: 2}
+], tool: "techreborn:industrial_centrifuge"}} />

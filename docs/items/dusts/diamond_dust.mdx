@@ -10,19 +10,17 @@ title: Diamond Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_diamond_dust techreborn:small_pile_of_diamond_dust air input techreborn:small_pile_of_diamond_dust techreborn:small_pile_of_diamond_dust air input air air air output techreborn:diamond_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="minecraft:diamond_ore" inline={true}/> → 2x <McItem slug="techreborn:diamond_dust" inline={true}/>  
-<McItem slug="minecraft:diamond" inline={true}/> → <McItem slug="techreborn:diamond_dust" inline={true}/>
+<Machine next={{input: [{id: "minecraft:diamond_ore"}], output: [{id: "techreborn:diamond_dust", qty: 2}], tool: "techreborn:grinder"}} />
+
+<Machine next={{input: [{id: "minecraft:diamond"}], output: [{id: "techreborn:diamond_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:diamond_dust air input air air air output techreborn:small_pile_of_diamond_dust,4"/>
 
-<CraftingTable recipe="input techreborn:diamond_dust techreborn:titanium_ingot air input techreborn:diamond_dust techreborn:titanium_ingot air input techreborn:diamond_dust techreborn:electronic_circuit techreborn:battery output techreborn:rockcutter"/>
+<CraftingTable recipe="input techreborn:diamond_dust techreborn:titanium_ingot air input techreborn:diamond_dust techreborn:titanium_ingot air input techreborn:diamond_dust techreborn:electronic_circuit techreborn:battery output techreborn:rock_cutter"/>
 
 <CraftingTable recipe="input techreborn:diamond_dust minecraft:glass techreborn:diamond_dust input minecraft:glass techreborn:diamond_dust minecraft:glass input techreborn:advanced_circuit techreborn:solar_panel techreborn:advanced_circuit output techreborn:solar_panel"/>
 
@@ -42,5 +40,10 @@ title: Diamond Dust
 
 <CraftingTable recipe="input minecraft:glass minecraft:glass minecraft:glass input techreborn:electrum_ingot techreborn:diamond_dust techreborn:electrum_ingot input minecraft:glass minecraft:glass minecraft:glass output techreborn:glass_fiber_cable,8"/>
 
-<McItem slug="techreborn:implosion_compressor" inline={true}/> recipe:  
-<McItem slug="techreborn:diamond_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → <McItem slug="minecraft:diamond" inline={true}/> + 16x <McItem slug="techreborn:dark_ashes" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:diamond_dust"},
+  {id: "minecraft:TNT", qty: 16}
+], output: [
+  {id: "minecraft:diamond"},
+  {id: "techreborn:dark_ashes", qty: 16}
+], tool: "techreborn:implosion_compressor"}} />

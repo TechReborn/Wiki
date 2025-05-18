@@ -6,26 +6,32 @@ title: Bauxite Dust
 
 # Bauxite Dust
 
-**Bauxite Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:aluminum_dust" inline={true}/> in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>.
+**Bauxite Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:aluminum_dust" /> in <McItem slug="techreborn:industrial_electrolyzer" />.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_bauxite_dust techreborn:small_pile_of_bauxite_dust air input techreborn:small_pile_of_bauxite_dust techreborn:small_pile_of_bauxite_dust air input air air air output techreborn:bauxite_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:bauxite_ore" inline={true}/> → 2x <McItem slug="techreborn:bauxite_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:bauxite_ore"}], output: [{id: "techreborn:bauxite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:bauxite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-4x <McItem slug="techreborn:bauxite_dust" inline={true}/> + <McItem slug="techreborn:aluminum_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:bauxite_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:bauxite_dust", qty: 4},
+  {id: "techreborn:aluminum_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:bauxite_dust air input air air air output techreborn:small_pile_of_bauxite_dust,4"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-12x <McItem slug="techreborn:bauxite_dust" inline={true}/> + 8x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-8x <McItem slug="techreborn:aluminum_dust" inline={true}/> +  
-2x <McItem slug="techreborn:small_pile_of_titanium_dust" inline={true}/> +  
-5x <McItem slug="techreborn:hydrogen_cell" inline={true}/> +  
-3x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:bauxite_dust", qty: 12},
+  {id: "techreborn:empty_cell", qty: 8}
+], output: [
+  {id: "techreborn:aluminum_dust", qty: 8},
+  {id: "techreborn:small_pile_of_titanium_dust", qty: 2},
+  {id: "techreborn:hydrogen_cell", qty: 5},
+  {id: "techreborn:compressed_air_cell", qty: 3}
+], tool: "techreborn:industrial_electrolyzer"}} />

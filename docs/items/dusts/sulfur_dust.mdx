@@ -10,24 +10,69 @@ title: Sulfur Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_sulfur_dust techreborn:small_pile_of_sulfur_dust air input techreborn:small_pile_of_sulfur_dust techreborn:small_pile_of_sulfur_dust air input air air air output techreborn:sulfur_dust"/>
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:galena_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 2x <McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>  
-<McItem slug="techreborn:galena_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> → 2x <McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/> + <McItem slug="techreborn:silver_dust" inline={true}/>  
-<McItem slug="techreborn:pyrite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 5x <McItem slug="techreborn:pyrite_dust" inline={true}/> + 2x <McItem slug="techreborn:sulfur_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:galena_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:galena_dust", qty: 2},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-<McItem slug="techreborn:sulfur_cell" inline={true}/> → <McItem slug="techreborn:sulfur_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:galena_ore"},
+  {id: "techreborn:mercury_cell"}
+], output: [
+  {id: "techreborn:galena_dust", qty: 2},
+  {id: "techreborn:sulfur_dust"},
+  {id: "techreborn:silver_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-<McItem slug="minecraft:blaze_powder" inline={true}/> → <McItem slug="techreborn:dark_ashes" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>  
-3x <McItem slug="techreborn:pyrite_dust" inline={true}/> → <McItem slug="techreborn:iron_dust" inline={true}/> + 2x <McItem slug="techreborn:sulfur_dust" inline={true}/>  
-<McItem slug="techreborn:cinnabar_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> → <McItem slug="techreborn:mercury_cell" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>  
-2x <McItem slug="techreborn:sphalerite_dust" inline={true}/> → <McItem slug="techreborn:zinc_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:pyrite_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:pyrite_dust", qty: 5},
+  {id: "techreborn:sulfur_dust", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
+
+<Machine next={{input: [
+  {id: "techreborn:sulfur_cell"}
+], output: [
+  {id: "techreborn:sulfur_dust"},
+  {id: "techreborn:empty_cell"}
+], tool: "techreborn:industrial_centrifuge"}} />
+
+<Machine next={{input: [
+  {id: "minecraft:blaze_powder"}
+], output: [
+  {id: "techreborn:dark_ashes"},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_electrolyzer"}} />
+
+<Machine next={{input: [
+  {id: "techreborn:pyrite_dust", qty: 3}
+], output: [
+  {id: "techreborn:iron_dust"},
+  {id: "techreborn:sulfur_dust", qty: 2}
+], tool: "techreborn:industrial_electrolyzer"}} />
+
+<Machine next={{input: [
+  {id: "techreborn:cinnabar_dust"},
+  {id: "techreborn:empty_cell"}
+], output: [
+  {id: "techreborn:mercury_cell"},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_electrolyzer"}} />
+
+<Machine next={{input: [
+  {id: "techreborn:sphalerite_dust", qty: 2}
+], output: [
+  {id: "techreborn:zinc_dust"},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
 ## Usage
 
-**Sulfur Dust** could be split into small piles using <McItem slug="minecraft:crafting_table" inline={true}/>  
 <CraftingTable recipe="input air air air input air techreborn:sulfur_dust air input air air air output techreborn:small_pile_of_sulfur_dust,4"/>

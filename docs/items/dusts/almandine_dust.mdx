@@ -6,22 +6,17 @@ title: Almandine Dust
 
 # Almandine Dust
 
-**Almandine Dust** is an intermediate product received by processing <McItem slug="techreborn:red_garnet_dust" inline={true}/> in <McItem slug="techreborn:industrial_centrifuge" inline={true}/>.
+**Almandine Dust** is an intermediate product received by processing <McItem slug="techreborn:red_garnet_dust"/> in <McItem slug="techreborn:industrial_centrifuge"/>.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_almandine_dust techreborn:small_pile_of_almandine_dust air input techreborn:small_pile_of_almandine_dust techreborn:small_pile_of_almandine_dust air input air air air output techreborn:almandine_dust"/>
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-16x <McItem slug="techreborn:red_garnet_dust" inline={true}/> →  
-3x <McItem slug="techreborn:pyrope_dust"/> + 5x <McItem slug="techreborn:almandine_dust" inline={true}/> + 8x <McItem slug="techreborn:spessartine_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:red_garnet_dust", qty: 16}], output: [{id: "techreborn:pyrope_dust", qty: 3}, {id: "techreborn:almandine_dust", qty: 5}, {id: "techreborn:spessartine_dust", qty: 8}], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-**Almandine Dust** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>  
-20x <McItem slug="techreborn:almandine_dust" inline={true}/> + 9x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-3x <McItem slug="techreborn:iron_dust" inline={true}/> + 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + 6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+**Almandine Dust** could be further processed in <Machine next={{input: [{id: "techreborn:almandine_dust", qty: 20}, {id: "techreborn:empty_cell", qty: 9}], output: [{id: "techreborn:iron_dust", qty: 3}, {id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:compressed_air_cell", qty: 6}], tool: "techreborn:industrial_electrolyzer"}} />
 
-Besides that, **Almandine Dust** could be split into small piles using <McItem slug="minecraft:crafting_table" inline={true}/>  
+Besides that, **Almandine Dust** could be split into small piles using <McItem slug="minecraft:crafting_table"/>  
 <CraftingTable recipe="input air air air input air techreborn:almandine_dust air input air air air output techreborn:small_pile_of_almandine_dust,4"/>

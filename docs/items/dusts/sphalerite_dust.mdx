@@ -6,27 +6,37 @@ title: Sphalerite Dust
 
 # Sphalerite Dust
 
-**Sphalerite Dust** is an intermediate product used to produce <McItem slug="techreborn:zinc_dust" inline={true}/>.
+**Sphalerite Dust** is an intermediate product used to produce <McItem slug="techreborn:zinc_dust" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_sphalerite_dust techreborn:small_pile_of_sphalerite_dust air input techreborn:small_pile_of_sphalerite_dust techreborn:small_pile_of_sphalerite_dust air input air air air output techreborn:sphalerite_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:sphalerite_ore" inline={true}/> → 2x <McItem slug="techreborn:sphalerite_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:sphalerite_ore"}], output: [{id: "techreborn:sphalerite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:sphalerite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-5x <McItem slug="techreborn:sphalerite_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:sphalerite_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:sphalerite_dust", qty: 5},
+  {id: "techreborn:small_pile_of_yellow_garnet_dust"},
+  {id: "techreborn:zinc_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
-<McItem slug="techreborn:sphalerite_ore" inline={true}/> + <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> →  
-5x <McItem slug="techreborn:sphalerite_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:sphalerite_ore"},
+  {id: "techreborn:sodiumpersulfate_cell"}
+], output: [
+  {id: "techreborn:sphalerite_dust", qty: 5},
+  {id: "techreborn:small_pile_of_yellow_garnet_dust"},
+  {id: "techreborn:zinc_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:sphalerite_dust air input air air air output techreborn:small_pile_of_sphalerite_dust,4"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-2x <McItem slug="techreborn:sphalerite_dust" inline={true}/> → <McItem slug="techreborn:zinc_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:sphalerite_dust", qty: 2}], output: [
+  {id: "techreborn:zinc_dust"},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_electrolyzer"}} />

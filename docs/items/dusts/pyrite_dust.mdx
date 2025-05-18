@@ -6,28 +6,37 @@ title: Pyrite Dust
 
 # Pyrite Dust
 
-**Pyrite Dust** is an intermediate product received by mining or processing <McItem slug="techreborn:pyrite_ore" inline={true}/>.
+**Pyrite Dust** is an intermediate product received by mining or processing <McItem slug="techreborn:pyrite_ore" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_pyrite_dust techreborn:small_pile_of_pyrite_dust air input techreborn:small_pile_of_pyrite_dust techreborn:small_pile_of_pyrite_dust air input air air air output techreborn:pyrite_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:pyrite_ore" inline={true}/> → 2x <McItem slug="techreborn:pyrite_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:pyrite_ore"}], output: [{id: "techreborn:pyrite_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:pyrite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 5x <McItem slug="techreborn:pyrite_dust" inline={true}/> + 2x <McItem slug="techreborn:sulfur_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:pyrite_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:pyrite_dust", qty: 5},
+  {id: "techreborn:sulfur_dust", qty: 2}
+], tool: "techreborn:industrial_grinder"}} />
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-32x <McItem slug="minecraft:redstone" inline={true}/> + 13x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-16x <McItem slug="techreborn:pyrite_dust" inline={true}/> + 3x <McItem slug="techreborn:ruby_dust" inline={true}/> + 10x <McItem slug="techreborn:mercury_cell" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/>
+<Machine next={{input: [
+  {id: "minecraft:redstone", qty: 32},
+  {id: "techreborn:empty_cell", qty: 13}
+], output: [
+  {id: "techreborn:pyrite_dust", qty: 16},
+  {id: "techreborn:ruby_dust", qty: 3},
+  {id: "techreborn:mercury_cell", qty: 10},
+  {id: "techreborn:silicon_cell", qty: 3}
+], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-**Pyrite Dust** can be processed in an <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>  
-3x <McItem slug="techreborn:pyrite_dust" inline={true}/> → <McItem slug="techreborn:iron_dust" inline={true}/> + 2x <McItem slug="techreborn:sulfur_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:pyrite_dust", qty: 3}], output: [
+  {id: "techreborn:iron_dust"},
+  {id: "techreborn:sulfur_dust", qty: 2}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
-Also, **Pyrite Dust** can be split into small piles using  
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:pyrite_dust air input air air air output techreborn:small_pile_of_pyrite_dust,4"/>

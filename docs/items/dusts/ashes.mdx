@@ -6,20 +6,24 @@ title: Ashes
 
 # Ashes
 
-**Ashes** is a dust used to get <McItem slug="techreborn:carbon_fiber_cell" inline={true}/>.
+**Ashes** is a dust used to get <McItem slug="techreborn:carbon_fiber_cell" />.
 
 ## Recipe
 
 <CraftingTable recipe="input techreborn:small_pile_of_ashes techreborn:small_pile_of_ashes air input techreborn:small_pile_of_ashes techreborn:small_pile_of_ashes air input air air air output techreborn:ashes"/>
 
-<McItem slug="techreborn:industrial_centrifuge" inline={true}/> recipe:  
-2x <McItem slug="techreborn:dark_ashes" inline={true}/> → 2x <McItem slug="techreborn:ashes" inline={true}/>
+<Machine next={{input: [{id: "techreborn:dark_ashes", qty: 2}], output: [{id: "techreborn:ashes", qty: 2}], tool: "techreborn:industrial_centrifuge"}} />
 
 ## Usage
 
-**Ashes** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" inline={true}/>  
-2x <McItem slug="techreborn:ashes" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
-<McItem slug="techreborn:carbon_fiber_cell" inline={true}/>
+**Ashes** could be further processed in <McItem slug="techreborn:industrial_electrolyzer" />
 
-Besides that **Ashes** could be split into small piles using <McItem slug="minecraft:crafting_table" inline={true}/>  
+<Machine next={{input: [
+  {id: "techreborn:ashes", qty: 2},
+  {id: "techreborn:empty_cell"}
+], output: [
+  {id: "techreborn:carbon_fiber_cell"}
+], tool: "techreborn:industrial_electrolyzer"}} />
+
+Besides that **Ashes** could be split into small piles using <McItem slug="minecraft:crafting_table" />  
 <CraftingTable recipe="input air air air input air techreborn:ashes air input air air air output techreborn:small_pile_of_ashes,4"/>

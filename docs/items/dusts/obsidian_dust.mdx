@@ -12,16 +12,18 @@ title: Obsidian Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_obsidian_dust techreborn:small_pile_of_obsidian_dust air input techreborn:small_pile_of_obsidian_dust techreborn:small_pile_of_obsidian_dust air input air air air output techreborn:obsidian_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="minecraft:obsidian" inline={true}/> → 4x <McItem slug="techreborn:obsidian_dust" inline={true}/>
+<Machine next={{input: [{id: "minecraft:obsidian"}], output: [{id: "techreborn:obsidian_dust", qty: 4}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
 <CraftingTable recipe="input air air air input air techreborn:obsidian_dust air input air air air output techreborn:small_pile_of_obsidian_dust,4"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-4x <McItem slug="techreborn:obsidian_dust" inline={true}/> + 3x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-2x <McItem slug="techreborn:small_pile_of_magnesium_dust" inline={true}/> +  
-2x <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> +  
-<McItem slug="techreborn:silicon_cell" inline={true}/> +  
-2x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:obsidian_dust", qty: 4},
+  {id: "techreborn:empty_cell", qty: 3}
+], output: [
+  {id: "techreborn:small_pile_of_magnesium_dust", qty: 2},
+  {id: "techreborn:small_pile_of_iron_dust", qty: 2},
+  {id: "techreborn:silicon_cell"},
+  {id: "techreborn:compressed_air_cell", qty: 2}
+], tool: "techreborn:industrial_electrolyzer"}} />

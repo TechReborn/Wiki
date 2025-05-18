@@ -6,28 +6,43 @@ title: Galena Dust
 
 # Galena Dust
 
-**Galena Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:silver_ingot" inline={true}/>, <McItem slug="techreborn:lead_ingot" inline={true}/> and <McItem slug="techreborn:sulfur_dust" inline={true}/>.
+**Galena Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:silver_ingot" />, <McItem slug="techreborn:lead_ingot" /> and <McItem slug="techreborn:sulfur_dust" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_galena_dust techreborn:small_pile_of_galena_dust air input techreborn:small_pile_of_galena_dust techreborn:small_pile_of_galena_dust air input air air air output techreborn:galena_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:galena_ore" inline={true}/> → 2x <McItem slug="techreborn:galena_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:galena_ore"}], output: [{id: "techreborn:galena_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:galena_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 2x <McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>  
-<McItem slug="techreborn:galena_ore" inline={true}/> + <McItem slug="techreborn:mercury_cell" inline={true}/> → 2x <McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/> + <McItem slug="techreborn:silver_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:galena_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:galena_dust", qty: 2},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_grinder"}} />
+
+<Machine next={{input: [
+  {id: "techreborn:galena_ore"},
+  {id: "techreborn:mercury_cell"}
+], output: [
+  {id: "techreborn:galena_dust", qty: 2},
+  {id: "techreborn:sulfur_dust"},
+  {id: "techreborn:silver_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:galena_dust air input air air air output techreborn:small_pile_of_galena_dust,4"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-2x <McItem slug="techreborn:galena_dust" inline={true}/> → <McItem slug="techreborn:silver_ingot" inline={true}/> + <McItem slug="techreborn:lead_ingot" inline={true}/>  
+<Machine next={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [
+  {id: "techreborn:silver_ingot"},
+  {id: "techreborn:lead_ingot"}
+], tool: "techreborn:blast_furnace"}} />
 _Requires 1500 heat_
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-2x <McItem slug="techreborn:galena_dust" inline={true}/> → 3x <McItem slug="techreborn:small_pile_of_silver_dust" inline={true}/> + 3x <McItem slug="techreborn:small_pile_of_lead_dust" inline={true}/> + 2x <McItem slug="techreborn:small_pile_of_sulfur_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:galena_dust", qty: 2}], output: [
+  {id: "techreborn:small_pile_of_silver_dust", qty: 3},
+  {id: "techreborn:small_pile_of_lead_dust", qty: 3},
+  {id: "techreborn:small_pile_of_sulfur_dust", qty: 2}
+], tool: "techreborn:industrial_electrolyzer"}} />

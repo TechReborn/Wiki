@@ -6,24 +6,20 @@ title: Titanium Dust
 
 # Titanium Dust
 
-**Titanium Dust** is a source for <McItem slug="techreborn:titanium_ingot" inline={true}/>, needed for many of the endgame machines.
+**Titanium Dust** is a source for <McItem slug="techreborn:titanium_ingot" />, needed for many of the endgame machines.
 
-The source of the first few <McItem slug="techreborn:titanium_dust" inline={true}/> will be crafting from <McItem slug="techreborn:small_pile_of_titanium_dust" inline={true}/>
+The source of the first few <McItem slug="techreborn:titanium_dust" /> will be crafting from <McItem slug="techreborn:small_pile_of_titanium_dust" />
 
-Later, <McItem slug="techreborn:titanium_dust" inline={true}/> is best acquired by crafting from <McItem slug="techreborn:uu_matter" inline={true}/>
+Later, <McItem slug="techreborn:titanium_dust" /> is best acquired by crafting from <McItem slug="techreborn:uu_matter" />
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_titanium_dust techreborn:small_pile_of_titanium_dust air input techreborn:small_pile_of_titanium_dust techreborn:small_pile_of_titanium_dust air input air air air output techreborn:titanium_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:titanium_ingot" inline={true}/> → <McItem slug="techreborn:titanium_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:titanium_ingot"}], output: [{id: "techreborn:titanium_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:titanium_dust air input air air air output techreborn:small_pile_of_titanium_dust,4"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:titanium_dust" inline={true}/> → <McItem slug="techreborn:titanium_ingot" inline={true}/>
+<Machine next={{input: [{id: "techreborn:titanium_dust"}], output: [{id: "techreborn:titanium_ingot"}], tool: "techreborn:blast_furnace"}} />

@@ -6,12 +6,16 @@ title: Amethyst Dust
 
 # Amethyst Dust
 
-**Amethyst Dust** is a dust produced by grinding.
+**Amethyst Dust** is a dust produced by grinding and it can be recompressed back into a gem using raw power of TNT in an <McItem slug="techreborn:implosion_compressor" />
 
-## Recipe
+## Recipes
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="minecraft:amethyst_block" inline={true}/> → 2x <McItem slug="techreborn:amethyst_dust" inline={true}/>
+<Machine next={{input: [{id: "minecraft:amethyst_block"}], output: [{id: "techreborn:amethyst_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-**Amethyst Dust** can be recompressed back into a gem using raw power of TNT in an <McItem slug="techreborn:implosion_compressor" inline={true}/>:  
-8x <McItem slug="techreborn:amethyst_dust" inline={true}/> + 16x <McItem slug="minecraft:TNT" inline={true}/> → 16x <McItem slug="minecraft:amethyst_shard" inline={true}/> + 1x <McItem slug="techreborn:quartz_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:amethyst_dust", qty: 8},
+  {id: "minecraft:TNT", qty: 16}
+], output: [
+  {id: "minecraft:amethyst_shard", qty: 16},
+  {id: "techreborn:quartz_dust"}
+], tool: "techreborn:implosion_compressor"}} />

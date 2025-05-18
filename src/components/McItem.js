@@ -25,7 +25,12 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 	}
 	let friendlyName = overrides.description === false ? '' : titleCase(slug);
 	if (!!overrides.name) { friendlyName = overrides.name; }
-	const items = packMap[pack](slug);
+	let items;
+	try {
+		items = packMap[pack](slug);
+	} catch (err) {
+		throw new Error(`McItem lookup failure: pack:${pack}/slug:${slug}`);
+	}
 	const Element = inline === true ? "span" : "div";
 	return (
 		<Element>

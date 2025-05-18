@@ -6,32 +6,28 @@ title: Aluminum Dust
 
 # Aluminum Dust
 
-**Aluminum Dust** used to produce <McItem slug="techreborn:aluminum_ingot" inline={true}/> which is widely used in crafting.
+**Aluminum Dust** used to produce <McItem slug="techreborn:aluminum_ingot"/> which is widely used in crafting.
 
 ## Recipe
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:aluminum_ingot" inline={true}/> → <McItem slug="techreborn:aluminum_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:aluminum_ingot"}], output: [{id: "techreborn:aluminum_dust"}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:bauxite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 2x <McItem slug="techreborn:bauxite_dust" inline={true}/> + <McItem slug="techreborn:aluminum_dust" inline={true}/>  
-<McItem slug="techreborn:sodalite_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> → 12x <McItem slug="techreborn:sodalite_dust" inline={true}/> + 3x <McItem slug="techreborn:aluminum_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:bauxite_ore"}, {id: "techreborn:water_cell"}], output: [{id: "techreborn:bauxite_dust", qty: 2}, {id: "techreborn:aluminum_dust"}], tool: "techreborn:industrial_grinder"}} />
+<Machine next={{input: [{id: "techreborn:sodalite_ore"}, {id: "techreborn:water_cell"}], output: [{id: "techreborn:sodalite_dust", qty: 12}, {id: "techreborn:aluminum_dust", qty: 3}], tool: "techreborn:industrial_grinder"}} />
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipes:  
-- 8x <McItem slug="techreborn:clay_dust" inline={true}/> + 5x <McItem slug="techreborn:empty_cell" inline={true}/> → <McItem slug="techreborn:lithium_cell" inline={true}/> + 2x <McItem slug="techreborn:silicon_cell" inline={true}/> + 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 2x <McItem slug="techreborn:sodium_cell" inline={true}/>  
-- 29x <McItem slug="techreborn:lazurite_dust" inline={true}/> + 10x <McItem slug="techreborn:empty_cell" inline={true}/> → 3x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + 2x <McItem slug="techreborn:calcium_cell" inline={true}/> + 4x <McItem slug="techreborn:sodium_cell" inline={true}/>  
-- 23x <McItem slug="techreborn:sodalite_dust" inline={true}/> + 8x <McItem slug="techreborn:empty_cell" inline={true}/> → 4x <McItem slug="techreborn:sodium_cell" inline={true}/> + 3x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + <McItem slug="techreborn:chlorite_cell" inline={true}/>  
-- 12x <McItem slug="techreborn:bauxite_dust" inline={true}/> + 8x <McItem slug="techreborn:empty_cell" inline={true}/> → 8x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 2x <McItem slug="techreborn:small_pile_of_titanium_dust" inline={true}/> + 5x <McItem slug="techreborn:hydrogen_cell" inline={true}/> + 3x <McItem slug="techreborn:compressed_air_cell" inline={true}/>  
-- 9x <McItem slug="techreborn:ruby_dust" inline={true}/> + 3x <McItem slug="techreborn:empty_cell" inline={true}/> → 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + <McItem slug="techreborn:chrome_dust" inline={true}/> + 3x <McItem slug="techreborn:compressed_air_cell" inline={true}/>  
-- 8x <McItem slug="techreborn:sapphire_dust" inline={true}/> + 3x <McItem slug="techreborn:empty_cell" inline={true}/> → 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:compressed_air_cell" inline={true}/>  
-- 29x <McItem slug="techreborn:emerald_dust" inline={true}/> + 18x <McItem slug="techreborn:empty_cell" inline={true}/> → 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:beryllium_cell" inline={true}/> + 6x <McItem slug="techreborn:silicon_cell" inline={true}/> + 9x <McItem slug="techreborn:compressed_air_cell" inline={true}/>  
-- 20x <McItem slug="techreborn:pyrope_dust" inline={true}/> + 9x <McItem slug="techreborn:empty_cell" inline={true}/> → 3x <McItem slug="techreborn:magnesium_dust" inline={true}/> + 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + 6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>  
-- 20x <McItem slug="techreborn:almandine_dust" inline={true}/> + 9x <McItem slug="techreborn:empty_cell" inline={true}/> → 3x <McItem slug="techreborn:iron_dust" inline={true}/> + 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + 6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>  
-- 20x <McItem slug="techreborn:spessartine_dust" inline={true}/> + 9x <McItem slug="techreborn:empty_cell" inline={true}/> → 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:manganese_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + 6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>  
-- 20x <McItem slug="techreborn:grossular_dust" inline={true}/> + 12x <McItem slug="techreborn:empty_cell" inline={true}/> → 3x <McItem slug="techreborn:calcium_cell" inline={true}/> + 2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + 6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine next={{input: [{id: "techreborn:clay_dust", qty: 8}, {id: "techreborn:empty_cell", qty: 5}], output: [{id: "techreborn:lithium_cell"}, {id: "techreborn:silicon_cell", qty: 2}, {id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:sodium_cell", qty: 2}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:lazurite_dust", qty: 29}, {id: "techreborn:empty_cell", qty: 10}], output: [{id: "techreborn:aluminum_dust", qty: 3}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:calcium_cell", qty: 2}, {id: "techreborn:sodium_cell", qty: 4}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:sodalite_dust", qty: 23}, {id: "techreborn:empty_cell", qty: 8}], output: [{id: "techreborn:sodium_cell", qty: 4}, {id: "techreborn:aluminum_dust", qty: 3}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:chlorite_cell"}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:bauxite_dust", qty: 12}, {id: "techreborn:empty_cell", qty: 8}], output: [{id: "techreborn:aluminum_dust", qty: 8}, {id: "techreborn:small_pile_of_titanium_dust", qty: 2}, {id: "techreborn:hydrogen_cell", qty: 5}, {id: "techreborn:compressed_air_cell", qty: 3}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:ruby_dust", qty: 9}, {id: "techreborn:empty_cell", qty: 3}], output: [{id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:chrome_dust"}, {id: "techreborn:compressed_air_cell", qty: 3}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:sapphire_dust", qty: 8}, {id: "techreborn:empty_cell", qty: 3}], output: [{id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:compressed_air_cell", qty: 3}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:emerald_dust", qty: 29}, {id: "techreborn:empty_cell", qty: 18}], output: [{id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:beryllium_cell", qty: 3}, {id: "techreborn:silicon_cell", qty: 6}, {id: "techreborn:compressed_air_cell", qty: 9}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:pyrope_dust", qty: 20}, {id: "techreborn:empty_cell", qty: 9}], output: [{id: "techreborn:magnesium_dust", qty: 3}, {id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:compressed_air_cell", qty: 6}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:almandine_dust", qty: 20}, {id: "techreborn:empty_cell", qty: 9}], output: [{id: "techreborn:iron_dust", qty: 3}, {id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:compressed_air_cell", qty: 6}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:spessartine_dust", qty: 20}, {id: "techreborn:empty_cell", qty: 9}], output: [{id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:manganese_dust", qty: 3}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:compressed_air_cell", qty: 6}], tool: "techreborn:industrial_electrolyzer"}} />
+<Machine next={{input: [{id: "techreborn:grossular_dust", qty: 20}, {id: "techreborn:empty_cell", qty: 12}], output: [{id: "techreborn:calcium_cell", qty: 3}, {id: "techreborn:aluminum_dust", qty: 2}, {id: "techreborn:silicon_cell", qty: 3}, {id: "techreborn:compressed_air_cell", qty: 6}], tool: "techreborn:industrial_electrolyzer"}} />
 
 ## Usage
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:aluminum_dust" inline={true}/> → <McItem slug="techreborn:aluminum_ingot" inline={true}/>  
+<Machine next={{input: [{id: "techreborn:aluminum_dust"}], output: [{id: "techreborn:aluminum_ingot"}], tool: "techreborn:blast_furnace"}} />
 _Requires Industrial Blast Furnace with 1700 heat._

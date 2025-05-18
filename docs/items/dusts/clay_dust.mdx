@@ -10,18 +10,20 @@ title: Clay Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_clay_dust techreborn:small_pile_of_clay_dust air input techreborn:small_pile_of_clay_dust techreborn:small_pile_of_clay_dust air input air air air output techreborn:clay_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="minecraft:clay_item" inline={true}/> → <McItem slug="techreborn:clay_dust" inline={true}/>
+<Machine next={{input: [{id: "minecraft:clay_item"}], output: [{id: "techreborn:clay_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:clay_dust air input air air air output techreborn:small_pile_of_clay_dust,4"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-8x <McItem slug="techreborn:clay_dust" inline={true}/> + 5x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-<McItem slug="techreborn:lithium_cell" inline={true}/> + 2x <McItem slug="techreborn:silicon_cell" inline={true}/> +  
-2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 2x <McItem slug="techreborn:sodium_cell" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:clay_dust", qty: 8},
+  {id: "techreborn:empty_cell", qty: 5}
+], output: [
+  {id: "techreborn:lithium_cell"},
+  {id: "techreborn:silicon_cell", qty: 2},
+  {id: "techreborn:aluminum_dust", qty: 2},
+  {id: "techreborn:sodium_cell", qty: 2}
+], tool: "techreborn:industrial_electrolyzer"}} />

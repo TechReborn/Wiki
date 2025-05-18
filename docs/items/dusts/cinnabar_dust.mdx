@@ -10,20 +10,27 @@ title: Cinnabar Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_cinnabar_dust techreborn:small_pile_of_cinnabar_dust air input techreborn:small_pile_of_cinnabar_dust techreborn:small_pile_of_cinnabar_dust air input air air air output techreborn:cinnabar_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:cinnabar_ore" inline={true}/> → 2x <McItem slug="techreborn:cinnabar_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:cinnabar_ore"}], output: [{id: "techreborn:cinnabar_dust", qty: 2}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:cinnabar_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-5x <McItem slug="techreborn:cinnabar_dust" inline={true}/> + 2x <McItem slug="techreborn:small_pile_of_redstone" inline={true}/> + <McItem slug="techreborn:small_pile_of_glowstone_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:cinnabar_ore"},
+  {id: "techreborn:water_cell"}
+], output: [
+  {id: "techreborn:cinnabar_dust", qty: 5},
+  {id: "techreborn:small_pile_of_redstone", qty: 2},
+  {id: "techreborn:small_pile_of_glowstone_dust"}
+], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:cinnabar_dust air input air air air output techreborn:small_pile_of_cinnabar_dust,4"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-<McItem slug="techreborn:cinnabar_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> → <McItem slug="techreborn:mercury_cell" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:cinnabar_dust"},
+  {id: "techreborn:empty_cell"}
+], output: [
+  {id: "techreborn:mercury_cell"},
+  {id: "techreborn:sulfur_dust"}
+], tool: "techreborn:industrial_electrolyzer"}} />

@@ -6,20 +6,16 @@ title: Steel Dust
 
 # Steel Dust
 
-**Steel Dust** is a greatest dust ever. You can keep your <McItem slug="techreborn:grinder" inline={true}/> and <McItem slug="techreborn:blast_furnace" inline={true}/> busy by grinding ingot to dust and then back smelting dust to ingot!
+**Steel Dust** is a greatest dust ever. You can keep your <McItem slug="techreborn:grinder" /> and <McItem slug="techreborn:blast_furnace" /> busy by grinding ingot to dust and then back smelting dust to ingot!
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_steel_dust techreborn:small_pile_of_steel_dust air input techreborn:small_pile_of_steel_dust techreborn:small_pile_of_steel_dust air input air air air output techreborn:steel_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:steel_ingot" inline={true}/> → <McItem slug="techreborn:steel_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:steel_ingot"}], output: [{id: "techreborn:steel_dust"}], tool: "techreborn:grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:steel_dust air input air air air output techreborn:small_pile_of_steel_dust,4"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:steel_dust" inline={true}/> → <McItem slug="techreborn:steel_ingot" inline={true}/>
+<Machine next={{input: [{id: "techreborn:steel_dust"}], output: [{id: "techreborn:steel_ingot"}], tool: "techreborn:blast_furnace"}} />

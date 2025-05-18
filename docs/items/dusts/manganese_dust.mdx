@@ -10,14 +10,18 @@ title: Manganese Dust
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_manganese_dust techreborn:small_pile_of_manganese_dust air input techreborn:small_pile_of_manganese_dust techreborn:small_pile_of_manganese_dust air input air air air output techreborn:manganese_dust"/>
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-20x <McItem slug="techreborn:spessartine_dust" inline={true}/> + 9x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-2x <McItem slug="techreborn:aluminum_dust" inline={true}/> + 3x <McItem slug="techreborn:manganese_dust" inline={true}/> + 3x <McItem slug="techreborn:silicon_cell" inline={true}/> + 6x <McItem slug="techreborn:compressed_air_cell" inline={true}/>
+<Machine next={{input: [
+  {id: "techreborn:spessartine_dust", qty: 20},
+  {id: "techreborn:empty_cell", qty: 9}
+], output: [
+  {id: "techreborn:aluminum_dust", qty: 2},
+  {id: "techreborn:manganese_dust", qty: 3},
+  {id: "techreborn:silicon_cell", qty: 3},
+  {id: "techreborn:compressed_air_cell", qty: 6}
+], tool: "techreborn:industrial_electrolyzer"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:manganese_dust air input air air air output techreborn:small_pile_of_manganese_dust,4"/>

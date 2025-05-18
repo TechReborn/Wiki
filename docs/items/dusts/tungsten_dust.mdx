@@ -6,29 +6,20 @@ title: Tungsten Dust
 
 # Tungsten Dust
 
-**Tungsten Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:tungsten_ingot" inline={true}/>.
+**Tungsten Dust** is a dust added by TechReborn. It is used to produce <McItem slug="techreborn:tungsten_ingot" />.
 
 ## Recipe
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input techreborn:small_pile_of_tungsten_dust techreborn:small_pile_of_tungsten_dust air input techreborn:small_pile_of_tungsten_dust techreborn:small_pile_of_tungsten_dust air input air air air output techreborn:tungsten_dust"/>
 
-<McItem slug="techreborn:grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:tungsten_ingot" inline={true}/> → <McItem slug="techreborn:tungsten_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:tungsten_ingot"}], output: [{id: "techreborn:tungsten_dust"}], tool: "techreborn:grinder"}} />
 
-<McItem slug="techreborn:industrial_grinder" inline={true}/> recipe:  
-<McItem slug="techreborn:tungsten_ore" inline={true}/> + <McItem slug="techreborn:water_cell" inline={true}/> →  
-2x <McItem slug="techreborn:tungsten_dust" inline={true}/> + 3x <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + 3x <McItem slug="techreborn:small_pile_of_manganese_dust" inline={true}/>
+<Machine next={{input: [{id: "techreborn:tungsten_ore"}, {id: "techreborn:water_cell"}], output: [{id: "techreborn:tungsten_dust", qty: 2}, {id: "techreborn:small_pile_of_iron_dust", qty: 3}, {id: "techreborn:small_pile_of_manganese_dust", qty: 3}], tool: "techreborn:industrial_grinder"}} />
 
 ## Usage
 
-<McItem slug="minecraft:crafting_table" inline={true}/> recipe:  
 <CraftingTable recipe="input air air air input air techreborn:tungsten_dust air input air air air output techreborn:small_pile_of_tungsten_dust,4"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
-<McItem slug="techreborn:tungsten_dust" inline={true}/> → <McItem slug="techreborn:tungsten_ingot" inline={true}/>  
-_This operation requires 2500 heat._
+<Machine next={{input: [{id: "techreborn:tungsten_dust"}], output: [{id: "techreborn:tungsten_ingot"}], tool: "techreborn:blast_furnace"}} />
 
-<McItem slug="techreborn:industrial_electrolyzer" inline={true}/> recipe:  
-<McItem slug="techreborn:tungsten_dust" inline={true}/> + <McItem slug="techreborn:empty_cell" inline={true}/> →  
-<McItem slug="techreborn:wolframium_cell" inline={true}/>
+<Machine next={{input: [{id: "techreborn:tungsten_dust"}, {id: "techreborn:empty_cell"}], output: [{id: "techreborn:wolframium_cell"}], tool: "techreborn:industrial_electrolyzer"}} />
