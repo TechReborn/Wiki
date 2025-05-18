@@ -4,5 +4,17 @@ title: Carbon Fiber Cell
 
 <ItemImage file="carbon_fiber_cell" alt="Carbon Fiber Cell" size="200" />
 
+**Carbon Fiber Cell** is produced in the <McItem slug="techreborn:industrial_electrolyzer" />.
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+### As An Output
+
+<Machine config={{
+  input: [
+    {id: "techreborn:ashes", qty: 2},
+    {id: "techreborn:empty_cell", qty: 1}
+  ],
+  output: [
+    {id: "techreborn:carbon_fiber_cell", qty: 1}
+  ],
+  tool: "techreborn:industrial_electrolyzer"
+}} />

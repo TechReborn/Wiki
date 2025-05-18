@@ -5,4 +5,16 @@ title: Deuterium Cell
 <ItemImage file="deuterium_cell" alt="Deuterium Cell" size="200" />
 
 
-**Fluids** are essential part of TechReborn mod. Thay are widely used for powering generators, producing other fluids or items.
+**Deuterium Cell** is used in the <McItem slug="techreborn:industrial_centrifuge" />.
+
+### As An Input
+
+<Machine config={{
+  input: [
+    {id: "techreborn:deuterium_cell", qty: 4}
+  ],
+  output: [
+    {id: "techreborn:tritium_cell", qty: 3}
+  ],
+  tool: "techreborn:industrial_centrifuge"
+}} />
