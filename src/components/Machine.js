@@ -56,6 +56,7 @@ export default function Machine({recipe, config = null}) {
 }
 
 function mapToolToStyles(tool) {
+	tool = tool.toLowerCase();
 	const FURNACE_LIKE = {input: { '--cols': '1', '--rows': '1' }, output: { '--cols': '1', '--rows': '1' }};
 	const CRAFTING_LIKE = {input: { '--cols': '3', '--rows': '3' }, output: { '--cols': '1', '--rows': '1' }};
 	const TWOWIDE_ONETALL = {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '2', '--rows': '1' }};
