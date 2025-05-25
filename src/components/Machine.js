@@ -29,7 +29,7 @@ export default function Machine({recipe, config = null}) {
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem
 							slug={item.id}
-							size="64"
+							size="48"
 							overrides={{ description: false }}
 						/>
 					</div>
@@ -43,7 +43,7 @@ export default function Machine({recipe, config = null}) {
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem
 							slug={item.id}
-							size="64"
+							size="48"
 							overrides={{ description: false }}
 						/>
 					</div>

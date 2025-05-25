@@ -14,4 +14,4 @@ The **LV Transformer** converts energy from Medium to Low tier. For more details
 
 ## Recipe
 
-<CraftingTable recipe="input minecraft:wood_planks techreborn:insulated_copper_cable minecraft:wood_planks input techreborn:copper_ingot techreborn:copper_ingot techreborn:copper_ingot input minecraft:wood_planks minecraft:wood_planks minecraft:wood_planks output techreborn:lv_transformer"/>
+<CraftingTable recipe="input minecraft:oak_planks techreborn:insulated_copper_cable minecraft:oak_planks input techreborn:copper_ingot techreborn:copper_ingot techreborn:copper_ingot input minecraft:oak_planks minecraft:oak_planks minecraft:oak_planks output techreborn:lv_transformer"/>
