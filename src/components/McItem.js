@@ -6,10 +6,11 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 	// todo: something better here, but if they don't give a slug, what can we even do?
 	if (!slug) { return (''); }
 	slug = slug.toLowerCase();
+	// minecrat packmap doesn't return an image as this is handled in css now.
+	// i'm lazy and didn't want a full refactor so this is good enough
 	const packMap = {
 		minecraft: (slug) => { 
-			const image = !!overrides.image ? `/img/minecraft/${overrides.image}.png` : `/img/minecraft/${slug}.png`;
-			return {image, path: `https://minecraft.wiki/w/${slug}`}; 
+			return {image: null, path: `https://minecraft.wiki/w/${slug}`}; 
 		},
 		techreborn: (slug) => {
 			const image = !!overrides.image ? `/img/techreborn/${overrides.image}.png` : `/img/techreborn/${slug}.png`;
@@ -32,15 +33,32 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 		throw new Error(`McItem lookup failure: pack:${pack}/slug:${slug}`);
 	}
 	const Element = inline === true ? "span" : "div";
+	// could be an actual <img> element, or a <span> (or div?) we style to be like one
+	// big advantage to this is being able to use a spritesheet
+	let imgEle;
+	if (pack === "minecraft") {
+		imgEle = renderCssItem(slug, size);
+	} else {
+		imgEle = <img alt={friendlyName} width={size} src={items.image} />;
+	}
 	return (
 		<Element>
 			<strong>
 				<a href={items.path}>
-					<img alt={friendlyName} width={size} src={items.image}></img>
+					{imgEle}
 					{friendlyName}
 				</a>
 			</strong>
 		</Element>
+	);
+}
+
+function renderCssItem(slug, size) {
+	// minecraft IDs are expressed with hyphens, always
+	const id = slug.split("_").join("-");
+	const n = 32 / size;
+	return (
+		<div className={`icon-32 ${id}`} style={{ '--n': n }}></div>
 	);
 }
 

@@ -51,7 +51,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/custom.css'
         },
       }),
     ],
