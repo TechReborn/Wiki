@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "techreborn:mercury"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "minecraft:diamond_chestplate"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 6,
+      "id": "techreborn:diamond_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:diamond_small_dust"
+    }
+  ],
+  "power": 128,
+  "time": 140
+}

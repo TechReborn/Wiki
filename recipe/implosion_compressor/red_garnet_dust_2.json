@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:implosion_compressor",
+  "ingredients": [
+    {
+      "count": 9,
+      "ingredient": "minecraft:redstone_block"
+    },
+    {
+      "count": 4,
+      "ingredient": "minecraft:end_crystal"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "techreborn:red_garnet_dust"
+    },
+    {
+      "count": 4,
+      "id": "techreborn:ender_eye_small_dust"
+    }
+  ],
+  "power": 30,
+  "time": 2000
+}

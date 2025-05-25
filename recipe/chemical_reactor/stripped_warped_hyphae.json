@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:stripped_crimson_hyphae"
+    },
+    {
+      "count": 2,
+      "ingredient": "#c:dusts/ender_pearl"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:stripped_warped_hyphae"
+    }
+  ],
+  "power": 30,
+  "time": 500
+}

@@ -1,0 +1,29 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "minecraft:kelp"
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:methane"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 5,
+  "time": 100
+}

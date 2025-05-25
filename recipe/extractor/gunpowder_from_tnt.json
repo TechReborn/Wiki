@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:tnt"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:gunpowder"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

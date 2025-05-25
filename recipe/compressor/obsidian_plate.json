@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:dusts/obsidian"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:obsidian_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

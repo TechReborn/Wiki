@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "count": 6,
+      "ingredient": "minecraft:prismarine_crystals"
+    },
+    {
+      "ingredient": "minecraft:glowstone"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:sea_lantern"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:electronic_circuit"
+    },
+    {
+      "count": 2,
+      "ingredient": "#c:plates/peridot"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:data_storage_core"
+    }
+  ],
+  "power": 20,
+  "time": 200
+}

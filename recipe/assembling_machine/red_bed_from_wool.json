@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:red_wool"
+    },
+    {
+      "ingredient": "#minecraft:planks"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:red_bed"
+    }
+  ],
+  "power": 25,
+  "time": 250
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:crossbow"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:string"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

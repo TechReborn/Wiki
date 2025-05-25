@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:tube_coral_block"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "minecraft:blue_dye"
+    }
+  ],
+  "power": 10,
+  "time": 400
+}

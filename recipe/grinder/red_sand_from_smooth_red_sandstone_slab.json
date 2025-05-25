@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:smooth_red_sandstone_slab"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:red_sand"
+    }
+  ],
+  "power": 2,
+  "time": 200
+}

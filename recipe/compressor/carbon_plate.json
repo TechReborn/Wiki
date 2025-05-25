@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:carbon_mesh"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:carbon_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:experience_bottle"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:glass_bottle"
+    }
+  ],
+  "power": 10,
+  "time": 150
+}

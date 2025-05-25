@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:redstone_ores"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "id": "minecraft:redstone"
+    }
+  ],
+  "power": 4,
+  "time": 270
+}

@@ -1,0 +1,33 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "count": 5,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:electrolyzed_water"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:hydrogen"
+      },
+      "count": 4,
+      "id": "techreborn:cell"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:compressed_air"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 50,
+  "time": 1000
+}

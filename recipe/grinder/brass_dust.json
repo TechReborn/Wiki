@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#c:ingots/brass"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:brass_dust"
+    }
+  ],
+  "power": 5,
+  "time": 200
+}

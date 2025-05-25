@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:netherrack"
+    },
+    {
+      "ingredient": "techreborn:template_template"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:netherite_upgrade_smithing_template"
+    }
+  ],
+  "power": 40,
+  "time": 1500
+}

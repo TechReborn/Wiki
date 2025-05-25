@@ -1,0 +1,34 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:glyceryl"
+        }
+      }
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:carbon"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:nitrocoal_fuel"
+      },
+      "count": 2,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 30,
+  "time": 300
+}

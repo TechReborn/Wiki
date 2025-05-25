@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/invar",
+  "result": {
+    "count": 1,
+    "id": "techreborn:invar_storage_block_wall"
+  }
+}

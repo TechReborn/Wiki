@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget",
+    "techreborn:copper_nugget"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:copper_ingot"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:yellow_dye"
+    },
+    {
+      "count": 2,
+      "ingredient": "minecraft:candle"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:yellow_candle"
+    }
+  ],
+  "power": 25,
+  "time": 250
+}

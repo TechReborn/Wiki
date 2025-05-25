@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:uvarovite_small_dust",
+    "techreborn:uvarovite_small_dust",
+    "techreborn:uvarovite_small_dust",
+    "techreborn:uvarovite_small_dust"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:uvarovite_dust"
+  }
+}

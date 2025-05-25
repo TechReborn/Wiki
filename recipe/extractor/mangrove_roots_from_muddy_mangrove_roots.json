@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:muddy_mangrove_roots"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:mangrove_roots"
+    }
+  ],
+  "power": 2,
+  "time": 200
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:storage_blocks/refined_iron"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 9,
+      "id": "techreborn:refined_iron_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

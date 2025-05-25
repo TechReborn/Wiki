@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "fluid": {
+    "amount": {
+      "value": 8100
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "minecraft:wooden_pickaxe"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "techreborn:saw_small_dust"
+    }
+  ],
+  "power": 30,
+  "time": 100
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot",
+    "techreborn:iridium_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:iridium_storage_block"
+  }
+}

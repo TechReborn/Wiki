@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:vacuum_freezer",
+  "ingredients": [
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:heliumplasma"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:helium"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 60,
+  "time": 400
+}

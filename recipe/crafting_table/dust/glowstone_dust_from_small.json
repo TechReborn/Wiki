@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:glowstone_small_dust",
+    "techreborn:glowstone_small_dust",
+    "techreborn:glowstone_small_dust",
+    "techreborn:glowstone_small_dust"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:glowstone_dust"
+  }
+}

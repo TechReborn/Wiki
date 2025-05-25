@@ -1,0 +1,35 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:carbon"
+        }
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:hydrogen"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:methane"
+      },
+      "count": 5,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 30,
+  "time": 2000
+}

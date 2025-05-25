@@ -1,0 +1,45 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "count": 12,
+      "ingredient": "techreborn:bauxite_dust"
+    },
+    {
+      "count": 8,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "id": "techreborn:aluminum_dust"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:titanium_small_dust"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:hydrogen"
+      },
+      "count": 5,
+      "id": "techreborn:cell"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:compressed_air"
+      },
+      "count": 3,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 60,
+  "time": 2000
+}

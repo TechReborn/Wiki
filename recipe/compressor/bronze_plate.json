@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:ingots/bronze"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:bronze_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

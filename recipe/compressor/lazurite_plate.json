@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:dusts/lazurite"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:lazurite_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

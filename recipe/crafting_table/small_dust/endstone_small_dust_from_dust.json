@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:endstone_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:endstone_small_dust"
+  }
+}

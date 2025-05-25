@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:manual"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:paper"
+    }
+  ],
+  "power": 10,
+  "time": 200
+}

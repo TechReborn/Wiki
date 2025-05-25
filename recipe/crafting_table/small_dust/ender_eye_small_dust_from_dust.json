@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:ender_eye_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:ender_eye_small_dust"
+  }
+}

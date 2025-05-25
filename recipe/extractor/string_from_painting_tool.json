@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:painting_tool"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:string"
+    }
+  ],
+  "power": 10,
+  "time": 150
+}

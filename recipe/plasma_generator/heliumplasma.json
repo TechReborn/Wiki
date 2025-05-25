@@ -1,0 +1,5 @@
+{
+  "type": "techreborn:plasma_generator",
+  "fluid": "techreborn:heliumplasma",
+  "power": 8192
+}

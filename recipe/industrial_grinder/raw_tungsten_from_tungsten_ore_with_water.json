@@ -1,0 +1,32 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/tungsten"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "techreborn:raw_tungsten"
+    },
+    {
+      "count": 7,
+      "id": "minecraft:iron_nugget"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:manganese_small_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

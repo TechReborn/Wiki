@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#c:dusts/electrum"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 9,
+      "id": "minecraft:gold_nugget"
+    },
+    {
+      "count": 9,
+      "id": "techreborn:silver_nugget"
+    }
+  ],
+  "power": 10,
+  "time": 7200
+}

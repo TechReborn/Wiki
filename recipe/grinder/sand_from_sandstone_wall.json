@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:sandstone_wall"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "minecraft:sand"
+    }
+  ],
+  "power": 3,
+  "time": 200
+}

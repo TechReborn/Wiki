@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:flint_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:flint_small_dust"
+  }
+}

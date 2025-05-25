@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:saltpeter_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:saltpeter_small_dust"
+  }
+}

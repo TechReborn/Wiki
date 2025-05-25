@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:black_dye"
+    },
+    {
+      "count": 12,
+      "ingredient": "minecraft:gray_stained_glass"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 12,
+      "id": "minecraft:black_stained_glass"
+    }
+  ],
+  "power": 25,
+  "time": 250
+}

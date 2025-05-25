@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:template_template"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "techreborn:diamond_small_dust"
+    }
+  ],
+  "power": 5,
+  "time": 200
+}

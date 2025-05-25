@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:planks"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "id": "techreborn:saw_small_dust"
+    }
+  ],
+  "power": 3,
+  "time": 180
+}

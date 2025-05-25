@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:data_storage_core"
+    },
+    {
+      "ingredient": "techreborn:industrial_circuit"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:data_storage_chip"
+    }
+  ],
+  "power": 20,
+  "time": 200
+}

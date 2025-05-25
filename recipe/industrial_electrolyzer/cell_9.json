@@ -1,0 +1,51 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "techreborn:ender_pearl_dust"
+    },
+    {
+      "count": 16,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:nitrogen"
+      },
+      "count": 5,
+      "id": "techreborn:cell"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:beryllium"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:potassium"
+      },
+      "count": 4,
+      "id": "techreborn:cell"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:chlorite"
+      },
+      "count": 6,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 50,
+  "time": 1300
+}

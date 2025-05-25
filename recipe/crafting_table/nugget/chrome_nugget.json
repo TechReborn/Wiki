@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:chrome_ingot"
+  ],
+  "result": {
+    "count": 9,
+    "id": "techreborn:chrome_nugget"
+  }
+}

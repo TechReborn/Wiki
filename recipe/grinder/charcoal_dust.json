@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:charcoal"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:charcoal_dust"
+    }
+  ],
+  "power": 4,
+  "time": 230
+}

@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#c:dusts/saw"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:wood_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

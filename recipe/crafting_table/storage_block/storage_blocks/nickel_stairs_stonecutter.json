@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/nickel",
+  "result": {
+    "count": 1,
+    "id": "techreborn:nickel_storage_block_stairs"
+  }
+}

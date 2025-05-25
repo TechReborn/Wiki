@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:cut_copper_slab"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:exposed_cut_copper_slab"
+    }
+  ],
+  "power": 30,
+  "time": 200
+}

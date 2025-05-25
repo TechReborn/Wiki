@@ -1,0 +1,33 @@
+{
+  "type": "techreborn:fusion_reactor",
+  "ingredients": [
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:wolframium"
+        }
+      }
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:lithium"
+        }
+      }
+    }
+  ],
+  "minSize": 1,
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:iridium_ore"
+    }
+  ],
+  "power": -2048,
+  "startEnergy": 90000000,
+  "time": 1024
+}

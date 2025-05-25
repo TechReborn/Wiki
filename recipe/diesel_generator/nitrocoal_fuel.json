@@ -1,0 +1,5 @@
+{
+  "type": "techreborn:diesel_generator",
+  "fluid": "techreborn:nitrocoal_fuel",
+  "power": 48
+}

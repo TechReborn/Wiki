@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "#techreborn:rubber_logs"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:rubber"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

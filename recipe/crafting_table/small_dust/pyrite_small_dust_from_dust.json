@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:pyrite_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:pyrite_small_dust"
+  }
+}

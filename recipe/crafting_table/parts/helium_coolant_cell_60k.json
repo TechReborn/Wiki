@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " T ",
+        "TCT",
+        " T "
+    ],
+    "key": {
+        "T": "#c:ingots/tin",
+        "C": "techreborn:helium_bucket"
+    },
+    "result": {
+        "id": "techreborn:helium_coolant_cell_60k"
+    }
+}

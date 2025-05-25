@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:fluid_replicator",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "techreborn:hydrogen"
+    }
+  },
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "techreborn:uu_matter"
+    }
+  ],
+  "outputs": [],
+  "power": 40,
+  "time": 100
+}

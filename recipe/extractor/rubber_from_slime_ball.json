@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:slime_ball"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "techreborn:rubber"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

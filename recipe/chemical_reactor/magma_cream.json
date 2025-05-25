@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:blaze_powder"
+    },
+    {
+      "ingredient": "minecraft:slime_ball"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:magma_cream"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

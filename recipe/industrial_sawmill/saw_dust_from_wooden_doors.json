@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "fluid": {
+    "amount": {
+      "value": 30375
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:wooden_doors"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "techreborn:saw_dust"
+    }
+  ],
+  "power": 30,
+  "time": 200
+}

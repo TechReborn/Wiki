@@ -1,0 +1,37 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "count": 32,
+      "ingredient": "minecraft:sugar"
+    },
+    {
+      "count": 7,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:carbon"
+      },
+      "count": 2,
+      "id": "techreborn:cell"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "minecraft:water"
+      },
+      "count": 5,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 20,
+  "time": 600
+}

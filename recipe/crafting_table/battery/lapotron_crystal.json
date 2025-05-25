@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LCL",
+        "LEL",
+        "LCL"
+    ],
+    "key": {
+        "L": "#c:plates/lazurite",
+        "C": "techreborn:industrial_circuit",
+        "E": "techreborn:energy_crystal"
+    },
+    "result": {
+        "id": "techreborn:lapotron_crystal"
+    }
+}

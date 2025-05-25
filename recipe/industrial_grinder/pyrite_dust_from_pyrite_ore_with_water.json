@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/pyrite"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "techreborn:pyrite_dust"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:sulfur_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": "#c:dusts/invar",
+  "result": {
+    "id": "techreborn:invar_ingot"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:prismarine"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "minecraft:prismarine_shard"
+    }
+  ],
+  "power": 2,
+  "time": 400
+}

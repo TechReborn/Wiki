@@ -1,0 +1,41 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 12,
+      "ingredient": "minecraft:tube_coral_block"
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:methane"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    },
+    {
+      "count": 24,
+      "id": "minecraft:dead_tube_coral"
+    },
+    {
+      "count": 12,
+      "id": "minecraft:dead_tube_coral_fan"
+    },
+    {
+      "count": 16,
+      "id": "minecraft:blue_dye"
+    }
+  ],
+  "power": 5,
+  "time": 500
+}

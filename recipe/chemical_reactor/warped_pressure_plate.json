@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:crimson_pressure_plate"
+    },
+    {
+      "ingredient": "#c:dusts/ender_pearl"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:warped_pressure_plate"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

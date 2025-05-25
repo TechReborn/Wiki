@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:tags_populated",
+      "registry": "minecraft:item",
+      "values": [
+        "c:marble"
+      ]
+    }
+  ],
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#c:marble"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:marble_dust"
+    }
+  ],
+  "power": 2,
+  "time": 180
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:aluminum_ingot"
+  ],
+  "result": {
+    "count": 9,
+    "id": "techreborn:aluminum_nugget"
+  }
+}

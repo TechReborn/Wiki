@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:oxeye_daisy"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:light_gray_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

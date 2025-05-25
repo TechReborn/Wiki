@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#c:dusts/platinum"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "techreborn:iridium_nugget"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:nickel_small_dust"
+    }
+  ],
+  "power": 5,
+  "time": 3000
+}

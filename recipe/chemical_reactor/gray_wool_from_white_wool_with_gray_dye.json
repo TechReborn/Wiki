@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:gray_dye"
+    },
+    {
+      "count": 4,
+      "ingredient": "minecraft:white_wool"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "minecraft:gray_wool"
+    }
+  ],
+  "power": 25,
+  "time": 250
+}

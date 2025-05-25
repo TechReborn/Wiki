@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:beds"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "minecraft:string"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

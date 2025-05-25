@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:copper_ingot"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:copper_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

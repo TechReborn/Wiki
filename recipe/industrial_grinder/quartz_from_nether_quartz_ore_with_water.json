@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "minecraft:nether_quartz_ore"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:quartz"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:sulfur_small_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "count": 3,
+      "ingredient": "minecraft:pearlescent_froglight"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:purple_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

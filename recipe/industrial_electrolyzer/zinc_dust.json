@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "techreborn:sphalerite_dust"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:zinc_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:sulfur_dust"
+    }
+  ],
+  "power": 50,
+  "time": 1200
+}

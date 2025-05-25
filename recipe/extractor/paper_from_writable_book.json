@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:writable_book"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:paper"
+    }
+  ],
+  "power": 10,
+  "time": 200
+}

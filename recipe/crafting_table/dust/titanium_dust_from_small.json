@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:titanium_small_dust",
+    "techreborn:titanium_small_dust",
+    "techreborn:titanium_small_dust",
+    "techreborn:titanium_small_dust"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:titanium_dust"
+  }
+}

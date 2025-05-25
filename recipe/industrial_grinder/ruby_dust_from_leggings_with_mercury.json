@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "techreborn:mercury"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "techreborn:ruby_leggings"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "techreborn:ruby_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:ruby_small_dust"
+    }
+  ],
+  "power": 128,
+  "time": 140
+}

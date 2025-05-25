@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:water"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:electrolyzed_water"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 20,
+  "time": 200
+}

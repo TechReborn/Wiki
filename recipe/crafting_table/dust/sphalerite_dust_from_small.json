@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:sphalerite_small_dust",
+    "techreborn:sphalerite_small_dust",
+    "techreborn:sphalerite_small_dust",
+    "techreborn:sphalerite_small_dust"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:sphalerite_dust"
+  }
+}

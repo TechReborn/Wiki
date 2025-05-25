@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:rolling_machine",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:iron_ingot",
+    "C": "minecraft:stone_pressure_plate",
+    "D": "minecraft:redstone"
+  },
+  "pattern": [
+    "A A",
+    "ACA",
+    "ADA"
+  ],
+  "power": 5,
+  "result": {
+    "count": 8,
+    "id": "minecraft:detector_rail"
+  },
+  "time": 250
+}

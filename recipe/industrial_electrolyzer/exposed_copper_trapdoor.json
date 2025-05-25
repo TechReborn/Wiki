@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:copper_trapdoor"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:exposed_copper_trapdoor"
+    }
+  ],
+  "power": 30,
+  "time": 200
+}

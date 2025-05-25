@@ -1,0 +1,41 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "minecraft:soul_sand"
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 10,
+      "id": "minecraft:sand"
+    },
+    {
+      "count": 4,
+      "id": "techreborn:saltpeter_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:coal_dust"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:oil"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 5,
+  "time": 2500
+}

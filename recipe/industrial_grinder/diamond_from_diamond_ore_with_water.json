@@ -1,0 +1,32 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:diamond_ores"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:diamond"
+    },
+    {
+      "count": 6,
+      "id": "techreborn:diamond_small_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:coal_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

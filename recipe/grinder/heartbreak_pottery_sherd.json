@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:heart_pottery_sherd"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:heartbreak_pottery_sherd"
+    }
+  ],
+  "power": 2,
+  "time": 100
+}

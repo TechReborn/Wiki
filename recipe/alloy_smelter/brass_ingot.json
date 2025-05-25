@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:alloy_smelter",
+  "ingredients": [
+    {
+      "count": 3,
+      "ingredient": "minecraft:copper_ingot"
+    },
+    {
+      "ingredient": "#c:ingots/zinc"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "techreborn:brass_ingot"
+    }
+  ],
+  "power": 6,
+  "time": 200
+}

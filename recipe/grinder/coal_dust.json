@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:coal"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:coal_dust"
+    }
+  ],
+  "power": 2,
+  "time": 230
+}

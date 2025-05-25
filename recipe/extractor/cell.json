@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:cell"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 10,
+  "time": 150
+}

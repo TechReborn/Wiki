@@ -1,0 +1,36 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "ae2"
+      ]
+    }
+  ],
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/certus_quartz"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "ae2:certus_quartz_crystal"
+    },
+    {
+      "count": 5,
+      "id": "ae2:certus_quartz_dust"
+    }
+  ],
+  "power": 128,
+  "time": 100
+}

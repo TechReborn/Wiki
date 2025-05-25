@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#techreborn:gravel_material"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:gravel"
+    }
+  ],
+  "power": 2,
+  "time": 180
+}

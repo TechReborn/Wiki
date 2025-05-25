@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "fluid": {
+    "amount": {
+      "value": 20250
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "minecraft:bamboo_mosaic_stairs"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:bamboo_mosaic_slab"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:saw_dust"
+    }
+  ],
+  "power": 30,
+  "time": 100
+}

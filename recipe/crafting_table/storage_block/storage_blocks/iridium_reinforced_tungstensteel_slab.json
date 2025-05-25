@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "#c:storage_blocks/iridium_reinforced_tungstensteel"
+  },
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "techreborn:iridium_reinforced_tungstensteel_storage_block_slab"
+  }
+}

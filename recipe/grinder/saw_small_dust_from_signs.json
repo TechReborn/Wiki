@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:signs"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:saw_small_dust"
+    }
+  ],
+  "power": 3,
+  "time": 180
+}

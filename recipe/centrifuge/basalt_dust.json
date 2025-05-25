@@ -1,0 +1,29 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "techreborn:basalt_dust"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:peridot_dust"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:calcite_dust"
+    },
+    {
+      "count": 8,
+      "id": "techreborn:flint_dust"
+    },
+    {
+      "count": 4,
+      "id": "techreborn:dark_ashes_dust"
+    }
+  ],
+  "power": 10,
+  "time": 2040
+}

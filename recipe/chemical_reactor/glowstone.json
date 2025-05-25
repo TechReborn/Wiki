@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "count": 6,
+      "ingredient": "#c:small_dusts/glowstone"
+    },
+    {
+      "ingredient": "minecraft:sea_lantern"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:glowstone"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

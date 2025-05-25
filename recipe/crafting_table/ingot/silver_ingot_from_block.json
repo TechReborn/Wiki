@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:silver_storage_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "techreborn:silver_ingot"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:lapis_block"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:lapis_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

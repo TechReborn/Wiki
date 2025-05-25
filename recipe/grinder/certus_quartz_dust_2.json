@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "ae2"
+      ]
+    }
+  ],
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/certus_quartz"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "ae2:certus_quartz_dust"
+    }
+  ],
+  "power": 2,
+  "time": 300
+}
