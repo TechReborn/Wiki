@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "fluid": {
+    "amount": {
+      "value": 20250
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "techreborn:rubber_stair"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:rubber_slab"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:saw_dust"
+    }
+  ],
+  "power": 30,
+  "time": 100
+}

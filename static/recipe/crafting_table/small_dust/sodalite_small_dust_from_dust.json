@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:sodalite_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:sodalite_small_dust"
+  }
+}

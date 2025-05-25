@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot",
+    "techreborn:brass_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:brass_storage_block"
+  }
+}

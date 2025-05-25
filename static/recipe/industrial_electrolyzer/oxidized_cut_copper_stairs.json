@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:weathered_cut_copper_stairs"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:oxidized_cut_copper_stairs"
+    }
+  ],
+  "power": 30,
+  "time": 200
+}

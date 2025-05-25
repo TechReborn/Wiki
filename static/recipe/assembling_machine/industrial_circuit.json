@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "ingredient": "#c:plates/platinum"
+    },
+    {
+      "ingredient": "techreborn:advanced_circuit"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:industrial_circuit"
+    }
+  ],
+  "power": 20,
+  "time": 200
+}

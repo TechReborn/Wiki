@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/raw_iridium",
+  "result": {
+    "count": 2,
+    "id": "techreborn:raw_iridium_storage_block_slab"
+  }
+}

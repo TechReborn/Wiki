@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot",
+    "techreborn:aluminum_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:aluminum_storage_block"
+  }
+}

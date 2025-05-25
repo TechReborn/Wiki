@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:scrapbox",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:scrap_box"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:flint_dust"
+    }
+  ],
+  "power": 10,
+  "time": 20
+}

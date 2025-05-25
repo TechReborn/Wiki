@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:implosion_compressor",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:iridium_alloy_ingot"
+    },
+    {
+      "count": 2,
+      "ingredient": "minecraft:end_crystal"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:iridium_alloy_plate"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:ender_eye_small_dust"
+    }
+  ],
+  "power": 30,
+  "time": 2000
+}

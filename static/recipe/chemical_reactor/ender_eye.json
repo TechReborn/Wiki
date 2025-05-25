@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:blaze_powder"
+    },
+    {
+      "ingredient": "minecraft:ender_pearl"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:ender_eye"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

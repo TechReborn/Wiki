@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:blast_furnace",
+  "heat": 1000,
+  "ingredients": [
+    {
+      "ingredient": "techreborn:refined_iron_ingot"
+    },
+    {
+      "count": 4,
+      "ingredient": "#c:dusts/coal"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:steel_ingot"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:dark_ashes_dust"
+    }
+  ],
+  "power": 128,
+  "time": 500
+}

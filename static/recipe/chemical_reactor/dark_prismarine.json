@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:prismarine"
+    },
+    {
+      "ingredient": "minecraft:black_dye"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:dark_prismarine"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

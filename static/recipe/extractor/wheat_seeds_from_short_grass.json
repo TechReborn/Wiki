@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:short_grass"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:wheat_seeds"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

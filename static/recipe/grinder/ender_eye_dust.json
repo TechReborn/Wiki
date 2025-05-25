@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:ender_eye"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "techreborn:ender_eye_dust"
+    }
+  ],
+  "power": 4,
+  "time": 200
+}

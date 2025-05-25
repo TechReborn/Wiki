@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:prismarine_bricks"
+    },
+    {
+      "ingredient": "techreborn:template_template"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:tide_armor_trim_smithing_template"
+    }
+  ],
+  "power": 40,
+  "time": 1500
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/peridot"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "techreborn:peridot_dust"
+    }
+  ],
+  "power": 2,
+  "time": 220
+}

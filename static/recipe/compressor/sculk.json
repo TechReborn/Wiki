@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "minecraft:sculk_vein"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:sculk"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

@@ -1,0 +1,5 @@
+{
+  "type": "techreborn:thermal_generator",
+  "fluid": "minecraft:lava",
+  "power": 60
+}

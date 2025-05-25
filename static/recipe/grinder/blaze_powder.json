@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:blaze_rod"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "minecraft:blaze_powder"
+    }
+  ],
+  "power": 4,
+  "time": 200
+}

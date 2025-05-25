@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:exposed_chiseled_copper"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:weathered_chiseled_copper"
+    }
+  ],
+  "power": 30,
+  "time": 200
+}

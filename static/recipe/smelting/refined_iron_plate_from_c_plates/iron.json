@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": "#c:plates/iron",
+  "result": {
+    "id": "techreborn:refined_iron_plate"
+  }
+}

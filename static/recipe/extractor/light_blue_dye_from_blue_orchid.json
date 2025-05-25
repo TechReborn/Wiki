@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:blue_orchid"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:light_blue_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

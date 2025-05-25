@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:water_bucket"
+  ],
+  "result": {
+    "count": 8,
+    "id": "techreborn:sap"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "type": "techreborn:diesel_generator",
+  "fluid": "techreborn:diesel",
+  "power": 128
+}

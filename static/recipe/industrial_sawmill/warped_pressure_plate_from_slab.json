@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "fluid": {
+    "amount": {
+      "value": 20250
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "minecraft:warped_slab"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:warped_pressure_plate"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:saw_dust"
+    }
+  ],
+  "power": 30,
+  "time": 200
+}

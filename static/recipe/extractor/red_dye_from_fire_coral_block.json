@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:fire_coral_block"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "minecraft:red_dye"
+    }
+  ],
+  "power": 10,
+  "time": 400
+}

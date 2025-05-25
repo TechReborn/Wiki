@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:emerald"
+  ],
+  "result": {
+    "count": 9,
+    "id": "techreborn:emerald_nugget"
+  }
+}

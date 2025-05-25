@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:dead_bush"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:stick"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

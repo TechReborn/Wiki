@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem",
+    "techreborn:peridot_gem"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:peridot_storage_block"
+  }
+}

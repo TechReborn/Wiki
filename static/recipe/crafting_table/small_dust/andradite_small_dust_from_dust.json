@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:andradite_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:andradite_small_dust"
+  }
+}

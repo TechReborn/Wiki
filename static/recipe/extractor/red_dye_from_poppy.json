@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:poppy"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:red_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

@@ -1,0 +1,30 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:hydrogen"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:deuterium"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 10,
+  "time": 4000
+}

@@ -1,0 +1,32 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "techreborn:sodium_persulfate"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:gold_ores"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:raw_gold"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:raw_copper"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:nickel_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

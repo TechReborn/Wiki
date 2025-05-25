@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:galena_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:galena_small_dust"
+  }
+}

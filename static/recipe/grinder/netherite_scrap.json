@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:ancient_debris"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:netherite_scrap"
+    }
+  ],
+  "power": 4,
+  "time": 200
+}

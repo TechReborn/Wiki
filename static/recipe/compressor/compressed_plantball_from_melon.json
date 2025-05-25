@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "count": 64,
+      "ingredient": "minecraft:melon_slice"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:compressed_plantball"
+    }
+  ],
+  "power": 2,
+  "time": 400
+}

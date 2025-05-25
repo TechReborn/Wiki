@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "count": 3,
+      "ingredient": "#c:dusts/calcite"
+    },
+    {
+      "ingredient": "minecraft:slime_ball"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:bone"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

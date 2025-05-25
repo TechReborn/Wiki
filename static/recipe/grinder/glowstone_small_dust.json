@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:shroomlight"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "techreborn:glowstone_small_dust"
+    }
+  ],
+  "power": 2,
+  "time": 300
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:obsidian"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "techreborn:obsidian_dust"
+    }
+  ],
+  "power": 6,
+  "time": 400
+}

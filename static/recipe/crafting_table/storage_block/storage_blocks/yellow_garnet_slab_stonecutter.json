@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/yellow_garnet",
+  "result": {
+    "count": 2,
+    "id": "techreborn:yellow_garnet_storage_block_slab"
+  }
+}

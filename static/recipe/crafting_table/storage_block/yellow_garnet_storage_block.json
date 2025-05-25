@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem",
+    "techreborn:yellow_garnet_gem"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:yellow_garnet_storage_block"
+  }
+}

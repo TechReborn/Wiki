@@ -1,0 +1,15 @@
+{
+    "type": "reborncore:padded",
+    "pattern": [
+        "UUU",
+        "UU ",
+        "US "
+    ],
+    "key": {
+        "S": "minecraft:deepslate",
+        "U": "techreborn:uu_matter"
+    },
+    "result": {
+        "id": "techreborn:deepslate_iridium_ore"
+    }
+}

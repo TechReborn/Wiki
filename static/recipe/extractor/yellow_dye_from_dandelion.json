@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:dandelion"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:yellow_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

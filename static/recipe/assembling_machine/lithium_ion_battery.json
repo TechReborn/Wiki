@@ -1,0 +1,27 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#c:plates/aluminum"
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:lithium"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:lithium_ion_battery"
+    }
+  ],
+  "power": 20,
+  "time": 200
+}

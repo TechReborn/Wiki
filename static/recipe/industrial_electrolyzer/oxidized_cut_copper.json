@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:weathered_cut_copper"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:oxidized_cut_copper"
+    }
+  ],
+  "power": 30,
+  "time": 200
+}

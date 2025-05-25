@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:red_garnet_small_dust",
+    "techreborn:red_garnet_small_dust",
+    "techreborn:red_garnet_small_dust",
+    "techreborn:red_garnet_small_dust"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:red_garnet_dust"
+  }
+}

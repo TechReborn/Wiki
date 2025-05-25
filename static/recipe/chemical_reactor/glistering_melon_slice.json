@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "count": 8,
+      "ingredient": "minecraft:gold_nugget"
+    },
+    {
+      "ingredient": "minecraft:melon_slice"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:glistering_melon_slice"
+    }
+  ],
+  "power": 30,
+  "time": 500
+}

@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "techreborn:galena_dust"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 6,
+      "id": "techreborn:silver_nugget"
+    },
+    {
+      "count": 6,
+      "id": "techreborn:lead_nugget"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:sulfur_small_dust"
+    }
+  ],
+  "power": 50,
+  "time": 1100
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/steel",
+  "result": {
+    "count": 1,
+    "id": "techreborn:steel_storage_block_stairs"
+  }
+}

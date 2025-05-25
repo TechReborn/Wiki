@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#c:storage_blocks/yellow_garnet"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 9,
+      "id": "techreborn:yellow_garnet_dust"
+    }
+  ],
+  "power": 2,
+  "time": 1500
+}

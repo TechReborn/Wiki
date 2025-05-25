@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:emerald_ores"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:emerald"
+    }
+  ],
+  "power": 4,
+  "time": 270
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:storage_blocks/zinc"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 9,
+      "id": "techreborn:zinc_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

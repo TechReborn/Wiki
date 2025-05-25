@@ -1,0 +1,32 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "techreborn:sodium_persulfate"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/sphalerite"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "techreborn:sphalerite_dust"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:zinc_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:yellow_garnet_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

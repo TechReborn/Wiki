@@ -1,0 +1,5 @@
+{
+  "type": "techreborn:semi_fluid_generator",
+  "fluid": "techreborn:biofuel",
+  "power": 6
+}

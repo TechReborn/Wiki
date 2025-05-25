@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:light_gray_dye"
+    },
+    {
+      "count": 8,
+      "ingredient": "minecraft:magenta_carpet"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "id": "minecraft:pink_carpet"
+    }
+  ],
+  "power": 25,
+  "time": 250
+}

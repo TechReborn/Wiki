@@ -1,0 +1,32 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 40500
+    },
+    "fluid": {
+      "fluid": "techreborn:mercury"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "techreborn:sapphire_axe"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:sapphire_dust"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:sapphire_small_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:saw_small_dust"
+    }
+  ],
+  "power": 128,
+  "time": 140
+}

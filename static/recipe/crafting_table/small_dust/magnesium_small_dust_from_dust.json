@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:magnesium_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:magnesium_small_dust"
+  }
+}

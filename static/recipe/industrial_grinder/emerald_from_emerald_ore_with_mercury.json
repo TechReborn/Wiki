@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "techreborn:mercury"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:emerald_ores"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "minecraft:emerald"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:emerald_small_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

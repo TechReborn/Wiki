@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/advanced_alloy",
+  "result": {
+    "count": 2,
+    "id": "techreborn:advanced_alloy_storage_block_slab"
+  }
+}

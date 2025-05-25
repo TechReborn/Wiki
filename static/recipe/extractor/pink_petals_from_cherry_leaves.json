@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:cherry_leaves"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "minecraft:pink_petals"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

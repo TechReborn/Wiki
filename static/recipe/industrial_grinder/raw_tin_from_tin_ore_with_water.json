@@ -1,0 +1,32 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/tin"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 2,
+      "id": "techreborn:raw_tin"
+    },
+    {
+      "count": 3,
+      "id": "minecraft:iron_nugget"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:zinc_nugget"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

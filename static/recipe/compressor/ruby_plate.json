@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:dusts/ruby"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:ruby_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

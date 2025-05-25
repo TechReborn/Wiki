@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:blast_furnace",
+  "heat": 1500,
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:silicon"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:silicon_plate"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 128,
+  "time": 1000
+}

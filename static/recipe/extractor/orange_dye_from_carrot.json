@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "count": 3,
+      "ingredient": "minecraft:carrot"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:orange_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:dark_ashes_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:dark_ashes_small_dust"
+  }
+}

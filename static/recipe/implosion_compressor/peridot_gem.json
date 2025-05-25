@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:implosion_compressor",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "#c:dusts/peridot"
+    },
+    {
+      "count": 16,
+      "ingredient": "minecraft:tnt"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "techreborn:peridot_gem"
+    },
+    {
+      "count": 12,
+      "id": "techreborn:dark_ashes_dust"
+    }
+  ],
+  "power": 30,
+  "time": 2000
+}

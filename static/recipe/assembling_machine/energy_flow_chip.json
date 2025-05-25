@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:lapotron_crystal"
+    },
+    {
+      "ingredient": "techreborn:industrial_circuit"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:energy_flow_chip"
+    }
+  ],
+  "power": 20,
+  "time": 200
+}

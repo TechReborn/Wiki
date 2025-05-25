@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:storage_blocks/peridot"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 9,
+      "id": "techreborn:peridot_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

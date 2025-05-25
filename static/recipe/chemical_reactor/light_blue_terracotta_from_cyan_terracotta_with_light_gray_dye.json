@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:light_gray_dye"
+    },
+    {
+      "count": 8,
+      "ingredient": "minecraft:cyan_terracotta"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "id": "minecraft:light_blue_terracotta"
+    }
+  ],
+  "power": 25,
+  "time": 250
+}

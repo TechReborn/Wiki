@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:peony"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "minecraft:pink_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

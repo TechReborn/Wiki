@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:centrifuge",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "techreborn:sap"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 14,
+      "id": "techreborn:rubber"
+    }
+  ],
+  "power": 5,
+  "time": 1300
+}

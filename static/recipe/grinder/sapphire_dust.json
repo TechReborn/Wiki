@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "ingredient": "#c:gems/sapphire"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:sapphire_dust"
+    }
+  ],
+  "power": 2,
+  "time": 200
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot",
+    "techreborn:invar_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:invar_storage_block"
+  }
+}

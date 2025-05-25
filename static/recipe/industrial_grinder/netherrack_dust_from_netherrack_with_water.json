@@ -1,0 +1,29 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "minecraft:netherrack"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 16,
+      "id": "techreborn:netherrack_dust"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:gold_nugget"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

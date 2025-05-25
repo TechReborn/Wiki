@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:horn_coral"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:yellow_dye"
+    }
+  ],
+  "power": 10,
+  "time": 200
+}

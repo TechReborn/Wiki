@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:prismarine"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:prismarine_bricks"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

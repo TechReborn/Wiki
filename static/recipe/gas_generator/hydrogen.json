@@ -1,0 +1,5 @@
+{
+  "type": "techreborn:gas_generator",
+  "fluid": "techreborn:hydrogen",
+  "power": 15
+}

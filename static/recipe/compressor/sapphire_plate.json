@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "#c:dusts/sapphire"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:sapphire_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

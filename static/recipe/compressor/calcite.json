@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:calcite_dust"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:calcite"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

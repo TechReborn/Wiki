@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:phosphorous_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:phosphorous_small_dust"
+  }
+}

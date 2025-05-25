@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "ingredient": "techreborn:solid_fuel_generator"
+    },
+    {
+      "ingredient": "techreborn:magnalium_plate"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:wind_mill"
+    }
+  ],
+  "power": 20,
+  "time": 700
+}

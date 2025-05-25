@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem",
+    "techreborn:sapphire_gem"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:sapphire_storage_block"
+  }
+}

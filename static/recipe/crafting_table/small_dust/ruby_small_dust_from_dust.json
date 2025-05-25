@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:ruby_dust"
+  ],
+  "result": {
+    "count": 4,
+    "id": "techreborn:ruby_small_dust"
+  }
+}

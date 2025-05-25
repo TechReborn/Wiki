@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "minecraft:glow_berries"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:glowstone_small_dust"
+    }
+  ],
+  "power": 2,
+  "time": 150
+}

@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:blast_furnace",
+  "heat": 3000,
+  "ingredients": [
+    {
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "ingredient": "#c:ingots/tungsten"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:hot_tungstensteel_ingot"
+    },
+    {
+      "count": 4,
+      "id": "techreborn:dark_ashes_dust"
+    }
+  ],
+  "power": 128,
+  "time": 2000
+}

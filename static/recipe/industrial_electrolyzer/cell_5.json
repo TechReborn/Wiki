@@ -1,0 +1,33 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "techreborn:cinnabar_dust"
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:mercury"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:sulfur_dust"
+    }
+  ],
+  "power": 50,
+  "time": 1500
+}

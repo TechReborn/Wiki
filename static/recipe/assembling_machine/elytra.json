@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "minecraft:phantom_membrane"
+    },
+    {
+      "count": 3,
+      "ingredient": "minecraft:end_rod"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:elytra"
+    }
+  ],
+  "power": 20,
+  "time": 500
+}

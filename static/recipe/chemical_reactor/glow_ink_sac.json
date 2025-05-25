@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "count": 3,
+      "ingredient": "minecraft:ink_sac"
+    },
+    {
+      "count": 2,
+      "ingredient": "minecraft:prismarine_crystals"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "minecraft:glow_ink_sac"
+    }
+  ],
+  "power": 30,
+  "time": 400
+}

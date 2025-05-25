@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:compressor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:iron_block"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 9,
+      "id": "techreborn:iron_plate"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

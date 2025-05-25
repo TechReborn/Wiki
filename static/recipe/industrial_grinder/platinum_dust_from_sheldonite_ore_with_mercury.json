@@ -1,0 +1,32 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "techreborn:mercury"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#c:ores/sheldonite"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "techreborn:platinum_dust"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:nickel_dust"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:iridium_nugget"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

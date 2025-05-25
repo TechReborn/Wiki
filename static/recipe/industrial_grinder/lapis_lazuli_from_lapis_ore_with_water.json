@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:lapis_ores"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 12,
+      "id": "minecraft:lapis_lazuli"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:lazurite_dust"
+    }
+  ],
+  "power": 64,
+  "time": 100
+}

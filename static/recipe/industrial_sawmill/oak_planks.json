@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "fluid": {
+    "amount": {
+      "value": 81000
+    },
+    "fluid": {
+      "fluid": "minecraft:water"
+    }
+  },
+  "ingredients": [
+    {
+      "ingredient": "#minecraft:oak_logs"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "minecraft:oak_planks"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:saw_dust"
+    }
+  ],
+  "power": 40,
+  "time": 200
+}

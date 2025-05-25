@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:pitcher_plant"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 4,
+      "id": "minecraft:cyan_dye"
+    }
+  ],
+  "power": 10,
+  "time": 300
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/lead",
+  "result": {
+    "count": 1,
+    "id": "techreborn:lead_storage_block_wall"
+  }
+}

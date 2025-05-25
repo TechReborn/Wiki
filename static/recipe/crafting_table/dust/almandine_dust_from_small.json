@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:almandine_small_dust",
+    "techreborn:almandine_small_dust",
+    "techreborn:almandine_small_dust",
+    "techreborn:almandine_small_dust"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:almandine_dust"
+  }
+}

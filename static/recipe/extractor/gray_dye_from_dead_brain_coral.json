@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:dead_brain_coral"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:gray_dye"
+    }
+  ],
+  "power": 10,
+  "time": 200
+}

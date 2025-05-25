@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot",
+    "techreborn:platinum_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "techreborn:platinum_storage_block"
+  }
+}

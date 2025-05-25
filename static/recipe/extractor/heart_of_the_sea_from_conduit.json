@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:extractor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:conduit"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:heart_of_the_sea"
+    }
+  ],
+  "power": 10,
+  "time": 1000
+}

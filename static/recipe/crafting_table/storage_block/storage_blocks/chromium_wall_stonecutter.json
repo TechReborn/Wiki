@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#c:storage_blocks/chromium",
+  "result": {
+    "count": 1,
+    "id": "techreborn:chrome_storage_block_wall"
+  }
+}

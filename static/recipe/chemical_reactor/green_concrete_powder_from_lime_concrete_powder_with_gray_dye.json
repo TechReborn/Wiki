@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "ingredients": [
+    {
+      "ingredient": "minecraft:gray_dye"
+    },
+    {
+      "count": 8,
+      "ingredient": "minecraft:lime_concrete_powder"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 8,
+      "id": "minecraft:green_concrete_powder"
+    }
+  ],
+  "power": 25,
+  "time": 250
+}
