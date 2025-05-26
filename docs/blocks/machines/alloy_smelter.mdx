@@ -17,16 +17,121 @@ The **Alloy Smelter** is a machine that creates metal alloys from ingots or dust
 
 <CraftingTable recipe="input air techreborn:electronic_circuit air input techreborn:electric_furnace techreborn:iron_alloy_furnace techreborn:electric_furnace input air air air output techreborn:alloy_smelter"/>
 
-### List of alloys
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipe:  
-3x <McItem slug="minecraft:copper_ingot" inline={true}/> + <McItem slug="techreborn:zinc_ingot" inline={true}/> &rarr; 4x <McItem slug="techreborn:brass_ingot" inline={true}/>
 
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipe:  
-3x <McItem slug="minecraft:copper_ingot" inline={true}/> + <McItem slug="techreborn:tin_ingot" inline={true}/> &rarr; 4x <McItem slug="techreborn:bronze_ingot" inline={true}/>
-
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipe:  
-<McItem slug="minecraft:gold_ingot" inline={true}/> + <McItem slug="techreborn:silver_ingot" inline={true}/> &rarr; 2x <McItem slug="techreborn:electrum_ingot" inline={true}/>
-
-<McItem slug="techreborn:alloy_smelter" inline={true}/> recipe:  
-2x <McItem slug="minecraft:iron_ingot" inline={true}/> + <McItem slug="techreborn:nickel_ingot" inline={true}/> &rarr; 3x <McItem slug="techreborn:invar_ingot" inline={true}/>
+### Crafting Recipes
+<Machine config={{
+  "input": [
+    {
+      "id": "minecraft:copper_ingot",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:zinc_ingot",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:brass_ingot",
+      "qty": 4
+    }
+  ],
+  "tool": "techreborn:alloy_smelter",
+  "meta": {
+    "power": 6,
+    "time": 200
+  }
+}} />
+<Machine config={{
+  "input": [
+    {
+      "id": "minecraft:copper_ingot",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:tin_ingot",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:bronze_ingot",
+      "qty": 4
+    }
+  ],
+  "tool": "techreborn:alloy_smelter",
+  "meta": {
+    "power": 6,
+    "time": 200
+  }
+}} />
+<Machine config={{
+  "input": [
+    {
+      "id": "minecraft:gold_ingot",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:silver_ingot",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:electrum_ingot",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:alloy_smelter",
+  "meta": {
+    "power": 6,
+    "time": 200
+  }
+}} />
+<Machine config={{
+  "input": [
+    {
+      "id": "minecraft:iron_ingot",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:nickel_ingot",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:invar_ingot",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:alloy_smelter",
+  "meta": {
+    "power": 6,
+    "time": 200
+  }
+}} />
+<Machine config={{
+  "input": [
+    {
+      "id": "minecraft:gold_ingot",
+      "qty": 10
+    },
+    {
+      "id": "minecraft:netherite_scrap",
+      "qty": 10
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:netherite_ingot",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:alloy_smelter",
+  "meta": {
+    "power": 6,
+    "time": 600
+  }
+}} />
