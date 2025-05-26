@@ -11,7 +11,11 @@ import McItem from '@site/src/components/McItem';
 		item: object
 			id: string
 			qty?: mixed (optional)
-	tool: string
+	tool: string,
+	meta?: object (optional)
+		time?: number (optional) expressed in ticks
+		power?: number (optional) expressed in ?
+		heat?: number (optional) just heat.
 */
 export default function Machine({recipe, config = null}) {
 	if (!config) {
@@ -21,7 +25,7 @@ export default function Machine({recipe, config = null}) {
 
 	const styles = mapToolToStyles(config.tool);
 	return (
-		<span>
+		<span class="machine-span">
 			<McItem slug={config.tool} />
 			<div class="crafting">
 			<div class="board" style={styles.input}>
@@ -49,6 +53,27 @@ export default function Machine({recipe, config = null}) {
 					</div>
 				))}
 			</div>
+		</div>
+
+		<div className="crafting-info">
+			{config.meta?.time != null && (
+				<div className="info-item">
+					<span aria-label="Time">⏱</span>
+					<span>{(config.meta.time * 0.05)}s</span>
+				</div>
+			)}
+			{config.meta?.power != null && (
+			<div className="info-item">
+				<span aria-label="Power">⚡</span>
+				<span>{config.meta.power}</span>
+			</div>
+			)}
+			{config.meta?.heat != null && (
+			<div className="info-item">
+				<span aria-label="Heat">🔥</span>
+				<span>{config.meta.heat}</span>
+			</div>
+			)}
 		</div>
 		</span>
 		
