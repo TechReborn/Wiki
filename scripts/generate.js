@@ -48,7 +48,7 @@ import path from "path";
 		const mdxPath = path.join(process.cwd(), category.path);
 		let original = await fs.readFile(mdxPath, "utf8");
 		original = original.split(HEADER).shift() + HEADER;
-		let newSection = "";
+		let newSections = {};
 		// todo: some are not flattened at this level, we need to fix that probably
 		for (const item of Object.values(recipes[category.name])) {
 			if (item.hasOwnProperty("type") === false) {
@@ -58,14 +58,39 @@ import path from "path";
 			// this converted information should be good regardless of destination
 			// machine page, item page, etc.
 			console.log(`* getting the item content for recipes[${category.name}][${item.id}]`);
+			// itemContent is the json object of the item directly from the file
 			const itemContent = recipes[category.name][item.id];
+			// converted will be an object with mdx:markdown and obj:config(recipe) object
 			const converted = formatter[functionMapper[category.name]](itemContent);
-			newSection = `${newSection}\n${converted}`;
+			// idSection will be our best guess as programatically splitting crafting outputs into groups
+			// i suspect this will result in some sorta odd groupings, but it's better than the alternative.
+			// basically taking whatever comes before "_from" "blue_wool" for instance, and calling that a group OR using the first output item
+			const idSection = (itemContent.id.includes("_from") === true) ? itemContent.id.split("_from").shift() : itemContent.id;
+			if (!newSections[idSection]) {
+				newSections[idSection] = [];
+			}
+			newSections[idSection].push({
+				config: converted.config,
+				mdx: converted.mdx
+			});
+		}
+		let renderedNewSection = "";
+		for (const key in newSections) {
+			if (newSections[key].length === 1) {
+				// no collapsable
+				renderedNewSection += newSections[key][0].mdx + "\n";
+			} else {
+				renderedNewSection += `<details>
+				<summary><McItem slug="${getPackFromId(key, newSections[key][0].config)}" /></summary>
+				${newSections[key].map(obj => obj.mdx).join("\n")}
+				</details>\n`;
+			}
+			
 		}
 		const output = `${original}
 		<details>
 			<summary>Recipes using ${titleCase(category.name)}</summary>
-			${newSection}
+			${renderedNewSection}
 		</details>`
 		await fs.writeFile(mdxPath, output, "utf8");
 	}
@@ -101,7 +126,10 @@ const formatter = {
 				time: data.time
 			}
 		};
-		return `<Machine config={${JSON.stringify(config, null, 2)}} />`;
+		return {
+			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
+			config
+		};
 	},
 	// for things that consume power and have a time, but omit all methane crafting recipes
 	industrial_centrifuge: (data) => {
@@ -122,9 +150,15 @@ const formatter = {
 			}
 		};
 		if (config.output.length === 1 && config.output[0].id == "techreborn:methane_cell") {
-			return "";
+			return {
+				mdx: "",
+				config
+			};
 		}
-		return `<Machine config={${JSON.stringify(config, null, 2)}} />`;
+		return {
+			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
+			config
+		};
 	}
 }
 
@@ -245,3 +279,11 @@ const functionMapper = {
 const titleCase = (s) =>
 	s.replace (/^[-_]*(.)/, (_, c) => c.toUpperCase())
 	 .replace (/[-_]+(.)/g, (_, c) => ' ' + c.toUpperCase());
+
+
+function getPackFromId(id, config) {
+	for (const item of config.output) {
+		if (item.id.includes(id) === true) { return item.id; }
+	}
+	return "minecraft:missing_asset";
+}
