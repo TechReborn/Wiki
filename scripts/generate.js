@@ -47,7 +47,8 @@ import path from "path";
 		// and now by file (a single .json hopefully)
 		const mdxPath = path.join(process.cwd(), category.path);
 		let original = await fs.readFile(mdxPath, "utf8");
-		original = original.split(HEADER).shift() + "\n" + HEADER;
+		original = original.split(HEADER).shift() + HEADER;
+		let newSection = "";
 		// todo: some are not flattened at this level, we need to fix that probably
 		for (const item of Object.values(recipes[category.name])) {
 			if (item.hasOwnProperty("type") === false) {
@@ -56,12 +57,17 @@ import path from "path";
 			}
 			// this converted information should be good regardless of destination
 			// machine page, item page, etc.
-			console.log(`getting the item content for recipes[${category.name}][${item.id}]`);
+			console.log(`* getting the item content for recipes[${category.name}][${item.id}]`);
 			const itemContent = recipes[category.name][item.id];
 			const converted = formatter[functionMapper[category.name]](itemContent);
-			original = `${original}\n${converted}`;
+			newSection = `${newSection}\n${converted}`;
 		}
-		await fs.writeFile(mdxPath, original, "utf8");
+		const output = `${original}
+		<details>
+			<summary>Recipes using ${titleCase(category.name)}</summary>
+			${newSection}
+		</details>`
+		await fs.writeFile(mdxPath, output, "utf8");
 	}
 
 	// await fs.writeFile(outputFile, JSON.stringify(recipes, null, 2), "utf8");
@@ -70,13 +76,13 @@ import path from "path";
 
 
 const ORDER = [
-	{name: "alloy_smelter", path: "docs/blocks/machines/alloy_smelter.mdx"}
+	{name: "alloy_smelter", path: "docs/blocks/machines/alloy_smelter.mdx"},
+	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx"}
 ];
 
 const formatter = {
 	// for things that consume power and have a time
 	electric: (data) => {
-		console.log("in electric formatter", data)
 		const config = {
 			input: data.ingredients.map(({ ingredient, count = 1 }) => ({
 				id: filterId(ingredient),
@@ -97,6 +103,12 @@ const formatter = {
 }
 
 const filterId = (input) => {
+	// first we need to check to see if input is an object
+	// after checking by hand, all items who use input as an object as cells, so that's what we'll assume because i'm lazy, even this line, so long.
+	// should result in techreborn:lithium_cell
+	if (typeof input === "object") {
+		input = `${input.components["techreborn:fluid"]}_cell`;
+	}
 	// these are called suffix terms because the way of correcting them is by
 	// adding the type of thing they are to the end of the input term, eg. 
 	// #c:ores/silver -> silver_ore
@@ -149,39 +161,53 @@ const filterId = (input) => {
 	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// let's catch any unhandled for now
 	if (input.includes("#c:") === true) { throw new Error (`Unhandled ID in filterId: ${input}`); }
+	// and some random ass arbitrary filtering for inconsistant minecraft ids
+	if (input.includes("#minecraft:") === true) {
+		input = input.split("#").join("");
+	}
+	// and some filtering for converting planks and logs to their oak specific versions
+	// this is just a small hack to help with image rendering and wiki linking
+	// i think our readers are small enough to figure out that it doesn't _need_ to be oak
+	if (input.includes("minecraft:planks") === true || input.includes("minecraft:logs") === true) {
+		const inputParts = input.split(":");
+		input = `${inputParts[0]}:oak_${inputParts[1]}`;
+	}
 	// if it didn't match it's...fine?
 	return input;
 }
 
 const functionMapper = {
 	alloy_smelter: "electric",
-	// assembling_machine: "type",
-	// blasting: "type",
-	// centrifuge: "type",
-	// chemical_reactor: "type",
-	// compressor: "type",
-	// crafting_table: "type",
-	// diesel_generator: "type",
-	// distillation_tower: "type",
-	// extractor: "type",
-	// fluid_replicator: "type",
-	// fusion_reactor: "type",
-	// gas_generator: "type",
-	// grinder: "type",
-	// implosion_compressor: "type",
-	// industrial_blast_furnace: "type",
-	// industrial_electrolyzer: "type",
-	// industrial_grinder: "type",
-	// industrial_sawmill: "type",
-	// plasma_generator: "type",
-	// recycler: "type",
-	// rolling_machine: "type",
-	// scrapbox: "type",
-	// semi_fluid_generator: "type",
-	// smelting: "type",
-	// solid_canning_machine: "type",
-	// thermal_generator: "type",
-	// vacuum_freezer: "type",
-	// wire_mill: "type"
+	assembling_machine: "electric",
+	blasting: "type",
+	centrifuge: "type",
+	chemical_reactor: "type",
+	compressor: "type",
+	crafting_table: "type",
+	diesel_generator: "type",
+	distillation_tower: "type",
+	extractor: "type",
+	fluid_replicator: "type",
+	fusion_reactor: "type",
+	gas_generator: "type",
+	grinder: "type",
+	implosion_compressor: "type",
+	industrial_blast_furnace: "type",
+	industrial_electrolyzer: "type",
+	industrial_grinder: "type",
+	industrial_sawmill: "type",
+	plasma_generator: "type",
+	recycler: "type",
+	rolling_machine: "type",
+	scrapbox: "type",
+	semi_fluid_generator: "type",
+	smelting: "type",
+	solid_canning_machine: "type",
+	thermal_generator: "type",
+	vacuum_freezer: "type",
+	wire_mill: "type"
 };
 
+const titleCase = (s) =>
+	s.replace (/^[-_]*(.)/, (_, c) => c.toUpperCase())
+	 .replace (/[-_]+(.)/g, (_, c) => ' ' + c.toUpperCase());

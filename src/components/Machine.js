@@ -65,7 +65,7 @@ export default function Machine({recipe, config = null}) {
 			{config.meta?.power != null && (
 			<div className="info-item">
 				<span aria-label="Power">⚡</span>
-				<span>{config.meta.power}</span>
+				<span>{config.meta.power * config.meta.time}E</span>
 			</div>
 			)}
 			{config.meta?.heat != null && (
