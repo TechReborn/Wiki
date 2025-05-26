@@ -3,6 +3,7 @@ import McItem from '@site/src/components/McItem';
 
 // recipe is the legacy recipe, config is the config generation parameter passing method
 /* Config Parameter Format:
+	id: string? (optional) auto assumed by first output item
 	input: array
 		item: object
 			id: string
@@ -26,7 +27,7 @@ export default function Machine({recipe, config = null}) {
 	const styles = mapToolToStyles(config.tool);
 	return (
 		<span class="machine-span">
-			<McItem slug={config.tool} />
+			<McItem slug={config.tool}/><span> - {titleCase(!!config.id ? config.id : config.output[0].id)}</span>
 			<div class="crafting">
 			<div class="board" style={styles.input}>
 				{config.input.map((item, idx) => (
@@ -169,3 +170,7 @@ function convertRecipeToConfig(recipe) {
 		tool: finalTool
 	};
 }
+
+const titleCase = (s) =>
+	s.replace (/^[-_]*(.)/, (_, c) => c.toUpperCase())
+	 .replace (/[-_]+(.)/g, (_, c) => ' ' + c.toUpperCase());

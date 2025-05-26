@@ -78,6 +78,7 @@ import path from "path";
 const ORDER = [
 	{name: "alloy_smelter", path: "docs/blocks/machines/alloy_smelter.mdx"},
 	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx"},
+	{name: "chemical_reactor", path: "docs/blocks/machines/chemical_reactor.mdx"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
 ];
 
@@ -85,25 +86,7 @@ const formatter = {
 	// for things that consume power and have a time
 	electric: (data) => {
 		const config = {
-			input: data.ingredients.map(({ ingredient, count = 1 }) => ({
-				id: filterId(ingredient),
-				qty: count,
-			})),
-			output: data.outputs.map(({ id, count = 1 }) => ({
-				id: filterId(id),
-				qty: count,
-			})),
-			tool: data.type,
-			meta: {
-				power: data.power,
-				time: data.time
-			}
-		};
-		return `<Machine config={${JSON.stringify(config, null, 2)}} />`;
-	},
-	// for things that consume power and have a time, but omit all methane crafting recipes
-	industrial_centrifuge: (data) => {
-		const config = {
+			id: data.id,
 			input: data.ingredients.map((obj) => ({
 				id: filterId(obj.ingredient),
 				qty: !!obj.count ? obj.count : 1,
@@ -118,7 +101,26 @@ const formatter = {
 				time: data.time
 			}
 		};
-		console.log(config);
+		return `<Machine config={${JSON.stringify(config, null, 2)}} />`;
+	},
+	// for things that consume power and have a time, but omit all methane crafting recipes
+	industrial_centrifuge: (data) => {
+		const config = {
+			id: data.id,
+			input: data.ingredients.map((obj) => ({
+				id: filterId(obj.ingredient),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			output: data.outputs.map((obj) => ({
+				id: filterId(obj.id, obj),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			tool: data.type,
+			meta: {
+				power: data.power,
+				time: data.time
+			}
+		};
 		if (config.output.length === 1 && config.output[0].id == "techreborn:methane_cell") {
 			return "";
 		}
@@ -177,17 +179,6 @@ const filterId = (input, full = null) => {
 			return input;
 		}
 	}
-	// basically anything 1:1 that is left over, a bit of a f* it bucket if you will
-	const specialTerms = {
-		"#c:tuff": "minecraft:tuff",
-		"#c:basalt": "minecraft:basalt",
-		"#c:certus_quartz": "techreborn:certus_quartz",
-		"#c:marble": "minecraft:marble",
-		"minecraft:slime_ball": "minecraft:slimeball"
-	};
-	if (!!specialTerms[input]) { return specialTerms[input]; }
-	// let's catch any unhandled for now
-	if (input.includes("#c:") === true) { throw new Error (`Unhandled ID in filterId: ${input}`); }
 	// and some random ass arbitrary filtering for inconsistant minecraft ids
 	if (input.includes("#minecraft:") === true) {
 		input = input.split("#").join("");
@@ -203,6 +194,18 @@ const filterId = (input, full = null) => {
 	if (input === "techreborn:cell" && !!full.components?.["techreborn:fluid"]) {
 		input = `${full.components["techreborn:fluid"]}_cell`;
 	}
+	// basically anything 1:1 that is left over, a bit of a f* it bucket if you will
+	const specialTerms = {
+		"#c:tuff": "minecraft:tuff",
+		"#c:basalt": "minecraft:basalt",
+		"#c:certus_quartz": "techreborn:certus_quartz",
+		"#c:marble": "minecraft:marble",
+		"minecraft:slime_ball": "minecraft:slimeball",
+		"minecraft:water_cell": "techreborn:water_cell"
+	};
+	if (!!specialTerms[input]) { return specialTerms[input]; }
+	// let's catch any unhandled for now
+	if (input.includes("#c:") === true) { throw new Error (`Unhandled ID in filterId: ${input}`); }
 	// if it didn't match it's...fine?
 	return input;
 }
@@ -211,7 +214,7 @@ const functionMapper = {
 	alloy_smelter: "electric",
 	assembling_machine: "electric",
 	blasting: "type",
-	chemical_reactor: "type",
+	chemical_reactor: "electric",
 	compressor: "type",
 	crafting_table: "type",
 	diesel_generator: "type",
