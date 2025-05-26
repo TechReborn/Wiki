@@ -104,6 +104,7 @@ const ORDER = [
 	{name: "alloy_smelter", path: "docs/blocks/machines/alloy_smelter.mdx"},
 	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx"},
 	{name: "chemical_reactor", path: "docs/blocks/machines/chemical_reactor.mdx"},
+	{name: "compressor", path: "docs/blocks/machines/compressor.mdx"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
 ];
 
@@ -214,7 +215,7 @@ const filterId = (input, full = null) => {
 		}
 	}
 	// and some random ass arbitrary filtering for inconsistant minecraft ids
-	if (input.includes("#minecraft:") === true) {
+	if (input.includes("#minecraft:") === true || input.includes("#techreborn:") === true) {
 		input = input.split("#").join("");
 	}
 	// and some filtering for converting planks and logs to their oak specific versions
@@ -229,13 +230,28 @@ const filterId = (input, full = null) => {
 		input = `${full.components["techreborn:fluid"]}_cell`;
 	}
 	// basically anything 1:1 that is left over, a bit of a f* it bucket if you will
+	// including all the vanilla minecraft blocks here, some will need more changes and looping will be more trouble than it's worth
 	const specialTerms = {
 		"#c:tuff": "minecraft:tuff",
 		"#c:basalt": "minecraft:basalt",
 		"#c:certus_quartz": "techreborn:certus_quartz",
 		"#c:marble": "minecraft:marble",
 		"minecraft:slime_ball": "minecraft:slimeball",
-		"minecraft:water_cell": "techreborn:water_cell"
+		"minecraft:water_cell": "techreborn:water_cell",
+		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
+		"minecraft:gold_block": "minecraft:block_of_gold",
+		"minecraft:iron_block": "minecraft:block_of_iron",
+		"minecraft:diamond_block": "minecraft:block_of_diamond",
+		"minecraft:emerald_block": "minecraft:block_of_emerald",
+		"minecraft:netherite_block": "minecraft:block_of_netherite",
+		"minecraft:coal_block": "minecraft:block_of_coal",
+		"minecraft:raw_iron_block": "minecraft:block_of_raw_iron",
+		"minecraft:raw_gold_block": "minecraft:block_of_raw_gold",
+		"minecraft:raw_copper_block": "minecraft:block_of_raw_copper",
+		"minecraft:copper_block": "minecraft:block_of_copper",
+		"minecraft:amethyst_block": "minecraft:block_of_amethyst",
+		"minecraft:redstone_block": "minecraft:block_of_redstone",
+		"minecraft:prismarine": "minecraft:prismarine_shard"
 	};
 	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// let's catch any unhandled for now
@@ -249,7 +265,7 @@ const functionMapper = {
 	assembling_machine: "electric",
 	blasting: "type",
 	chemical_reactor: "electric",
-	compressor: "type",
+	compressor: "electric",
 	crafting_table: "type",
 	diesel_generator: "type",
 	distillation_tower: "type",

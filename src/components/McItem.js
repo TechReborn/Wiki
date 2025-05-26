@@ -30,7 +30,7 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 	try {
 		items = packMap[pack](slug);
 	} catch (err) {
-		throw new Error(`McItem lookup failure: pack:${pack}/slug:${slug}`);
+		throw new Error(`McItem lookup failure: pack:'${pack}' / slug:'${slug}'`);
 	}
 	const Element = inline === true ? "span" : "div";
 	// could be an actual <img> element, or a <span> (or div?) we style to be like one
