@@ -16,5 +16,5 @@ title: Small Pile Of Chrome Dust
 
 <CraftingTable recipe="input techreborn:small_pile_of_chrome_dust techreborn:small_pile_of_chrome_dust air input techreborn:small_pile_of_chrome_dust techreborn:small_pile_of_chrome_dust air input air air air output techreborn:chrome_dust"/>
 
-<McItem slug="techreborn:blast_furnace" inline={true}/> recipe:  
+<McItem slug="techreborn:industrial_blast_furnace" inline={true}/> recipe:  
 4x <McItem slug="techreborn:small_pile_of_chrome_dust" inline={true}/> → <McItem slug="techreborn:chrome_ingot" inline={true}/>
