@@ -77,7 +77,8 @@ import path from "path";
 
 const ORDER = [
 	{name: "alloy_smelter", path: "docs/blocks/machines/alloy_smelter.mdx"},
-	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx"}
+	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx"},
+	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
 ];
 
 const formatter = {
@@ -99,15 +100,40 @@ const formatter = {
 			}
 		};
 		return `<Machine config={${JSON.stringify(config, null, 2)}} />`;
+	},
+	// for things that consume power and have a time, but omit all methane crafting recipes
+	industrial_centrifuge: (data) => {
+		const config = {
+			input: data.ingredients.map((obj) => ({
+				id: filterId(obj.ingredient),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			output: data.outputs.map((obj) => ({
+				id: filterId(obj.id, obj),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			tool: data.type,
+			meta: {
+				power: data.power,
+				time: data.time
+			}
+		};
+		console.log(config);
+		if (config.output.length === 1 && config.output[0].id == "techreborn:methane_cell") {
+			return "";
+		}
+		return `<Machine config={${JSON.stringify(config, null, 2)}} />`;
 	}
 }
 
-const filterId = (input) => {
+const filterId = (input, full = null) => {
 	// first we need to check to see if input is an object
 	// after checking by hand, all items who use input as an object as cells, so that's what we'll assume because i'm lazy, even this line, so long.
 	// should result in techreborn:lithium_cell
 	if (typeof input === "object") {
 		input = `${input.components["techreborn:fluid"]}_cell`;
+		// oh but wait, sometimes that doesn't work
+		if (input.includes("minecraft:")) { input = input.split("minecraft:").join("techreborn:"); }
 	}
 	// these are called suffix terms because the way of correcting them is by
 	// adding the type of thing they are to the end of the input term, eg. 
@@ -157,7 +183,8 @@ const filterId = (input) => {
 		"#c:basalt": "minecraft:basalt",
 		"#c:certus_quartz": "techreborn:certus_quartz",
 		"#c:marble": "minecraft:marble",
-	}
+		"minecraft:slime_ball": "minecraft:slimeball"
+	};
 	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// let's catch any unhandled for now
 	if (input.includes("#c:") === true) { throw new Error (`Unhandled ID in filterId: ${input}`); }
@@ -172,6 +199,10 @@ const filterId = (input) => {
 		const inputParts = input.split(":");
 		input = `${inputParts[0]}:oak_${inputParts[1]}`;
 	}
+	// some filtering for outputs that output a cell, but don't include the fluid
+	if (input === "techreborn:cell" && !!full.components?.["techreborn:fluid"]) {
+		input = `${full.components["techreborn:fluid"]}_cell`;
+	}
 	// if it didn't match it's...fine?
 	return input;
 }
@@ -180,7 +211,6 @@ const functionMapper = {
 	alloy_smelter: "electric",
 	assembling_machine: "electric",
 	blasting: "type",
-	centrifuge: "type",
 	chemical_reactor: "type",
 	compressor: "type",
 	crafting_table: "type",
@@ -193,6 +223,7 @@ const functionMapper = {
 	grinder: "type",
 	implosion_compressor: "type",
 	industrial_blast_furnace: "type",
+	industrial_centrifuge: "industrial_centrifuge",
 	industrial_electrolyzer: "type",
 	industrial_grinder: "type",
 	industrial_sawmill: "type",
