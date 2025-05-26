@@ -65,7 +65,7 @@ function mapToolToStyles(tool) {
 		"techreborn:rolling_machine": CRAFTING_LIKE,
 		"minecraft:furnace": FURNACE_LIKE,
 		"techreborn:iron_furnace": FURNACE_LIKE,
-		"techreborn:blast_furnace": TWOWIDE_ONETALL,
+		"techreborn:industrial_blast_furnace": TWOWIDE_ONETALL,
 		"techreborn:electric_furnace": FURNACE_LIKE,
 		"techreborn:compressor": FURNACE_LIKE,
 		"techreborn:grinder": FURNACE_LIKE,
