@@ -29,7 +29,7 @@ export default function Machine({recipe, config = null}) {
 		<span class="machine-span">
 			<McItem slug={config.tool}/><span> - {titleCase(!!config.id ? config.id : config.output[0].id)}</span>
 			<div class="crafting">
-			<div class="board" style={styles.input}>
+			<div class="crafting-board" style={styles.input}>
 				{config.input.map((item, idx) => (
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem

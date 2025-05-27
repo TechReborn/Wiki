@@ -46,7 +46,7 @@
   gap: 1rem;               /* space between input, arrow, output */
 }
 
-.board {
+.crafting-board {
   display: grid;
   gap: var(--slot-gap);
   grid-template-columns: repeat(var(--cols), var(--slot-size));

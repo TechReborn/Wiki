@@ -106,6 +106,7 @@ const ORDER = [
 	{name: "chemical_reactor", path: "docs/blocks/machines/chemical_reactor.mdx"},
 	{name: "compressor", path: "docs/blocks/machines/compressor.mdx"},
 	{name: "distillation_tower", path: "docs/blocks/machines/distillation_tower.mdx"},
+	{name: "extractor", path: "docs/blocks/machines/extractor.mdx"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
 ];
 
@@ -239,6 +240,7 @@ const filterId = (input, full = null) => {
 		"#c:marble": "minecraft:marble",
 		"minecraft:slime_ball": "minecraft:slimeball",
 		"minecraft:water_cell": "techreborn:water_cell",
+		"minecraft:cod": "minecraft:raw_cod",
 		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
 		"minecraft:gold_block": "minecraft:block_of_gold",
 		"minecraft:iron_block": "minecraft:block_of_iron",
@@ -270,7 +272,7 @@ const functionMapper = {
 	crafting_table: "type",
 	diesel_generator: "type",
 	distillation_tower: "electric",
-	extractor: "type",
+	extractor: "electric",
 	fluid_replicator: "type",
 	fusion_reactor: "type",
 	gas_generator: "type",
