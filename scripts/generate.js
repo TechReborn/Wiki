@@ -105,6 +105,7 @@ const ORDER = [
 	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx"},
 	{name: "chemical_reactor", path: "docs/blocks/machines/chemical_reactor.mdx"},
 	{name: "compressor", path: "docs/blocks/machines/compressor.mdx"},
+	{name: "distillation_tower", path: "docs/blocks/machines/distillation_tower.mdx"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
 ];
 
@@ -268,7 +269,7 @@ const functionMapper = {
 	compressor: "electric",
 	crafting_table: "type",
 	diesel_generator: "type",
-	distillation_tower: "type",
+	distillation_tower: "electric",
 	extractor: "type",
 	fluid_replicator: "type",
 	fusion_reactor: "type",
