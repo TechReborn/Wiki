@@ -231,6 +231,16 @@ const filterId = (input, full = null) => {
 	if (input === "techreborn:cell" && !!full.components?.["techreborn:fluid"]) {
 		input = `${full.components["techreborn:fluid"]}_cell`;
 	}
+	// addressing minecraft vanilla blocks being in the wrong format
+	const blockList = ["gold", "iron", "diamond", "emerald", "netherite", "coal", "copper", "amethyst", "redstone", "raw_iron", "raw_gold", "raw_copper"];
+	if (input.includes("minecraft:") === true && input.includes("_block") === true) {
+		// maybe a match...
+		const inputSlug = input.split("minecraft:").pop();
+		const blockOnly = inputSlug.split("_block").shift();
+		if (blockList.includes(blockOnly) === true) {
+			input = `minecraft:block_of_${blockOnly}`;
+		}
+	}
 	// basically anything 1:1 that is left over, a bit of a f* it bucket if you will
 	// including all the vanilla minecraft blocks here, some will need more changes and looping will be more trouble than it's worth
 	const specialTerms = {
@@ -242,18 +252,6 @@ const filterId = (input, full = null) => {
 		"minecraft:water_cell": "techreborn:water_cell",
 		"minecraft:cod": "minecraft:raw_cod",
 		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
-		"minecraft:gold_block": "minecraft:block_of_gold",
-		"minecraft:iron_block": "minecraft:block_of_iron",
-		"minecraft:diamond_block": "minecraft:block_of_diamond",
-		"minecraft:emerald_block": "minecraft:block_of_emerald",
-		"minecraft:netherite_block": "minecraft:block_of_netherite",
-		"minecraft:coal_block": "minecraft:block_of_coal",
-		"minecraft:raw_iron_block": "minecraft:block_of_raw_iron",
-		"minecraft:raw_gold_block": "minecraft:block_of_raw_gold",
-		"minecraft:raw_copper_block": "minecraft:block_of_raw_copper",
-		"minecraft:copper_block": "minecraft:block_of_copper",
-		"minecraft:amethyst_block": "minecraft:block_of_amethyst",
-		"minecraft:redstone_block": "minecraft:block_of_redstone",
 		"minecraft:prismarine": "minecraft:prismarine_shard"
 	};
 	if (!!specialTerms[input]) { return specialTerms[input]; }

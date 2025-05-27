@@ -48,7 +48,7 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 	return (
 		<Element>
 			<strong>
-				<a href={items.path} target="_blank">
+				<a href={items.path}>
 					{items.image}
 					{friendlyName}
 				</a>
