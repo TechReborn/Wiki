@@ -21,6 +21,15 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 	if (!!overrides.name) { friendlyName = overrides.name; }
 	let items;
 	const packMap = {
+		ae2: (slug) => { 
+			const path = `https://guide.appliedenergistics.org/1.21/items-blocks-machines/${slug}`;
+			let image = (<img alt={friendlyName} width={size} src={`/img/ae2/${slug}.png`} />);
+			if (path.includes("#") === true) { image = renderCssItem("invalid", size); }
+			return {
+				image,
+				path
+			};
+		},
 		minecraft: (slug) => { 
 			return {
 				image: renderCssItem(slug, size), 
@@ -28,9 +37,12 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 			}; 
 		},
 		techreborn: (slug) => {
+			const path = findIdInGlobal(slug);
+			let image = (<img alt={friendlyName} width={size} src={`/img/techreborn/${slug}.png`} />)
+			if (path.includes("#") === true) { image = renderCssItem("invalid", size); }
 			return {
-				image: (<img alt={friendlyName} width={size} src={`/img/techreborn/${slug}.png`} />), 
-				path: findIdInGlobal(slug)
+				image,
+				path
 			};
 		}
 	};

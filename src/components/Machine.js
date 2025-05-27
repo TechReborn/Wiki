@@ -43,7 +43,7 @@ export default function Machine({recipe, config = null}) {
 
 			<div class="arrow"></div>
 
-			<div class="board" style={styles.output}>
+			<div class="crafting-board" style={styles.output}>
 				{config.output.map((item, idx) => (
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem

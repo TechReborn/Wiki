@@ -107,6 +107,7 @@ const ORDER = [
 	{name: "compressor", path: "docs/blocks/machines/compressor.mdx"},
 	{name: "distillation_tower", path: "docs/blocks/machines/distillation_tower.mdx"},
 	{name: "extractor", path: "docs/blocks/machines/extractor.mdx"},
+	{name: "grinder", path: "docs/blocks/machines/grinder.mdx"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
 ];
 
@@ -174,6 +175,27 @@ const filterId = (input, full = null) => {
 		// oh but wait, sometimes that doesn't work
 		if (input.includes("minecraft:")) { input = input.split("minecraft:").join("techreborn:"); }
 	}
+	// this alternates between being a f-it bucket kinda of check and a "we need to override this now" check
+	const specialTerms = {
+		"#c:tuff": "minecraft:tuff",
+		"#c:basalt": "minecraft:basalt",
+		"#c:marble": "minecraft:marble",
+		"#c:limestone": "techreborn:limestone",
+		"#c:froglights": "minecraft:froglight",
+		"#c:sponges": "minecraft:sponge",
+		"#c:sulfurs": "techreborn:sulfur",
+		"#techreborn:calcite_dust_material": "minecraft:calcite",
+		"#techreborn:calcite_small_dust_material": "minecraft:bone_meal",
+		"#techreborn:gravel_material": "minecraft:cobblestone",
+		"minecraft:slime_ball": "minecraft:slimeball",
+		"minecraft:water_cell": "techreborn:water_cell",
+		"minecraft:cod": "minecraft:raw_cod",
+		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
+		"minecraft:prismarine": "minecraft:prismarine_shard",
+		"#c:certus_quartz": "ae2:certus_quartz_crystal",
+		"#c:ores/certus_quartz": "ae2:budding_certus",
+	};
+	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// these are called suffix terms because the way of correcting them is by
 	// adding the type of thing they are to the end of the input term, eg. 
 	// #c:ores/silver -> silver_ore
@@ -241,20 +263,6 @@ const filterId = (input, full = null) => {
 			input = `minecraft:block_of_${blockOnly}`;
 		}
 	}
-	// basically anything 1:1 that is left over, a bit of a f* it bucket if you will
-	// including all the vanilla minecraft blocks here, some will need more changes and looping will be more trouble than it's worth
-	const specialTerms = {
-		"#c:tuff": "minecraft:tuff",
-		"#c:basalt": "minecraft:basalt",
-		"#c:certus_quartz": "techreborn:certus_quartz",
-		"#c:marble": "minecraft:marble",
-		"minecraft:slime_ball": "minecraft:slimeball",
-		"minecraft:water_cell": "techreborn:water_cell",
-		"minecraft:cod": "minecraft:raw_cod",
-		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
-		"minecraft:prismarine": "minecraft:prismarine_shard"
-	};
-	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// let's catch any unhandled for now
 	if (input.includes("#c:") === true) { throw new Error (`Unhandled ID in filterId: ${input}`); }
 	// if it didn't match it's...fine?
@@ -274,7 +282,7 @@ const functionMapper = {
 	fluid_replicator: "type",
 	fusion_reactor: "type",
 	gas_generator: "type",
-	grinder: "type",
+	grinder: "electric",
 	implosion_compressor: "type",
 	industrial_blast_furnace: "type",
 	industrial_centrifuge: "industrial_centrifuge",
