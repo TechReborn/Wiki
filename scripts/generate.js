@@ -187,13 +187,15 @@ const filterId = (input, full = null) => {
 		"#techreborn:calcite_dust_material": "minecraft:calcite",
 		"#techreborn:calcite_small_dust_material": "minecraft:bone_meal",
 		"#techreborn:gravel_material": "minecraft:cobblestone",
+		"#c:ingots/chromium": "techreborn:chrome_ingot",
+		"#c:storage_blocks/chromium": "techreborn:chrome_storage_block",
 		"minecraft:slime_ball": "minecraft:slimeball",
 		"minecraft:water_cell": "techreborn:water_cell",
 		"minecraft:cod": "minecraft:raw_cod",
 		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
 		"minecraft:prismarine": "minecraft:prismarine_shard",
 		"#c:certus_quartz": "ae2:certus_quartz_crystal",
-		"#c:ores/certus_quartz": "ae2:budding_certus",
+		"#c:ores/certus_quartz": "ae2:budding_certus"
 	};
 	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// these are called suffix terms because the way of correcting them is by
