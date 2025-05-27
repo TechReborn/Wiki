@@ -370,8 +370,28 @@ Main usage of **Compressor** is to make plates and compressed plant balls.
   "id": "compressed_plantball",
   "input": [
     {
-      "id": "techreborn:plantball_material",
+      "id": "minecraft:oak_leaves",
       "qty": 8
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:compressed_plantball",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:compressor",
+  "meta": {
+    "power": 2,
+    "time": 400
+  }
+}} />
+<Machine config={{
+  "id": "compressed_plantball_2",
+  "input": [
+    {
+      "id": "techreborn:plantball",
+      "qty": 1
     }
   ],
   "output": [
@@ -407,26 +427,6 @@ Main usage of **Compressor** is to make plates and compressed plant balls.
   }
 }} />
 				</details>
-<Machine config={{
-  "id": "compressed_plantball_2",
-  "input": [
-    {
-      "id": "techreborn:plantball",
-      "qty": 1
-    }
-  ],
-  "output": [
-    {
-      "id": "techreborn:compressed_plantball",
-      "qty": 1
-    }
-  ],
-  "tool": "techreborn:compressor",
-  "meta": {
-    "power": 2,
-    "time": 400
-  }
-}} />
 <details>
 				<summary><McItem slug="techreborn:copper_plate" /></summary>
 				<Machine config={{

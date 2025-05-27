@@ -14,18 +14,14 @@ The **Industrial Centrifuge** is a machine used to produce <McItem slug="techreb
 
 ### Recipes
 
-<CraftingTable recipe=" input techreborn:refined_iron_ingot techreborn:advanced_circuit techreborn:refined_iron_ingot input techreborn:advanced_machine_block techreborn:extractor techreborn:advanced_machine_block input techreborn:refined_iron_ingot techreborn:advanced_circuit techreborn:refined_iron_ingot output techreborn:industrial_centrifuge "/>
 <CraftingTable recipe=" input techreborn:aluminum_plate techreborn:advanced_circuit techreborn:aluminum_plate input techreborn:advanced_machine_frame techreborn:extractor techreborn:advanced_machine_frame input techreborn:aluminum_plate techreborn:advanced_circuit techreborn:aluminum_plate output techreborn:industrial_centrifuge "/>
 
-### Usage
-
-Used as an ingredient in the <McItem slug="minecraft:crafting_table"/> to produce:
-<CraftingTable recipe=" input techreborn:industrial_centrifuge techreborn:energy_flow_circuit techreborn:industrial_centrifuge input techreborn:extractor techreborn:highly_advanced_machine_block techreborn:extractor input techreborn:industrial_electrolyzer techreborn:energy_flow_circuit techreborn:industrial_electrolyzer output techreborn:distillation_tower "/>
-
-### Methane Cell Inputs
+### Methane
 
 One <McItem slug="techreborn:methane_cell"/> can be produced from any of the following:
 
+<details>
+	<summary>Methane Cell Inputs</summary>
 - 32x <McItem slug="minecraft:apple" inline={true}/>
 - 24x <McItem slug="minecraft:baked_potato" inline={true}/>
 - 12x <McItem slug="minecraft:raw_beef" inline={true}/>
@@ -56,6 +52,9 @@ One <McItem slug="techreborn:methane_cell"/> can be produced from any of the fol
 - 16x <McItem slug="minecraft:rotten_flesh" inline={true}/>
 - 32x <McItem slug="minecraft:spider_eye" inline={true}/>
 - 16x <McItem slug="minecraft:steak" inline={true}/>
+- 16x <McItem slug="minecraft:egg" inline={true}/>
+- 32x <McItem slug="minecraft:turtle_egg" inline={true}/>
+</details>
 
 ### Crafting Recipes
 		<details>
@@ -260,8 +259,6 @@ One <McItem slug="techreborn:methane_cell"/> can be produced from any of the fol
     "time": 240
   }
 }} />
-
-
 <Machine config={{
   "id": "coarse_dirt",
   "input": [
@@ -910,84 +907,6 @@ One <McItem slug="techreborn:methane_cell"/> can be produced from any of the fol
     "time": 2050
   }
 }} />
-<details>
-				<summary><McItem slug="minecraft:missing_asset" /></summary>
-				
-
-
-
-
-
-
-
-<Machine config={{
-  "id": "methan_cell_from_egg",
-  "input": [
-    {
-      "id": "minecraft:egg",
-      "qty": 16
-    },
-    {
-      "id": "techreborn:empty_cell",
-      "qty": 1
-    }
-  ],
-  "output": [
-    {
-      "id": "techreborn:methane_cell",
-      "qty": 1
-    },
-    {
-      "id": "techreborn:calcite_dust",
-      "qty": 1
-    }
-  ],
-  "tool": "techreborn:industrial_centrifuge",
-  "meta": {
-    "power": 5,
-    "time": 500
-  }
-}} />
-
-
-
-
-
-
-
-
-
-
-
-<Machine config={{
-  "id": "methan_cell_from_turtle_egg",
-  "input": [
-    {
-      "id": "minecraft:turtle_egg",
-      "qty": 32
-    },
-    {
-      "id": "techreborn:empty_cell",
-      "qty": 1
-    }
-  ],
-  "output": [
-    {
-      "id": "techreborn:methane_cell",
-      "qty": 1
-    },
-    {
-      "id": "techreborn:calcite_dust",
-      "qty": 1
-    }
-  ],
-  "tool": "techreborn:industrial_centrifuge",
-  "meta": {
-    "power": 5,
-    "time": 500
-  }
-}} />
-				</details>
 <Machine config={{
   "id": "moss_block",
   "input": [

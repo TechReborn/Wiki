@@ -65,7 +65,12 @@ import path from "path";
 			// idSection will be our best guess as programatically splitting crafting outputs into groups
 			// i suspect this will result in some sorta odd groupings, but it's better than the alternative.
 			// basically taking whatever comes before "_from" "blue_wool" for instance, and calling that a group OR using the first output item
-			const idSection = (itemContent.id.includes("_from") === true) ? itemContent.id.split("_from").shift() : itemContent.id;
+			let idSection = (itemContent.id.includes("_from") === true) ? itemContent.id.split("_from").shift() : itemContent.id;
+			// most types of groupings are the _from variety, some are just 2 after the name
+			// i haven't seen any 3's yet...
+			if (idSection.includes("_2") === true) {
+				idSection = idSection.slice(0, -2);
+			}
 			if (!newSections[idSection]) {
 				newSections[idSection] = [];
 			}
@@ -108,6 +113,7 @@ const ORDER = [
 	{name: "distillation_tower", path: "docs/blocks/machines/distillation_tower.mdx"},
 	{name: "extractor", path: "docs/blocks/machines/extractor.mdx"},
 	{name: "grinder", path: "docs/blocks/machines/grinder.mdx"},
+	{name: "implosion_compressor", path: "docs/blocks/machines/implosion_compressor.mdx"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
 ];
 
@@ -134,35 +140,6 @@ const formatter = {
 			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
 			config
 		};
-	},
-	// for things that consume power and have a time, but omit all methane crafting recipes
-	industrial_centrifuge: (data) => {
-		const config = {
-			id: data.id,
-			input: data.ingredients.map((obj) => ({
-				id: filterId(obj.ingredient),
-				qty: !!obj.count ? obj.count : 1,
-			})),
-			output: data.outputs.map((obj) => ({
-				id: filterId(obj.id, obj),
-				qty: !!obj.count ? obj.count : 1,
-			})),
-			tool: data.type,
-			meta: {
-				power: data.power,
-				time: data.time
-			}
-		};
-		if (config.output.length === 1 && config.output[0].id == "techreborn:methane_cell") {
-			return {
-				mdx: "",
-				config
-			};
-		}
-		return {
-			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
-			config
-		};
 	}
 }
 
@@ -181,27 +158,42 @@ const filterId = (input, full = null) => {
 	}
 	// this alternates between being a f-it bucket kinda of check and a "we need to override this now" check
 	const specialTerms = {
+		// some 1:1 terms to what they look like they should be
 		"#c:tuff": "minecraft:tuff",
 		"#c:basalt": "minecraft:basalt",
-		"#c:marble": "minecraft:marble",
+		"#c:marble": "minecraft:calcite",
 		"#c:limestone": "techreborn:limestone",
 		"#c:froglights": "minecraft:froglight",
 		"#c:sponges": "minecraft:sponge",
 		"#c:sulfurs": "techreborn:sulfur",
+		// these image and item names differ
 		"#c:ingots/chromium": "techreborn:chrome_ingot",
 		"#c:storage_blocks/chromium": "techreborn:chrome_storage_block",
+		// if we have more nuggets, we'll write a mapper for them
+		"#c:nuggets/iridium": "techreborn:iridium_nugget",
+		"#c:nuggets/netherite": "techreborn:netherite_nugget",
+		// these _material id's represent a set of materials. i took a common one and used it as a representitive for the sample
 		"techreborn:calcite_dust_material": "minecraft:calcite",
 		"techreborn:calcite_small_dust_material": "minecraft:bone_meal",
 		"techreborn:gravel_material": "minecraft:cobblestone",
+		"techreborn:plantball_material": "minecraft:oak_leaves",
+		// some spelling fixes
 		"minecraft:slime_ball": "minecraft:slimeball",
 		"minecraft:water_cell": "techreborn:water_cell",
 		"minecraft:cod": "minecraft:raw_cod",
 		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
 		"minecraft:lapis_ores": "minecraft:block_of_lapis_lazuli",
+		"minecraft:ender_eye": "minecraft:eye_of_ender",
+		// these are not valid items, so i changed them to my best guess
 		"minecraft:prismarine": "minecraft:prismarine_shard",
 		"minecraft:quartz": "minecraft:nether_quartz",
 		"minecraft:quartz_block": "minecraft:block_of_quartz",
-		"minecraft:ender_eye": "minecraft:eye_of_ender",
+		// this is about turning general item terms into specific ones
+		"#c:foods/cooked_meats": "minecraft:cooked_beef",
+		"#c:foods/raw_meats": "minecraft:raw_beef",
+		"minecraft:planks": "minecraft:oak_planks",
+		"minecraft:logs": "minecraft:oak_logs",
+		// ae2 mod support mapping (more than this is supported, this just needs mapping)
 		"#c:certus_quartz": "ae2:certus_quartz_crystal",
 		"#c:ores/certus_quartz": "ae2:budding_certus"
 	};
@@ -248,13 +240,6 @@ const filterId = (input, full = null) => {
 			return input;
 		}
 	}
-	// and some filtering for converting planks and logs to their oak specific versions
-	// this is just a small hack to help with image rendering and wiki linking
-	// i think our readers are small enough to figure out that it doesn't _need_ to be oak
-	if (input.includes("minecraft:planks") === true || input.includes("minecraft:logs") === true) {
-		const inputParts = input.split(":");
-		input = `${inputParts[0]}:oak_${inputParts[1]}`;
-	}
 	// some filtering for outputs that output a cell, but don't include the fluid
 	if (input === "techreborn:cell" && !!full.components?.["techreborn:fluid"]) {
 		input = `${full.components["techreborn:fluid"]}_cell`;
@@ -300,9 +285,9 @@ const functionMapper = {
 	fusion_reactor: "type",
 	gas_generator: "type",
 	grinder: "electric",
-	implosion_compressor: "type",
+	implosion_compressor: "electric",
 	industrial_blast_furnace: "type",
-	industrial_centrifuge: "industrial_centrifuge",
+	industrial_centrifuge: "electric",
 	industrial_electrolyzer: "type",
 	industrial_grinder: "type",
 	industrial_sawmill: "type",
