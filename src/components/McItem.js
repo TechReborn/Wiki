@@ -39,7 +39,9 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 		techreborn: (slug) => {
 			const path = findIdInGlobal(slug);
 			let image = (<img alt={friendlyName} width={size} src={`/img/techreborn/${slug}.png`} />)
-			if (path.includes("#") === true) { image = renderCssItem("invalid", size); }
+			// i think this might improve the user experience
+			// we'll allow invalid links to attempt to render images
+			// if (path.includes("#") === true) { image = renderCssItem("invalid", size); }
 			return {
 				image,
 				path

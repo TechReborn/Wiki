@@ -175,6 +175,10 @@ const filterId = (input, full = null) => {
 		// oh but wait, sometimes that doesn't work
 		if (input.includes("minecraft:")) { input = input.split("minecraft:").join("techreborn:"); }
 	}
+	// and some random ass arbitrary filtering for inconsistant minecraft ids
+	if (input.includes("#minecraft:") === true || input.includes("#techreborn:") === true) {
+		input = input.split("#").join("");
+	}
 	// this alternates between being a f-it bucket kinda of check and a "we need to override this now" check
 	const specialTerms = {
 		"#c:tuff": "minecraft:tuff",
@@ -184,16 +188,20 @@ const filterId = (input, full = null) => {
 		"#c:froglights": "minecraft:froglight",
 		"#c:sponges": "minecraft:sponge",
 		"#c:sulfurs": "techreborn:sulfur",
-		"#techreborn:calcite_dust_material": "minecraft:calcite",
-		"#techreborn:calcite_small_dust_material": "minecraft:bone_meal",
-		"#techreborn:gravel_material": "minecraft:cobblestone",
 		"#c:ingots/chromium": "techreborn:chrome_ingot",
 		"#c:storage_blocks/chromium": "techreborn:chrome_storage_block",
+		"techreborn:calcite_dust_material": "minecraft:calcite",
+		"techreborn:calcite_small_dust_material": "minecraft:bone_meal",
+		"techreborn:gravel_material": "minecraft:cobblestone",
 		"minecraft:slime_ball": "minecraft:slimeball",
 		"minecraft:water_cell": "techreborn:water_cell",
 		"minecraft:cod": "minecraft:raw_cod",
 		"minecraft:lapis_block": "minecraft:block_of_lapis_lazuli",
+		"minecraft:lapis_ores": "minecraft:block_of_lapis_lazuli",
 		"minecraft:prismarine": "minecraft:prismarine_shard",
+		"minecraft:quartz": "minecraft:nether_quartz",
+		"minecraft:quartz_block": "minecraft:block_of_quartz",
+		"minecraft:ender_eye": "minecraft:eye_of_ender",
 		"#c:certus_quartz": "ae2:certus_quartz_crystal",
 		"#c:ores/certus_quartz": "ae2:budding_certus"
 	};
@@ -240,10 +248,6 @@ const filterId = (input, full = null) => {
 			return input;
 		}
 	}
-	// and some random ass arbitrary filtering for inconsistant minecraft ids
-	if (input.includes("#minecraft:") === true || input.includes("#techreborn:") === true) {
-		input = input.split("#").join("");
-	}
 	// and some filtering for converting planks and logs to their oak specific versions
 	// this is just a small hack to help with image rendering and wiki linking
 	// i think our readers are small enough to figure out that it doesn't _need_ to be oak
@@ -263,6 +267,17 @@ const filterId = (input, full = null) => {
 		const blockOnly = inputSlug.split("_block").shift();
 		if (blockList.includes(blockOnly) === true) {
 			input = `minecraft:block_of_${blockOnly}`;
+		}
+	}
+	// addressing pluralization in vanilla minecraft ores, singular is the correct way
+	const oreList = ["gold", "iron", "diamond", "emerald", "netherite", "coal", "copper", "amethyst"];
+	if (input.includes("minecraft:") === true && input.includes("_ores") === true) {
+		// maybe a match...
+		const inputSlug = input.split("minecraft:").pop();
+		const blockOnly = inputSlug.split("_ores").shift();
+		if (blockList.includes(blockOnly) === true) {
+			// slice off the pluralization
+			input = input.slice(0, -1);
 		}
 	}
 	// let's catch any unhandled for now
