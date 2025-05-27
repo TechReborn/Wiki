@@ -68,7 +68,7 @@ import path from "path";
 			let idSection = (itemContent.id.includes("_from") === true) ? itemContent.id.split("_from").shift() : itemContent.id;
 			// most types of groupings are the _from variety, some are just 2 after the name
 			// i haven't seen any 3's yet...
-			if (idSection.includes("_2") === true) {
+			if (idSection.includes("_2") === true && category.overrides?.includes("no_digit_group") !== true) {
 				idSection = idSection.slice(0, -2);
 			}
 			if (!newSections[idSection]) {
@@ -114,7 +114,8 @@ const ORDER = [
 	{name: "extractor", path: "docs/blocks/machines/extractor.mdx"},
 	{name: "grinder", path: "docs/blocks/machines/grinder.mdx"},
 	{name: "implosion_compressor", path: "docs/blocks/machines/implosion_compressor.mdx"},
-	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"}
+	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"},
+	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"]}
 ];
 
 const formatter = {
@@ -288,7 +289,7 @@ const functionMapper = {
 	implosion_compressor: "electric",
 	industrial_blast_furnace: "type",
 	industrial_centrifuge: "electric",
-	industrial_electrolyzer: "type",
+	industrial_electrolyzer: "electric",
 	industrial_grinder: "type",
 	industrial_sawmill: "type",
 	plasma_generator: "type",
