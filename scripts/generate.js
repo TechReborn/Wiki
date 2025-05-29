@@ -125,7 +125,8 @@ const ORDER = [
 	{name: "grinder", path: "docs/blocks/machines/grinder.mdx"},
 	{name: "implosion_compressor", path: "docs/blocks/machines/implosion_compressor.mdx"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"},
-	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"]}
+	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"]},
+	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx"},
 ];
 
 const formatter = {
@@ -304,7 +305,7 @@ const functionMapper = {
 	industrial_blast_furnace: "type",
 	industrial_centrifuge: "electric",
 	industrial_electrolyzer: "electric",
-	industrial_grinder: "type",
+	industrial_grinder: "electric",
 	industrial_sawmill: "type",
 	plasma_generator: "type",
 	recycler: "type",

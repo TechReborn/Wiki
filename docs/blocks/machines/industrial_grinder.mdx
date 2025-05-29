@@ -43,41 +43,3303 @@ Attach the **Industrial Grinder** to the middle layer centre and connect it to a
 8. Hologram button  
 9. JEI recipe button
 
-## Usage
 
-| Input A                                               | Input B                                         | Output(s)                                                                                                   |
-|-------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| <McItem slug="minecraft:ancient_debris" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="minecraft:netherite_scrap" inline={true}/> + 3x<McItem slug="minecraft:gold_nugget" inline={true}/> |
-| 8x<McItem slug="minecraft:netherrack" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 8x<McItem slug="techreborn:netherrack_dust" inline={true}/> + <McItem slug="minecraft:gold_nugget" inline={true}/> |
-| <McItem slug="minecraft:iron_ore" inline={true}/>     | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:iron_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_tin_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> |
-| <McItem slug="techreborn:sheldonite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:platinum_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> + 2x<McItem slug="techreborn:iridium_nugget" inline={true}/> |
-| <McItem slug="techreborn:sheldonite_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="techreborn:platinum_dust" inline={true}/> + <McItem slug="techreborn:nickel_dust" inline={true}/> + 2x<McItem slug="techreborn:iridium_nugget" inline={true}/> |
-| <McItem slug="techreborn:tungsten_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:tungsten_dust" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_manganese_dust" inline={true}/> |
-| <McItem slug="techreborn:iridium_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:iridium_ingot" inline={true}/> + <McItem slug="techreborn:platinum_dust" inline={true}/> |
-| <McItem slug="techreborn:copper_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_gold_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/> |
-| <McItem slug="techreborn:copper_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 3x<McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_gold_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/> |
-| <McItem slug="techreborn:copper_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="minecraft:raw_copper" inline={true}/> + 3x<McItem slug="minecraft:gold_nugget" inline={true}/> |
-| <McItem slug="techreborn:tin_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | 2x<McItem slug="techreborn:tin_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_zinc_dust" inline={true}/> |
-| <McItem slug="techreborn:tin_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 2x<McItem slug="techreborn:tin_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_iron_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> |
-| <McItem slug="minecraft:gold_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 2x<McItem slug="techreborn:gold_dust" inline={true}/> + <McItem slug="techreborn:copper_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_nickel_dust" inline={true}/> |
-| <McItem slug="minecraft:gold_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 3x<McItem slug="minecraft:raw_gold" inline={true}/> + 3x<McItem slug="techreborn:copper_nugget" inline={true}/> + 3x<McItem slug="techreborn:nickel_nugget" inline={true}/> |
-| <McItem slug="techreborn:galena_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 2x<McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/> |
-| <McItem slug="techreborn:galena_ore" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | 2x<McItem slug="techreborn:galena_dust" inline={true}/> + <McItem slug="techreborn:sulfur_dust" inline={true}/> + <McItem slug="techreborn:raw_silver" inline={true}/> |
-| <McItem slug="techreborn:sphalerite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 5x<McItem slug="techreborn:sphalerite_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> |
-| <McItem slug="techreborn:sphalerite_ore" inline={true}/> | <McItem slug="techreborn:sodiumpersulfate_cell" inline={true}/> | 5x<McItem slug="techreborn:sphalerite_dust" inline={true}/> + <McItem slug="techreborn:small_pile_of_yellow_garnet_dust" inline={true}/> + <McItem slug="techreborn:zinc_dust" inline={true}/> |
-| <McItem slug="techreborn:bauxite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 2x<McItem slug="techreborn:bauxite_dust" inline={true}/> + <McItem slug="techreborn:aluminum_dust" inline={true}/> |
-| <McItem slug="techreborn:sodalite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 12x<McItem slug="techreborn:sodalite_dust" inline={true}/> + 3x<McItem slug="techreborn:aluminum_dust" inline={true}/> |
-| <McItem slug="techreborn:pyrite_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 5x<McItem slug="techreborn:pyrite_dust" inline={true}/> + 2x<McItem slug="techreborn:sulfur_dust" inline={true}/> |
-| <McItem slug="techreborn:ruby_ore" inline={true}/>    | <McItem slug="techreborn:water_cell" inline={true}/>    | <McItem slug="techreborn:ruby" inline={true}/> + 6x<McItem slug="techreborn:small_pile_of_ruby_dust" inline={true}/> + 2x<McItem slug="techreborn:small_pile_of_red_garnet_dust" inline={true}/> |
-| <McItem slug="techreborn:sapphire_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/>   | <McItem slug="techreborn:sapphire" inline={true}/> + 6x<McItem slug="techreborn:small_pile_of_sapphire_dust" inline={true}/> + 2x<McItem slug="techreborn:small_pile_of_peridot" inline={true}/> |
-| <McItem slug="minecraft:diamond_ore" inline={true}/>  | <McItem slug="techreborn:mercury_cell" inline={true}/> | 2x<McItem slug="minecraft:diamond" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_diamond_dust" inline={true}/> |
-| <McItem slug="minecraft:emerald_ore" inline={true}/>  | <McItem slug="techreborn:mercury_cell" inline={true}/> | 2x<McItem slug="minecraft:emerald" inline={true}/> + 3x<McItem slug="techreborn:small_pile_of_emerald_dust" inline={true}/> |
-| <McItem slug="minecraft:lapis_lazuli_ore" inline={true}/> | <McItem slug="techreborn:water_cell" inline={true}/> | 12x<McItem slug="minecraft:lapis_lazuli" inline={true}/> + 3x<McItem slug="techreborn:lazurite_dust" inline={true}/> |
-| <McItem slug="minecraft:copper_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="minecraft:raw_copper" inline={true}/> |
-| <McItem slug="minecraft:gold_ingot" inline={true}/>   | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="minecraft:raw_gold" inline={true}/> |
-| <McItem slug="minecraft:iron_ingot" inline={true}/>   | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="minecraft:raw_iron" inline={true}/> |
-| <McItem slug="techreborn:iridium_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_iridium" inline={true}/> |
-| <McItem slug="techreborn:lead_ingot" inline={true}/>  | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_lead" inline={true}/> |
-| <McItem slug="techreborn:silver_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_silver" inline={true}/> |
-| <McItem slug="techreborn:tin_ingot" inline={true}/>   | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_tin" inline={true}/> |
-| <McItem slug="techreborn:tungsten_ingot" inline={true}/> | <McItem slug="techreborn:mercury_cell" inline={true}/> | <McItem slug="techreborn:raw_tungsten" inline={true}/> |
+### Crafting Recipes
+		<details>
+			<summary>Recipes using Industrial Grinder</summary>
+			<Machine config={{
+  "id": "bauxite_dust_from_bauxite_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:bauxite_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:bauxite_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:aluminum_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "certus_quartz_crystal_from_certus_quartz_ore_with_water",
+  "input": [
+    {
+      "id": "ae2:budding_certus",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "ae2:certus_quartz_crystal",
+      "qty": 2
+    },
+    {
+      "id": "ae2:certus_quartz_dust",
+      "qty": 5
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "cinnabar_dust_from_cinnabar_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:cinnabar_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:cinnabar_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:redstone_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:glowstone_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="minecraft:coal" /></summary>
+				<Machine config={{
+  "id": "coal_from_coal_ore_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:coal_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:coal",
+      "qty": 4
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "coal_from_coal_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:coal_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:coal",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:diamond_dust" /></summary>
+				<Machine config={{
+  "id": "diamond_dust_from_axe_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_boots_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_boots_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_chestplate_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_chestplate_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_heart_of_the_sea_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:heart_of_the_sea",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:titanium_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:platinum_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:raw_iridium",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_helmet_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_helmet_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_hoe_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_horse_armor_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_horse_armor",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_horse_armor_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_horse_armor",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_leggings_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_leggings_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_pickaxe_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_smithing_template_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:trim_templates",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_smithing_template_with_water",
+  "input": [
+    {
+      "id": "techreborn:trim_templates",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_sword_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_trim_template_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:template_template",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_dust_from_trim_template_with_water",
+  "input": [
+    {
+      "id": "techreborn:template_template",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="minecraft:diamond" /></summary>
+				<Machine config={{
+  "id": "diamond_from_diamond_ore_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:diamond",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "diamond_from_diamond_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:diamond",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:coal_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:diamond_small_dust" /></summary>
+				<Machine config={{
+  "id": "diamond_small_dust_from_axe_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_small_dust_from_heart_of_the_sea_with_water",
+  "input": [
+    {
+      "id": "minecraft:heart_of_the_sea",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:titanium_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:platinum_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:iridium_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "diamond_small_dust_from_hoe_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_small_dust_from_pickaxe_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_small_dust_from_shovel_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:diamond_shovel",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_small_dust_from_shovel_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_shovel",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "diamond_small_dust_from_sword_with_water",
+  "input": [
+    {
+      "id": "minecraft:diamond_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diamond_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="minecraft:emerald" /></summary>
+				<Machine config={{
+  "id": "emerald_from_emerald_ore_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:emerald_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:emerald",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:emerald_small_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "emerald_from_emerald_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:emerald_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:emerald",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:emerald_small_dust",
+      "qty": 6
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:endstone_dust" /></summary>
+				<Machine config={{
+  "id": "endstone_dust_from_end_stone_bricks_with_water",
+  "input": [
+    {
+      "id": "minecraft:end_stone_bricks",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:endstone_dust",
+      "qty": 4
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "endstone_dust_from_end_stone_with_water",
+  "input": [
+    {
+      "id": "minecraft:end_stone",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:endstone_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:galena_dust" /></summary>
+				<Machine config={{
+  "id": "galena_dust_from_galena_ore_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:galena_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:galena_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:sulfur_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:raw_silver",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "galena_dust_from_galena_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:galena_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:galena_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:sulfur_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "lapis_lazuli_from_lapis_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:block_of_lapis_lazuli",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:lapis_lazuli",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:lazurite_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "netherite_nugget_from_netherite_ingot_with_lava",
+  "input": [
+    {
+      "id": "minecraft:netherite_ingot",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:netherite_nugget",
+      "qty": 9
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="minecraft:netherite_scrap" /></summary>
+				<Machine config={{
+  "id": "netherite_scrap_from_ancient_debris_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:ancient_debris",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:netherite_scrap",
+      "qty": 3
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "netherite_scrap_from_ancient_debris_with_water",
+  "input": [
+    {
+      "id": "minecraft:ancient_debris",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:netherite_scrap",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 5
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:netherrack_dust" /></summary>
+				<Machine config={{
+  "id": "netherrack_dust_from_netherrack_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:netherrack",
+      "qty": 8
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:netherrack_dust",
+      "qty": 8
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "netherrack_dust_from_netherrack_with_water",
+  "input": [
+    {
+      "id": "minecraft:netherrack",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:netherrack_dust",
+      "qty": 16
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:obsidian_dust" /></summary>
+				<Machine config={{
+  "id": "obsidian_dust_from_ender_chest_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:ender_chest",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:obsidian_dust",
+      "qty": 7
+    },
+    {
+      "id": "techreborn:ender_eye_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "obsidian_dust_from_ender_chest_with_water",
+  "input": [
+    {
+      "id": "minecraft:ender_chest",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:obsidian_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:ender_eye_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "obsidian_dust_from_magma_block_with_water",
+  "input": [
+    {
+      "id": "minecraft:magma_block",
+      "qty": 5
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:obsidian_dust",
+      "qty": 4
+    },
+    {
+      "id": "minecraft:magma_cream",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 250
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:peridot_dust" /></summary>
+				<Machine config={{
+  "id": "peridot_dust_from_axe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_boots_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_boots_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_chestplate_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_chestplate_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_helmet_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_helmet_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_hoe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_leggings_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_leggings_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_pickaxe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_dust_from_sword_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "peridot_gem_from_peridot_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_gem",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:emerald_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="techreborn:peridot_small_dust" /></summary>
+				<Machine config={{
+  "id": "peridot_small_dust_from_axe_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_small_dust_from_hoe_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_small_dust_from_pickaxe_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_small_dust_from_shovel_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:peridot_spade",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_small_dust_from_shovel_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_spade",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "peridot_small_dust_from_sword_with_water",
+  "input": [
+    {
+      "id": "techreborn:peridot_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:platinum_dust" /></summary>
+				<Machine config={{
+  "id": "platinum_dust_from_sheldonite_ore_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sheldonite_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:platinum_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:nickel_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:iridium_nugget",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "platinum_dust_from_sheldonite_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:sheldonite_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:platinum_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:nickel_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:iridium_nugget",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "prismarine_crystals_from_froglight_with_water",
+  "input": [
+    {
+      "id": "minecraft:froglight",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:prismarine_crystals",
+      "qty": 3
+    },
+    {
+      "id": "minecraft:slimeball",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "pyrite_dust_from_pyrite_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:pyrite_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:pyrite_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:sulfur_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "quartz_from_nether_quartz_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:nether_quartz_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:nether_quartz",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:sulfur_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="minecraft:raw_copper" /></summary>
+				<Machine config={{
+  "id": "raw_copper_from_copper_ore_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:copper_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:raw_copper",
+      "qty": 3
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_copper_from_copper_ore_with_sodium_persulfate",
+  "input": [
+    {
+      "id": "minecraft:copper_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:raw_copper",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:raw_gold",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:nickel_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_copper_from_copper_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:copper_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:raw_copper",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="minecraft:raw_gold" /></summary>
+				<Machine config={{
+  "id": "raw_gold_from_gold_ore_with_mercury",
+  "input": [
+    {
+      "id": "minecraft:gold_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:raw_gold",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:copper_nugget",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:nickel_nugget",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_gold_from_gold_ore_with_sodium_persulfate",
+  "input": [
+    {
+      "id": "minecraft:gold_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:raw_gold",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:raw_copper",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:nickel_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_gold_from_gold_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:gold_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:raw_gold",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:copper_nugget",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:nickel_nugget",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:raw_iridium" /></summary>
+				<Machine config={{
+  "id": "raw_iridium_from_iridium_ore_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:iridium_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_iridium",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:platinum_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_iridium_from_iridium_ore_with_sodium_persulfate",
+  "input": [
+    {
+      "id": "techreborn:iridium_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_iridium",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:platinum_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_iridium_from_iridium_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:iridium_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_iridium",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:platinum_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "raw_iron_from_iron_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:iron_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:raw_iron",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:tin_nugget",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:nickel_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_lead_from_lead_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:lead_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_lead",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:galena_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_silver_from_silver_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:silver_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_silver",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:galena_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="techreborn:raw_tin" /></summary>
+				<Machine config={{
+  "id": "raw_tin_from_tin_ore_with_sodium_persulfate",
+  "input": [
+    {
+      "id": "techreborn:tin_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_tin",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:raw_iron",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:zinc_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "raw_tin_from_tin_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:tin_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_tin",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:zinc_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "raw_tungsten_from_tungsten_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:tungsten_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:raw_tungsten",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "qty": 7
+    },
+    {
+      "id": "techreborn:manganese_small_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "redstone_from_redstone_ore_with_water",
+  "input": [
+    {
+      "id": "minecraft:redstone_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:redstone",
+      "qty": 10
+    },
+    {
+      "id": "techreborn:glowstone_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="techreborn:ruby_dust" /></summary>
+				<Machine config={{
+  "id": "ruby_dust_from_axe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_boots_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_boots_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_chestplate_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_chestplate_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_helmet_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_helmet_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_hoe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_leggings_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_leggings_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_pickaxe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_dust_from_sword_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "ruby_gem_from_ruby_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_gem",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:red_garnet_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="techreborn:ruby_small_dust" /></summary>
+				<Machine config={{
+  "id": "ruby_small_dust_from_axe_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_small_dust_from_hoe_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_small_dust_from_pickaxe_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_small_dust_from_shovel_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:ruby_spade",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_small_dust_from_shovel_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_spade",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "ruby_small_dust_from_sword_with_water",
+  "input": [
+    {
+      "id": "techreborn:ruby_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ruby_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:sapphire_dust" /></summary>
+				<Machine config={{
+  "id": "sapphire_dust_from_axe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_boots_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_boots_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_boots",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_chestplate_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_chestplate_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_chestplate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_helmet_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_helmet_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_helmet",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_hoe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_leggings_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_leggings_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_leggings",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_pickaxe_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_dust_from_sword_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "sapphire_gem_from_sapphire_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_gem",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:peridot_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="techreborn:sapphire_small_dust" /></summary>
+				<Machine config={{
+  "id": "sapphire_small_dust_from_axe_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_small_dust_from_hoe_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_small_dust_from_pickaxe_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_small_dust_from_shovel_with_mercury",
+  "input": [
+    {
+      "id": "techreborn:sapphire_spade",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_small_dust_from_shovel_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_spade",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+<Machine config={{
+  "id": "sapphire_small_dust_from_sword_with_water",
+  "input": [
+    {
+      "id": "techreborn:sapphire_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sapphire_small_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 128,
+    "time": 140
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "sodalite_dust_from_sodalite_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:sodalite_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sodalite_dust",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:aluminum_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<details>
+				<summary><McItem slug="techreborn:sphalerite_dust" /></summary>
+				<Machine config={{
+  "id": "sphalerite_dust_from_sphalerite_ore_with_sodium_persulfate",
+  "input": [
+    {
+      "id": "techreborn:sphalerite_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sphalerite_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:zinc_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:yellow_garnet_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "sphalerite_dust_from_sphalerite_ore_with_water",
+  "input": [
+    {
+      "id": "techreborn:sphalerite_ore",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sphalerite_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:zinc_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:yellow_garnet_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_grinder",
+  "meta": {
+    "power": 64,
+    "time": 100
+  }
+}} />
+				</details>
+
+		</details>
