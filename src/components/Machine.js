@@ -81,7 +81,7 @@ export default function Machine({recipe, config = null}) {
 			{config.meta?.fluid != null && (
 			<div className="info-item">
 				<span aria-label="Fluid">💧</span>
-				<span>{config.meta.fluid.amnt / 81000}x🪣 - {config.meta.fluid.name.split("minecraft:").join("").split("techreborn:").join("")}</span>
+				<span>{config.meta.fluid.amnt / 81000}x🪣 - {titleCase(config.meta.fluid.name.split("minecraft:").join("").split("techreborn:").join(""))}</span>
 			</div>
 			)}
 		</div>

@@ -124,6 +124,7 @@ const ORDER = [
 	{name: "extractor", path: "docs/blocks/machines/extractor.mdx", func: "electric"},
 	{name: "grinder", path: "docs/blocks/machines/grinder.mdx", func: "electric"},
 	{name: "implosion_compressor", path: "docs/blocks/machines/implosion_compressor.mdx", func: "electric"},
+	{name: "industrial_blast_furnace", path: "docs/blocks/machines/industrial_blast_furnace.mdx", func: "electric_heat"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx", func: "electric"},
 	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"], func: "electric"},
 	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx", func: "electric_fluid"},
@@ -176,6 +177,30 @@ const formatter = {
 					amnt: data.fluid.amount.value,
 					name: data.fluid.fluid.fluid
 				}
+			}
+		};
+		return {
+			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
+			config
+		};
+	},
+	// the industrial blast furnace needs heat in addition to power
+	electric_heat: (data) => {
+		const config = {
+			id: data.id,
+			input: data.ingredients.map((obj) => ({
+				id: filterId(obj.ingredient),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			output: data.outputs.map((obj) => ({
+				id: filterId(obj.id, obj),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			tool: data.type,
+			meta: {
+				power: data.power,
+				time: data.time,
+				heat: data.heat
 			}
 		};
 		return {
@@ -248,11 +273,9 @@ const filterId = (input, full = null) => {
 	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// we're going to try something wild and assume that any vanilla minecraft object that sends with an S is plural, and we don't want it to be.
 	// if that's a bad assumption, we'll fix it later...maybe
-	if (input.charAt(input.length - 1) === "s") {
-		// carveouts
-		if (input.includes("stair") === false && input.includes("plank") === false) {
-			input = input.slice(0, -1);
-		}
+	const exceptions = ["stairs", "planks", "boots", "leggings", "bars"];
+	if (input.endsWith("s") && !exceptions.some((term) => input.includes(term))) {
+		input = input.slice(0, -1);
 	}
 	// these are called suffix terms because the way of correcting them is by
 	// adding the type of thing they are to the end of the input term, eg. 
