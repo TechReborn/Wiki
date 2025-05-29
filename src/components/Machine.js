@@ -17,6 +17,9 @@ import McItem from '@site/src/components/McItem';
 		time?: number (optional) expressed in ticks
 		power?: number (optional) expressed in ?
 		heat?: number (optional) just heat.
+		fluid?: object (optional)
+			amnt: number   expressed in units?
+			name: string   the name of the fluid
 */
 export default function Machine({recipe, config = null}) {
 	if (!config) {
@@ -73,6 +76,12 @@ export default function Machine({recipe, config = null}) {
 			<div className="info-item">
 				<span aria-label="Heat">🔥</span>
 				<span>{config.meta.heat}</span>
+			</div>
+			)}
+			{config.meta?.fluid != null && (
+			<div className="info-item">
+				<span aria-label="Fluid">💧</span>
+				<span>{config.meta.fluid.amnt} - {config.meta.fluid.name.split("minecraft:").join("").split("techreborn:").join("")}</span>
 			</div>
 			)}
 		</div>

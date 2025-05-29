@@ -152,6 +152,33 @@ const formatter = {
 			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
 			config
 		};
+	},
+	// the industrial grinder consumes power and fluid
+	industrial_grinder: (data) => {
+		const config = {
+			id: data.id,
+			input: data.ingredients.map((obj) => ({
+				id: filterId(obj.ingredient),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			output: data.outputs.map((obj) => ({
+				id: filterId(obj.id, obj),
+				qty: !!obj.count ? obj.count : 1,
+			})),
+			tool: data.type,
+			meta: {
+				power: data.power,
+				time: data.time,
+				fluid: {
+					amnt: data.fluid.amount.value,
+					name: data.fluid.fluid.fluid
+				}
+			}
+		};
+		return {
+			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
+			config
+		};
 	}
 }
 
@@ -305,7 +332,7 @@ const functionMapper = {
 	industrial_blast_furnace: "type",
 	industrial_centrifuge: "electric",
 	industrial_electrolyzer: "electric",
-	industrial_grinder: "electric",
+	industrial_grinder: "industrial_grinder",
 	industrial_sawmill: "type",
 	plasma_generator: "type",
 	recycler: "type",
