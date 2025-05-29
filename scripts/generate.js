@@ -1,4 +1,14 @@
-// file: build-recipes.mjs
+/*
+This script is intended to read _lightly modified_* .json files in /static/recipe and then modify existing 
+.mdx pages with the information from those .json files. The script is intended to be idempotent so don't
+worry about running it too much UNLESS you've made changes to the resulting files afterwards.
+
+* Bulk renames need to take place before running this:
+    techreborn:blast_furnace -> techreborn:industrial_blast_furnace
+    techreborn:centrifuge -> techreborn:industrial_centrifuge
+    removed extractor/cell.json
+    removed a large chunk of duplicate methan and methane producing recipes
+*/
 import fs from "fs/promises";
 import path from "path";
 
@@ -244,6 +254,10 @@ const filterId = (input, full = null) => {
 	// some filtering for outputs that output a cell, but don't include the fluid
 	if (input === "techreborn:cell" && !!full.components?.["techreborn:fluid"]) {
 		input = `${full.components["techreborn:fluid"]}_cell`;
+		if (input.includes("minecraft:") === true) {
+			// to fix input like "minecraft:water_cell"
+			input = input.split("minecraft:").join("techreborn:");
+		}
 	}
 	// addressing minecraft vanilla blocks being in the wrong format
 	const blockList = ["gold", "iron", "diamond", "emerald", "netherite", "coal", "copper", "amethyst", "redstone", "raw_iron", "raw_gold", "raw_copper"];
