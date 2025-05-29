@@ -18,11 +18,105 @@ The **Solid Canning Machine** is used to make different cells.
 
 <CraftingTable recipe="input techreborn:tin_ingot techreborn:electronic_circuit techreborn:tin_ingot input techreborn:tin_ingot techreborn:basic_machine_frame techreborn:tin_ingot input techreborn:tin_ingot techreborn:tin_ingot techreborn:tin_ingot output techreborn:solid_canning_machine" />
 
-## Usage
 
-| Input A                                           | Input B                                  | Output(s)                                            |
-| ------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
-| <McItem slug="techreborn:compressed_plantball" /> | <McItem slug="techreborn:empty_cell" />  | <McItem slug="techreborn:biofuel_cell" />            |
-| <McItem slug="techreborn:helium_cell" />          | 2x<McItem slug="techreborn:tin_ingot" /> | <McItem slug="techreborn:helium_coolant_cell_60k" /> |
-| <McItem slug="techreborn:water_cell" />           | 2x<McItem slug="techreborn:tin_ingot" /> | <McItem slug="techreborn:water_coolant_cell_10k" />  |
-| <McItem slug="techreborn:sulfur_dust" />          | <McItem slug="techreborn:empty_cell" />  | <McItem slug="techreborn:sulfur_cell" />             |
+### Crafting Recipes
+		<details>
+			<summary>Recipes using Solid Canning Machine</summary>
+			<Machine config={{
+  "id": "cell",
+  "input": [
+    {
+      "id": "techreborn:compressed_plantball",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:biofuel_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:solid_canning_machine",
+  "meta": {
+    "power": 1,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "cell_2",
+  "input": [
+    {
+      "id": "techreborn:sulfur_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sulfur_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:solid_canning_machine",
+  "meta": {
+    "power": 1,
+    "time": 100
+  }
+}} />
+<Machine config={{
+  "id": "helium_coolant_cell_60k",
+  "input": [
+    {
+      "id": "techreborn:helium_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:tin_ingot",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:helium_coolant_cell_60k",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:solid_canning_machine",
+  "meta": {
+    "power": 1,
+    "time": 60
+  }
+}} />
+<Machine config={{
+  "id": "water_coolant_cell_10k",
+  "input": [
+    {
+      "id": "techreborn:water_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:tin_ingot",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:water_coolant_cell_10k",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:solid_canning_machine",
+  "meta": {
+    "power": 1,
+    "time": 60
+  }
+}} />
+
+		</details>

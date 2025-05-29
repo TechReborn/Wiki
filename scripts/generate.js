@@ -129,6 +129,7 @@ const ORDER = [
 	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"], func: "electric"},
 	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx", func: "electric_fluid"},
 	{name: "industrial_sawmill", path: "docs/blocks/machines/industrial_sawmill.mdx", func: "electric_fluid"},
+	{name: "solid_canning_machine", path: "docs/blocks/machines/solid_canning_machine.mdx", func: "electric", overrides: ["no_digit_group"]},
 	{name: "vacuum_freezer", path: "docs/blocks/machines/vacuum_freezer.mdx", func: "electric"},
 	{name: "wire_mill", path: "docs/blocks/machines/wire_mill.mdx", func: "electric"},
 ];
