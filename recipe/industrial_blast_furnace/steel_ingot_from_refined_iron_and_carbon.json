@@ -1,0 +1,31 @@
+{
+  "type": "techreborn:industrial_blast_furnace",
+  "heat": 1000,
+  "ingredients": [
+    {
+      "ingredient": "techreborn:refined_iron_ingot"
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "techreborn:carbon"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:steel_ingot"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:cell"
+    }
+  ],
+  "power": 128,
+  "time": 500
+}

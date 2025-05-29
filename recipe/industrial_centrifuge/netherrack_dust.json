@@ -1,0 +1,41 @@
+{
+  "type": "techreborn:industrial_centrifuge",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "techreborn:netherrack_dust"
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:redstone"
+    },
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:sulfur"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:coal_dust"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:gold_nugget"
+    }
+  ],
+  "power": 5,
+  "time": 2400
+}

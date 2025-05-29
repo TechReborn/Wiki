@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:industrial_centrifuge",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:magma_cream"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:blaze_powder"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:slime_ball"
+    }
+  ],
+  "power": 5,
+  "time": 5000
+}

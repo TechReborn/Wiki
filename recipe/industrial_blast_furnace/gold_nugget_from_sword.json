@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:industrial_blast_furnace",
+  "heat": 1000,
+  "ingredients": [
+    {
+      "ingredient": "minecraft:golden_sword"
+    },
+    {
+      "ingredient": "minecraft:sand"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "minecraft:gold_nugget"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:dark_ashes_dust"
+    }
+  ],
+  "power": 128,
+  "time": 140
+}

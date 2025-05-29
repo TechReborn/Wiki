@@ -1,0 +1,33 @@
+{
+  "type": "techreborn:industrial_centrifuge",
+  "ingredients": [
+    {
+      "count": 12,
+      "ingredient": "minecraft:warped_wart_block"
+    },
+    {
+      "ingredient": {
+        "fabric:type": "fabric:components",
+        "base": "techreborn:cell",
+        "components": {
+          "techreborn:fluid": "minecraft:empty"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "components": {
+        "techreborn:fluid": "techreborn:methane"
+      },
+      "count": 1,
+      "id": "techreborn:cell"
+    },
+    {
+      "count": 2,
+      "id": "techreborn:ender_pearl_dust"
+    }
+  ],
+  "power": 5,
+  "time": 500
+}

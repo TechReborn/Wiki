@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:industrial_centrifuge",
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "techreborn:bronze_dust"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 27,
+      "id": "techreborn:copper_nugget"
+    },
+    {
+      "count": 9,
+      "id": "techreborn:tin_nugget"
+    }
+  ],
+  "power": 10,
+  "time": 6000
+}

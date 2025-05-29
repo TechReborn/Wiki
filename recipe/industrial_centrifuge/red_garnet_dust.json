@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:industrial_centrifuge",
+  "ingredients": [
+    {
+      "count": 16,
+      "ingredient": "techreborn:red_garnet_dust"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "techreborn:pyrope_dust"
+    },
+    {
+      "count": 5,
+      "id": "techreborn:almandine_dust"
+    },
+    {
+      "count": 8,
+      "id": "techreborn:spessartine_dust"
+    }
+  ],
+  "power": 5,
+  "time": 3000
+}
