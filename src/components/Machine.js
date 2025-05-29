@@ -81,7 +81,7 @@ export default function Machine({recipe, config = null}) {
 			{config.meta?.fluid != null && (
 			<div className="info-item">
 				<span aria-label="Fluid">💧</span>
-				<span>{config.meta.fluid.amnt} - {config.meta.fluid.name.split("minecraft:").join("").split("techreborn:").join("")}</span>
+				<span>{config.meta.fluid.amnt / 81000}x🪣 - {config.meta.fluid.name.split("minecraft:").join("").split("techreborn:").join("")}</span>
 			</div>
 			)}
 		</div>
@@ -111,7 +111,7 @@ function mapToolToStyles(tool) {
 		"techreborn:fusion_reactor": TWOWIDE_ONETALL,
 		"techreborn:industrial_grinder": TWOWIDE_ONETALL,
 		"techreborn:assembling_machine": TWOWIDE_ONETALL,
-		"techreborn:saw_mill": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '2', '--rows': '2' }},
+		"techreborn:industrial_sawmill": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '2', '--rows': '1' }},
 		"techreborn:alloy_smelter": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '1', '--rows': '1' }},
 		"techreborn:industrial_centrifuge": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '4', '--rows': '1' }},
 		"techreborn:distillation_tower": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '4', '--rows': '1' }},

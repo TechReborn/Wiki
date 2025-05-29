@@ -71,7 +71,7 @@ import path from "path";
 			// itemContent is the json object of the item directly from the file
 			const itemContent = recipes[category.name][item.id];
 			// converted will be an object with mdx:markdown and obj:config(recipe) object
-			const converted = formatter[functionMapper[category.name]](itemContent);
+			const converted = formatter[category.func](itemContent);
 			// idSection will be our best guess as programatically splitting crafting outputs into groups
 			// i suspect this will result in some sorta odd groupings, but it's better than the alternative.
 			// basically taking whatever comes before "_from" "blue_wool" for instance, and calling that a group OR using the first output item
@@ -116,17 +116,18 @@ import path from "path";
 
 
 const ORDER = [
-	{name: "alloy_smelter", path: "docs/blocks/machines/alloy_smelter.mdx"},
-	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx"},
-	{name: "chemical_reactor", path: "docs/blocks/machines/chemical_reactor.mdx"},
-	{name: "compressor", path: "docs/blocks/machines/compressor.mdx"},
-	{name: "distillation_tower", path: "docs/blocks/machines/distillation_tower.mdx"},
-	{name: "extractor", path: "docs/blocks/machines/extractor.mdx"},
-	{name: "grinder", path: "docs/blocks/machines/grinder.mdx"},
-	{name: "implosion_compressor", path: "docs/blocks/machines/implosion_compressor.mdx"},
-	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx"},
-	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"]},
-	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx"},
+	{name: "alloy_smelter", path: "docs/blocks/machines/alloy_smelter.mdx", func: "electric"},
+	{name: "assembling_machine", path: "docs/blocks/machines/assembling_machine.mdx", func: "electric"},
+	{name: "chemical_reactor", path: "docs/blocks/machines/chemical_reactor.mdx", func: "electric"},
+	{name: "compressor", path: "docs/blocks/machines/compressor.mdx", func: "electric"},
+	{name: "distillation_tower", path: "docs/blocks/machines/distillation_tower.mdx", func: "electric"},
+	{name: "extractor", path: "docs/blocks/machines/extractor.mdx", func: "electric"},
+	{name: "grinder", path: "docs/blocks/machines/grinder.mdx", func: "electric"},
+	{name: "implosion_compressor", path: "docs/blocks/machines/implosion_compressor.mdx", func: "electric"},
+	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx", func: "electric"},
+	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"], func: "electric"},
+	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx", func: "electric_fluid"},
+	{name: "industrial_sawmill", path: "docs/blocks/machines/industrial_sawmill.mdx", func: "electric_fluid"},
 ];
 
 const formatter = {
@@ -153,8 +154,8 @@ const formatter = {
 			config
 		};
 	},
-	// the industrial grinder consumes power and fluid
-	industrial_grinder: (data) => {
+	// the industrial grinder consumes power and fluid (as does the sawmill, maybe others?)
+	electric_fluid: (data) => {
 		const config = {
 			id: data.id,
 			input: data.ingredients.map((obj) => ({
@@ -232,11 +233,25 @@ const filterId = (input, full = null) => {
 		"#c:foods/raw_meats": "minecraft:raw_beef",
 		"minecraft:planks": "minecraft:oak_planks",
 		"minecraft:logs": "minecraft:oak_logs",
+		"minecraft:signs": "minecraft:oak_sign",
+		"minecraft:wooden_doors": "minecraft:oak_wood_door",
+		"minecraft:wooden_fences": "minecraft:oak_fence",
+		"minecraft:wooden_pressure_plates": "minecraft:oak_pressure_plate",
+		"minecraft:wooden_trapdoors": "minecraft:oak_trapdoor",
+		"minecraft:wooden_buttons": "minecraft:oak_button",
 		// ae2 mod support mapping (more than this is supported, this just needs mapping)
 		"#c:certus_quartz": "ae2:certus_quartz_crystal",
 		"#c:ores/certus_quartz": "ae2:budding_certus"
 	};
 	if (!!specialTerms[input]) { return specialTerms[input]; }
+	// we're going to try something wild and assume that any vanilla minecraft object that sends with an S is plural, and we don't want it to be.
+	// if that's a bad assumption, we'll fix it later...maybe
+	if (input.charAt(input.length - 1) === "s") {
+		// carveouts
+		if (input.includes("stair") === false && input.includes("plank") === false) {
+			input = input.slice(0, -1);
+		}
+	}
 	// these are called suffix terms because the way of correcting them is by
 	// adding the type of thing they are to the end of the input term, eg. 
 	// #c:ores/silver -> silver_ore
@@ -298,53 +313,21 @@ const filterId = (input, full = null) => {
 		}
 	}
 	// addressing pluralization in vanilla minecraft ores, singular is the correct way
-	const oreList = ["gold", "iron", "diamond", "emerald", "netherite", "coal", "copper", "amethyst"];
-	if (input.includes("minecraft:") === true && input.includes("_ores") === true) {
-		// maybe a match...
-		const inputSlug = input.split("minecraft:").pop();
-		const blockOnly = inputSlug.split("_ores").shift();
-		if (blockList.includes(blockOnly) === true) {
-			// slice off the pluralization
-			input = input.slice(0, -1);
-		}
-	}
+	// const oreList = ["gold", "iron", "diamond", "emerald", "netherite", "coal", "copper", "amethyst"];
+	// if (input.includes("minecraft:") === true && input.includes("_ores") === true) {
+	// 	// maybe a match...
+	// 	const inputSlug = input.split("minecraft:").pop();
+	// 	const blockOnly = inputSlug.split("_ores").shift();
+	// 	if (blockList.includes(blockOnly) === true) {
+	// 		// slice off the pluralization
+	// 		input = input.slice(0, -1);
+	// 	}
+	// }
 	// let's catch any unhandled for now
 	if (input.includes("#c:") === true) { throw new Error (`Unhandled ID in filterId: ${input}`); }
 	// if it didn't match it's...fine?
 	return input;
 }
-
-const functionMapper = {
-	alloy_smelter: "electric",
-	assembling_machine: "electric",
-	blasting: "type",
-	chemical_reactor: "electric",
-	compressor: "electric",
-	crafting_table: "type",
-	diesel_generator: "type",
-	distillation_tower: "electric",
-	extractor: "electric",
-	fluid_replicator: "type",
-	fusion_reactor: "type",
-	gas_generator: "type",
-	grinder: "electric",
-	implosion_compressor: "electric",
-	industrial_blast_furnace: "type",
-	industrial_centrifuge: "electric",
-	industrial_electrolyzer: "electric",
-	industrial_grinder: "industrial_grinder",
-	industrial_sawmill: "type",
-	plasma_generator: "type",
-	recycler: "type",
-	rolling_machine: "type",
-	scrapbox: "type",
-	semi_fluid_generator: "type",
-	smelting: "type",
-	solid_canning_machine: "type",
-	thermal_generator: "type",
-	vacuum_freezer: "type",
-	wire_mill: "type"
-};
 
 const titleCase = (s) =>
 	s.replace (/^[-_]*(.)/, (_, c) => c.toUpperCase())
