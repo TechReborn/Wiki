@@ -376,17 +376,6 @@ const filterId = (input, full = null) => {
 			input = `minecraft:block_of_${blockOnly}`;
 		}
 	}
-	// addressing pluralization in vanilla minecraft ores, singular is the correct way
-	// const oreList = ["gold", "iron", "diamond", "emerald", "netherite", "coal", "copper", "amethyst"];
-	// if (input.includes("minecraft:") === true && input.includes("_ores") === true) {
-	// 	// maybe a match...
-	// 	const inputSlug = input.split("minecraft:").pop();
-	// 	const blockOnly = inputSlug.split("_ores").shift();
-	// 	if (blockList.includes(blockOnly) === true) {
-	// 		// slice off the pluralization
-	// 		input = input.slice(0, -1);
-	// 	}
-	// }
 	// let's catch any unhandled for now
 	if (input.includes("#c:") === true) { throw new Error (`Unhandled ID in filterId: ${input}`); }
 	// if it didn't match it's...fine?
