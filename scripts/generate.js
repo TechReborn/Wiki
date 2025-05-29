@@ -129,6 +129,7 @@ const ORDER = [
 	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"], func: "electric"},
 	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx", func: "electric_fluid"},
 	{name: "industrial_sawmill", path: "docs/blocks/machines/industrial_sawmill.mdx", func: "electric_fluid"},
+	{name: "rolling_machine", path: "docs/blocks/machines/rolling_machine.mdx", func: "crafting"},
 	{name: "solid_canning_machine", path: "docs/blocks/machines/solid_canning_machine.mdx", func: "electric", overrides: ["no_digit_group"]},
 	{name: "vacuum_freezer", path: "docs/blocks/machines/vacuum_freezer.mdx", func: "electric"},
 	{name: "wire_mill", path: "docs/blocks/machines/wire_mill.mdx", func: "electric"},
@@ -208,6 +209,43 @@ const formatter = {
 			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
 			config
 		};
+	},
+	// this machine behaves like a crafting table and passes in recipes the same way
+	// i'm going to make power optional since some crafting-esque tables consume power
+	crafting: (data) => {
+		const config = {
+			id: data.id,
+			input: [],
+			output: [{
+				id: data.result.id,
+				qty: data.result.count
+			}],
+			tool: data.type,
+			meta: {
+				...(!!data.power && {power: data.power}),
+				...(!!data.time && {time: data.time}),
+			}
+		};
+		if (!!data.ingredients) {
+			// if they passed ingredients, that means order doesn't matter
+			// these are generally simplier recipes
+			data.input = data.ingredients.map((obj) => ({
+				id: filterId(obj.ingredient),
+				qty: !!obj.count ? obj.count : 1,
+			}));
+		} else if (!!data.pattern) {
+			// the standard way of passing in complex recipes
+			const patternArr = data.pattern.flatMap(section => section.split(""));
+			data.key[" "] = "minecraft:air";
+			config.input = patternArr.map((key) => ({
+				id: filterId(data.key[key]),
+				qty: 1
+			}));
+		}
+		return {
+			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
+			config
+		};
 	}
 }
 
@@ -273,8 +311,8 @@ const filterId = (input, full = null) => {
 	};
 	if (!!specialTerms[input]) { return specialTerms[input]; }
 	// we're going to try something wild and assume that any vanilla minecraft object that sends with an S is plural, and we don't want it to be.
-	// if that's a bad assumption, we'll fix it later...maybe
-	const exceptions = ["stairs", "planks", "boots", "leggings", "bars"];
+	// we'll carve out a list of exception to this rule as we hand test. it's janky, but i don't see you coding this beast.
+	const exceptions = ["stairs", "planks", "boots", "leggings", "bars", "glass", "crystals", "seeds", "bricks"];
 	if (input.endsWith("s") && !exceptions.some((term) => input.includes(term))) {
 		input = input.slice(0, -1);
 	}

@@ -23802,6 +23802,13 @@
   --i:-18; 
   --j:-3; 
 }
+.verdant-froglight {
+  --n:1; /* scale */
+  
+  /* coordinates of the image */
+  --i:-18; 
+  --j:-3; 
+}
 .very-damaged-anvil {
   --n:1; /* scale */
   
