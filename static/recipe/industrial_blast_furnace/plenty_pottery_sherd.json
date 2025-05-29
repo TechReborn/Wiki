@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:industrial_blast_furnace",
+  "heat": 1000,
+  "ingredients": [
+    {
+      "count": 4,
+      "ingredient": "minecraft:clay_ball"
+    },
+    {
+      "ingredient": "minecraft:chest"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "minecraft:plenty_pottery_sherd"
+    }
+  ],
+  "power": 128,
+  "time": 100
+}

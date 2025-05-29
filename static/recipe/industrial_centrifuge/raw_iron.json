@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:industrial_centrifuge",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "minecraft:raw_iron"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "techreborn:tin_nugget"
+    },
+    {
+      "count": 3,
+      "id": "techreborn:nickel_nugget"
+    }
+  ],
+  "power": 5,
+  "time": 1500
+}

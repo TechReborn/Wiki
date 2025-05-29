@@ -3,6 +3,7 @@ import McItem from '@site/src/components/McItem';
 
 // recipe is the legacy recipe, config is the config generation parameter passing method
 /* Config Parameter Format:
+	id: string? (optional) auto assumed by first output item
 	input: array
 		item: object
 			id: string
@@ -11,7 +12,14 @@ import McItem from '@site/src/components/McItem';
 		item: object
 			id: string
 			qty?: mixed (optional)
-	tool: string
+	tool: string,
+	meta?: object (optional)
+		time?: number (optional) expressed in ticks
+		power?: number (optional) expressed in ?
+		heat?: number (optional) just heat.
+		fluid?: object (optional)
+			amnt: number   expressed in units?
+			name: string   the name of the fluid
 */
 export default function Machine({recipe, config = null}) {
 	if (!config) {
@@ -21,10 +29,10 @@ export default function Machine({recipe, config = null}) {
 
 	const styles = mapToolToStyles(config.tool);
 	return (
-		<span>
-			<McItem slug={config.tool} />
+		<span class="machine-span">
+			<McItem slug={config.tool}/><span> - {titleCase(!!config.id ? config.id : config.output[0].id)}</span>
 			<div class="crafting">
-			<div class="board" style={styles.input}>
+			<div class="crafting-board" style={styles.input}>
 				{config.input.map((item, idx) => (
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem
@@ -38,7 +46,7 @@ export default function Machine({recipe, config = null}) {
 
 			<div class="arrow"></div>
 
-			<div class="board" style={styles.output}>
+			<div class="crafting-board" style={styles.output}>
 				{config.output.map((item, idx) => (
 					<div className="slot" key={idx} data-quantity={item.qty}>
 						<McItem
@@ -49,6 +57,33 @@ export default function Machine({recipe, config = null}) {
 					</div>
 				))}
 			</div>
+		</div>
+
+		<div className="crafting-info">
+			{config.meta?.time != null && (
+				<div className="info-item">
+					<span aria-label="Time">⏱</span>
+					<span>{(config.meta.time * 0.05)}s</span>
+				</div>
+			)}
+			{config.meta?.power != null && (
+			<div className="info-item">
+				<span aria-label="Power">⚡</span>
+				<span>{config.meta.power * config.meta.time}E</span>
+			</div>
+			)}
+			{config.meta?.heat != null && (
+			<div className="info-item">
+				<span aria-label="Heat">🔥</span>
+				<span>{config.meta.heat}</span>
+			</div>
+			)}
+			{config.meta?.fluid != null && (
+			<div className="info-item">
+				<span aria-label="Fluid">💧</span>
+				<span>{config.meta.fluid.amnt / 81000}x🪣 - {titleCase(config.meta.fluid.name.split("minecraft:").join("").split("techreborn:").join(""))}</span>
+			</div>
+			)}
 		</div>
 		</span>
 		
@@ -76,7 +111,7 @@ function mapToolToStyles(tool) {
 		"techreborn:fusion_reactor": TWOWIDE_ONETALL,
 		"techreborn:industrial_grinder": TWOWIDE_ONETALL,
 		"techreborn:assembling_machine": TWOWIDE_ONETALL,
-		"techreborn:saw_mill": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '2', '--rows': '2' }},
+		"techreborn:industrial_sawmill": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '2', '--rows': '1' }},
 		"techreborn:alloy_smelter": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '1', '--rows': '1' }},
 		"techreborn:industrial_centrifuge": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '4', '--rows': '1' }},
 		"techreborn:distillation_tower": {input: { '--cols': '2', '--rows': '1' }, output: { '--cols': '4', '--rows': '1' }},
@@ -144,3 +179,7 @@ function convertRecipeToConfig(recipe) {
 		tool: finalTool
 	};
 }
+
+const titleCase = (s) =>
+	s.replace (/^[-_]*(.)/, (_, c) => c.toUpperCase())
+	 .replace (/[-_]+(.)/g, (_, c) => ' ' + c.toUpperCase());

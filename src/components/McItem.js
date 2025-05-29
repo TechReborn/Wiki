@@ -2,22 +2,15 @@ import React from 'react';
 const GLOBAL = require('../../.docusaurus/globalData.json');
 const PAGES = GLOBAL['docusaurus-plugin-content-docs'].default.versions[0].docs;
 
+/* overrides:
+description: setting to false disables the word part of the item, good for crafting machines
+name: allows you to inject a new name instead of what would be rendered by titleCase-ing the slug
+image: allows you to give it an alternate slug it will use to render the image
+*/
 export default function McItem({slug, pack, inline = true, size = 24, overrides = {}}) {
 	// todo: something better here, but if they don't give a slug, what can we even do?
 	if (!slug) { return (''); }
 	slug = slug.toLowerCase();
-	// minecrat packmap doesn't return an image as this is handled in css now.
-	// i'm lazy and didn't want a full refactor so this is good enough
-	const packMap = {
-		minecraft: (slug) => { 
-			return {image: null, path: `https://minecraft.wiki/w/${slug}`}; 
-		},
-		techreborn: (slug) => {
-			const image = !!overrides.image ? `/img/techreborn/${overrides.image}.png` : `/img/techreborn/${slug}.png`;
-			const path = findIdInGlobal(slug);
-			return {image, path};
-		}
-	};
 	// support legacy slug id's as well for easy for migration
 	if (slug.indexOf(':') !== -1) {
 		const slugParts = slug.split(':');
@@ -27,25 +20,50 @@ export default function McItem({slug, pack, inline = true, size = 24, overrides 
 	let friendlyName = overrides.description === false ? '' : titleCase(slug);
 	if (!!overrides.name) { friendlyName = overrides.name; }
 	let items;
+	const packMap = {
+		ae2: (slug) => { 
+			const path = `https://guide.appliedenergistics.org/1.21/items-blocks-machines/${slug}`;
+			let image = (<img alt={friendlyName} width={size} src={`/img/ae2/${slug}.png`} />);
+			if (path.includes("#") === true) { image = renderCssItem("invalid", size); }
+			return {
+				image,
+				path
+			};
+		},
+		minecraft: (slug) => { 
+			return {
+				image: renderCssItem(slug, size), 
+				path: `https://minecraft.wiki/w/${slug}`
+			}; 
+		},
+		techreborn: (slug) => {
+			const path = findIdInGlobal(slug);
+			let image = (<img alt={friendlyName} width={size} src={`/img/techreborn/${slug}.png`} />)
+			// i think this might improve the user experience
+			// we'll allow invalid links to attempt to render images
+			// if (path.includes("#") === true) { image = renderCssItem("invalid", size); }
+			return {
+				image,
+				path
+			};
+		}
+	};
 	try {
 		items = packMap[pack](slug);
 	} catch (err) {
-		throw new Error(`McItem lookup failure: pack:${pack}/slug:${slug}`);
+		throw new Error(`McItem lookup failure: pack:'${pack}' / slug:'${slug}'`);
+	}
+	if (!!overrides.image) {
+		const newSlugParts = overrides.image.split(":");
+		const newItem = packMap[newSlugParts[0]](newSlugParts[1]);
+		items.image = newItem.image;
 	}
 	const Element = inline === true ? "span" : "div";
-	// could be an actual <img> element, or a <span> (or div?) we style to be like one
-	// big advantage to this is being able to use a spritesheet
-	let imgEle;
-	if (pack === "minecraft") {
-		imgEle = renderCssItem(slug, size);
-	} else {
-		imgEle = <img alt={friendlyName} width={size} src={items.image} />;
-	}
 	return (
 		<Element>
 			<strong>
 				<a href={items.path}>
-					{imgEle}
+					{items.image}
 					{friendlyName}
 				</a>
 			</strong>

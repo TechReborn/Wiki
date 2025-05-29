@@ -14555,7 +14555,7 @@
   --i:-23; 
   --j:-26; 
 }
-.magma-block-be {
+.magma-block {
   --n:1; /* scale */
   
   /* coordinates of the image */
@@ -20897,7 +20897,7 @@
   --i:-52; 
   --j:-19; 
 }
-.sea-lantern-be {
+.sea-lantern {
   --n:1; /* scale */
   
   /* coordinates of the image */
@@ -23795,14 +23795,14 @@
   --i:-58; 
   --j:-26; 
 }
-.verdant-froglight {
+.froglight {
   --n:1; /* scale */
   
   /* coordinates of the image */
   --i:-18; 
-  --j:-7; 
+  --j:-3; 
 }
-.verdant-froglight-be {
+.verdant-froglight {
   --n:1; /* scale */
   
   /* coordinates of the image */
@@ -24894,7 +24894,7 @@
   --i:-48; 
   --j:-0; 
 }
-.white-wool-revision-2 {
+.wool {
   --n:1; /* scale */
   
   /* coordinates of the image */

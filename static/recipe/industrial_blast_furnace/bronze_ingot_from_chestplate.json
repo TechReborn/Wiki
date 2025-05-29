@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:industrial_blast_furnace",
+  "heat": 1000,
+  "ingredients": [
+    {
+      "ingredient": "techreborn:bronze_chestplate"
+    },
+    {
+      "ingredient": "minecraft:sand"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 5,
+      "id": "techreborn:bronze_ingot"
+    },
+    {
+      "count": 1,
+      "id": "techreborn:dark_ashes_dust"
+    }
+  ],
+  "power": 128,
+  "time": 140
+}

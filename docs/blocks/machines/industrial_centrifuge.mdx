@@ -14,29 +14,14 @@ The **Industrial Centrifuge** is a machine used to produce <McItem slug="techreb
 
 ### Recipes
 
-<CraftingTable recipe=" input techreborn:refined_iron_ingot techreborn:advanced_circuit techreborn:refined_iron_ingot input techreborn:advanced_machine_block techreborn:extractor techreborn:advanced_machine_block input techreborn:refined_iron_ingot techreborn:advanced_circuit techreborn:refined_iron_ingot output techreborn:industrial_centrifuge "/>
 <CraftingTable recipe=" input techreborn:aluminum_plate techreborn:advanced_circuit techreborn:aluminum_plate input techreborn:advanced_machine_frame techreborn:extractor techreborn:advanced_machine_frame input techreborn:aluminum_plate techreborn:advanced_circuit techreborn:aluminum_plate output techreborn:industrial_centrifuge "/>
 
-### Usage
-
-Used as an ingredient in the <McItem slug="minecraft:crafting_table"/> to produce:
-<CraftingTable recipe=" input techreborn:industrial_centrifuge techreborn:energy_flow_circuit techreborn:industrial_centrifuge input techreborn:extractor techreborn:highly_advanced_machine_block techreborn:extractor input techreborn:industrial_electrolyzer techreborn:energy_flow_circuit techreborn:industrial_electrolyzer output techreborn:distillation_tower "/>
-
-### Industrial Centrifuge Recipes
-
-| Input | Output |
-|-------|--------|
-| <McItem slug="minecraft:magma_cream"/> | <McItem slug="minecraft:blaze_powder"/><McItem slug="minecraft:slimeball"/> |
-| 16x <McItem slug="minecraft:dirt"/> | 8x <McItem slug="minecraft:sand"/><McItem slug="minecraft:clay"/>2x <McItem slug="minecraft:gravel"/> |
-| <McItem slug="minecraft:golden_apple"/> | 6x <McItem slug="minecraft:gold_ingot"/><McItem slug="techreborn:methane_cell"/> |
-| <McItem slug="minecraft:golden_carrot"/> | 6x <McItem slug="minecraft:gold_nugget"/><McItem slug="techreborn:methane_cell"/> |
-| <McItem slug="techreborn:bronze_dust"/> | 6x <McItem slug="techreborn:small_pile_of_copper_dust"/>2x <McItem slug="techreborn:small_pile_of_tin_dust"/> |
-| 2x <McItem slug="techreborn:iron_dust"/> | <McItem slug="techreborn:small_pile_of_tin_dust"/><McItem slug="techreborn:small_pile_of_nickel_dust"/> |
-
-### Methane Cell Inputs
+### Methane
 
 One <McItem slug="techreborn:methane_cell"/> can be produced from any of the following:
 
+<details>
+	<summary>Methane Cell Inputs</summary>
 - 32x <McItem slug="minecraft:apple" inline={true}/>
 - 24x <McItem slug="minecraft:baked_potato" inline={true}/>
 - 12x <McItem slug="minecraft:raw_beef" inline={true}/>
@@ -67,4 +52,1640 @@ One <McItem slug="techreborn:methane_cell"/> can be produced from any of the fol
 - 16x <McItem slug="minecraft:rotten_flesh" inline={true}/>
 - 32x <McItem slug="minecraft:spider_eye" inline={true}/>
 - 16x <McItem slug="minecraft:steak" inline={true}/>
+- 16x <McItem slug="minecraft:egg" inline={true}/>
+- 32x <McItem slug="minecraft:turtle_egg" inline={true}/>
+</details>
 
+### Crafting Recipes
+		<details>
+			<summary>Recipes using Industrial Centrifuge</summary>
+			<Machine config={{
+  "id": "basalt_dust",
+  "input": [
+    {
+      "id": "techreborn:basalt_dust",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:peridot_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:calcite_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:flint_dust",
+      "qty": 8
+    },
+    {
+      "id": "techreborn:dark_ashes_dust",
+      "qty": 4
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 2040
+  }
+}} />
+<Machine config={{
+  "id": "brain_coral_block",
+  "input": [
+    {
+      "id": "minecraft:brain_coral_block",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:dead_brain_coral",
+      "qty": 24
+    },
+    {
+      "id": "minecraft:dead_brain_coral_fan",
+      "qty": 12
+    },
+    {
+      "id": "minecraft:pink_dye",
+      "qty": 16
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "brass_dust",
+  "input": [
+    {
+      "id": "techreborn:bras_dust",
+      "qty": 4
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:copper_nugget",
+      "qty": 27
+    },
+    {
+      "id": "techreborn:zinc_nugget",
+      "qty": 9
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 6000
+  }
+}} />
+<Machine config={{
+  "id": "bronze_dust",
+  "input": [
+    {
+      "id": "techreborn:bronze_dust",
+      "qty": 4
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:copper_nugget",
+      "qty": 27
+    },
+    {
+      "id": "techreborn:tin_nugget",
+      "qty": 9
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 6000
+  }
+}} />
+<Machine config={{
+  "id": "bubble_coral_block",
+  "input": [
+    {
+      "id": "minecraft:bubble_coral_block",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:dead_bubble_coral",
+      "qty": 24
+    },
+    {
+      "id": "minecraft:dead_bubble_coral_fan",
+      "qty": 12
+    },
+    {
+      "id": "minecraft:purple_dye",
+      "qty": 16
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "calcium_carbonate_cell",
+  "input": [
+    {
+      "id": "techreborn:calcium_carbonate_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:calcite_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 4000
+  }
+}} />
+<Machine config={{
+  "id": "carbon_cell_from_ashes_dust",
+  "input": [
+    {
+      "id": "techreborn:ashes_dust",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:carbon_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 240
+  }
+}} />
+<Machine config={{
+  "id": "coarse_dirt",
+  "input": [
+    {
+      "id": "minecraft:coarse_dirt",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:gravel",
+      "qty": 8
+    },
+    {
+      "id": "minecraft:flint",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:sand",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "crimson_nylium",
+  "input": [
+    {
+      "id": "minecraft:crimson_nylium",
+      "qty": 8
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:netherrack",
+      "qty": 6
+    },
+    {
+      "id": "minecraft:crimson_fungu",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1640
+  }
+}} />
+<Machine config={{
+  "id": "dark_ashes_dust",
+  "input": [
+    {
+      "id": "techreborn:dark_ashes_dust",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ashes_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2400
+  }
+}} />
+<Machine config={{
+  "id": "deuterium_cell",
+  "input": [
+    {
+      "id": "techreborn:deuterium_cell",
+      "qty": 4
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:tritium_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:cell",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 3000
+  }
+}} />
+<Machine config={{
+  "id": "dirt",
+  "input": [
+    {
+      "id": "minecraft:dirt",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:sand",
+      "qty": 8
+    },
+    {
+      "id": "minecraft:clay_ball",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "electrum_dust",
+  "input": [
+    {
+      "id": "techreborn:electrum_dust",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 9
+    },
+    {
+      "id": "techreborn:silver_nugget",
+      "qty": 9
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 7200
+  }
+}} />
+<Machine config={{
+  "id": "enchanted_golden_apple",
+  "input": [
+    {
+      "id": "minecraft:enchanted_golden_apple",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:gold_ingot",
+      "qty": 64
+    },
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "ender_eye_dust",
+  "input": [
+    {
+      "id": "techreborn:ender_eye_dust",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:ender_pearl_dust",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:blaze_powder",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1840
+  }
+}} />
+<Machine config={{
+  "id": "endstone_dust",
+  "input": [
+    {
+      "id": "techreborn:endstone_dust",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:helium3_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:helium_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:tungsten_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:sand",
+      "qty": 12
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 4800
+  }
+}} />
+<Machine config={{
+  "id": "fire_coral_block",
+  "input": [
+    {
+      "id": "minecraft:fire_coral_block",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:dead_fire_coral",
+      "qty": 24
+    },
+    {
+      "id": "minecraft:dead_fire_coral_fan",
+      "qty": 12
+    },
+    {
+      "id": "minecraft:red_dye",
+      "qty": 16
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "glistering_melon_slice",
+  "input": [
+    {
+      "id": "minecraft:glistering_melon_slice",
+      "qty": 8
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "glow_berries",
+  "input": [
+    {
+      "id": "minecraft:glow_berrie",
+      "qty": 32
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:orange_dye",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:glowstone_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "glowstone_dust",
+  "input": [
+    {
+      "id": "minecraft:glowstone_dust",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:redstone",
+      "qty": 8
+    },
+    {
+      "id": "techreborn:sulfur_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:helium_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "golden_apple",
+  "input": [
+    {
+      "id": "minecraft:golden_apple",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:gold_ingot",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "golden_carrot",
+  "input": [
+    {
+      "id": "minecraft:golden_carrot",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 6
+    },
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "grass_block",
+  "input": [
+    {
+      "id": "minecraft:grass_block",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:sand",
+      "qty": 8
+    },
+    {
+      "id": "minecraft:clay_ball",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:plantball",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "helium_cell",
+  "input": [
+    {
+      "id": "techreborn:helium_cell",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:helium3_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:cell",
+      "qty": 15
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 6000
+  }
+}} />
+<Machine config={{
+  "id": "horn_coral_block",
+  "input": [
+    {
+      "id": "minecraft:horn_coral_block",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:dead_horn_coral",
+      "qty": 24
+    },
+    {
+      "id": "minecraft:dead_horn_coral_fan",
+      "qty": 12
+    },
+    {
+      "id": "minecraft:yellow_dye",
+      "qty": 16
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "hydrogen_cell",
+  "input": [
+    {
+      "id": "techreborn:hydrogen_cell",
+      "qty": 4
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:deuterium_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:cell",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 4000
+  }
+}} />
+<Machine config={{
+  "id": "lapis_lazuli",
+  "input": [
+    {
+      "id": "minecraft:lapis_lazuli",
+      "qty": 4
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:lazurite_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:pyrite_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:calcite_small_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sodalite_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1500
+  }
+}} />
+<Machine config={{
+  "id": "lava_cell",
+  "input": [
+    {
+      "id": "techreborn:lava_cell",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:cell",
+      "qty": 16
+    },
+    {
+      "id": "minecraft:copper_ingot",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:electrum_ingot",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:tungsten_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1500
+  }
+}} />
+<Machine config={{
+  "id": "magma_cream",
+  "input": [
+    {
+      "id": "minecraft:magma_cream",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:blaze_powder",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:slimeball",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 5000
+  }
+}} />
+<Machine config={{
+  "id": "marble_dust",
+  "input": [
+    {
+      "id": "techreborn:marble_dust",
+      "qty": 8
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:magnesium_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:calcite_dust",
+      "qty": 7
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2050
+  }
+}} />
+<Machine config={{
+  "id": "moss_block",
+  "input": [
+    {
+      "id": "minecraft:moss_block",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:plantball",
+      "qty": 9
+    },
+    {
+      "id": "minecraft:dirt",
+      "qty": 4
+    },
+    {
+      "id": "minecraft:sand",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:gravel",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "mycelium",
+  "input": [
+    {
+      "id": "minecraft:mycelium",
+      "qty": 8
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:sand",
+      "qty": 4
+    },
+    {
+      "id": "minecraft:clay_ball",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:brown_mushroom",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:red_mushroom",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1640
+  }
+}} />
+<Machine config={{
+  "id": "netherrack_dust",
+  "input": [
+    {
+      "id": "techreborn:netherrack_dust",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:redstone",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:sulfur_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:coal_dust",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2400
+  }
+}} />
+<Machine config={{
+  "id": "nickel_dust",
+  "input": [
+    {
+      "id": "techreborn:nickel_dust",
+      "qty": 3
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:iron_nugget",
+      "qty": 3
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:copper_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 3440
+  }
+}} />
+<Machine config={{
+  "id": "platinum_dust",
+  "input": [
+    {
+      "id": "techreborn:platinum_dust",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:iridium_nugget",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:nickel_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 3000
+  }
+}} />
+<Machine config={{
+  "id": "podzol",
+  "input": [
+    {
+      "id": "minecraft:podzol",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:sand",
+      "qty": 8
+    },
+    {
+      "id": "minecraft:clay_ball",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:gravel",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:plantball",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "raw_copper",
+  "input": [
+    {
+      "id": "minecraft:raw_copper",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:gold_nugget",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:nickel_nugget",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2400
+  }
+}} />
+<Machine config={{
+  "id": "raw_gold",
+  "input": [
+    {
+      "id": "minecraft:raw_gold",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:copper_nugget",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:nickel_nugget",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2400
+  }
+}} />
+<Machine config={{
+  "id": "raw_iron",
+  "input": [
+    {
+      "id": "minecraft:raw_iron",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:tin_nugget",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:nickel_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1500
+  }
+}} />
+<Machine config={{
+  "id": "raw_lead",
+  "input": [
+    {
+      "id": "techreborn:raw_lead",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:silver_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2400
+  }
+}} />
+<Machine config={{
+  "id": "raw_silver",
+  "input": [
+    {
+      "id": "techreborn:raw_silver",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:lead_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2400
+  }
+}} />
+<Machine config={{
+  "id": "raw_tin",
+  "input": [
+    {
+      "id": "techreborn:raw_tin",
+      "qty": 2
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:zinc_nugget",
+      "qty": 3
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2100
+  }
+}} />
+<Machine config={{
+  "id": "red_garnet_dust",
+  "input": [
+    {
+      "id": "techreborn:red_garnet_dust",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:pyrope_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:almandine_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:spessartine_dust",
+      "qty": 8
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 3000
+  }
+}} />
+<Machine config={{
+  "id": "redstone",
+  "input": [
+    {
+      "id": "minecraft:redstone",
+      "qty": 32
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 13
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:silicon_cell",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:pyrite_dust",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:ruby_dust",
+      "qty": 3
+    },
+    {
+      "id": "techreborn:mercury_cell",
+      "qty": 10
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2200
+  }
+}} />
+<Machine config={{
+  "id": "rooted_dirt",
+  "input": [
+    {
+      "id": "minecraft:rooted_dirt",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:sand",
+      "qty": 8
+    },
+    {
+      "id": "minecraft:clay_ball",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "qty": 2
+    },
+    {
+      "id": "minecraft:hanging_root",
+      "qty": 7
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "rubber_log",
+  "input": [
+    {
+      "id": "techreborn:rubber_log",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 5
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sap",
+      "qty": 8
+    },
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:carbon_cell",
+      "qty": 4
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 5000
+  }
+}} />
+<Machine config={{
+  "id": "sap",
+  "input": [
+    {
+      "id": "techreborn:sap",
+      "qty": 4
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:rubber",
+      "qty": 14
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1300
+  }
+}} />
+<Machine config={{
+  "id": "shroomlight",
+  "input": [
+    {
+      "id": "minecraft:shroomlight",
+      "qty": 8
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:glowstone_dust",
+      "qty": 4
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "soul_sand",
+  "input": [
+    {
+      "id": "minecraft:soul_sand",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:sand",
+      "qty": 10
+    },
+    {
+      "id": "techreborn:saltpeter_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:coal_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:oil_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "soul_soil",
+  "input": [
+    {
+      "id": "minecraft:soul_soil",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:dirt",
+      "qty": 8
+    },
+    {
+      "id": "techreborn:saltpeter_dust",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:coal_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:oil_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "sulfur_cell",
+  "input": [
+    {
+      "id": "techreborn:sulfur_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:sulfur_dust",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 10,
+    "time": 4000
+  }
+}} />
+<Machine config={{
+  "id": "sweet_berries",
+  "input": [
+    {
+      "id": "minecraft:sweet_berrie",
+      "qty": 32
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:red_dye",
+      "qty": 5
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "tube_coral_block",
+  "input": [
+    {
+      "id": "minecraft:tube_coral_block",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "minecraft:dead_tube_coral",
+      "qty": 24
+    },
+    {
+      "id": "minecraft:dead_tube_coral_fan",
+      "qty": 12
+    },
+    {
+      "id": "minecraft:blue_dye",
+      "qty": 16
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "tuff",
+  "input": [
+    {
+      "id": "minecraft:tuff",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:dark_ashes_dust",
+      "qty": 18
+    },
+    {
+      "id": "techreborn:ashes_dust",
+      "qty": 12
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 2500
+  }
+}} />
+<Machine config={{
+  "id": "warped_nylium",
+  "input": [
+    {
+      "id": "minecraft:warped_nylium",
+      "qty": 8
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:netherrack",
+      "qty": 6
+    },
+    {
+      "id": "minecraft:warped_fungu",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1640
+  }
+}} />
+<Machine config={{
+  "id": "warped_wart_block",
+  "input": [
+    {
+      "id": "minecraft:warped_wart_block",
+      "qty": 12
+    },
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:methane_cell",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:ender_pearl_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 500
+  }
+}} />
+<Machine config={{
+  "id": "yellow_garnet_dust",
+  "input": [
+    {
+      "id": "techreborn:yellow_garnet_dust",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:andradite_dust",
+      "qty": 5
+    },
+    {
+      "id": "techreborn:grossular_dust",
+      "qty": 8
+    },
+    {
+      "id": "techreborn:uvarovite_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 3500
+  }
+}} />
+<Machine config={{
+  "id": "zinc_dust",
+  "input": [
+    {
+      "id": "techreborn:zinc_dust",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:tin_nugget",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_centrifuge",
+  "meta": {
+    "power": 5,
+    "time": 1050
+  }
+}} />
+
+		</details>

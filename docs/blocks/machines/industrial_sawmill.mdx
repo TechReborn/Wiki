@@ -1,0 +1,1556 @@
+---
+title: Industrial Saw Mill
+---
+
+<ItemImage file="industrial_sawmill" alt="Industrial Saw Mill" size="200" />
+
+# Industrial Saw Mill
+
+The **Industrial Saw Mill** is a multi-block wood processing machine.
+
+## Recipe
+
+<CraftingTable recipe="input techreborn:refined_iron_ingot techreborn:advanced_circuit techreborn:refined_iron_ingot input techreborn:diamond_saw_blade techreborn:diamond_saw_blade techreborn:diamond_saw_blade input techreborn:advanced_circuit techreborn:advanced_machine_block techreborn:advanced_circuit output techreborn:saw_mill"/>
+
+## Building instructions
+
+The **Industrial Saw Mill** multi-block has 3 layers:
+
+- **First layer**: 9x <McItem slug="techreborn:basic_machine_casing" inline={true}/>  
+  <img src="/img/blocks/saw_mill_layer1.png" alt="Layer 1"/>
+- **Second layer**: 8x <McItem slug="techreborn:advanced_machine_casing" inline={true}/> with a central hole filled with water  
+  <img src="/img/blocks/saw_mill_layer2.png" alt="Layer 2"/>
+- **Third layer**: 9x <McItem slug="techreborn:basic_machine_casing" inline={true}/>  
+  <img src="/img/blocks/saw_mill_layer3.png" alt="Layer 3"/>
+
+Place the **Saw Mill** block on the top and connect it to a power source.  
+<img src="/img/blocks/saw_mill.png" alt="Saw Mill"/>
+
+## Usage
+
+Put wood and water into the input slot. The **Industrial Saw Mill** will produce planks, and with a chance, some <McItem slug="techreborn:saw_dust" inline={true}/> and paper.
+
+<img src="/img/blocks/saw_mill_output.png" alt="Industrial Saw Mill Output"/>
+
+### Crafting Recipes
+		<details>
+			<summary>Recipes using Industrial Sawmill</summary>
+			<Machine config={{
+  "id": "acacia_planks",
+  "input": [
+    {
+      "id": "minecraft:acacia_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:acacia_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "acacia_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:acacia_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:acacia_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "acacia_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:acacia_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:acacia_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "bamboo_mosaic_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:bamboo_mosaic_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:bamboo_mosaic_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "bamboo_planks",
+  "input": [
+    {
+      "id": "minecraft:bamboo_block",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:bamboo_planks",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 100,
+    "fluid": {
+      "amnt": 40500,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<details>
+				<summary><McItem slug="minecraft:bamboo_pressure_plate" /></summary>
+				<Machine config={{
+  "id": "bamboo_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:bamboo_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:bamboo_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "bamboo_pressure_plate_from_slab_2",
+  "input": [
+    {
+      "id": "minecraft:bamboo_mosaic_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:bamboo_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "bamboo_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:bamboo_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:bamboo_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "birch_planks",
+  "input": [
+    {
+      "id": "minecraft:birch_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:birch_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "birch_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:birch_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:birch_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "birch_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:birch_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:birch_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "cherry_planks",
+  "input": [
+    {
+      "id": "minecraft:cherry_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:cherry_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "cherry_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:cherry_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:cherry_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "cherry_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:cherry_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:cherry_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "crimson_planks",
+  "input": [
+    {
+      "id": "minecraft:crimson_stem",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:crimson_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "crimson_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:crimson_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:crimson_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "crimson_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:crimson_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:crimson_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "dark_oak_planks",
+  "input": [
+    {
+      "id": "minecraft:dark_oak_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:dark_oak_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "dark_oak_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:dark_oak_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:dark_oak_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "dark_oak_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:dark_oak_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:dark_oak_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "jungle_planks",
+  "input": [
+    {
+      "id": "minecraft:jungle_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:jungle_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "jungle_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:jungle_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:jungle_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "jungle_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:jungle_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:jungle_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "mangrove_planks",
+  "input": [
+    {
+      "id": "minecraft:mangrove_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:mangrove_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "mangrove_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:mangrove_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:mangrove_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "mangrove_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:mangrove_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:mangrove_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "oak_planks",
+  "input": [
+    {
+      "id": "minecraft:oak_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:oak_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "oak_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:oak_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:oak_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "oak_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:oak_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:oak_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "pale_oak_planks",
+  "input": [
+    {
+      "id": "minecraft:pale_oak_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:pale_oak_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "pale_oak_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:pale_oak_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:pale_oak_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "pale_oak_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:pale_oak_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:pale_oak_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "rubber_planks",
+  "input": [
+    {
+      "id": "techreborn:rubber_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:rubber_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "rubber_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "techreborn:rubber_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:rubber_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "rubber_slab_from_stairs",
+  "input": [
+    {
+      "id": "techreborn:rubber_stair",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:rubber_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<details>
+				<summary><McItem slug="techreborn:saw_dust" /></summary>
+				<Machine config={{
+  "id": "saw_dust_from_planks",
+  "input": [
+    {
+      "id": "minecraft:oak_planks",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 8
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_dust_from_signs",
+  "input": [
+    {
+      "id": "minecraft:oak_sign",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 10125,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_dust_from_wooden_doors",
+  "input": [
+    {
+      "id": "minecraft:oak_wood_door",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 30375,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_dust_from_wooden_fences",
+  "input": [
+    {
+      "id": "minecraft:oak_fence",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 10125,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_dust_from_wooden_pressure_plates",
+  "input": [
+    {
+      "id": "minecraft:oak_pressure_plate",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 10125,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_dust_from_wooden_trapdoors",
+  "input": [
+    {
+      "id": "minecraft:oak_trapdoor",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 10125,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+				</details>
+<details>
+				<summary><McItem slug="techreborn:saw_small_dust" /></summary>
+				<Machine config={{
+  "id": "saw_small_dust_from_bowl",
+  "input": [
+    {
+      "id": "minecraft:bowl",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_mangrove_roots",
+  "input": [
+    {
+      "id": "minecraft:mangrove_root",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_treetap",
+  "input": [
+    {
+      "id": "techreborn:treetap",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_wooden_axe",
+  "input": [
+    {
+      "id": "minecraft:wooden_axe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 5
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_wooden_buttons",
+  "input": [
+    {
+      "id": "minecraft:oak_button",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 20,
+    "time": 50,
+    "fluid": {
+      "amnt": 4050,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_wooden_hoe",
+  "input": [
+    {
+      "id": "minecraft:wooden_hoe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_wooden_pickaxe",
+  "input": [
+    {
+      "id": "minecraft:wooden_pickaxe",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 5
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_wooden_shovel",
+  "input": [
+    {
+      "id": "minecraft:wooden_shovel",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "saw_small_dust_from_wooden_sword",
+  "input": [
+    {
+      "id": "minecraft:wooden_sword",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:saw_small_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 8100,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+				</details>
+<Machine config={{
+  "id": "spruce_planks",
+  "input": [
+    {
+      "id": "minecraft:spruce_log",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:spruce_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "spruce_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:spruce_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:spruce_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "spruce_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:spruce_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:spruce_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "warped_planks",
+  "input": [
+    {
+      "id": "minecraft:warped_stem",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:warped_planks",
+      "qty": 4
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 3
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 40,
+    "time": 200,
+    "fluid": {
+      "amnt": 81000,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "warped_pressure_plate_from_slab",
+  "input": [
+    {
+      "id": "minecraft:warped_slab",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:warped_pressure_plate",
+      "qty": 2
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 200,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+<Machine config={{
+  "id": "warped_slab_from_stairs",
+  "input": [
+    {
+      "id": "minecraft:warped_stairs",
+      "qty": 1
+    }
+  ],
+  "output": [
+    {
+      "id": "minecraft:warped_slab",
+      "qty": 1
+    },
+    {
+      "id": "techreborn:saw_dust",
+      "qty": 2
+    }
+  ],
+  "tool": "techreborn:industrial_sawmill",
+  "meta": {
+    "power": 30,
+    "time": 100,
+    "fluid": {
+      "amnt": 20250,
+      "name": "minecraft:water"
+    }
+  }
+}} />
+
+		</details>

@@ -10,13 +10,6 @@ The **Distillation Tower** is a multiblock machine that is used to crack oil int
 
 <CraftingTable recipe="input techreborn:industrial_centrifuge techreborn:energy_flow_chip techreborn:industrial_centrifuge input techreborn:extractor techreborn:industrial_machine_frame techreborn:extractor input techreborn:industrial_electrolyzer techreborn:energy_flow_chip techreborn:industrial_electrolyzer output techreborn:distillation_tower" />
 
-## Usage
-
-The only recipe for **Distillation Tower** provided by Tech Reborn is:
-
-16x <McItem slug="techreborn:oil_cell" inline={true}/> + 16x <McItem slug="techreborn:empty_cell" inline={true}/> →  
-16x <McItem slug="techreborn:diesel_cell" inline={true}/> + 15x <McItem slug="techreborn:sulfuric_acid_cell" inline={true}/> + <McItem slug="techreborn:glyceryl_cell" inline={true}/>
-
 ## Building Instructions
 
 The **Distillation Tower** requires a 3×3×4 multiblock structure with a hollow center.
@@ -27,3 +20,40 @@ The **Distillation Tower** requires a 3×3×4 multiblock structure with a hollow
 - **Top Layer**: 9x <McItem slug="techreborn:industrial_machine_casing" inline={true}/>
 
 Attach the machine controller to the **bottom center block** and connect power to operate it.
+### Crafting Recipes
+		<details>
+			<summary>Recipes using Distillation Tower</summary>
+			<Machine config={{
+  "id": "cell",
+  "input": [
+    {
+      "id": "techreborn:empty_cell",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:oil_cell",
+      "qty": 16
+    }
+  ],
+  "output": [
+    {
+      "id": "techreborn:diesel_cell",
+      "qty": 16
+    },
+    {
+      "id": "techreborn:sulfuric_acid_cell",
+      "qty": 15
+    },
+    {
+      "id": "techreborn:glyceryl_cell",
+      "qty": 1
+    }
+  ],
+  "tool": "techreborn:distillation_tower",
+  "meta": {
+    "power": 20,
+    "time": 400
+  }
+}} />
+
+		</details>

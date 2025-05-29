@@ -46,12 +46,11 @@
   gap: 1rem;               /* space between input, arrow, output */
 }
 
-.board {
+.crafting-board {
   display: grid;
   gap: var(--slot-gap);
   grid-template-columns: repeat(var(--cols), var(--slot-size));
   grid-template-rows:    repeat(var(--rows), var(--slot-size));
-  padding-bottom: 10px;
 }
 
 .slot {
@@ -102,4 +101,22 @@
   .arrow {
     transform: rotate(90deg);
   }
+}
+
+.crafting-info {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: var(--slot-gap);
+  margin-top: var(--slot-gap);
+  font-size: .875rem;
+  color: #666;
+  align-items: center;
+  padding-bottom: 20px;
+  border: 2px;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }

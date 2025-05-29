@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:industrial_centrifuge",
+  "ingredients": [
+    {
+      "count": 2,
+      "ingredient": "#c:raw_materials/lead"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 3,
+      "id": "techreborn:silver_nugget"
+    }
+  ],
+  "power": 5,
+  "time": 2400
+}

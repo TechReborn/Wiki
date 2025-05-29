@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:industrial_blast_furnace",
+  "heat": 1500,
+  "ingredients": [
+    {
+      "ingredient": "#c:dusts/titanium"
+    }
+  ],
+  "outputs": [
+    {
+      "count": 1,
+      "id": "techreborn:titanium_ingot"
+    }
+  ],
+  "power": 128,
+  "time": 3600
+}
