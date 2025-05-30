@@ -124,11 +124,11 @@ const ORDER = [
 	{name: "extractor", path: "docs/blocks/machines/extractor.mdx", func: "electric"},
 	{name: "grinder", path: "docs/blocks/machines/grinder.mdx", func: "electric"},
 	{name: "implosion_compressor", path: "docs/blocks/machines/implosion_compressor.mdx", func: "electric"},
-	{name: "industrial_blast_furnace", path: "docs/blocks/machines/industrial_blast_furnace.mdx", func: "electric_heat"},
+	{name: "industrial_blast_furnace", path: "docs/blocks/machines/industrial_blast_furnace.mdx", func: "electric"},
 	{name: "industrial_centrifuge", path: "docs/blocks/machines/industrial_centrifuge.mdx", func: "electric"},
 	{name: "industrial_electrolyzer", path: "docs/blocks/machines/industrial_electrolyzer.mdx", overrides: ["no_digit_group"], func: "electric"},
-	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx", func: "electric_fluid"},
-	{name: "industrial_sawmill", path: "docs/blocks/machines/industrial_sawmill.mdx", func: "electric_fluid"},
+	{name: "industrial_grinder", path: "docs/blocks/machines/industrial_grinder.mdx", func: "electric"},
+	{name: "industrial_sawmill", path: "docs/blocks/machines/industrial_sawmill.mdx", func: "electric"},
 	{name: "rolling_machine", path: "docs/blocks/machines/rolling_machine.mdx", func: "crafting"},
 	{name: "solid_canning_machine", path: "docs/blocks/machines/solid_canning_machine.mdx", func: "electric", overrides: ["no_digit_group"]},
 	{name: "vacuum_freezer", path: "docs/blocks/machines/vacuum_freezer.mdx", func: "electric"},
@@ -150,59 +150,13 @@ const formatter = {
 			})),
 			tool: data.type,
 			meta: {
-				power: data.power,
-				time: data.time
-			}
-		};
-		return {
-			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
-			config
-		};
-	},
-	// the industrial grinder consumes power and fluid (as does the sawmill, maybe others?)
-	electric_fluid: (data) => {
-		const config = {
-			id: data.id,
-			input: data.ingredients.map((obj) => ({
-				id: filterId(obj.ingredient),
-				qty: !!obj.count ? obj.count : 1,
-			})),
-			output: data.outputs.map((obj) => ({
-				id: filterId(obj.id, obj),
-				qty: !!obj.count ? obj.count : 1,
-			})),
-			tool: data.type,
-			meta: {
-				power: data.power,
-				time: data.time,
-				fluid: {
+				...(!!data.power && {power: data.power}),
+				...(!!data.time && {time: data.time}),
+				...(!!data.heat && {heat: data.heat}),
+				...(!!data.fluid && {fluid: {
 					amnt: data.fluid.amount.value,
 					name: data.fluid.fluid.fluid
-				}
-			}
-		};
-		return {
-			mdx: `<Machine config={${JSON.stringify(config, null, 2)}} />`,
-			config
-		};
-	},
-	// the industrial blast furnace needs heat in addition to power
-	electric_heat: (data) => {
-		const config = {
-			id: data.id,
-			input: data.ingredients.map((obj) => ({
-				id: filterId(obj.ingredient),
-				qty: !!obj.count ? obj.count : 1,
-			})),
-			output: data.outputs.map((obj) => ({
-				id: filterId(obj.id, obj),
-				qty: !!obj.count ? obj.count : 1,
-			})),
-			tool: data.type,
-			meta: {
-				power: data.power,
-				time: data.time,
-				heat: data.heat
+				}})
 			}
 		};
 		return {
