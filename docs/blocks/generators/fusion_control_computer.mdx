@@ -2,51 +2,77 @@
 title: Fusion Control Computer
 ---
 
-<ItemImage file="fusion_control_computer" alt="Fusion Control Computer" size="200" />
+<ItemImage
+  file="fusion_control_computer"
+  alt="Fusion Control Computer"
+  size="200"
+/>
 
 # Fusion Control Computer
 
-The **Fusion Control Computer** is part of a multi-block generator that produces energy from various fluids. It is unique in that it does not simply consume the fuel, but instead processes them into a new item. It is also used as a machine to produce <McItem slug="techreborn:platinum_dust" inline={true}/> and <McItem slug="techreborn:iridium_ore" inline={true}/>.  
-It must be combined with a minimum of 16 <McItem slug="techreborn:fusion_coil" inline={true}/>s to create a usable fusion reactor.
+The **Fusion Control Computer** is part of a multi-block generator that produces energy from various fluids. 
+It is unique in that it does not simply consume the fuel, but instead processes them into a new item. It is also used as a machine to produce <McItem slug="techreborn:platinum_dust"  /> and <McItem slug="techreborn:iridium_ore"  />. 
+It must be combined with a minimum of 16 <McItem slug="techreborn:fusion_coil"  />s to create a usable fusion reactor.
 
-| Tier   | Generation Rate | Input | Output | Storage |
-|--------|------------------|--------|--------|---------|
-| Insane | <tooltip title="16,384">16.3k</tooltip> E/t[^1] | <tooltip title="8,192">8.1k</tooltip> E/t | <tooltip title="100,000">100k</tooltip> E/t[^2] | 100M–2.1G Energy[^3] |
+| Tier   | Generation Rate           | Input                | Output                   | Storage                        |
+| ------ | ------------------------- | -------------------- | ------------------------ | ------------------------------ |
+| Insane | 16.3k Energy per Tick[^1] | 8.1k Energy per Tick | 100k Energy per Tick[^2] | 100M Energy to 2.1G Energy[^3] |
+
+[^1]: Base Generation Rate - can be many multiples of this depending on the size of the reactor; see the **Power Generation** table above.
+[^2]: Output power from top and bottom only **_while crafting_**.
+[^3]: Scales with the generation multiplier. Ex. 1.74x = 174M Energy storage. Capped at 2.1G Energy.
+[^4]: Rounded Down
+[^5]: Rounded Down
+[^6]: Capped at 2,147,483,647 Energy
+[^7]: _Total Power Generated_ divided by _Max Capacity_, rounded to nearest whole percent
 
 ### Recipe
 
-<CraftingTable recipe="input techreborn:energy_flow_chip techreborn:energy_flow_chip techreborn:energy_flow_chip input techreborn:energy_crystal techreborn:fusion_coil techreborn:energy_crystal input techreborn:energy_flow_chip techreborn:energy_flow_chip techreborn:energy_flow_chip output techreborn:fusion_control_computer"/>
+<CraftingTable recipe="input techreborn:energy_flow_chip techreborn:energy_flow_chip techreborn:energy_flow_chip input techreborn:energy_crystal techreborn:fusion_coil techreborn:energy_crystal input techreborn:energy_flow_chip techreborn:energy_flow_chip techreborn:energy_flow_chip output techreborn:fusion_control_computer" />
 
 ### Usage
 
-- Adjustable hologram with H key
-- Outputs power only while crafting
-- Inputs energy only while idle
-- Must be pre-charged before activation
+- It provides an adjustable hologram of the various sizes of multi-block with the H button on the item's menu. Togglable on and off.
+- Outputs energy on the top and bottom **_while crafting_**.
+- Inputs energy on the sides **_while not crafting_**.
+- Must be charged with energy before using for a power generating recipe; see the _Minimum Energy Required_ column in the Fuel/Input section below.
 
-### Fuel/Input Table
+### Fuel/Input
 
-| Input A | Input B | Minimum Energy | Output | Energy Produced |
-|--------|---------|----------------|--------|-----------------|
-| <McItem slug="techreborn:deuterium_cell" inline={true}/> | <McItem slug="techreborn:tritium_cell" inline={true}/> | 40M | <McItem slug="techreborn:helium3_cell" inline={true}/> | 16,364 E/t × 2048 = 33.5M E × Mult |
-| <McItem slug="techreborn:deuterium_cell" inline={true}/> | <McItem slug="techreborn:helium3_cell" inline={true}/> | 40M | <McItem slug="techreborn:heliumplasma_cell" inline={true}/> | 33.5M E × Mult |
+- **Input A** and **Input B** must be in a <McItem slug="techreborn:empty_cell" /> and not a <McItem slug="minecraft:bucket" />. These cells will also be consumed by the machine when the reaction starts.
+- **Minimum Energy Required** is energy that must exist in the computer to start the process, and it will be immediately consumed (if available) when the ingredients are placed in their slots. Fortunately the impact of this is reduced as you build larger and larger fusion reactors, as the _Energy Produced_ scales up while the energy consumed to start the reactor is always constant.
+- **Output** is the resulting item that is created with the fusion of the other two items. If necessary, it will be created within a Cell (this does not have to be provided by the player).
+- **Energy Produced** is the amount of energy the reactor will create in the process of making the output resource. This is typically multiplied by the reactor size (see the Power Generation table below).
+- **Energy Consumed** is the amount the reactor requires to continue to produce certain items.
 
-### Fuel-to-Item Reactions (Consumes 2048 E/t)[^4]
+| Input A                                     | Input B                                   | Minimum Energy Required | Output                                         | Energy Produced                                         |
+| ------------------------------------------- | ----------------------------------------- | ----------------------- | ---------------------------------------------- | ------------------------------------------------------- |
+| <McItem slug="techreborn:deuterium_cell" /> | <McItem slug="techreborn:tritium_cell" /> | 40M Energy              | <McItem slug="techreborn:helium3_cell" />      | 16,364 E/t _ 2048 ticks = 33,554,433 E _ Gen Multiplier |
+| <McItem slug="techreborn:deuterium_cell" /> | <McItem slug="techreborn:helium3_cell" /> | 40M Energy              | <McItem slug="techreborn:heliumplasma_cell" /> | 16,364 E/t _ 2048 ticks = 33,554,433 E _ Gen Multiplier |
 
-| Input A | Input B | Min Energy | Continuous Energy Cost | Output |
-|---------|---------|------------|------------------------|--------|
-| <McItem slug="techreborn:wolframium_cell" inline={true}/> | <McItem slug="techreborn:beryllium_cell" inline={true}/> | 80M | 2048 E/t × 1024 ticks = 2.1M E | <McItem slug="techreborn:platinum_dust" inline={true}/> |
-| <McItem slug="techreborn:wolframium_cell" inline={true}/> | <McItem slug="techreborn:lithium_cell" inline={true}/> | 90M | 2048 E/t × 1024 ticks = 2.1M E | <McItem slug="techreborn:iridium_ore" inline={true}/> |
+> The following recipes consume power at 2048 E/t.
 
-<accordion>
-<panel title="Power Generation Table" icon="fa fa-table">
+| Input A                                      | Input B                                     | Minimum Energy Required | Energy Consumed                      | Output                                     |
+| -------------------------------------------- | ------------------------------------------- | ----------------------- | ------------------------------------ | ------------------------------------------ |
+| <McItem slug="techreborn:wolframium_cell" /> | <McItem slug="techreborn:beryllium_cell" /> | 80M Energy              | 2048 E/t \* 1024 ticks = 2,097,152 E | <McItem slug="techreborn:platinum_dust" /> |
+| <McItem slug="techreborn:wolframium_cell" /> | <McItem slug="techreborn:lithium_cell" />   | 90M Energy              | 2048 E/t \* 1024 ticks = 2,097,152 E | <McItem slug="techreborn:iridium_ore" />   |
 
-*Table is omitted for brevity but includes reactor size, coil count, generation multiplier, per-tick energy, total energy, max capacity, and efficiency percent.*
+### Power Generation Table
 
-</panel>
-</accordion>
-
-[^1]: Base generation rate. Multiplied by reactor size multiplier.  
-[^2]: May not be extractable via cables due to mod limitations.  
-[^3]: Storage scales with multiplier. Max capped at 2,147,483,647 E.  
-[^4]: Bug: These reactions produce energy rather than consume it in 1.16.5+.
+| Size | Fusion Coils Required | Generation Multiplier | Energy Generated per Tick[^4] | Total Energy Generated[^5] | Max Capacity[^6] | Percent of Capacity[^7] |
+| ---- | --------------------- | --------------------- | ----------------------------- | -------------------------- | ---------------- | ----------------------- |
+| 6    | 16                    | 1.00                  | 16.3k                         | 33.5M                      | 100M             | 34%                     |
+| 7    | 16                    | 1.74                  | 28.5k                         | 58.3M                      | 174M             | 34%                     |
+| 8    | 24                    | 3.61                  | 59.1k                         | 121.1M                     | 361M             | 34%                     |
+| 9    | 24                    | 6.06                  | 99.2k                         | 203.3M                     | 606M             | 34%                     |
+| 10   | 28                    | 9.06                  | 148.4k                        | 304.0M                     | 906M             | 34%                     |
+| 11   | 36                    | 12.58                 | 206.1k                        | 422.1M                     | 1.2G             | 34%                     |
+| 12   | 40                    | 16.60                 | 271.9k                        | 557.0M                     | 1.6G             | 34%                     |
+| 13   | 48                    | 21.11                 | 345.8k                        | 708.3M                     | 2.1G             | 34%                     |
+| 14   | 64                    | 26.10                 | 427.6k                        | 875.7M                     | 2.1G             | 41%                     |
+| 15   | 64                    | 31.55                 | 516.9k                        | 1.0G                       | 2.1G             | 49%                     |
+| 16   | 70                    | 37.45                 | 613.5k                        | 1.2G                       | 2.1G             | 59%                     |
+| 17   | 70                    | 43.80                 | 717.6k                        | 1.4G                       | 2.1G             | 68%                     |
+| 18   | 92                    | 50.59                 | 828.8k                        | 1.6G                       | 2.1G             | 79%                     |
+| 19   | 108                   | 57.81                 | 947.1k                        | 1.9G                       | 2.1G             | 90%                     |
+| 20   | 120                   | 65.45                 | 1.0M                          | 2.1G                       | 2.1G             | 102%                    |

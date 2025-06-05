@@ -4,9 +4,7 @@ title: Semifluid Generator
 
 <ItemImage file="semifluid_generator" alt="Semifluid Generator" size="200" />
 
-# Semifluid Generator
-
-The **Semifluid Generator** produces energy from various fluids. It has an internal **[Tank](/img/mods/techreborn/basic_tank_unit)** that can hold 10k mB of fluid (10 **[Buckets](/mods/minecraft/bucket)** or **[Cells](/items/fluid/empty_cell)** worth) which is consumed as it is converted to energy.
+The **Semifluid Generator** produces energy from various fluids. It has an internal tank that can hold 10k mB of fluid which is consumed as it is converted to energy.
 
 | Tier   | Generation Rate | Output  | Storage |
 |--------|------------------|---------|---------|
@@ -29,5 +27,5 @@ The **Semifluid Generator** produces energy from various fluids. It has an inter
 ### Usage
 
 - Place a cell or bucket of fuel into the input slot to fill the internal tank  
-- Can also be filled by an external **[Tank](/img/mods/techreborn/basic_tank_unit)**  
+- Can also be filled by an external **[Tank](/docs/blocks/tanks/)**  
 - Outputs energy on all sides
