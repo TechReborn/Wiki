@@ -34,7 +34,7 @@ The <McItem slug="techreborn:grinder" /> allows you to grind ores into <McItem s
 
 Now you should have some idea how the main process loop works. Your next goal should be <McItem slug="techreborn:industrial_grinder" />, a better version of the <McItem slug="techreborn:grinder" /> to make even more resources from the ore. But before we can make it, we need first make some new machines to create required parts. Check the **Industrial Grinder** page fo the recipe.
 
-As you can see this mechine is a bit more complicated than those we build before and requires processed materials. One of them is <McItem slug="techreborn:diamond_grinding_head" />
+As you can see this machine is a bit more complicated than those we build before and requires processed materials. One of them is <McItem slug="techreborn:diamond_grinding_head" />
 which requires <McItem slug="techreborn:steel_ingot" />, but to obtain that you first need to make <McItem slug="techreborn:industrial_blast_furnace" />.
 
 To make this furnance you will need <McItem slug="techreborn:cupronickel_heating_coil" /> which is made in <McItem slug="techreborn:rolling_machine" />
